@@ -1,0 +1,10 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/EGWNCentral.Api/EGWNCentral.Api.csproj" />
+    <Project Path="src/EGWNCentral.Core/EGWNCentral.Core.csproj" />
+    <Project Path="src/EGWNCentral.Infrastructure/EGWNCentral.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/EGWNCentral.Tests/EGWNCentral.Tests.csproj" />
+  </Folder>
+</Solution>
