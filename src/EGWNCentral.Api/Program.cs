@@ -103,6 +103,10 @@ public class Program
         if (app.Environment.IsDevelopment())
         {
             app.MapOpenApi("/swagger/v1/swagger.json");
+            app.UseSwaggerUI(options =>
+            {
+                options.SwaggerEndpoint("/swagger/v1/swagger.json", "EGWN Central API");
+            });
         }
 
         app.UseSerilogRequestLogging();
