@@ -14,6 +14,10 @@ public sealed class MeteringPointConfiguration : IEntityTypeConfiguration<Meteri
             .HasMaxLength(64)
             .IsRequired();
 
+        builder.Property(x => x.EnergyDirection)
+            .HasMaxLength(32)
+            .IsRequired();
+
         builder.Property(x => x.Description)
             .HasMaxLength(200);
 

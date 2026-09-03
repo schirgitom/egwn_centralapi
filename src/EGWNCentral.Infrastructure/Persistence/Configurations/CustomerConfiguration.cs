@@ -12,6 +12,7 @@ public sealed class CustomerConfiguration : IEntityTypeConfiguration<Customer>
 
         builder.Property(x => x.CustomerNumber)
             .HasMaxLength(64)
+            .HasDefaultValueSql("'EGWN-' || lpad(nextval('customer_number_seq')::text, 2, '0')")
             .IsRequired();
 
         builder.Property(x => x.Name)

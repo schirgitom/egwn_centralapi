@@ -8,9 +8,9 @@ public interface IMeteringPointService
 
     Task<MeteringPoint?> GetByIdAsync(Guid id, CancellationToken cancellationToken = default);
 
-    Task<MeteringPoint> CreateAsync(Guid customerId, string meteringPointCode, string? description, CancellationToken cancellationToken = default);
+    Task<MeteringPoint> CreateAsync(Guid customerId, string meteringPointCode, string energyDirection, string? description, CancellationToken cancellationToken = default);
 
-    Task<MeteringPoint?> UpdateAsync(Guid id, string? description, CancellationToken cancellationToken = default);
+    Task<MeteringPoint?> UpdateAsync(Guid id, string? description, string? energyDirection, CancellationToken cancellationToken = default);
 
     Task<bool> DeleteAsync(Guid id, CancellationToken cancellationToken = default);
 }

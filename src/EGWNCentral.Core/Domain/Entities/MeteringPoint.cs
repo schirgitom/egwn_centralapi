@@ -6,6 +6,8 @@ public sealed class MeteringPoint : SoftDeletableEntity
 
     public string MeteringPointCode { get; set; } = string.Empty;
 
+    public string EnergyDirection { get; set; } = string.Empty;
+
     public string? Description { get; set; }
 
     public Customer Customer { get; set; } = null!;

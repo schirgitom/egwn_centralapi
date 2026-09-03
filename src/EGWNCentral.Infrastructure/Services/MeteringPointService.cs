@@ -20,7 +20,7 @@ public sealed class MeteringPointService(IUnitOfWork unitOfWork) : IMeteringPoin
             .FirstOrDefaultAsync(x => x.Id == id, cancellationToken);
     }
 
-    public async Task<MeteringPoint> CreateAsync(Guid customerId, string meteringPointCode, string? description, CancellationToken cancellationToken = default)
+    public async Task<MeteringPoint> CreateAsync(Guid customerId, string meteringPointCode, string energyDirection, string? description, CancellationToken cancellationToken = default)
     {
         var customerExists = await unitOfWork.Customers.Query(asNoTracking: true).AnyAsync(x => x.Id == customerId, cancellationToken);
         if (!customerExists)
@@ -29,6 +29,7 @@ public sealed class MeteringPointService(IUnitOfWork unitOfWork) : IMeteringPoin
         }
 
         var normalizedCode = Normalize(meteringPointCode);
+        var normalizedEnergyDirection = NormalizeEnergyDirection(energyDirection);
         var exists = await unitOfWork.MeteringPoints.Query(asNoTracking: true)
             .AnyAsync(x => x.MeteringPointCode == normalizedCode, cancellationToken);
 
@@ -41,6 +42,7 @@ public sealed class MeteringPointService(IUnitOfWork unitOfWork) : IMeteringPoin
         {
             CustomerId = customerId,
             MeteringPointCode = normalizedCode,
+            EnergyDirection = normalizedEnergyDirection,
             Description = NormalizeNullable(description)
         };
 
@@ -49,7 +51,7 @@ public sealed class MeteringPointService(IUnitOfWork unitOfWork) : IMeteringPoin
         return meteringPoint;
     }
 
-    public async Task<MeteringPoint?> UpdateAsync(Guid id, string? description, CancellationToken cancellationToken = default)
+    public async Task<MeteringPoint?> UpdateAsync(Guid id, string? description, string? energyDirection, CancellationToken cancellationToken = default)
     {
         var meteringPoint = await unitOfWork.MeteringPoints.GetByIdAsync(id, cancellationToken);
         if (meteringPoint is null)
@@ -57,7 +59,16 @@ public sealed class MeteringPointService(IUnitOfWork unitOfWork) : IMeteringPoin
             return null;
         }
 
-        meteringPoint.Description = NormalizeNullable(description);
+        if (description is not null)
+        {
+            meteringPoint.Description = NormalizeNullable(description);
+        }
+
+        if (energyDirection is not null)
+        {
+            meteringPoint.EnergyDirection = NormalizeEnergyDirection(energyDirection);
+        }
+
         await unitOfWork.SaveChangesAsync(cancellationToken);
         return meteringPoint;
     }
@@ -89,5 +100,16 @@ public sealed class MeteringPointService(IUnitOfWork unitOfWork) : IMeteringPoin
     private static string? NormalizeNullable(string? value)
     {
         return string.IsNullOrWhiteSpace(value) ? null : value.Trim();
+    }
+
+    private static string NormalizeEnergyDirection(string energyDirection)
+    {
+        var normalized = Normalize(energyDirection).ToLowerInvariant();
+        if (normalized is not ("generation" or "consumption"))
+        {
+            throw new ArgumentException("Energy direction must be either 'generation' or 'consumption'.", nameof(energyDirection));
+        }
+
+        return normalized;
     }
 }

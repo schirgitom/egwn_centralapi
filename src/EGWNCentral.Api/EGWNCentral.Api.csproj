@@ -25,4 +25,8 @@
     <ProjectReference Include="..\EGWNCentral.Infrastructure\EGWNCentral.Infrastructure.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Seeding\" />
+  </ItemGroup>
+
 </Project>

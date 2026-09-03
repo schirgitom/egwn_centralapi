@@ -29,7 +29,7 @@ public sealed class CustomerServiceTests
         var meteringPointService = new MeteringPointService(unitOfWork);
 
         var customer = await customerService.CreateAsync("K-200", "Delete Customer", null);
-        var meteringPoint = await meteringPointService.CreateAsync(customer.Id, "AT001000000000000000000000000001", "Main Meter");
+        var meteringPoint = await meteringPointService.CreateAsync(customer.Id, "AT001000000000000000000000000001", "generation", "Main Meter");
 
         var deleted = await customerService.DeleteAsync(customer.Id);
 

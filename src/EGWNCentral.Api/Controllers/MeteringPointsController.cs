@@ -30,7 +30,7 @@ public sealed class MeteringPointsController(IMeteringPointService meteringPoint
     {
         try
         {
-            var meteringPoint = await meteringPointService.CreateAsync(request.CustomerId, request.MeteringPointCode, request.Description, cancellationToken);
+            var meteringPoint = await meteringPointService.CreateAsync(request.CustomerId, request.MeteringPointCode, request.EnergyDirection, request.Description, cancellationToken);
             return CreatedAtAction(nameof(GetById), new { id = meteringPoint.Id }, Map(meteringPoint));
         }
         catch (ArgumentException ex)
@@ -50,8 +50,15 @@ public sealed class MeteringPointsController(IMeteringPointService meteringPoint
     [HttpPut("{id:guid}")]
     public async Task<ActionResult<MeteringPointResponse>> Update(Guid id, [FromBody] UpdateMeteringPointRequest request, CancellationToken cancellationToken)
     {
-        var meteringPoint = await meteringPointService.UpdateAsync(id, request.Description, cancellationToken);
-        return meteringPoint is null ? NotFound() : Ok(Map(meteringPoint));
+        try
+        {
+            var meteringPoint = await meteringPointService.UpdateAsync(id, request.Description, request.EnergyDirection, cancellationToken);
+            return meteringPoint is null ? NotFound() : Ok(Map(meteringPoint));
+        }
+        catch (ArgumentException ex)
+        {
+            return BadRequest(ex.Message);
+        }
     }
 
     [HttpDelete("{id:guid}")]
@@ -67,6 +74,7 @@ public sealed class MeteringPointsController(IMeteringPointService meteringPoint
             meteringPoint.Id,
             meteringPoint.CustomerId,
             meteringPoint.MeteringPointCode,
+            meteringPoint.EnergyDirection,
             meteringPoint.Description,
             meteringPoint.CreatedAtUtc,
             meteringPoint.UpdatedAtUtc);

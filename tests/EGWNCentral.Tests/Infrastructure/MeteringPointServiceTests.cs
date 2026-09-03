@@ -14,11 +14,27 @@ public sealed class MeteringPointServiceTests
         var service = new MeteringPointService(unitOfWork);
 
         await Assert.ThrowsAsync<KeyNotFoundException>(() =>
-            service.CreateAsync(Guid.NewGuid(), "AT001000000000000000000000000002", "Missing Customer"));
+            service.CreateAsync(Guid.NewGuid(), "AT001000000000000000000000000002", "generation", "Missing Customer"));
     }
 
     [Fact]
-    public async Task UpdateAsync_ShouldUpdateDescription()
+    public async Task CreateAsync_WithInvalidEnergyDirection_ShouldThrow()
+    {
+        await using var dbContext = CreateDbContext();
+        var unitOfWork = new UnitOfWork(dbContext);
+        var customerService = new CustomerService(unitOfWork);
+        var service = new MeteringPointService(unitOfWork);
+
+        var customer = await customerService.CreateAsync("K-300", "Invalid Energy Direction", null);
+
+        var ex = await Assert.ThrowsAsync<ArgumentException>(() =>
+            service.CreateAsync(customer.Id, "AT001000000000000000000000000003", "invalid", "Old"));
+
+        Assert.Equal("energyDirection", ex.ParamName);
+    }
+
+    [Fact]
+    public async Task UpdateAsync_ShouldUpdateDescriptionAndEnergyDirection()
     {
         await using var dbContext = CreateDbContext();
         var unitOfWork = new UnitOfWork(dbContext);
@@ -26,12 +42,13 @@ public sealed class MeteringPointServiceTests
         var meteringPointService = new MeteringPointService(unitOfWork);
 
         var customer = await customerService.CreateAsync("K-300", "Update Customer", null);
-        var meteringPoint = await meteringPointService.CreateAsync(customer.Id, "AT001000000000000000000000000003", "Old");
+        var meteringPoint = await meteringPointService.CreateAsync(customer.Id, "AT001000000000000000000000000003", "generation", "Old");
 
-        var updated = await meteringPointService.UpdateAsync(meteringPoint.Id, "New");
+        var updated = await meteringPointService.UpdateAsync(meteringPoint.Id, "New", "consumption");
 
         Assert.NotNull(updated);
         Assert.Equal("New", updated!.Description);
+        Assert.Equal("consumption", updated.EnergyDirection);
     }
 
     [Fact]
@@ -43,7 +60,7 @@ public sealed class MeteringPointServiceTests
         var meteringPointService = new MeteringPointService(unitOfWork);
 
         var customer = await customerService.CreateAsync("K-400", "Delete Meter", null);
-        var meteringPoint = await meteringPointService.CreateAsync(customer.Id, "AT001000000000000000000000000004", null);
+        var meteringPoint = await meteringPointService.CreateAsync(customer.Id, "AT001000000000000000000000000004", "generation", null);
 
         var deleted = await meteringPointService.DeleteAsync(meteringPoint.Id);
 

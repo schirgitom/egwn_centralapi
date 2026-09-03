@@ -3,6 +3,7 @@ using System.Text;
 using EGWNCentral.Api.Options;
 using EGWNCentral.Api.Services;
 using EGWNCentral.Infrastructure;
+using EGWNCentral.Infrastructure.Persistence;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using Serilog;
@@ -12,7 +13,7 @@ namespace EGWNCentral.Api;
 
 public class Program
 {
-    public static void Main(string[] args)
+    public static async Task Main(string[] args)
     {
         var preConfiguration = new ConfigurationBuilder()
             .SetBasePath(AppContext.BaseDirectory)
@@ -91,11 +92,17 @@ public class Program
         builder.Services.AddControllers();
         builder.Services.AddOpenApi();
 
+
         var app = builder.Build();
+        using (var scope = app.Services.CreateScope())
+        {
+            var db = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
+            SeedData.Seed(db);
+        }
 
         if (app.Environment.IsDevelopment())
         {
-            app.MapOpenApi();
+            app.MapOpenApi("/swagger/v1/swagger.json");
         }
 
         app.UseSerilogRequestLogging();

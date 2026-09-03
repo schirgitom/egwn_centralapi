@@ -34,6 +34,7 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                     b.Property<string>("CustomerNumber")
                         .IsRequired()
                         .HasMaxLength(64)
+                        .HasDefaultValueSql("'EGWN-' || lpad(nextval('customer_number_seq')::text, 2, '0')")
                         .HasColumnType("character varying(64)");
 
                     b.Property<DateTimeOffset?>("DeletedAtUtc")
@@ -81,6 +82,11 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                     b.Property<string>("Description")
                         .HasMaxLength(200)
                         .HasColumnType("character varying(200)");
+
+                    b.Property<string>("EnergyDirection")
+                        .IsRequired()
+                        .HasMaxLength(32)
+                        .HasColumnType("character varying(32)");
 
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("boolean");
