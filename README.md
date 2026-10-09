@@ -1,6 +1,6 @@
 # EGWNCentral
 
-EGWNCentral ist eine .NET Web API zur Verwaltung einer Energiegemeinschaft mit Fokus auf **Kunden** und **Zaehlpunkte**.
+EGWNCentral ist eine .NET Web API zur Verwaltung von Energiegemeinschaften mit Fokus auf **Kunden**, **Zaehlpunkte** und deren Teilnahme.
 
 ## Technologie-Stack
 
@@ -52,3 +52,9 @@ Wichtige Einstellungen in `src\EGWNCentral.Api\appsettings.json`:
 
 - `/api/customers`
 - `/api/metering-points`
+- `/api/energy-communities`
+
+Zaehlpunkte koennen mehreren Energiegemeinschaften zugeordnet werden. Der Teilnahmegrad wird pro Zuordnung unabhaengig von anderen Gemeinschaften auf 0 bis 100 Prozent festgelegt:
+
+- `PUT /api/energy-communities/{communityId}/metering-points/{meteringPointId}` mit `{"participationPercentage": 75}`
+- `DELETE /api/energy-communities/{communityId}/metering-points/{meteringPointId}` entfernt die Zuordnung.

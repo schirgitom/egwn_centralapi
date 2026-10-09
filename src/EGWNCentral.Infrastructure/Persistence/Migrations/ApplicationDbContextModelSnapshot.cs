@@ -22,6 +22,48 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
 
+            modelBuilder.Entity("EGWNCentral.Core.Domain.Entities.CommunityParticipation", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid");
+
+                    b.Property<DateTimeOffset>("CreatedAtUtc")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<DateTimeOffset?>("DeletedAtUtc")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<Guid>("EnergyCommunityId")
+                        .HasColumnType("uuid");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("boolean");
+
+                    b.Property<Guid>("MeteringPointId")
+                        .HasColumnType("uuid");
+
+                    b.Property<decimal>("ParticipationPercentage")
+                        .HasPrecision(5, 2)
+                        .HasColumnType("numeric(5,2)");
+
+                    b.Property<DateTimeOffset?>("UpdatedAtUtc")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("MeteringPointId");
+
+                    b.HasIndex("EnergyCommunityId", "MeteringPointId")
+                        .IsUnique()
+                        .HasFilter("\"IsDeleted\" = false");
+
+                    b.ToTable("CommunityParticipations", t =>
+                        {
+                            t.HasCheckConstraint("CK_CommunityParticipations_ParticipationPercentage", "\"ParticipationPercentage\" >= 0 AND \"ParticipationPercentage\" <= 100");
+                        });
+                });
+
             modelBuilder.Entity("EGWNCentral.Core.Domain.Entities.Customer", b =>
                 {
                     b.Property<Guid>("Id")
@@ -33,9 +75,10 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
 
                     b.Property<string>("CustomerNumber")
                         .IsRequired()
+                        .ValueGeneratedOnAdd()
                         .HasMaxLength(64)
-                        .HasDefaultValueSql("'EGWN-' || lpad(nextval('customer_number_seq')::text, 2, '0')")
-                        .HasColumnType("character varying(64)");
+                        .HasColumnType("character varying(64)")
+                        .HasDefaultValueSql("'EGWN-' || lpad(nextval('customer_number_seq')::text, 2, '0')");
 
                     b.Property<DateTimeOffset?>("DeletedAtUtc")
                         .HasColumnType("timestamp with time zone");
@@ -62,6 +105,34 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         .HasFilter("\"IsDeleted\" = false");
 
                     b.ToTable("Customers");
+                });
+
+            modelBuilder.Entity("EGWNCentral.Core.Domain.Entities.EnergyCommunity", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid");
+
+                    b.Property<DateTimeOffset>("CreatedAtUtc")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<DateTimeOffset?>("DeletedAtUtc")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("boolean");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(200)
+                        .HasColumnType("character varying(200)");
+
+                    b.Property<DateTimeOffset?>("UpdatedAtUtc")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("EnergyCommunities");
                 });
 
             modelBuilder.Entity("EGWNCentral.Core.Domain.Entities.MeteringPoint", b =>
@@ -110,6 +181,25 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                     b.ToTable("MeteringPoints");
                 });
 
+            modelBuilder.Entity("EGWNCentral.Core.Domain.Entities.CommunityParticipation", b =>
+                {
+                    b.HasOne("EGWNCentral.Core.Domain.Entities.EnergyCommunity", "EnergyCommunity")
+                        .WithMany("Participations")
+                        .HasForeignKey("EnergyCommunityId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("EGWNCentral.Core.Domain.Entities.MeteringPoint", "MeteringPoint")
+                        .WithMany("CommunityParticipations")
+                        .HasForeignKey("MeteringPointId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("EnergyCommunity");
+
+                    b.Navigation("MeteringPoint");
+                });
+
             modelBuilder.Entity("EGWNCentral.Core.Domain.Entities.MeteringPoint", b =>
                 {
                     b.HasOne("EGWNCentral.Core.Domain.Entities.Customer", "Customer")
@@ -124,6 +214,16 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
             modelBuilder.Entity("EGWNCentral.Core.Domain.Entities.Customer", b =>
                 {
                     b.Navigation("MeteringPoints");
+                });
+
+            modelBuilder.Entity("EGWNCentral.Core.Domain.Entities.EnergyCommunity", b =>
+                {
+                    b.Navigation("Participations");
+                });
+
+            modelBuilder.Entity("EGWNCentral.Core.Domain.Entities.MeteringPoint", b =>
+                {
+                    b.Navigation("CommunityParticipations");
                 });
 #pragma warning restore 612, 618
         }

@@ -8,5 +8,9 @@ public interface IUnitOfWork
 
     IRepository<MeteringPoint> MeteringPoints { get; }
 
+    IRepository<EnergyCommunity> EnergyCommunities { get; }
+
+    IRepository<CommunityParticipation> CommunityParticipations { get; }
+
     Task<int> SaveChangesAsync(CancellationToken cancellationToken = default);
 }

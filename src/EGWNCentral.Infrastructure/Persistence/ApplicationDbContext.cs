@@ -9,6 +9,10 @@ public sealed class ApplicationDbContext(DbContextOptions<ApplicationDbContext> 
 
     public DbSet<MeteringPoint> MeteringPoints => Set<MeteringPoint>();
 
+    public DbSet<EnergyCommunity> EnergyCommunities => Set<EnergyCommunity>();
+
+    public DbSet<CommunityParticipation> CommunityParticipations => Set<CommunityParticipation>();
+
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.ApplyConfigurationsFromAssembly(typeof(ApplicationDbContext).Assembly);

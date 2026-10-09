@@ -26,6 +26,7 @@ public static class DependencyInjection
 
         services.AddScoped<ICustomerService, CustomerService>();
         services.AddScoped<IMeteringPointService, MeteringPointService>();
+        services.AddScoped<IEnergyCommunityService, EnergyCommunityService>();
 
         return services;
     }

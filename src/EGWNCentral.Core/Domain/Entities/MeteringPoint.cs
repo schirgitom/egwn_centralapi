@@ -11,4 +11,6 @@ public sealed class MeteringPoint : SoftDeletableEntity
     public string? Description { get; set; }
 
     public Customer Customer { get; set; } = null!;
+
+    public ICollection<CommunityParticipation> CommunityParticipations { get; set; } = new List<CommunityParticipation>();
 }
