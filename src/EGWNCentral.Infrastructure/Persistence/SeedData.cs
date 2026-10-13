@@ -7,68 +7,143 @@ public static class SeedData
 {
     public static void Seed(ApplicationDbContext context)
     {
-        if (context.Customers.Any(x => x.CustomerNumber == "EGWN-01"))
+        if (context.Customers.Any())
         {
             return;
         }
 
-        var customers = new[]
+        var rows = ReadSeedRows();
+        if (rows.Count == 0)
         {
-            CustomerWithPoints("EGWN-01", "Friedrich Kristofferitsch", ("AT0082000000000000000000006179501", "consumption")),
-            CustomerWithPoints("EGWN-02", "Christoph Pichler",
-                ("AT0082000818400000000000001242601", "consumption"),
-                ("AT0082000818400000000000001242702", "consumption"),
-                ("AT0082000818400000000000001242701", "consumption")),
-            CustomerWithPoints("EGWN-03", "Sonja Pöllabauer", ("AT0080000819000000000000000145187", "consumption")),
-            CustomerWithPoints("EGWN-04", "Sarah Mayer", ("AT0082000818400000000000003436301", "consumption")),
-            CustomerWithPoints("EGWN-05", "Vinzenz Scharler", ("AT0082000819200000000000000067001", "consumption")),
-            CustomerWithPoints("EGWN-06", "Anna & Michael Tiefengraber", ("AT0082000819100000000000000729601", "consumption")),
-            CustomerWithPoints("EGWN-07", "Werner Derler",
-                ("AT0082000819100000000000000756301", "consumption"),
-                ("AT0080000819100000202501230486936", "generation")),
-            CustomerWithPoints("EGWN-08", "Peter Strassegger", ("AT0082000817200000000000002615001", "consumption")),
-            CustomerWithPoints("EGWN-09", "Peter Klamminger", ("AT0080000819000000202411050471847", "generation")),
-            CustomerWithPoints("EGWN-10", "Bernd Kerschbaumer",
-                ("AT0080000819000000202012100079281", "generation"),
-                ("AT0080000819100000000000000066587", "consumption")),
-            CustomerWithPoints("EGWN-11", "Fritz jun. Kristofferitsch",
-                ("AT0082000000000000000000006197701", "consumption"),
-                ("AT0080000819000000202209200159119", "generation")),
-            CustomerWithPoints("EGWN-12", "Harald Pfurtscheller e.U.", ("AT0082000819100000000000004160001", "consumption")),
-            CustomerWithPoints("EGWN-13", "EDL Event GmbH",
-                ("AT0080000819000000000000000130123", "consumption"),
-                ("AT0080000819000000202209200159122", "generation"),
-                ("AT0082000000000000000000006128401", "consumption"),
-                ("AT0080000819000000202209200159120", "generation")),
-            CustomerWithPoints("EGWN-14", "Johann Flicker",
-                ("AT0082000819000000000000001480001", "consumption"),
-                ("AT0080000819000000202412030483624", "generation")),
-            CustomerWithPoints("EGWN-15", "Kleintierpraxis Anger", ("AT0082000818400000000000002728401", "consumption")),
-            CustomerWithPoints("EGWN-16", "Fritz Kristofferitsch", ("AT0080000819000000000000000086514", "consumption")),
-            CustomerWithPoints("EGWN-17", "Hubert Schweiger", ("AT0082000819100000000000000251101", "consumption")),
-            CustomerWithPoints("EGWN-18", "Zäzilia Straußberger", ("AT0082000819000000000000001470901", "consumption")),
-            CustomerWithPoints("EGWN-19", "Johann Höfler", ("AT0082000818400000000000003434801", "consumption"))
-        };
+            return;
+        }
 
-        context.Customers.AddRange(customers);
+        var customersByKey = rows
+            .GroupBy(x => x.ParticipantKey, StringComparer.OrdinalIgnoreCase)
+            .ToDictionary(
+                group => group.Key,
+                group => CreateCustomer(group.Key, group.ToList()),
+                StringComparer.OrdinalIgnoreCase);
+
+        var energyCommunities = rows
+            .Select(x => x.CommunityName)
+            .Where(x => !string.IsNullOrWhiteSpace(x))
+            .Distinct(StringComparer.OrdinalIgnoreCase)
+            .Select(name => new EnergyCommunity
+            {
+                Id = Guid.NewGuid(),
+                Name = name
+            })
+            .ToList();
+
+        context.Customers.AddRange(customersByKey.Values);
+        context.EnergyCommunities.AddRange(energyCommunities);
+        context.SaveChanges();
+
+        var communityByName = energyCommunities.ToDictionary(x => x.Name, StringComparer.OrdinalIgnoreCase);
+        var meteringPointByCode = customersByKey.Values
+            .SelectMany(x => x.MeteringPoints)
+            .ToDictionary(x => x.MeteringPointCode, StringComparer.OrdinalIgnoreCase);
+
+        var participations = rows
+            .Where(x => !string.IsNullOrWhiteSpace(x.CommunityName))
+            .Select(x => (x.CommunityName, x.MeteringPointCode))
+            .Distinct()
+            .Select(item => new CommunityParticipation
+            {
+                Id = Guid.NewGuid(),
+                EnergyCommunityId = communityByName[item.CommunityName].Id,
+                MeteringPointId = meteringPointByCode[item.MeteringPointCode].Id,
+                ParticipationPercentage = 100m
+            })
+            .ToList();
+
+        context.CommunityParticipations.AddRange(participations);
         context.SaveChanges();
     }
 
-    private static Customer CustomerWithPoints(string customerNumber, string name, params (string Code, string Direction)[] meterPoints)
+    private static Customer CreateCustomer(string participantKey, List<SeedRow> rows)
     {
+        var first = rows[0];
+        var customerNumber = $"EGWN-{participantKey}";
+        var fullName = $"{first.FirstName} {first.LastName}".Trim();
+        var name = string.IsNullOrWhiteSpace(fullName) ? $"Teilnehmer {participantKey}" : fullName;
+        var email = rows.Select(x => x.Email).FirstOrDefault(x => !string.IsNullOrWhiteSpace(x));
+
         var customer = new Customer
         {
             Id = Guid.NewGuid(),
             CustomerNumber = customerNumber,
             Name = name,
-            MeteringPoints = meterPoints.Select(point => new MeteringPoint
+            Email = string.IsNullOrWhiteSpace(email) ? null : email,
+            MeteringPoints = rows.Select(row => row.MeteringPointCode).Distinct(StringComparer.OrdinalIgnoreCase).Select(meterPointCode => new MeteringPoint
             {
                 Id = Guid.NewGuid(),
-                MeteringPointCode = point.Code,
-                EnergyDirection = point.Direction
+                MeteringPointCode = meterPointCode,
+                EnergyDirection = "consumption"
             }).ToList()
         };
 
         return customer;
     }
+
+    private static List<SeedRow> ReadSeedRows()
+    {
+        var csvPath = Path.Combine(AppContext.BaseDirectory, "..", "..", "..", "..", "data", "Seeding.csv");
+        var fullPath = Path.GetFullPath(csvPath);
+        if (!File.Exists(fullPath))
+        {
+            return [];
+        }
+
+        var lines = File.ReadAllLines(fullPath);
+        if (lines.Length <= 1)
+        {
+            return [];
+        }
+
+        var rows = new List<SeedRow>();
+        for (var i = 1; i < lines.Length; i++)
+        {
+            var line = lines[i];
+            if (string.IsNullOrWhiteSpace(line))
+            {
+                continue;
+            }
+
+            var columns = line.Split(';');
+            if (columns.Length < 11)
+            {
+                continue;
+            }
+
+            var meteringPointCode = columns[10].Trim();
+            if (!meteringPointCode.StartsWith("AT", StringComparison.OrdinalIgnoreCase))
+            {
+                continue;
+            }
+
+            var exportId = columns[0].Trim();
+            var participantId = columns[7].Trim();
+            var participantKey = string.IsNullOrWhiteSpace(participantId) ? $"EXP-{exportId}" : participantId;
+
+            rows.Add(new SeedRow(
+                participantKey,
+                columns[1].Trim(),
+                columns[2].Trim(),
+                columns[6].Trim(),
+                columns[8].Trim(),
+                meteringPointCode));
+        }
+
+        return rows;
+    }
+
+    private sealed record SeedRow(
+        string ParticipantKey,
+        string LastName,
+        string FirstName,
+        string Email,
+        string CommunityName,
+        string MeteringPointCode);
 }

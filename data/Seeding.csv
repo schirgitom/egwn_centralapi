@@ -1,0 +1,715 @@
+﻿Export_VNID;Nachname;Vorname;Titel;Anrede;Beruf;Email;TeilnehmerID;Kurzbezeichnung;Beginn;Zaehlpunkt
+1;Urtl;Wassergemeinschaft;;;;;U_1;EEG U;20/06/2024;AT0082000816000000000000000935801
+4;Nistelberger sen.;Peter;;Herr;;veronika@nistelberger.info;TW_1;EEG TW;18/09/2024;AT0082000816000000000000000925201
+4;Nistelberger sen.;Peter;;Herr;;veronika@nistelberger.info;TW_1;EEG TW;21/06/2024;AT0082000816000000000000000925202
+4;Nistelberger sen.;Peter;;Herr;;veronika@nistelberger.info;TW_1;EEG TW;18/09/2024;AT0080000816000000202303290250696
+5;Musterteilnehmer;Karl;Ing. Dr.;Herr;;;;EEG TW;21/06/2024;Zählpunktnummer
+6;Nistelberger;Veronika;;Frau;;veronika@nistelberger.info;TW_2;EEG TW;09/08/2024;AT0080000816000000202208230155174
+6;Nistelberger;Veronika;;Frau;;veronika@nistelberger.info;TW_2;EEG TW;25/07/2024;
+7;Nistelberger;Stefan;;Herr;;stefan@nistelberger.info;TW_3;EEG TW;29/08/2024;AT0082000816000000000000003197401
+7;Nistelberger;Stefan;;Herr;;stefan@nistelberger.info;TW_3;EEG TW;29/08/2024;AT0080000816000000202210200175458
+7;Nistelberger;Stefan;;Herr;;stefan@nistelberger.info;TW_3;EEG TW;;
+8;Nistelberger GmbH;Zimmerei;;Firma;;office@nistelberger.info;TW_4;EEG TW;29/07/2024;AT0080000816000000202007090074750
+8;Nistelberger GmbH;Zimmerei;;Firma;;office@nistelberger.info;TW_4;EEG TW;19/09/2024;AT0080000816000000000000000122169
+8;Nistelberger GmbH;Zimmerei;;Firma;;office@nistelberger.info;TW_4;EEG TW;25/07/2024;
+8;Nistelberger GmbH;Zimmerei;;Firma;;office@nistelberger.info;TW_4;EEG TW;19/09/2024;AT0080000816000000202008060075287
+9;Hofer GEA B65;Christian;;Herr;;christian.hofer@vb-hoeher.at;B65_2;EEG U;08/07/2024;AT0080000816000000201803050055336
+9;Hofer GEA B65;Christian;;Herr;;christian.hofer@vb-hoeher.at;B65_2;EEG U;08/07/2024;AT0082000816000000000000000937101
+9;Hofer GEA B65;Christian;;Herr;;christian.hofer@vb-hoeher.at;B65_2;GEA B65;09/07/2024;AT0080000816000000201803050055335
+9;Hofer GEA B65;Christian;;Herr;;christian.hofer@vb-hoeher.at;B65_2;GEA U11;28/06/2023;AT0080000816000000202103230088275
+9;Hofer GEA B65;Christian;;Herr;;christian.hofer@vb-hoeher.at;B65_2;GEA U11;04/07/2023;AT0082000816000000000000002997701
+9;Hofer GEA B65;Christian;;Herr;;christian.hofer@vb-hoeher.at;B65_2;GEA B65;09/07/2024;AT0082000000000000000000004607401
+9;Hofer GEA B65;Christian;;Herr;;christian.hofer@vb-hoeher.at;B65_2;GEA B65;09/07/2024;AT0082000000000000000000004607601
+9;Hofer GEA B65;Christian;;Herr;;christian.hofer@vb-hoeher.at;B65_2;GEA B65;09/07/2024;AT0082000816000000000000000635701
+10;DKW 10;VVBH GmbH;;Firma;;christian.hofer@vb-hoeher.at;TW_5;EEG TW;27/07/2024;AT0082000816000000000000003271501
+11;WaSt-TRADING e.U.;Wagner Stefan;;;;office@wast-stick.at;B65_1;GEA B65;10/06/2024;AT0080000816000000000000000072048
+12;Gaststätte;Baumgartner;;Firma;;gh-baumgartner@gmx.at;TW_6;EEG TW;28/08/2024;AT0082000816000000000000000887501
+12;Gaststätte;Baumgartner;;Firma;;gh-baumgartner@gmx.at;TW_6;EEG TW;17/09/2024;
+13;Wagner;Heinrich;;Herr;;gerda58@gmx.at;TW_7;EEG TW;29/08/2024;AT0082000818100000000000001622401
+13;Wagner;Heinrich;;Herr;;gerda58@gmx.at;TW_7;EEG TW;25/07/2024;
+14;Wagner;Stefan;;Herr;;office@wast-stick.at;TW_8;EEG TW;12/09/2024;AT0082000818100000000000001638001
+14;Wagner;Stefan;;Herr;;office@wast-stick.at;TW_8;EEG TW;25/07/2024;
+14;Wagner;Stefan;;Herr;;office@wast-stick.at;TW_8;EEG TW;22/10/2025;AT0080000818100000201607210040147
+15;Gruber;Bianca;;Frau;;;U11_1;GEA U11;07/09/2024;AT0080000816000000000000000112968
+15;Gruber;Bianca;;Frau;;;U11_1;GEA U11;11/07/2024;
+16;Lagler;Kevin;;Herr;;kevin.lagler@gmx.at;U11_2;GEA U11;07/09/2024;AT0080000816000000000000000112969
+17;Winkler;Bernadette;;Frau;;;U11_3;GEA U11;10/09/2024;AT0080000816000000000000000112971
+18;Pichler;Albert;;Herr;;albert.pichler.steindl@gmx.at;TW_9;EEG TW;29/08/2024;AT0082000816000000000000000918201
+18;Pichler;Albert;;Herr;;albert.pichler.steindl@gmx.at;TW_9;EEG TW;11/07/2024;
+20;Schoberer;Sieglinde;;Frau;;sigusat@yahoo.de;U_3;EEG U;10/09/2024;AT0082000816000000000000003281601
+20;Schoberer;Sieglinde;;Frau;;sigusat@yahoo.de;U_3;EEG U;11/07/2024;
+21;Schoberer;Siegfried;;Herr;;;U_4;EEG U;26/07/2024;AT0082000816000000000000000935301
+22;Lackner;Johannes;;Herr;;lackner.johannes@yahoo.de;WS_25;EEG WS;24/01/2026;AT0082000816000000000000001691001
+22;Lackner;Johannes;;Herr;;lackner.johannes@yahoo.de;WS_25;EEG WS;24/01/2026;AT0080000816000000202311280337421
+23;Hutter;Gerald;;Herr;;office@varicon.at;TW_10;EEG TW;29/08/2024;AT0082000818100000000000001673501
+23;Hutter;Gerald;;Herr;;office@varicon.at;TW_10;EEG TW;12/07/2024;
+24;VariCon GmbH;;;Firma;;office@varicon.at;TW_11;EEG TW;05/02/2026;AT0082000816000000000000001397802
+24;VariCon GmbH;;;Firma;;office@varicon.at;TW_11;EEG TW;05/02/2026;AT0082000816000000000000001397801
+25;Pichler;Josef;;Herr;;saegewerk.pichler@aon.at;TW_12;EEG TW;19/09/2024;AT0080000816000000202207010137300
+25;Pichler;Josef;;Herr;;saegewerk.pichler@aon.at;TW_12;EEG TW;19/09/2024;AT0082000816000000000000000882001
+25;Pichler;Josef;;Herr;;saegewerk.pichler@aon.at;TW_12;EEG TW;06/08/2024;
+26;Sägewerk Pichler;Pichler Josef;;Firma;;saegewerk.pichler@aon.at;TW_13;EEG TW;12/03/2025;AT0080000816000000202207010137303
+26;Sägewerk Pichler;Pichler Josef;;Firma;;saegewerk.pichler@aon.at;TW_13;EEG TW;12/03/2025;AT0082000000000000000000000884801
+27;Lagler Coaching;Kevin;;Herr;;kevin.lagler@gmx.at;TW_14;EEG TW;30/07/2024;AT0082000000000000000000004628701
+30;Painer;Peter;;Herr;;p.painer@schropper.at;TW_15;EEG TW;19/09/2024;AT0080000816000000201311100020197
+30;Painer;Peter;;Herr;;p.painer@schropper.at;TW_15;EEG TW;19/09/2024;AT0082000816000000000000000918301
+30;Painer;Peter;;Herr;;p.painer@schropper.at;TW_15;EEG TW;23/01/2025;AT0080000816000000000000000108046
+31;Thannhausen;Gemeinde;;;;gde@thannhausen.at;TW_16;EEG TW;13/12/2024;AT0080000816000000000000000052510
+31;Thannhausen;Gemeinde;;;;gde@thannhausen.at;TW_16;EEG TW;13/12/2024;AT0080000816000000000000000052584
+31;Thannhausen;Gemeinde;;;;gde@thannhausen.at;TW_16;EEG TW;30/07/2024;AT0082000816000000000000003894801
+31;Thannhausen;Gemeinde;;;;gde@thannhausen.at;TW_16;EEG TW;13/12/2024;AT0082000816000000000000004236201
+31;Thannhausen;Gemeinde;;;;gde@thannhausen.at;TW_16;EEG TW;13/12/2024;AT0082000816000000000000004113801
+31;Thannhausen;Gemeinde;;;;gde@thannhausen.at;TW_16;EEG TW;13/12/2024;AT0082000816000000000000004090101
+31;Thannhausen;Gemeinde;;;;gde@thannhausen.at;TW_16;EEG TW;13/12/2024;AT0082000816000000000000004090001
+31;Thannhausen;Gemeinde;;;;gde@thannhausen.at;TW_16;EEG TW;13/12/2024;AT0082000816000000000000003823901
+31;Thannhausen;Gemeinde;;;;gde@thannhausen.at;TW_16;EEG TW;13/12/2024;AT0082000816000000000000003432201
+31;Thannhausen;Gemeinde;;;;gde@thannhausen.at;TW_16;EEG TW;12/12/2024;AT0082000816000000000000003802702
+31;Thannhausen;Gemeinde;;;;gde@thannhausen.at;TW_16;EEG TW;12/12/2024;AT0082000816000000000000003404902
+31;Thannhausen;Gemeinde;;;;gde@thannhausen.at;TW_16;EEG TW;13/12/2024;AT0082000816000000000000002296201
+31;Thannhausen;Gemeinde;;;;gde@thannhausen.at;TW_16;EEG TW;13/12/2024;AT0082000816000000000000000712301
+31;Thannhausen;Gemeinde;;;;gde@thannhausen.at;TW_16;EEG TW;13/12/2024;AT0082000816000000000000000933301
+31;Thannhausen;Gemeinde;;;;gde@thannhausen.at;TW_16;EEG TW;13/12/2024;
+31;Thannhausen;Gemeinde;;;;gde@thannhausen.at;TW_16;EEG TW;01/08/2024;AT0082000000000000000000004460201
+31;Thannhausen;Gemeinde;;;;gde@thannhausen.at;TW_16;EEG TW;13/12/2024;AT0082000816000000000000004090201
+31;Thannhausen;Gemeinde;;;;gde@thannhausen.at;TW_16;EEG TW;13/12/2024;AT0080000816000000201908080069960
+31;Thannhausen;Gemeinde;;;;gde@thannhausen.at;TW_16;EEG TW;12/12/2024;AT0080000816000000201908080069959
+31;Thannhausen;Gemeinde;;;;gde@thannhausen.at;TW_16;EEG TW;01/08/2024;AT0080000816000000202003270072976
+32;Schüppel;Stefan;Ing.;Herr;;;TW_17;EEG TW;;
+34;Macher;Karl-Heinz;;Herr;;office@malermeister-macher.at;TW_19;EEG TW;28/09/2024;AT0082000818400000000000001203201
+34;Macher;Karl-Heinz;;Herr;;office@malermeister-macher.at;TW_19;EEG TW;30/07/2024;
+35;Sauer;Johannes;;Herr;;hannes.sauer83@gmx.at;TW_20;EEG TW;18/10/2024;AT0082000816000000000000000939701
+35;Sauer;Johannes;;Herr;;hannes.sauer83@gmx.at;TW_20;EEG TW;18/10/2024;AT0080000816000000202203170109497
+35;Sauer;Johannes;;Herr;;hannes.sauer83@gmx.at;TW_20;EEG TW;30/07/2024;
+36;Schwarz;Stefan;;Herr;;gefluegelschwarz@gmail.com;TW_21;EEG TW;17/09/2024;AT0082000818300000000000001706301
+36;Schwarz;Stefan;;Herr;;gefluegelschwarz@gmail.com;TW_21;EEG TW;23/09/2024;AT0080000818300000201611100041934
+37;Fladl;Franz;;Firma;;predingerhof@aon.at;TW_47;EEG TW;12/03/2025;AT0082000000000000000000002885301
+39;Steinwender;David;;Herr;;david.steinwender.1@gmail.com;TW_22;EEG TW;28/08/2024;AT0080000816000000000000000083250
+39;Steinwender;David;;Herr;;david.steinwender.1@gmail.com;TW_22;EEG TW;28/08/2024;AT0080000816000000202205020119653
+39;Steinwender;David;;Herr;;david.steinwender.1@gmail.com;TW_22;EEG TW;20/08/2024;
+40;Adlmann;Silvia;;Frau;;moerth@ziro.at;TW_23;EEG TWS;19/02/2025;AT0082000816000000000000004334101
+41;Wiener;Martin;;Herr;;martinwiener@gmx.at;U_13;EEG U;19/09/2024;AT0082000816000000000000000936101
+41;Wiener;Martin;;Herr;;martinwiener@gmx.at;U_13;EEG U;19/09/2024;AT0080000816000000202202230107393
+41;Wiener;Martin;;Herr;;martinwiener@gmx.at;U_13;EEG U;17/09/2024;
+42;Hausecker;Michael;;Herr;;2mhqmhq@gmail.com;TWS_30;EEG TWS;23/01/2025;AT0082000816000000000000004172901
+42;Hausecker;Michael;;Herr;;2mhqmhq@gmail.com;TWS_30;EEG TWS;23/01/2025;AT0082000000000000000000004601801
+44;Pieber;Gernot;;Herr;;office@elektrotechnik-pieber.at;TWS_50;EEG TWS;15/03/2025;AT0082000816000000000000004043401
+44;Pieber;Gernot;;Herr;;office@elektrotechnik-pieber.at;TWS_50;EEG TWS;21/01/2026;AT0080000816000000202511200579138
+45;Pieber;Doris;;Frau;;office@elektrotechnik-pieber.at;TWS_49;EEG TWS;29/03/2025;AT0080000816000000201210290012942
+45;Pieber;Doris;;Frau;;office@elektrotechnik-pieber.at;TWS_49;EEG TWS;;
+45;Pieber;Doris;;Frau;;office@elektrotechnik-pieber.at;TWS_49;EEG TWS;29/03/2025;AT0082000000000000000000004487501
+46;GmbH;Schlosstaverne;;Firma;;office@schlosstaverne-thannhausen.at;TW_32;EEG TW;19/12/2024;AT0082000816000000000000002086801
+46;GmbH;Schlosstaverne;;Firma;;office@schlosstaverne-thannhausen.at;TW_32;EEG TW;19/12/2024;AT0080000816000000202311210336933
+47;Weiz GmbH & Co KG;Autohaus;;Firma;;guenther.stoiber@autohaus-weiz.at;TWS_43;EEG TWS;21/08/2026;AT0080000816000000000000000103858
+47;Weiz GmbH & Co KG;Autohaus;;Firma;;guenther.stoiber@autohaus-weiz.at;TWS_43;EEG TWS;31/01/2025;AT0080000816000000201809250061879
+48;Reisinger;Konrad;;Herr;;;TWS_28;EEG TW;19/12/2024;AT0082000816000000000000001938701
+48;Reisinger;Konrad;;Herr;;;TWS_28;EEG TW;19/12/2024;AT0080000816000000202307190295505
+50;Vorraber;Johann u.Sabine;;Fam.;Pens;vorraber.johann@aon.at;TWS_12;EEG TW;28/12/2024;AT0082000816000000000000002554801
+50;Vorraber;Johann u.Sabine;;Fam.;Pens;vorraber.johann@aon.at;TWS_12;EEG TW;23/10/2025;AT0080000816000000202411180472591
+51;Klug;Josefa;;Frau;Pens;bernhardklug@gmx.at;U_5;EEG U;21/12/2024;AT0082000816000000000000000936901
+54;Ponsold;Elisabeth;;Frau;;albert.kainz@koenig-rex.com;;EEG TWS;;AT0082000806200000000000000292201
+55;Ponsold;Wolfgang;;Herr;;Wolfgang.Ponsold@gmx.at;;EEG TW;;AT0082000816000000000000002171001
+56;Hofstätter;Gerhard;Ing.;Herr;Pens;gerhard.hofstaetter@mein.gmx;WS_4;EEG TWS;21/12/2024;AT0082000816000000000000002452801
+56;Hofstätter;Gerhard;Ing.;Herr;Pens;gerhard.hofstaetter@mein.gmx;WS_4;EEG TWS;21/12/2024;AT0082000000000000000000004527101
+57;Hofstätter;Gerhard u. Elke;;Fam.;;gerhard.hofstaetter@mein.gmx;TWS_9;EEG TW;20/12/2024;AT0082000816000000000000004180701
+58;Gruber;Franz;;Herr;Pens;franz.grubi55@gmail.com;TW_24;EEG TWS;28/12/2024;AT0082000806100000000000002865101
+59;Lexer;Alfred;DI;Herr;;alfred.lexer@outlook.com;TWS_1;EEG TW;24/01/2025;AT0082000816000000000000003626101
+59;Lexer;Alfred;DI;Herr;;alfred.lexer@outlook.com;TWS_1;EEG TW;20/12/2024;AT0080000816000000201310250020010
+60;Schwaiger;Josef;;Herr;;hj.schwaiger@drei.at;TWS_2;EEG TW;28/12/2024;AT0082000816000000000000002116301
+61;Lemmerer;Ernst;;Herr;;ernst.lemmerer2@gmail.com;WS_1;EEG TWS;22/12/2024;AT0082000816000000000000004234801
+62;Strobl;Siegfried;;Herr;;strobl.siegfried1978@gmail.com;TWS_10;EEG TW;;AT0082000816000000000000002125201
+62;Strobl;Siegfried;;Herr;;strobl.siegfried1978@gmail.com;TWS_10;EEG TW;17/01/2025;AT0082000816000000000000002125901
+63;Schlögl;Vinzenz;;Herr;;Vinzenz271057@hotmail.com;TWS_3;EEG TW;19/12/2024;AT0082000816000000000000000946001
+63;Schlögl;Vinzenz;;Herr;;Vinzenz271057@hotmail.com;TWS_3;EEG TW;19/12/2024;AT0080000816000000202107220094681
+64;Damm;Benedikt und Helga;DI;Familie;;benedikt.damm@aon.at;TWS_4;EEG TW;18/12/2024;AT0082000816000000000000002725401
+64;Damm;Benedikt und Helga;DI;Familie;;benedikt.damm@aon.at;TWS_4;EEG TW;18/12/2024;AT0080000816000000201311190020380
+65;Ebner;Brigitte Elvira Evelyn;;Frau;;;B65_3;GEA B65;21/12/2024;AT0082000000000000000000004608001
+66;Schaffer;Helmut;;Herr;;helmut.5@gmx.at;TW_25;EEG WS;19/02/2025;AT0082000816000000000000004116901
+67;Neuhold;Heinz;;Herr;;;TW_26;EEG TWS;14/03/2025;AT0080000816000000202207180139383
+67;Neuhold;Heinz;;Herr;;;TW_26;EEG TWS;14/03/2025;AT0082000816000000000000000449201
+68;Sysel;Erich;;Herr;;e.sysel@gmx.at;TWS_5;EEG TW;19/12/2024;AT0082000816000000000000000660101
+69;Wiener;Josef;;Herr;;sepp.wiener@gmail.com;TWS_6;EEG TW;08/01/2025;AT0082000816000000000000002561501
+69;Wiener;Josef;;Herr;;sepp.wiener@gmail.com;TWS_6;EEG TW;08/01/2025;AT0082000000000000000000004683501
+70;Vorraber;Martin und Daniela;;Familie;;martin.vorraber@gmail.com;TWS_7;EEG TW;20/12/2024;AT0082000816000000000000002487201
+70;Vorraber;Martin und Daniela;;Familie;;martin.vorraber@gmail.com;TWS_7;EEG TW;11/11/2025;AT0080000816000000202502170499671
+71;Marosits;Barbara;Mag.;Frau;;b.marosits@gmail.com;WS_2;EEG TWS;30/12/2024;AT0082000816000000000000002409001
+71;Marosits;Barbara;Mag.;Frau;;b.marosits@gmail.com;WS_2;EEG TWS;30/12/2024;AT0080000816000000201705030044080
+72;Kraxner;Josef;;Herr;;krge@gmx.at;TW_30;EEG WS;30/01/2025;AT0082000818100000000000002455701
+73;Perner;Günter;;Herr;;guenter.perner@gmx.at;WS_3;EEG TWS;14/01/2025;AT0082000816000000000000000402001
+74;Frieß;Otto & Angelika;;Familie;;r.pirker@gmail.com;TWS_8;EEG TW;30/12/2024;AT0082000816000000000000004319201
+74;Frieß;Otto & Angelika;;Familie;;r.pirker@gmail.com;TWS_8;EEG TW;30/12/2024;AT0080000816000000201708100046773
+75;Zachenhofer;Dietmar;;Herr;;zachenhoferdidi@gmail.com;WS_5;EEG TWS;25/04/2025;AT0082000816000000000000002273001
+75;Zachenhofer;Dietmar;;Herr;;zachenhoferdidi@gmail.com;WS_5;EEG TWS;07/05/2025;AT0082000816000000000000000634301
+76;Darnhofer;Franz;;Herr;;franz.darnhofer@gmx.at;TW_27;EEG TWS;20/12/2024;AT0082000816000000000000000475501
+77;Landscha;Wassergenossenschaft;;zH Wiener Josef;;wassergenossenschaft.landscha@gmail.com;TWS_21;EEG TW;24/01/2025;AT0082000816000000000000002625201
+77;Landscha;Wassergenossenschaft;;zH Wiener Josef;;wassergenossenschaft.landscha@gmail.com;TWS_21;EEG TW;;AT0082000816000000000000002086401
+77;Landscha;Wassergenossenschaft;;zH Wiener Josef;;wassergenossenschaft.landscha@gmail.com;TWS_21;EEG TW;13/01/2025;AT0080000816000000000000000064975
+78;KFZ Technik und Handel Karl Strobl;Strobl Karl;;Firma;;office@kfz-strobl.at;TWS_79;EEG TWS;25/04/2025;AT0082000816000000000000001588001
+80;Piber;Erwin;DI;Herr;;erwin.piber@gmail.com;WS_6;EEG TWS;20/12/2024;AT0082000000000000000000004425401
+81;Wiener;Andreas;;Herr;;andreas.wiener1@gmx.net;WS_7;EEG TWS;13/01/2025;AT0082000816000000000000003037901
+81;Wiener;Andreas;;Herr;;andreas.wiener1@gmx.net;WS_7;EEG TWS;13/01/2025;AT0080000816000000202204250117985
+82;Glaser;Gertrude;;Frau;;gerti.glaser.2@gmx.at;TWS_11;EEG TW;17/01/2025;AT0082000000000000000000004434101
+83;Wiener sen.;Josef;;Herr;;sepp.wiener@gmail.com;TWS_13;EEG TW;30/12/2024;AT0082000816000000000000002113401
+84;Wünscher;Josef;;Herr;;fam.wuenscher@gmail.com;WS_8;EEG TWS;20/12/2024;AT0082000816000000000000000410201
+85;Leinweber;Wolf;Mag.;Herr;;post@wolfleinweber.com;TWS_14;EEG TW;28/12/2024;AT0082000816000000000000000937301
+86;Ederer;Werner;;Herr;;werner.ederer@gmx.net;TW_28;EEG TWS;20/12/2024;AT0082000816000000000000000474501
+87;Die Kellerratten;BSG Mortantsch;;;;office@diekellerratten.at;TWS_15;EEG TW;19/12/2024;AT0082000000000000000000004486101
+88;Schinnerl;Robert;;Herr;;schinnerl.robs@gmx.at;TWS_16;EEG TW;17/01/2025;AT0082000816000000000000000940201
+89;Strobl;Johannes;;Herr;;strobl@thannhausen.at;TWS_18;EEG TW;17/01/2025;AT0082000000000000000000002109401
+89;Strobl;Johannes;;Herr;;strobl@thannhausen.at;TWS_18;EEG TW;17/01/2025;AT0082000000000000000000005106401
+90;Kainz;Gerhard;;Herr;;kainz.g34@gmail.com;TWS_17;EEG TW;17/01/2025;AT0082000816000000000000000941201
+91;Reiter;Johannes;;Herr;;johannesreiter999@gmail.com;WS_9;EEG TWS;20/12/2024;AT0080000816000000000000000099122
+91;Reiter;Johannes;;Herr;;johannesreiter999@gmail.com;WS_9;EEG TWS;20/12/2024;AT0080000816000000202304050251993
+92;Schenner;Hubert;DI;Herr;;hubert@schenner.net;TW_29;EEG TWS;21/12/2024;AT0082000816000000000000001696001
+93;Gruber;Christine;;Frau;;gr.christine@gmx.at;TWS_27;EEG TW;19/12/2024;AT0082000816000000000000001910701
+93;Gruber;Christine;;Frau;;gr.christine@gmx.at;TWS_27;EEG TW;19/12/2024;AT0082000816000000000000001910702
+94;Leitner;Martin;;Herr;;office@niglbauer.at;TWS_19;EEG TW;15/01/2025;AT0082000818200000000000000979601
+94;Leitner;Martin;;Herr;;office@niglbauer.at;TWS_19;EEG TW;15/01/2025;AT0082000818200000000000000979602
+94;Leitner;Martin;;Herr;;office@niglbauer.at;TWS_19;EEG TW;15/01/2025;AT0082000000000000000000004572001
+95;Lembacher;Franz;;Herr;;anneliese.lembacher@hotmail.com;TWS_20;EEG TW;19/02/2025;AT0082000816000000000000002158001
+96;Ablasser;Engelbert;;Herr;;engelbert.ablasser@aon.at;TW_22;EEG TW;21/12/2024;AT0082000816000000000000002738601
+97;Holzer;Anton;;Herr;;holzer.anton.1@gmail.com;U_7;EEG U;20/02/2025;AT0082000816000000000000000934601
+98;Heinz;Hildegard;;Frau;;info@biobergbauernhof-heinz.at;U_8;EEG U;15/01/2025;AT0082000000000000000000000935901
+98;Heinz;Hildegard;;Frau;;info@biobergbauernhof-heinz.at;U_8;EEG U;15/01/2025;AT0080000816000000202109230098261
+99;Krones;Peter;;Herr;;edererclaus@gmail.com;TWS_23;EEG TW;19/12/2024;AT0082000816000000000000001422201
+100;Payler;Johann;;Herr;;payler@gmx.at;TW_31;EEG WS;30/01/2025;AT0082000816000000000000003911201
+100;Payler;Johann;;Herr;;payler@gmx.at;TW_31;EEG WS;30/01/2025;AT0080000816000000202407020424513
+101;Stelzer;Lukas;;Herr;;lukas.stelzer@gmx.at;TWS_24;EEG TW;12/01/2025;AT0080000816000000202105160091903
+102;Pailer;Günter;;Herr;;;WN_1;EEG WN;;AT0082000000000000000000004541201
+103;Holzerbauer;Gerald;;Herr;;holzerbauergerald@gmx.at;TWS_25;EEG TW;19/12/2024;AT0082000000000000000000004362001
+103;Holzerbauer;Gerald;;Herr;;holzerbauergerald@gmx.at;TWS_25;EEG TW;19/12/2024;AT0080000816000000202205240122560
+104;Hutter;Thomas;;Herr;;t-hutter@chirurgie-hutter.at;WS_10;EEG TWS;20/12/2024;AT0080000816000000000000000074899
+104;Hutter;Thomas;;Herr;;t-hutter@chirurgie-hutter.at;WS_10;EEG TWS;20/12/2024;AT0080000816000000202205090120724
+105;Kornberger;Franz;;Herr;;kornbergerfranz@gmail.com;TWS_26;EEG TW;23/01/2025;AT0080000816000000000000000115587
+106;Rauchenberger;Peter;;Herr;;p.rauchenberger@inode.at;WS_11;EEG TWS;11/02/2025;AT0082000816000000000000000895801
+106;Rauchenberger;Peter;;Herr;;p.rauchenberger@inode.at;WS_11;EEG TWS;11/02/2025;AT0082000816000000000000003652101
+109;Brauchart;Michaela;;Frau;;hofer.m@trimas.at;U_9;EEG U;14/01/2025;AT0082000816000000000000002212701
+110;Schwarz;Christina;;Frau;;christina-schwarz@gmx.at;TWS_31;EEG TWS;15/01/2025;AT0082000816000000000000002789401
+110;Schwarz;Christina;;Frau;;christina-schwarz@gmx.at;TWS_31;EEG TWS;15/01/2025;AT0082000816000000000000002789402
+111;Haas;Karl;Mag.;Herr;;karl_haas@gmx.at;TWS_29;EEG TWS;31/12/2024;AT0080000816000000202210130173360
+111;Haas;Karl;Mag.;Herr;;karl_haas@gmx.at;TWS_29;EEG TWS;31/12/2024;AT0082000816000000000000003683101
+112;Prettenhofer;Alexandra;;Familie;;prettenhoferalexandra@gmail.com;TW_33;EEG TW;15/01/2025;AT0082000818200000000000003953401
+113;Haas;Christian;;Herr;;chr.haas@proton.me;TW_34;EEG TW;30/12/2024;AT0082000000000000000000004520701
+114;Lindner;Wilhelm & Simone;;Familie;;simone.karner@gmx.at;TWS_32;EEG TWS;15/01/2025;AT0082000816000000000000004156401
+115;Karner;Heinz;;Herr;;heinz.karner@outlook.com;TWS_33;EEG TWS;31/12/2024;AT0080000816000000202208170153730
+115;Karner;Heinz;;Herr;;heinz.karner@outlook.com;TWS_33;EEG TWS;31/12/2024;AT0082000816000000000000000586201
+116;Pfeiffer;Johann & Andrea;;Familie;;andrea.pfeiffer@planung-pfeiffer.at;TWS_45;EEG TWS;13/02/2025;AT0082000816000000000000000397701
+118;Gutmann Leisten KG;Gutmann Andreas;;Firma;;office@gutmann-leisten.at;TWS_34;EEG TWS;01/05/2025;AT0082000818100000000000005012102
+120;Strobl;Helfried;;Herr;;christa.strobl1@gmx.at;TWS_36;EEG TWS;21/02/2025;AT0082000818100000000000004024801
+121;Schwarz;Christian & Anita;;Familie;;schwarz.mc@yahoo.com;TW_35;EEG TW;22/05/2026;AT0082000816000000000000000946101
+123;Ederer;Karl & Elisabeth;;Familie;;karl.ederer@gmx.net;TWS_37;EEG TWS;15/01/2025;AT0082000816000000000000002979601
+124;Zingl;Reinhold & Elisabeth;;Familie;;reinhold.zingl@a1.net;U_10;EEG U;28/01/2025;AT0082000816000000000000003397601
+124;Zingl;Reinhold & Elisabeth;;Familie;;reinhold.zingl@a1.net;U_10;EEG U;28/01/2025;AT0080000816000000201409170023077
+125;Zingl;Reinhold;Ing.;Herr;;reinhold.zingl@a1.net;TWS_38;EEG TWS;28/01/2025;AT0082000816000000000000003710501
+125;Zingl;Reinhold;Ing.;Herr;;reinhold.zingl@a1.net;TWS_38;EEG TWS;28/01/2025;AT0082000816000000000000003710502
+126;Schweiger;Peter;;Herr;;peter.schweiger@lieb.at;TWS_39;EEG TWS;24/01/2025;AT0080000816000000201703300042888
+126;Schweiger;Peter;;Herr;;peter.schweiger@lieb.at;TWS_39;EEG TWS;24/01/2025;AT0082000816000000000000004044801
+127;Fink;Rene & Walter;;Herr;;rene8160@icloud.com;U_11;EEG U;31/01/2025;AT0082000816000000000000000938901
+128;Christandl;Günter u. M.;;Familie;;guenter.christandl@tb-christandl.at;TW_37;EEG TW;17/01/2025;AT0082000816000000000000002435901
+129;Christandl;Günter;Ing.;Herr;;guenter.christandl@tb-christandl.at;TW_38;EEG TW;17/01/2025;AT0082000816000000000000002444901
+130;GmbH;Christiandl;;Firma;;guenter.christandl@tb-christandl.at;TW_39;EEG TW;17/01/2025;
+132;Kreiner jun.;Johann;;Herr;;johann.kreiner@weiz.at;U_12;EEG U;14/01/2025;AT0080000816000000202207190139521
+132;Kreiner jun.;Johann;;Herr;;johann.kreiner@weiz.at;U_12;EEG U;14/01/2025;AT0082000816000000000000003687901
+133;Schwaiger;Michael;;Herr;;marianne.schwaiger74@gmail.com;TWS_40;EEG TWS;27/02/2025;AT0080000818100000000000000066469
+134;Kreimer;Peter & Tanja;;Familie;;kreimer.tanja@gmail.com;TW_40;EEG TW;15/01/2025;AT0080000816200000000000000064637
+134;Kreimer;Peter & Tanja;;Familie;;kreimer.tanja@gmail.com;TW_40;EEG TW;04/06/2026;AT0080000816200000202105070091694
+135;Wildling;Sandra;;Frau;;reisinger.sandy@gmail.com;TW_41;EEG TW;23/01/2025;AT0080000816000000000000000094392
+135;Wildling;Sandra;;Frau;;reisinger.sandy@gmail.com;TW_41;EEG TW;23/01/2025;AT0080000816000000201803260055755
+136;Zengerer;Rudolf;;Herr;;r06.zengerer@gmail.com;TW_42;EEG TW;23/07/2025;AT0082000816000000000000002109701
+137;Grabner;Otto;;Herr;;otto.grabner@sonnenleben.at;TWS_41;EEG TWS;01/05/2026;AT0082000818100000000000001601501
+138;Johann Pfeiffer GmbH;Bauplanung & Innenarchitektur;;Firma;;andrea.pfeiffer@planung-pfeiffer.at;TWS_44;EEG TWS;;AT0082000816000000000000003189501
+138;Johann Pfeiffer GmbH;Bauplanung & Innenarchitektur;;Firma;;andrea.pfeiffer@planung-pfeiffer.at;TWS_44;EEG TWS;13/02/2025;AT0082000816000000000000003189502
+140;Petermichl;David;;Herr;;david.petermichl@gmail.com;TWS_42;EEG TWS;08/02/2025;AT0080000818100000000000000072322
+140;Petermichl;David;;Herr;;david.petermichl@gmail.com;TWS_42;EEG TWS;08/02/2025;AT0080000818100000202303070244401
+141;Maier;Gottfried;;Herr;;gottfriedm8@gmail.com;TW_43;EEG TW;31/01/2025;AT0082000816000000000000003542301
+142;Alexandra;Fotostudio;;Firma;;weiz@fotoalexandra.at;TWS_46;EEG TWS;10/02/2025;AT0082000000000000000000002562901
+142;Alexandra;Fotostudio;;Firma;;weiz@fotoalexandra.at;TWS_46;EEG TWS;10/02/2025;AT0082000000000000000000002562902
+143;Neuhold;Marco;;Herr;;office@fliesenblitz.at;U_14;EEG U;31/01/2025;AT0080000816000000202410090460345
+143;Neuhold;Marco;;Herr;;office@fliesenblitz.at;U_14;EEG U;05/12/2025;AT0080000816000000000000000078421
+144;Schlacher;Anton;;Herr;;schlacher.anton@aon.at;TW_44;EEG TW;21/02/2025;AT0082000816000000000000000465601
+144;Schlacher;Anton;;Herr;;schlacher.anton@aon.at;TW_44;EEG TW;21/02/2025;AT0080000816000000202301130215852
+145;Leitner;Josef;;Herr;;josefleitner@gmx.de;TW_45;EEG TW;25/04/2025;AT0082000816000000000000000885701
+146;Wagner;Herbert;;Herr;;huwiwagner2@gmail.com;TWS_47;EEG TWS;20/03/2025;AT0082000816000000000000004158301
+147;Trieb;Johann;;Herr;;johann_trieb@aon.at;TWS_48;EEG TWS;31/01/2025;AT0082000816000000000000001890101
+148;Kreimer;Markus;;Herr;;kreimer.markus@gmail.com;TWS_51;EEG TWS;10/02/2025;AT0082000816000000000000000899201
+149;Michelitsch;Walter;;Herr;;walter.michelitsch13@gmail.com;TWS_52;EEG TWS;20/02/2025;AT0082000816000000000000001583101
+149;Michelitsch;Walter;;Herr;;walter.michelitsch13@gmail.com;TWS_52;EEG TWS;20/02/2025;AT0080000816000000202405150411184
+150;Krautstingl;Karl und Regina;;Familie;;krautstingl@gmail.com;TW_46;EEG TW;21/03/2025;AT0082000816000000000000004131101
+151;Pregartner;Alois;;Herr;;pregartneralois@icloud.com;TW_53;EEG TWS;10/02/2025;AT0082000816000000000000003250601
+151;Pregartner;Alois;;Herr;;pregartneralois@icloud.com;TW_53;EEG TWS;10/02/2025;AT0082000816000000000000000461101
+152;Pendl;Werner;;Herr;;werner.pendl@gmx.at;TWS_54;EEG TWS;30/03/2025;AT0080000818100000202210170174036
+152;Pendl;Werner;;Herr;;werner.pendl@gmx.at;TWS_54;EEG TWS;28/03/2025;AT0082000818100000000000000478701
+153;Auer;Josef;;Herr;;jam.78@gmx.at;TW_48;EEG TW;;AT0082000816000000000000002084701
+154;Stelzer;Franz;;Herr;;info@saxofranz.at;TW_49;EEG TW;;AT0082000816000000000000002114201
+155;Vorraber;Karl;;Herr;;karl.vorr110@a1.net;TW_50;EEG TW;20/03/2025;AT0082000816000000000000002110701
+157;Klinger;Andrea Michaela;;Frau;;mmm.klinger@aon.at;WS_14;EEG WS;25/02/2025;AT0082000816000000000000003470101
+158;Hollersbacher;Josef;;Herr;;josef.hollersbacher@gmx.at;TW_51;EEG TW;21/03/2025;AT0082000816000000000000000885301
+158;Hollersbacher;Josef;;Herr;;josef.hollersbacher@gmx.at;TW_51;EEG TW;21/03/2025;AT0080000816000000202008180075477
+159;Thabar;Daniela;;Familie;;danielathabar@gmx.at;TW_52;EEG TW;26/02/2025;AT0082000000000000000000004444901
+160;Meindl;Marika;;Frau;;marika.meindl@outlook.com;TW_53;EEG TW;21/03/2025;AT0082000816000000000000003765801
+161;Kicker;Markus;Ing.;Herr;;kicker.markus@gmail.com;TWS_55;EEG TWS;25/02/2025;AT0080000816000000000000000092650
+161;Kicker;Markus;Ing.;Herr;;kicker.markus@gmail.com;TWS_55;EEG TWS;25/02/2025;AT0080000816000000202308310309786
+162;Pieber;Franz;;Herr;;pieber22@gmail.com;TWS_56;EEG TWS;21/03/2025;AT0082000816000000000000003560201
+164;Harpf-Leitner;Julie;Dr.;Frau;;ordination-jhl@outlook.com;TWS_57;EEG TWS;14/02/2025;AT0082000818100000000000002820201
+164;Harpf-Leitner;Julie;Dr.;Frau;;ordination-jhl@outlook.com;TWS_57;EEG TWS;;AT0082000818100000000000002820202
+165;Allmer;Gerta & Erwin;;Familie;;erwin.allmer132@gmail.com;TWS_58;EEG TWS;14/12/2025;AT0080000816000000202206270126755
+167;Infrastrukturentwicklungs KG;Orts- und;;Firma;;gde@thannhausen.at;TW_16;EEG TW;13/12/2024;AT0080000816000000000000000069555
+167;Infrastrukturentwicklungs KG;Orts- und;;Firma;;gde@thannhausen.at;TW_16;EEG TW;29/01/2026;AT0080000816000000202410180460864
+167;Infrastrukturentwicklungs KG;Orts- und;;Firma;;gde@thannhausen.at;TW_16;EEG TW;29/01/2026;AT0080000816000000202507230542253
+168;Lernbeiss;Margit Maria;;Frau;;josef.lernbeiss@icloud.com;TWS_59;EEG TWS;27/02/2025;AT0082000816000000000000000471101
+169;Weber;Johann;;Herr;;hannes.weber@inode.at;TW_54;EEG TW;21/03/2025;AT0082000816000000000000000884201
+170;Oberdorf;Wassergenossenschaft;;zH Grabner Karl;;grabner.karl@inode.at;TW_55;EEG TW;25/02/2025;AT0082000816000000000000000884901
+171;Haidenhofer (TWS);Werner;;Herr;;haidiw@gmx.at;TWS_60;EEG TWS;12/03/2025;AT0082000816000000000000002980601
+172;Steinwender;Anna;;Frau;;erich.steinwender@gmx.at;TW_56;EEG TW;24/10/2025;AT0082000816000000000000002176101
+172;Steinwender;Anna;;Frau;;erich.steinwender@gmx.at;TW_56;EEG TW;24/10/2025;AT0080000816000000202303220248971
+173;Bleimuth;Rudolf;;Herr;;rudolf.bleimuth@gmx.at;TWS_61;EEG TWS;12/03/2025;AT0082000816000000000000002248001
+173;Bleimuth;Rudolf;;Herr;;rudolf.bleimuth@gmx.at;TWS_61;EEG TWS;12/03/2025;AT0082000000000000000000004652001
+174;Oberdorf;ESV;;;;gremslroman@gmail.com;TW_57;EEG TW;24/04/2025;AT0082000816000000000000000886101
+175;Luttenberger;Wolfgang;;Herr;;wolfgang.luttenberger@gmail.com;TWS_62;EEG TWS;20/02/2025;AT0082000816000000000000004277801
+175;Luttenberger;Wolfgang;;Herr;;wolfgang.luttenberger@gmail.com;TWS_62;EEG TWS;19/08/2026;AT0080000816000000202604160605636
+176;Jeschek;Gerd;;Herr;;gerd.jeschek911@gmail.com;TWS_63;EEG TWS;20/03/2025;AT0082000816000000000000004042401
+177;Maier;Kurt;;Herr;;kkb.maier@aon.at;TW_58;EEG TW;16/04/2025;AT0082000816000000000000003795201
+178;Derler;Rupert;DI (FH);Herr;;rupert.derler@hotmail.de;TW_59;EEG TW;14/03/2025;AT0080000816000000000000000138618
+178;Derler;Rupert;DI (FH);Herr;;rupert.derler@hotmail.de;TW_59;EEG TW;14/03/2025;AT0080000816000000202404290409838
+178;Derler;Rupert;DI (FH);Herr;;rupert.derler@hotmail.de;TW_59;EEG TW;14/03/2025;AT0082000816000000000000002087701
+179;Schwaiger;Gottfried;;Herr;;gottfried.schwaiger64@gmail.com;TWS_64;EEG TWS;15/03/2025;AT0082000000000000000000004681901
+180;DejaVu;Sacco Marco;;Firma;;dejavu@sacco-pizza.com;TW_61;EEG TW;22/05/2025;AT0082000816000000000000004269401
+181;Flicker;Peter;;Herr;;peter.flicker@gmail.com;TW_60;EEG TW;18/04/2025;AT0082000818400000000000000036701
+182;Rettenegger;Walter;;Herr;;walter.rettenegger@aon.at;TWS_65;EEG TWS;;AT0082000816000000000000002748201
+182;Rettenegger;Walter;;Herr;;walter.rettenegger@aon.at;TWS_65;EEG TWS;14/03/2025;AT0082000816000000000000002748202
+183;Autohaus Derler GmbH;;;Firma;;wolfgang@autohaus-derler.at;TWS_66;EEG TWS;03/03/2025;AT0080000816000000202006240074442
+183;Autohaus Derler GmbH;;;Firma;;wolfgang@autohaus-derler.at;TWS_66;EEG TWS;03/03/2025;AT0082000816000000000000002617601
+184;Vorraber;Franz;;Herr;;info@vorraber.at;TWS_145;EEG TWS;30/06/2026;AT0082000816000000000000000473401
+184;Vorraber;Franz;;Herr;;info@vorraber.at;TWS_145;EEG TWS;30/06/2026;AT0082000816000000000000000467601
+184;Vorraber;Franz;;Herr;;info@vorraber.at;TWS_145;EEG TWS;30/06/2026;AT0080000816000000202109230098248
+185;Sattinger;Marcus;;Herr;;sattingermarcus@gmail.com;TWS_67;EEG TWS;14/03/2025;AT0082000816000000000000000906401
+185;Sattinger;Marcus;;Herr;;sattingermarcus@gmail.com;TWS_67;EEG TWS;06/05/2026;AT0080000816000000202509110554636
+186;Sattinger;Bruno;;Herr;;sattingerbruno@gmail.com;TWS_68;EEG TWS;14/03/2025;AT0082000816000000000000000905501
+187;Raith;Tanja;;Frau;;tanja.adlmann@gmx.at;U_15;EEG U;11/03/2025;AT0082000816000000000000000934301
+188;Felberbauer;Arno;;Herr;;schwaigerdaniela900@gmail.com;TWS_69;EEG TWS;03/03/2025;AT0082000816000000000000003345801
+192;Hofer;Johannes;;Herr;;ja.hofer@aon.at;TW_62;EEG TW;16/04/2025;AT0082000816000000000000000697401
+192;Hofer;Johannes;;Herr;;ja.hofer@aon.at;TW_62;EEG TW;16/04/2025;AT0082000000000000000000004528701
+193;Trsek;Philipp;;Herr;;philipp.trsek.pt@gmail.com;TW_63;EEG TW;14/05/2025;AT0082000816000000000000004264101
+193;Trsek;Philipp;;Herr;;philipp.trsek.pt@gmail.com;TW_63;EEG TW;14/05/2025;AT0080000816000000202209230159841
+194;Graf;Walter;;Herr;;waltergraf17@gmail.com;TW_64;EEG TW;24/04/2025;AT0082000816000000000000002088101
+194;Graf;Walter;;Herr;;waltergraf17@gmail.com;TW_64;EEG TW;24/04/2025;AT0082000000000000000000004527601
+195;Promitzer;Thomas;Ing.;Herr;;thomas.promitzer@inode.at;TW_65;EEG TW;02/07/2025;AT0082000816000000000000000883401
+196;Scharler;Vinzenz;;Herr;;kontakt@vinzenzscharler.at;WN_2;EEG WN;14/05/2025;AT0082000819200000000000000067001
+197;Faist;Gerhard;;Herr;;gerhard.faist@weiz.online;TW_66;EEG TW;28/03/2025;AT0082000816000000000000000944501
+197;Faist;Gerhard;;Herr;;gerhard.faist@weiz.online;TW_66;EEG TW;28/03/2025;AT0080000816000000202301240217618
+199;Schönauer;Josef;;Herr;;josef.schoenauer@andritz.com;TWS_72;EEG TWS;30/03/2025;AT0082000816000000000000003204301
+200;Sindlhofer;Johann;;Herr;;hans.sindlhofer@gmail.com;WS_15;EEG WS;05/09/2025;AT0082000816000000000000002460501
+201;Kainer;Anita;;Frau;;anita.kainer@weiz.online;TW_67;EEG TW;14/03/2025;AT0082000816000000000000003631601
+201;Kainer;Anita;;Frau;;anita.kainer@weiz.online;TW_67;EEG TW;14/03/2025;AT0080000816000000201904040068798
+202;Hütter;Daniel;;Herr;;daniel.huetter@gmx.net;TWS_73;EEG TWS;15/03/2025;AT0080000818100000000000000113782
+203;Wiener;Wolfgang;;Herr;;wolfgangwiener@outlook.com;TW_68;EEG TW;01/05/2025;AT0082000816000000000000000889701
+203;Wiener;Wolfgang;;Herr;;wolfgangwiener@outlook.com;TW_68;EEG TW;01/05/2025;AT0082000000000000000000004625101
+204;Pirkheim;Siegfried;;Herr;;pirkheim.siegfried@icloud.com;TWS_74;EEG TWS;21/03/2025;AT0082000816000000000000002532401
+205;Schaffernak;Erwin;;Herr;;erwin.schaffernak@gmx.at;TWS_71;EEG TWS;14/03/2025;AT0082000816000000000000002149101
+205;Schaffernak;Erwin;;Herr;;erwin.schaffernak@gmx.at;TWS_71;EEG TWS;14/03/2025;AT0080000816000000202404180398826
+206;Auer;Peter;;Herr;;auerpatrick@gmx.at;TW_69;EEG TW;14/03/2025;AT0082000816000000000000000889201
+207;Auer;Patrick;;Herr;;auerpatrick@gmx.at;TW_70;EEG TW;14/03/2025;AT0082000816000000000000000888701
+208;Rath;Gerhard;;Herr;;gerhard.rath1@gmx.at;TWS_75;EEG TWS;24/04/2025;AT0082000818100000000000004016301
+209;MH Gastronomie GmbH;Hofer Manuela;;Firma;;hofer.manuela@inode.at;TWS_76;EEG TWS;25/04/2025;AT0082000816000000000000003449501
+210;Leitner;Johann;;Herr;;leitner.naas@gmail.com;TW_71;EEG TW;15/05/2025;AT0082000816000000000000002124001
+211;Leitner;Johannes;;Herr;;leitner.naas@gmail.com;TW_72;EEG TW;14/05/2025;AT0082000000000000000000004358601
+212;Mayer;Sarah;;Frau;;sarah-mayer@gmx.net;WN_3;EEG WN;28/03/2025;AT0082000818400000000000003436301
+213;Reisenhofer;Wolfgang;;Herr;;wolfgang.reisenhofer@delicando.com;TW_73;EEG TW;18/04/2025;AT0080000816000000000000000063875
+213;Reisenhofer;Wolfgang;;Herr;;wolfgang.reisenhofer@delicando.com;TW_73;EEG TW;19/04/2025;AT0080000816000000202203280111111
+214;Schwarz;Erich;;Herr;;erich.schwarz@weiz.online;TW_74;EEG TW;20/03/2025;AT0082000816000000000000000882901
+215;Hofer;Gerald;;Herr;;geraldhofer2@hotmail.com;TWS_77;EEG TWS;29/03/2025;AT0082000816000000000000003067301
+216;Supper;Gerald;;Herr;;geraldsupper@aon.at;TW_75;EEG TW;21/03/2025;AT0080000816000000202204250118118
+216;Supper;Gerald;;Herr;;geraldsupper@aon.at;TW_75;EEG TW;21/03/2025;AT0082000816000000000000003815601
+217;Reisenhofer;Maria;;Frau;;maria@reisenhofer.info;TW_76;EEG TW;12/04/2025;AT0082000816000000000000003897701
+218;Schwarz;Heribert Leopold;;Herr;;heribertschwarz11@gmail.com;TW_77;EEG TW;02/06/2025;AT0082000816000000000000000936401
+221;Schloffer-Polacsek;Alexandra;DI;Frau;;alexandra.schloffer@gmx.at;TW_78;EEG TW;24/04/2025;AT0080000816000000000000000133435
+221;Schloffer-Polacsek;Alexandra;DI;Frau;;alexandra.schloffer@gmx.at;TW_78;EEG TW;24/04/2025;AT0080000816000000202208240154388
+222;Schloffer;Willibald;;Herr;;schloffer.willi@aon.at;TW_79;EEG TW;25/04/2025;AT0082000816000000000000000714601
+223;Edlinger;Gottfried;;Herr;;edlinger.gottfried@aon.at;TW_80;EEG TW;25/04/2025;AT0082000816200000000000000533301
+224;Schloffer;Eduard;;Herr;;;TW_83;EEG TW;;AT0082000816000000000000003513601
+225;Ponsold Michaela;Wittgruberhof OEAV;;Firma;;wittgruberhof@zetz.at;TW_112;EEG TW;21/08/2025;AT0082000818400000000000000910901
+226;Pichler;Ursula;;Frau;;ursulapichler12@gmail.com;TW_81;EEG TW;14/05/2025;AT0082000816000000000000000889601
+227;Almer;Hubert Josef;;Herr;;hubert.almer@gmx.at;TW_82;EEG TW;29/03/2025;AT0082000816000000000000002426001
+228;Oberer;Werner;;Herr;;werner.oberer@gmx.at;WS_13;EEG WS;09/05/2025;AT0082000818100000000000004149001
+229;Reitbauer;Günther;;Herr;;reitbauerguenther1@gmail.com;TWS_78;EEG TWS;21/11/2025;AT0082000816000000000000001595801
+230;Hofer;Manuela;;Frau;;hofer.manuela@inode.at;TWS_93;EEG TWS;28/05/2025;AT0082000816000000000000003787401
+231;Flechl;Andreas;;Herr;;andreas.flechl@gmx.at;TWS_80;EEG TWS;24/04/2025;AT0080000816000000000000000069120
+232;Wiener;Johann;;Herr;;hansundmartina.wiener@gmail.com;TW_84;EEG TW;14/05/2025;AT0082000816000000000000000889401
+232;Wiener;Johann;;Herr;;hansundmartina.wiener@gmail.com;TW_84;EEG TW;14/05/2025;AT0080000816000000202204040112246
+233;Doppelreiter;Christoph;Mag.;Herr;;chrichri@gmx.at;TW_85;EEG TW;07/05/2025;AT0082000000000000000000004366601
+234;Wiedenegger;Stefan;;Herr;;stefan.wiedenegger@gmx.at;TW_86;EEG TW;17/05/2025;AT0082000000000000000000004622501
+235;Tändl;Josef;;Herr;;josef.taendl@gmail.com;TW_87;EEG TW;23/04/2025;AT0082000816000000000000002811501
+236;Steinbauer;Peter & Anna;;Familie;;anna.steinbauer1@gmx.at;TW_88;EEG TW;14/05/2025;AT0082000816000000000000002454201
+237;Derler;Michael;;Herr;;derlermike@gmx.net;U_16;EEG U;29/04/2025;AT0082000000000000000000004396301
+238;Derler;Theresia;;Frau;;;U_17;EEG U;;AT0082000816000000000000000934401
+239;Stanzer;Manfred;;Herr;;manfred.stanzer@gmx.at;TW_89;EEG TW;24/04/2025;AT0082000000000000000000003924501
+239;Stanzer;Manfred;;Herr;;manfred.stanzer@gmx.at;TW_89;EEG TW;24/04/2025;AT0080000816000000202207260140322
+240;Kirchengast;Gerda;;Frau;;gerda.kirchengast@outlook.com;TWS_81;EEG TWS;24/04/2025;AT0082000816000000000000003369001
+241;Wetzelhütter;Franz;;Herr;;f.wetzelhuetter@hotmail.com;TW_90;EEG TW;12/04/2025;AT0080000816000000202304120252729
+241;Wetzelhütter;Franz;;Herr;;f.wetzelhuetter@hotmail.com;TW_90;EEG TW;12/04/2025;AT0082000816000000000000003323101
+242;Auer;Christian;;Herr;;inge.neuhold@hotmail.com;TWS_82;EEG TWS;09/07/2025;AT0080000818100000202205270122379
+242;Auer;Christian;;Herr;;inge.neuhold@hotmail.com;TWS_82;EEG TWS;09/07/2025;AT0082000818100000000000001600401
+243;Tiefengraber;Anna & Michael;;Familie;;tiefengraber_anna@gmx.at;WN_4;EEG WN;07/05/2025;AT0082000819100000000000000729601
+244;Friess;Josef;;Herr;;josef.friesz@aon.at;TW_91;EEG TW;14/05/2025;AT0082000816000000000000001207401
+245;Kogler-Sobl;Jakob;;Herr;;jakob.kogler-sobl@aon.at;TW_92;EEG TW;11/04/2025;AT0080000816000000202212290214221
+246;Mauthner;Gerald;;Herr;;office@obstbau-mauthner.at;WS_16;EEG WS;25/04/2025;AT0082000816000000000000001693201
+246;Mauthner;Gerald;;Herr;;office@obstbau-mauthner.at;WS_16;EEG WS;25/04/2025;AT0080000816000000201410230023380
+247;Mauthner;Gerald;;Firma;;office@obstbau-mauthner.at;WS_17;EEG WS;26/04/2025;AT0082000000000000000000004529401
+248;Stadlhofer;Maria;;Frau;;;WN_5;EEG WN;;AT0082000819100000000000000735001
+249;Scholz;Dieter & Brigitte;;Familie;;dieter.scholz49@gmail.com;TW_93;EEG TW;;AT0082000818200000000000001945601
+250;Mittermann;Klaus;;Herr;;klaus.mittermann@leier.hu;TWS_83;EEG TWS;25/04/2025;AT0082000816000000000000004158701
+251;Loidl;Marina;;Frau;;philipp.loidl@hotmail.com;TWS_84;EEG TWS;30/04/2026;AT0082000818100000000000001632801
+251;Loidl;Marina;;Frau;;philipp.loidl@hotmail.com;TWS_84;EEG TWS;30/04/2026;AT0080000818100000202501210486525
+252;Perner;Andrea;;Frau;;Andrea.Perner@elinmotoren.at;TWS_85;EEG TWS;26/08/2025;AT0082000816000000000000000392601
+254;Neuhold;Helmut;;Herr;;helmutneuhold001@gmail.com;TW_95;EEG TW;14/05/2025;AT0082000816000000000000000888001
+255;Neuhold;Josef;;Herr;;j.m.neuhold@aon.at;TW_96;EEG TW;14/05/2025;AT0082000816000000000000000910801
+255;Neuhold;Josef;;Herr;;j.m.neuhold@aon.at;TW_96;EEG TW;14/05/2025;AT0080000816000000202202150106718
+256;Greiter;Sabine;;Frau;;mgreiter@aon.at;TWS_86;EEG TWS;05/08/2025;AT0082000816000000000000002152001
+256;Greiter;Sabine;;Frau;;mgreiter@aon.at;TWS_86;EEG TWS;05/08/2025;AT0080000816000000202504090515526
+257;Hofer GEA U11;Christian;;Herr;;christian.hofer@vb-hoeher.at;U11_0;GEA U11;;AT0080000816000000202103230088275
+257;Hofer GEA U11;Christian;;Herr;;christian.hofer@vb-hoeher.at;U11_0;GEA U11;;AT0082000816000000000000002997701
+257;Hofer GEA U11;Christian;;Herr;;christian.hofer@vb-hoeher.at;U11_0;GEA U11;;AT0082000816000000000000000937101
+258;Hofer Urtl;Christian;;Herr;;christian.hofer@vb-hoeher.at;U_2;EEG U;;AT0080000816000000201803050055336
+258;Hofer Urtl;Christian;;Herr;;christian.hofer@vb-hoeher.at;U_2;EEG U;;AT0082000816000000000000000937101
+258;Hofer Urtl;Christian;;Herr;;christian.hofer@vb-hoeher.at;U_2;EEG U;;AT0080000816000000202103230088275
+259;Hofer TW;Christian;;Herr;;christian.hofer@vb-hoeher.at;TW_94;EEG TW;;AT0080000816000000201803050055335
+262;Schirnhofer;Michael;;Herr;;michael.schirnhofer07@gmail.com;TW_97;EEG TW;14/05/2025;AT0082000816000000000000002401601
+263;Derler;Werner;;Herr;;DERLER.MARTINA@gmail.com;WN_6;EEG WN;15/05/2025;AT0082000819100000000000000756301
+263;Derler;Werner;;Herr;;DERLER.MARTINA@gmail.com;WN_6;EEG WN;15/05/2025;AT0080000819100000202501230486936
+264;Kocso;Timea;;Frau;;timi.lorincz89@gmail.com;TW_99;EEG TW;05/06/2025;AT0082000816000000000000000883901
+265;Texer;Marco;;Herr;;marcotexer@gmx.at;TW_98;EEG TW;27/09/2025;AT0082000816000000000000003420001
+266;Kandlhofer;Johannes;Mag.;Herr;;johannes.kandlhofer@kapas.at;TWS_87;EEG TWS;03/05/2025;AT0082000000000000000000004528801
+266;Kandlhofer;Johannes;Mag.;Herr;;johannes.kandlhofer@kapas.at;TWS_87;EEG TWS;03/05/2025;AT0082000816000000000000004274601
+267;Schneider;Sabine & Harald;;Familie;;sabine.schneider@magna.com;TW_100;EEG TW;29/05/2025;AT0082000816000000000000003354401
+268;Steuerberatung GmbH;KAPAS;;Firma;;office@kapas.at;TWS_88;EEG TWS;;
+268;Steuerberatung GmbH;KAPAS;;Firma;;office@kapas.at;TWS_88;EEG TWS;21/05/2025;AT0080000816000000202406200423782
+269;Berger;Peter;;Herr;Pen;karl-martin@karlbergerbau.at;TW_101;EEG TW;14/05/2025;AT0080000816000000202501070485069
+270;Berger;Roswitha;;Frau;;karl-martin@karlbergerbau.at;TW_102;EEG TW;06/06/2025;AT0082000816000000000000003536001
+271;Kronawetter;Eva;;Frau;;eva.becker@a1.net;WS_18;EEG WS;08/05/2025;AT0082000818100000000000001676901
+272;Elektromaschinenbau;Leitner Franz;;Firma;;office@motoren-leitner.at;TW_104;EEG TW;09/05/2025;AT0082000816000000000000003889301
+273;Leitner;Franz & Gabriela;;Familie;;office@motoren-leitner.at;TW_103;EEG TW;08/05/2025;AT0082000816000000000000003390401
+274;Pessl;Daniela;;Frau;;thomas.leitner97@gmx.at;TW_105;EEG TW;17/05/2025;AT0082000816000000000000003388701
+275;Christandl;Raphael;;Herr;;;TE_1;EEG TE;;AT00813000000R0000000000000007343
+275;Christandl;Raphael;;Herr;;;TE_1;EEG TE;;AT0081300000000000000000009672201
+276;GmbH;FSC Immo;;Firma;;;TE_2;EEG TE;;AT00813000000R0000000000000003044
+276;GmbH;FSC Immo;;Firma;;;TE_2;EEG TE;;AT0081300000000000000000009095301
+277;OG;Hofer & Partner;;Firma;;;TE_3;EEG TE;06/05/2025;AT00813000000R0000000000000006102
+277;OG;Hofer & Partner;;Firma;;;TE_3;EEG TE;06/05/2025;AT0081300000000000000000001072002
+277;OG;Hofer & Partner;;Firma;;;TE_3;EEG TE;;AT0081300000000000000000010205901
+277;OG;Hofer & Partner;;Firma;;;TE_3;EEG TE;06/05/2025;AT00813000000R0000000000000007365
+277;OG;Hofer & Partner;;Firma;;;TE_3;EEG TE;06/05/2025;AT0081300000000000000000010220201
+277;OG;Hofer & Partner;;Firma;;;TE_3;EEG TE;;AT00813000000R0000000000000007464
+278;Vanila Gleisdorf;Moder & Partner OG;;Firma;;gleisdorf@vanila.at;TE_4;EEG TE;;AT0081300000000000000000004204201
+278;Vanila Gleisdorf;Moder & Partner OG;;Firma;;gleisdorf@vanila.at;TE_4;EEG TE;;AT00813000000R0000000000000003321
+279;IMMO GmbH;SHARK HMC;;Firma;;;TE_5;EEG TE;06/05/2025;AT0081300000000000000000009714201
+280;Pfurtscheller e.U.;Harald;;Firma;;office@rodelstubn.at;WN_7;EEG WN;12/06/2025;AT0082000819100000000000004160001
+281;Riedler;Werner;;Herr;;w.riedler@icloud.com;TWS_89;EEG TWS;13/05/2025;AT0082000816000000000000002219501
+281;Riedler;Werner;;Herr;;w.riedler@icloud.com;TWS_89;EEG TWS;13/05/2025;AT0080000816000000202011100078407
+282;Neuhold;Christian;;Herr;;christian1010@gmx.at;TW_106;EEG TW;05/06/2025;AT0082000816000000000000004191401
+282;Neuhold;Christian;;Herr;;christian1010@gmx.at;TW_106;EEG TW;05/06/2025;AT0080000816000000202209260160255
+283;Dorfplatzerl;Hierz-Adlmann OG;;Firma;;office@dorfplatzerl.at;TWS_95;EEG TWS;29/05/2025;AT0080000816000000202407310426262
+283;Dorfplatzerl;Hierz-Adlmann OG;;Firma;;office@dorfplatzerl.at;TWS_95;EEG TWS;29/05/2025;AT0080000816000000000000000095105
+284;Eisner;Kurt;;Herr;;kurteisner@gmx.at;TW_107;EEG TW;17/05/2025;AT0080000816000000000000000067492
+284;Eisner;Kurt;;Herr;;kurteisner@gmx.at;TW_107;EEG TW;17/05/2025;AT0080000816000000202003110072717
+285;Habe;Christian;;Herr;;habe@farbenzauber.com;TWS_91;EEG TWS;16/05/2025;AT0080000816000000202208180154119
+285;Habe;Christian;;Herr;;habe@farbenzauber.com;TWS_91;EEG TWS;16/05/2025;AT0082000000000000000000004526001
+286;Mautner;Franz;;Herr;;franzmautner@gmx.de;TWS_92;EEG TWS;09/07/2025;AT0082000816000000000000002147701
+287;Leiter;Christian;DI;Herr;;c.leiter@aon.at;WS_19;EEG WS;21/05/2025;AT0082000816000000000000001691101
+287;Leiter;Christian;DI;Herr;;c.leiter@aon.at;WS_19;EEG WS;21/05/2025;AT0080000816000000202409060458340
+288;Hütter;Manfred;;Herr;;httermartina@icloud.com;TW_108;EEG TW;22/07/2025;AT0082000816000000000000004173101
+289;Vermessung ZT-GmbH;Permann & Schmaldienst;;Firma;;christoph.permann@permann.com;TWS_94;EEG TWS;22/06/2025;AT0082000000000000000000004118701
+289;Vermessung ZT-GmbH;Permann & Schmaldienst;;Firma;;christoph.permann@permann.com;TWS_94;EEG TWS;29/05/2025;AT0080000816000000202307260296293
+290;Lueger;Franz;;Herr;;christiana.franz@gmx.net;TWS_96;EEG TWS;29/05/2025;AT0080000816000000202303210248132
+292;Gerstl;Alois;;Herr;;gerstl.martin@outlook.de;TW_109;EEG TW;28/05/2025;AT0080000816000000202302210232243
+293;Mild-Fuchs;Patrick;;Herr;;mild.fuchs@gmail.com;TW_110;EEG TW;21/08/2025;AT0082000816000000000000002114801
+294;Allmer GmbH;Hotel;;Firma;;office@hotel-allmer.at;TWS_97;EEG TWS;18/06/2025;AT0082000000000000000000000677501
+294;Allmer GmbH;Hotel;;Firma;;office@hotel-allmer.at;TWS_97;EEG TWS;03/09/2026;AT0080000816000000000000000153698
+295;Haas;Franz;;Herr;;office@vb-hoeher.at;TWS_98;EEG TWS;;AT0082000816000000000000002920201
+296;Ablasser;Engelbert;;Herr;;engelbert.ablasser@aon.at;U_6;EEG U;21/12/2024;AT0080000816000000201704100042956
+297;Peintinger;Johann;;Herr;;johann.peintinger@gmx.at;TW_111;EEG TW;02/07/2025;AT0082000816300000000000001328801
+298;Hutter;Johannes;;Herr;;obstbau.huha@weiz.online;TWS_99;EEG TWS;18/06/2025;AT0082000816000000000000000462101
+298;Hutter;Johannes;;Herr;;obstbau.huha@weiz.online;TWS_99;EEG TWS;18/06/2025;AT0080000816000000201404240022067
+299;Klamminger;Peter;;Herr;;info@klamminger.org;WN_8;EEG WN;16/07/2025;AT0080000819000000202411050471847
+300;Strassegger;Peter;;Herr;;strassegger59@gmail.com;WN_9;EEG WN;22/07/2025;AT0082000817200000000000002615001
+301;Schweiger;Markus;;Herr;;markus_schweiger@gmx.at;TW_113;EEG TW;17/09/2025;AT0082000816000000000000000910501
+302;Lammer;Rene;;Herr;;rene.m.lammer@gmx.at;TWS_100;EEG TWS;12/06/2025;AT0082000000000000000000004657101
+303;Höher;Maria Christine;;Frau;Pens;neuhold.markus@gmail.com;U_18;EEG U;16/10/2025;AT0082000816000000000000000934701
+303;Höher;Maria Christine;;Frau;Pens;neuhold.markus@gmail.com;U_18;EEG U;16/10/2025;AT0080000816000000201612210042403
+304;Neuhold;Markus;;Herr;;markus.neuhold@siemens-energy.com;TWS_101;EEG TWS;09/09/2025;AT0082000816000000000000001411701
+305;Rechberger;Horst;Ing.;Herr;;horst.rechberger@gmail.com;TWS_102;EEG TWS;05/08/2025;AT0080000816000000202212010211521
+306;Dengg;Herbert;;Herr;;herbert.dengg@aon.at;TW_114;EEG TW;02/07/2025;AT0082000000000000000000004445701
+307;Neuhold;Dominik;;Herr;;domi.neuhold@gmail.com;TW_115;EEG TW;02/07/2025;AT0082000816200000000000000570001
+308;Edlinger;Lydia;;Frau;;selene00@gmx.at;TW_117;EEG TW;07/10/2025;AT0082000000000000000000004660501
+309;Pretterhofer;Josef;;Herr;;pretterhofer.josef@gmail.com;TW_116;EEG TW;09/07/2025;AT0082000816000000000000002117501
+310;Braunstein;Sarah;;Frau;;brasar08@gmx.at;WTE_1;EEG WTE ST;01/09/2025;AT00813000000R0000000000000007592
+312;Adelmann;Franz Walter;;Herr;;walter.f.adelmann@gmx.at;TW_126;EEG TW;06/08/2025;AT0080000821100000202107270094761
+312;Adelmann;Franz Walter;;Herr;;walter.f.adelmann@gmx.at;TW_126;EEG TW;06/08/2025;AT0082000821100000000000001645001
+313;Schwarz;Hansjoerg;;Herr;;hansjoerg.schwarz@tugraz.at;TW_127;EEG TW;06/08/2025;AT0082000816000000000000002085701
+314;Graf;Franz;;Herr;;webmaster@mrblack.at;TW_169;EEG TW;03/12/2025;AT0082000816000000000000002088201
+314;Graf;Franz;;Herr;;webmaster@mrblack.at;TW_169;EEG TW;04/12/2025;AT0082000000000000000000004571201
+315;GmbH;Ziesler;;Firma;;rene.ziesler@ziesler.at;TWS_103;EEG TWS;24/09/2026;AT0082000818100000000000000455501
+316;Ziesler WN;Rene;;Herr;;rene.ziesler@ziesler.at;WN_10;EEG WN;24/09/2026;AT0082000867300000000000001788101
+317;Immobilien GmbH;ZP1;;Firma;;rene.ziesler@ziesler.at;TWS_104;EEG TWS;24/09/2026;AT0082000818100000000000003777501
+317;Immobilien GmbH;ZP1;;Firma;;rene.ziesler@ziesler.at;TWS_104;EEG TWS;24/09/2026;AT0082000818100000000000003777701
+317;Immobilien GmbH;ZP1;;Firma;;rene.ziesler@ziesler.at;TWS_104;EEG TWS;24/09/2026;AT0082000818100000000000003777601
+317;Immobilien GmbH;ZP1;;Firma;;rene.ziesler@ziesler.at;TWS_104;EEG TWS;24/09/2026;AT0082000818100000000000003830601
+317;Immobilien GmbH;ZP1;;Firma;;rene.ziesler@ziesler.at;TWS_104;EEG TWS;24/09/2026;AT0082000818100000000000003789901
+317;Immobilien GmbH;ZP1;;Firma;;rene.ziesler@ziesler.at;TWS_104;EEG TWS;24/09/2026;AT0082000818100000000000003799401
+317;Immobilien GmbH;ZP1;;Firma;;rene.ziesler@ziesler.at;TWS_104;EEG TWS;24/09/2026;AT0082000818100000000000003795001
+317;Immobilien GmbH;ZP1;;Firma;;rene.ziesler@ziesler.at;TWS_104;EEG TWS;24/09/2026;AT0082000000000000000000003789201
+317;Immobilien GmbH;ZP1;;Firma;;rene.ziesler@ziesler.at;TWS_104;EEG TWS;24/09/2026;AT0082000818100000000000003812001
+317;Immobilien GmbH;ZP1;;Firma;;rene.ziesler@ziesler.at;TWS_104;EEG TWS;24/09/2026;AT0082000818100000000000003825501
+317;Immobilien GmbH;ZP1;;Firma;;rene.ziesler@ziesler.at;TWS_104;EEG TWS;24/09/2026;AT0082000818100000000000003795102
+319;Leber;Reinhard;;Herr;;reini.leber@gmail.com;TWS_105;EEG TWS;09/07/2025;AT0082000818100000000000000457401
+319;Leber;Reinhard;;Herr;;reini.leber@gmail.com;TWS_105;EEG TWS;04/04/2026;AT0082000818100000000000000456901
+319;Leber;Reinhard;;Herr;;reini.leber@gmail.com;TWS_105;EEG TWS;04/04/2026;AT0080000818100000202209140158315
+320;KG;Nahwärme Unterfladnitz 102;;Firma;;nah.unterfladnitz@outlook.com;TWS_106;EEG TWS;27/09/2025;AT0082000818100000000000004296001
+321;Ziesler;Rene;;Herr;;rene.ziesler@ziesler.at;TW_207;EEG TWS;26/09/2026;AT0072500818100000000000000000003
+325;Dexer;Josef;;Herr;;sepp@musik-dexer.at;TW_118;EEG TW;17/09/2025;AT0082000816000000000000000887801
+325;Dexer;Josef;;Herr;;sepp@musik-dexer.at;TW_118;EEG TW;17/09/2025;AT0082000816000000000000000887802
+326;Dexer Josef;Musikgeschäft;;Firma;;gleisdorf@musik-dexer.at;WTE_2;EEG WTE ST;13/09/2025;AT0081300000000000000000002724501
+327;Naehmaschinen Pitter;Eva-Maria Gratzer;;Firma;;franz.gratzer@weiz.online;TW_119;EEG TW;07/10/2025;AT0082000000000000000000002505101
+329;Falk;Andrea;;Frau;;andrea.falk83@gmail.com;TW_120;EEG TW;21/08/2025;AT0080000816000000202211140188635
+329;Falk;Andrea;;Frau;;andrea.falk83@gmail.com;TW_120;EEG TW;21/08/2025;AT0082000816000000000000002125301
+329;Falk;Andrea;;Frau;;andrea.falk83@gmail.com;TW_120;EEG TW;21/08/2025;AT0080000816000000000000000123364
+330;Groß;Gabriele;;Frau;;waltergross2692@gmail.com;WTE_3;EEG WTE ST;;AT0081300000000000000000001245401
+330;Groß;Gabriele;;Frau;;waltergross2692@gmail.com;WTE_3;EEG WTE ST;;AT00813000000R0000000000000001578
+331;Rzymann;Wilhelm & Liane;;Familie;;liane.rzymann@icloud.com;TWS_108;EEG TWS;03/09/2025;AT0082000816000000000000002637801
+331;Rzymann;Wilhelm & Liane;;Familie;;liane.rzymann@icloud.com;TWS_108;EEG TWS;03/09/2025;AT0080000816000000202010210077946
+332;Kutschera;Gerhard & Elisabeth;Dr.;Familie;;gkutschera68@gmail.com;TW_121;EEG TW;25/11/2025;AT0082000818200000000000004160901
+332;Kutschera;Gerhard & Elisabeth;Dr.;Familie;;gkutschera68@gmail.com;TW_121;EEG TW;25/11/2025;AT0082000000000000000000004528401
+333;Flechl;Andrea;;Frau;;herbert.flechl@gmail.com;TW_122;EEG TW;06/08/2025;AT0080000816000000202402010351633
+334;Flechl;Herbert;;Herr;;herbert.flechl@gmail.com;TW_123;EEG TW;03/09/2025;AT0080000816000000202204050112789
+335;Fleck;Winfried;;Herr;;fleckwinfried@gmail.com;TWS_107;EEG TWS;14/10/2025;AT0080000816000000202303290250943
+336;Brandtner;Sandra;;Frau;;ms.brandtner@aon.at;TW_124;EEG TW;09/09/2025;AT0082000816000000000000000465901
+336;Brandtner;Sandra;;Frau;;ms.brandtner@aon.at;TW_124;EEG TW;09/09/2025;AT0080000816000000202112210102405
+337;Derler;Gertrude;;Frau;;karl.derler04@gmail.com;TW_125;EEG TW;06/08/2025;AT0082000000000000000000004686801
+337;Derler;Gertrude;;Frau;;karl.derler04@gmail.com;TW_125;EEG TW;06/08/2025;AT0082000818200000000000000704501
+338;Anger;Kleintierpraxis;;Firma;;gkutschera68@gmail.com;WN_11;EEG WN;06/08/2025;AT0082000818400000000000002728401
+339;Strobl;Johann;;Herr;;johannstrobl2@gmail.com;WTE_4;EEG WTE ST;01/09/2025;AT0081300000000000000000009878901
+340;Ferkel;Hans;;Herr;;hans.ferkel@gmx.de;TW_128;EEG TW;17/09/2025;AT0082000816000000000000002698901
+340;Ferkel;Hans;;Herr;;hans.ferkel@gmx.de;TW_128;EEG TW;22/05/2026;AT0080000816000000202604130605171
+341;Klammler;Harald;;Herr;;office@hvsued.at;TW_130;EEG TW;03/09/2025;AT0082000816200000000000004167501
+341;Klammler;Harald;;Herr;;office@hvsued.at;TW_130;EEG TW;04/06/2026;AT0080000816200000202503310514618
+342;Fasching;Harald;;Herr;;h.fasching@gmx.net;TWS_109;EEG TWS;12/09/2025;AT0080000816000000000000000053147
+343;Strobl;Patrick;;Herr;;patrick.strobl@e-steiermark.com;TW_131;EEG TW;03/09/2025;AT0082000816000000000000002129401
+343;Strobl;Patrick;;Herr;;patrick.strobl@e-steiermark.com;TW_131;EEG TW;03/09/2025;AT0080000816000000202009030075815
+344;Dittrich;Gabor;;Herr;;dittrichandroid@gmail.com;TW_132;EEG TW;01/11/2025;AT0082000816000000000000004133801
+345;Borka;Miklos;;Herr;;nomadmyky@gmail.com;TWS_110;EEG TWS;17/10/2025;AT0082000000000000000000004508801
+346;Felberbauer;Karl;;Herr;;marco.felberbauer@gmx.at;TW_133;EEG TW;17/09/2025;AT0082000818400000000000001720301
+347;Rahm;Wolfgang;;Herr;;wolfgangrahm@gmx.at;TW_136;EEG TW;27/09/2025;AT0082000818200000000000000704801
+347;Rahm;Wolfgang;;Herr;;wolfgangrahm@gmx.at;TW_136;EEG TW;27/09/2025;AT0080000818200000201305140017972
+348;Steinbauer;Gottfried;;Herr;;gottfried.steinbauer@gmx.at;TW_129;EEG TW;07/10/2025;AT0082000816000000000000001234201
+349;Kristofferitsch;Fritz jun.;;Herr;;sylvia@edl-event.at;WN_12;EEG WN;17/09/2025;AT0082000000000000000000006197701
+349;Kristofferitsch;Fritz jun.;;Herr;;sylvia@edl-event.at;WN_12;EEG WN;17/09/2025;AT0080000819000000202209200159119
+350;GmbH;EDL Event;;Firma;;sylvia@edl-event.at;WN_13;EEG WN;19/10/2025;AT0080000819000000000000000130123
+350;GmbH;EDL Event;;Firma;;sylvia@edl-event.at;WN_13;EEG WN;27/08/2025;AT0080000819000000202209200159122
+350;GmbH;EDL Event;;Firma;;sylvia@edl-event.at;WN_13;EEG WN;04/11/2025;AT0082000000000000000000006128401
+350;GmbH;EDL Event;;Firma;;sylvia@edl-event.at;WN_13;EEG WN;04/11/2025;AT0080000819000000202209200159120
+351;Kristofferitsch;Friedrich;;Herr;;sylvia@edl-event.at;WN_14;EEG WN;28/08/2025;AT0082000000000000000000006179501
+352;Kristofferitsch;Fritz;;Herr;Musiker;sylvia@edl-event.at;WN_15;EEG WN;28/08/2025;AT0080000819000000000000000086514
+353;Haider;Johann und Rosina;;Familie;;haijo@aon.at;TW_134;EEG TW;22/11/2025;AT0082000816000000000000000931701
+354;Wilhelm;Renate;;Frau;;renatewilhelm@outlook.com;TW_135;EEG TW;17/09/2025;AT0082000818200000000000000706501
+355;Kreimer;Gabi;;Frau;;kreimerga78@gmail.com;TWS_111;EEG TWS;14/10/2025;AT0082000816000000000000003407901
+357;Tödling;Michael;;Herr;;michaeltd56@gmail.com;WS_20;EEG WS;12/09/2025;AT0080000818100000000000000106706
+358;Neuhold;Hubert;;Herr;;h.neuhold@landring.at;TW_137;EEG TW;19/11/2025;AT0082000818200000000000000950101
+358;Neuhold;Hubert;;Herr;;h.neuhold@landring.at;TW_137;EEG TW;19/11/2025;AT0080000818200000202208080152435
+359;Strobl;Bernhard;;Herr;;heidemarie.strobl@outlook.com;TW_138;EEG TW;16/12/2025;AT0082000816000000000000002111501
+359;Strobl;Bernhard;;Herr;;heidemarie.strobl@outlook.com;TW_138;EEG TW;16/12/2025;AT0080000816000000202002050071916
+360;Flicker;Johann;;Herr;;gerhard_flicker@aon.at;WN_16;EEG WN;25/09/2025;AT0082000819000000000000001480001
+360;Flicker;Johann;;Herr;;gerhard_flicker@aon.at;WN_16;EEG WN;25/09/2025;AT0080000819000000202412030483624
+361;Allmer;Sonja;;Frau;;allmer.sonja@gmail.com;TWS_112;EEG TWS;27/09/2025;AT0082000816000000000000002919102
+361;Allmer;Sonja;;Frau;;allmer.sonja@gmail.com;TWS_112;EEG TWS;27/09/2025;AT0082000816000000000000002919101
+362;Hauer;Andreas;;Herr;;andreas.hauer188@gmail.com;TW_139;EEG TW;15/10/2025;AT0082000000000000000000004586901
+363;Egger;Helga;;Frau;;egger.helga@aol.at;TW_140;EEG TW;14/10/2025;AT0082000816000000000000000930101
+364;Temmel-Klampfer;Gerald;;Herr;;office@trinkexpress.at;TW_141;EEG TW;09/04/2026;AT0082000816000000000000002084301
+365;Schöller;Reinhold;;Herr;;reinhold.schoeller@icloud.com;U_19;EEG U;25/09/2026;AT0082000816000000000000003745801
+365;Schöller;Reinhold;;Herr;;reinhold.schoeller@icloud.com;U_19;EEG U;25/09/2026;AT0080000816000000202209210159218
+366;Reitbauer;Josef;;Herr;;sega2009@gmx.at;TWS_113;EEG TWS;22/10/2025;AT0082000816000000000000003134101
+367;Gangl;Roswitha;;Frau;;gangl.nici@gmail.com;WS_21;EEG WS;29/01/2026;AT0080000806300000201307310019120
+368;Hausleitner;Stefan & Simone;;Familie;;scarab@gmx.at;TWS_114;EEG TWS;04/11/2025;AT0080000816000000000000000049873
+368;Hausleitner;Stefan & Simone;;Familie;;scarab@gmx.at;TWS_114;EEG TWS;04/11/2025;AT0080000816400000202502260500686
+369;Wünscher;Andreas;;Herr;;wuenscher.andreas@a1.net;TWS_115;EEG TWS;04/11/2025;AT0082000816000000000000002146801
+369;Wünscher;Andreas;;Herr;;wuenscher.andreas@a1.net;TWS_115;EEG TWS;04/11/2025;AT0080000816400000202502280500973
+370;Pimperl;Christian;;Herr;;chrispimperl@gmail.com;TW_142;EEG TW;30/10/2025;AT0082000816000000000000000930701
+370;Pimperl;Christian;;Herr;;chrispimperl@gmail.com;TW_142;EEG TW;30/10/2025;AT0080000816000000202301050214907
+371;Lafer;Günter;Ing.;Herr;;lafer@lafer-gierer.at;TWS_116;EEG TWS;21/01/2026;AT0082000816000000000000004005401
+371;Lafer;Günter;Ing.;Herr;;lafer@lafer-gierer.at;TWS_116;EEG TWS;21/01/2026;AT0080000816000000202306150271606
+372;Mauthner;Stephan;;Herr;;st.mauthner@gmail.com;TW_143;EEG TW;19/11/2025;AT0082000000000000000000004412001
+373;Schwarz;Philipp;;Herr;;philipp.schwarz@magna.com;WS_22;EEG WS;28/11/2025;AT0080000818100000000000000125979
+374;Lafer;Hedwig;;Frau;;lafer@lafer-gierer.at;TWS_117;EEG TWS;20/11/2025;AT0082000816000000000000002748602
+374;Lafer;Hedwig;;Frau;;lafer@lafer-gierer.at;TWS_117;EEG TWS;05/12/2025;AT0082000816000000000000002748601
+375;Deimel;Philipp;;Herr;;Philipp.Deimel@gmx.at;TWS_121;EEG TWS;11/11/2025;AT0082000818100000000000000247001
+376;Stadtegger;Alois;;Herr;;luis.stadtegger@gmx.at;TW_144;EEG TW;20/11/2025;AT0082000816000000000000002765701
+377;Tomaschitsch;Martin;;Herr;;martintomaschitsch@gmail.com;WS_23;EEG WS;11/11/2025;AT0082000818100000000000003712801
+378;Sackl;Edmund;;Herr;;edmund_sackl@outlook.com;TW_145;EEG TW;03/12/2025;AT0082000816000000000000003187101
+379;Doppelhofer;Ernst;;Herr;;ernst.doppelhofer@aon.at;TWS_118;EEG TWS;03/12/2025;AT0082000816000000000000000463401
+379;Doppelhofer;Ernst;;Herr;;ernst.doppelhofer@aon.at;TWS_118;EEG TWS;03/12/2025;AT0080000816000000202301310228682
+380;Weberhofer;Karin;;Frau;;n.ponsold@gmail.com;TW_146;EEG TW;11/12/2025;AT0080000816000000000000000053517
+380;Weberhofer;Karin;;Frau;;n.ponsold@gmail.com;TW_146;EEG TW;11/12/2025;AT0080000816000000202403270386833
+381;Niederl;Vanessa;;Frau;;vanessaverena11@gmail.com;TW_147;EEG TW;29/01/2026;AT0080000816000000000000000056009
+382;Siegl;Josef;;Herr;;;TWS_127;EEG TWS;05/12/2025;AT0082000000000000000000004527801
+382;Siegl;Josef;;Herr;;;TWS_127;EEG TWS;05/12/2025;AT0082000816000000000000001436301
+383;Hofer;Dorothea;;Frau;;geraldhofer2@hotmail.com;TWS_119;EEG TWS;05/12/2025;AT0082000816000000000000000448701
+384;Vorraber;Alois;;Herr;;a.vorraber@gmx.at;TWS_120;EEG TWS;20/11/2025;AT0082000816000000000000003918601
+385;Kreim;Robert;;Herr;;robert.kreim@gmail.com;TW_148;EEG TW;26/11/2025;AT0082000816000000000000001406401
+386;Kober;Christine;;Frau;;;TWS_122;EEG TWS;;AT0080000816000000000000000104484
+387;Kober;Günter;;Herr;;;TWS_123;EEG TWS;29/01/2026;AT0080000816000000000000000104485
+388;Dobrowolny;Axel & Michaela;Mag. (FH);Familie;;axel.dobrowolny@weiz.at;TW_149;EEG TW;12/12/2025;AT0082000816000000000000002102601
+388;Dobrowolny;Axel & Michaela;Mag. (FH);Familie;;axel.dobrowolny@weiz.at;TW_149;EEG TW;12/12/2025;AT0080000816000000202303210248187
+390;Dobrowolny;Axel;Mag. (FH);Herr;;axel.dobrowolny@weiz.at;TWS_124;EEG TWS;11/11/2025;AT0082000000000000000000000592601
+391;Tauß;Siliva;;Frau;;silviatauss1967@gmail.com;TW_150;EEG TW;15/01/2026;AT0082000816000000000000000914501
+391;Tauß;Siliva;;Frau;;silviatauss1967@gmail.com;TW_150;EEG TW;15/01/2026;AT0080000816000000201512030035353
+392;Wagner;Jürgen;;Herr;;jw5@gmx.at;TW_151;EEG TW;29/11/2025;AT0080000818100000000000000044953
+392;Wagner;Jürgen;;Herr;;jw5@gmx.at;TW_151;EEG TW;29/11/2025;AT0080000818100000202107290095815
+393;Geyer;Harald;;Herr;;geyer.harald@gmx.at;WS_24;EEG WS;20/11/2025;AT0080000818100000000000000128950
+393;Geyer;Harald;;Herr;;geyer.harald@gmx.at;WS_24;EEG WS;20/11/2025;AT0080000818100000202211080187804
+394;Hartl;Anna;;Frau;;philipp.hartl@klimatech.at;TW_152;EEG TW;29/01/2026;AT0080000816000000000000000097650
+394;Hartl;Anna;;Frau;;philipp.hartl@klimatech.at;TW_152;EEG TW;29/01/2026;AT0080000816000000202210110173049
+395;Gingl;Gerald;;Herr;;gerald@gingl.com;TW_153;EEG TW;29/11/2025;AT0082000816000000000000004301001
+395;Gingl;Gerald;;Herr;;gerald@gingl.com;TW_153;EEG TW;05/12/2025;AT0080000816000000000000000113907
+396;Graf;Helmut & Gabriela;;Familie;;grafhelmut69@gmail.com;TW_154;EEG TW;29/11/2025;AT0082000816000000000000002524101
+397;Greimel;Friedrich;;Herr;Pens;gfa.zfp.office@gmail.com;TW_158;EEG TW;15/01/2026;AT0082000816200000000000003930801
+397;Greimel;Friedrich;;Herr;Pens;gfa.zfp.office@gmail.com;TW_158;EEG TW;02/12/2025;AT0082000816200000000000002249001
+397;Greimel;Friedrich;;Herr;Pens;gfa.zfp.office@gmail.com;TW_158;EEG TW;02/12/2025;AT0080000816200000201302140016950
+398;Tendl;Brigitte;;Frau;;brigitte.tendl@gmail.com;TW_155;EEG TW;20/11/2025;AT0082000816000000000000002372501
+398;Tendl;Brigitte;;Frau;;brigitte.tendl@gmail.com;TW_155;EEG TW;20/11/2025;AT0080000816000000202303210248196
+399;Greimel;Markus;;Herr;;m.greimel1@gmail.com;TW_165;EEG TW;12/12/2025;AT0082000816200000000000000874301
+400;Grobbauer;David;Dipl.-Ing.;Herr;;david.grobbauer@gmail.com;TWS_125;EEG TWS;20/11/2025;AT0080000816000000000000000086434
+400;Grobbauer;David;Dipl.-Ing.;Herr;;david.grobbauer@gmail.com;TWS_125;EEG TWS;20/11/2025;AT0080000816000000202209200159194
+401;Mauthner;Manfred;;Herr;;M.mauthner53@gmail.com;TW_156;EEG TW;16/01/2026;AT0082000816000000000000000713001
+402;z.H. Fr. Siebenhofer;Guat leben;;Verein;;walburga.siebenhofer@mailbox.org;TW_160;EEG TW;20/11/2025;AT0080000816000000000000000040096
+402;z.H. Fr. Siebenhofer;Guat leben;;Verein;;walburga.siebenhofer@mailbox.org;TW_160;EEG TW;20/11/2025;AT0080000816000000202407310426273
+403;Siebenhofer;Walburga;Dr.;Frau;;walburga.siebenhofer@mailbox.org;TW_159;EEG TW;25/06/2026;AT0082000816000000000000001943001
+403;Siebenhofer;Walburga;Dr.;Frau;;walburga.siebenhofer@mailbox.org;TW_159;EEG TW;25/06/2026;AT0080000816000000201407140022637
+404;Aluani;Simone;;Frau;;simonehierzberger@gmail.com;TW_161;EEG TW;20/11/2025;AT0080000816000000000000000075523
+404;Aluani;Simone;;Frau;;simonehierzberger@gmail.com;TW_161;EEG TW;20/11/2025;AT0080000816000000202403130385521
+405;Steinmann;Jürgen;Ing.;Firma;;juergen@steinmann.cc;TW_157;EEG TW;29/11/2025;AT0082000000000000000000002465501
+405;Steinmann;Jürgen;Ing.;Firma;;juergen@steinmann.cc;TW_157;EEG TW;29/11/2025;AT0082000000000000000000002465502
+405;Steinmann;Jürgen;Ing.;Firma;;juergen@steinmann.cc;TW_157;EEG TW;29/11/2025;AT0082000000000000000000002614301
+405;Steinmann;Jürgen;Ing.;Firma;;juergen@steinmann.cc;TW_157;EEG TW;29/11/2025;AT0082000000000000000000003497101
+405;Steinmann;Jürgen;Ing.;Firma;;juergen@steinmann.cc;TW_157;EEG TW;29/11/2025;AT0082000000000000000000003497102
+405;Steinmann;Jürgen;Ing.;Firma;;juergen@steinmann.cc;TW_157;EEG TW;29/11/2025;AT0082000000000000000000002614302
+405;Steinmann;Jürgen;Ing.;Firma;;juergen@steinmann.cc;TW_157;EEG TW;29/11/2025;AT0080000816000000201703300042896
+406;Wilfling;Nadine;BSc;Frau;;nadine.wilfling@gmx.at;WTE_5;EEG WTE ST;16/12/2025;AT0081300000000000000000009770401
+406;Wilfling;Nadine;BSc;Frau;;nadine.wilfling@gmx.at;WTE_5;EEG WTE ST;16/12/2025;AT00813000000R0000000000000004922
+407;Leitner;Christine;;Frau;;christineleitner68@gmx.at;TW_162;EEG TW;25/11/2025;AT0082000816000000000000003400201
+408;Eibisberger;Johann;;Herr;;johann.eibisberger65@gmail.com;TW_163;EEG TW;03/12/2025;AT0082000816000000000000000889501
+409;Tschol;Walter;Ing.;Herr;;walter.tschol@aon.at;TWS_126;EEG TWS;25/11/2025;AT0082000818100000000000003091201
+409;Tschol;Walter;Ing.;Herr;;walter.tschol@aon.at;TWS_126;EEG TWS;25/11/2025;AT0080000818100000202108030095934
+410;Huber;Erich;;Herr;;edeltraud.huber64@gmail.com;TW_166;EEG TW;25/11/2025;AT0082000816000000000000000933601
+410;Huber;Erich;;Herr;;edeltraud.huber64@gmail.com;TW_166;EEG TW;25/11/2025;AT0080000816000000202211290210652
+411;Artner;Astrid Anna;Mag.;Frau;;info@muberger.at;TW_164;EEG TW;14/08/2026;AT0082000816000000000000002107801
+411;Artner;Astrid Anna;Mag.;Frau;;info@muberger.at;TW_164;EEG TW;14/08/2026;AT0080000816000000202106070093492
+412;Frieß;Herbert & Elisabeth;;Familie;;friess.herbert@gmx.at;TW_167;EEG TW;28/11/2025;AT0082000816000000000000003048001
+412;Frieß;Herbert & Elisabeth;;Familie;;friess.herbert@gmx.at;TW_167;EEG TW;28/11/2025;AT0080000816000000202208050152124
+413;Engelmann;Johann;;Herr;;silviaallmer10@gmail.com;TW_168;EEG TW;29/11/2025;AT0082000816000000000000000445601
+413;Engelmann;Johann;;Herr;;silviaallmer10@gmail.com;TW_168;EEG TW;29/11/2025;AT0080000816000000201709280048069
+415;Sorger;Rita;;Frau;;georg.schweighofer@stmk.gv.at;TW_170;EEG TW;15/01/2026;AT0082000000000000000000004511601
+416;Pieber;Johann;;Herr;;;TW_171;EEG TW;05/12/2025;AT0082000816000000000000003388801
+417;Koller;Johann;;Herr;;;TWS_128;EEG TWS;21/01/2026;AT0082000816000000000000003141301
+418;Flicker;Bernhard;;Herr;;Bernhard.Flicker@gmx.at;TW_172;EEG TW;;AT0082000816000000000000004245001
+418;Flicker;Bernhard;;Herr;;Bernhard.Flicker@gmx.at;TW_172;EEG TW;;AT0082000816000000000000004245002
+419;GmbH;APMT;;Firma;;apmt@apmt.at;TW_173;EEG TW;11/12/2025;AT0082000816000000000000002425401
+420;Gutmann;Gisela;;Frau;;g.gutmann73@gmail.com;WTE_7;EEG WTE ST;05/02/2026;AT0081300000000000000000009894901
+421;Schweiger;Hubert;;Herr;;elfriede.schweiger1967@gmail.com;WN_17;EEG WN;13/12/2025;AT0082000819100000000000000251101
+422;Straußberger;Zäzilia;;Frau;;cilli.st@icloud.com;WN_18;EEG WN;04/02/2026;AT0082000819000000000000001470901
+423;Schloffer;Anna;;Frau;;heinz.schloffer@aon.at;TW_174;EEG TW;29/01/2026;AT0082000816000000000000001443001
+424;Wimmer;Sandra;;Frau;;sandra@spirit2all.at;TW_175;EEG TW;11/02/2026;AT0082000816000000000000000910401
+424;Wimmer;Sandra;;Frau;;sandra@spirit2all.at;TW_175;EEG TW;11/02/2026;AT0080000816000000202303070244684
+425;Fleck;Harald;;Herr;;fleckhari@hotmail.com;TWS_129;EEG TWS;21/01/2026;AT0082000816000000000000003633801
+426;Hofer WTE;Christian;;Herr;;christian.hofer@vb-hoeher.at;WTE_8;EEG WTE ST;18/12/2025;AT0081300000000000000000002774701
+426;Hofer WTE;Christian;;Herr;;christian.hofer@vb-hoeher.at;WTE_8;EEG WTE ST;18/12/2025;AT0081300000000000000000001483401
+427;Kalcher;Johann;;Herr;;johannkalcher@gmx.at;TW_176;EEG TW;17/01/2026;AT0082000816000000000000002085001
+427;Kalcher;Johann;;Herr;;johannkalcher@gmx.at;TW_176;EEG TW;17/01/2026;AT0080000816000000201304180017612
+428;Kleinhappel;Josef;;Herr;;;TW_177;EEG TW;21/01/2026;AT0082000816000000000000002470501
+430;Petermichl;Georg;;Herr;;georg.petermichl@gmx.at;TWS_130;EEG TWS;29/01/2026;AT0082000818100000000000001629701
+431;Gruber;Christine;;Frau;;gr.christine@gmx.at;TW_178;EEG TW;16/02/2026;AT0082000816300000000000001876101
+432;Derler;Herbert;;Herr;;derlerherbert@gmail.com;TWS_131;EEG TWS;29/01/2026;AT0082000816000000000000003574901
+433;Paier;Johann;;Herr;;;TW_179;EEG TW;29/01/2026;AT0082000816000000000000003941701
+434;Pichler;Christoph;;Herr;;office@pichlerforst.net;WN_19;EEG WN;04/02/2026;AT0082000818400000000000001242601
+434;Pichler;Christoph;;Herr;;office@pichlerforst.net;WN_19;EEG WN;04/02/2026;AT0082000818400000000000001242701
+434;Pichler;Christoph;;Herr;;office@pichlerforst.net;WN_19;EEG WN;04/02/2026;AT0082000818400000000000001242702
+436;Reithofer;Siegfried;;Herr;;siegfried.reithofer@aon.at;WTE_9;EEG WTE ST;17/04/2026;AT00813000000R0000000000000011491
+436;Reithofer;Siegfried;;Herr;;siegfried.reithofer@aon.at;WTE_9;EEG WTE ST;07/03/2026;AT0081300000000000000000001538001
+437;Pirker;Stefan;Dr.;Herr;;kojote99@gmail.com;TW_181;EEG TW;25/02/2026;AT0080000816000000000000000106651
+437;Pirker;Stefan;Dr.;Herr;;kojote99@gmail.com;TW_181;EEG TW;03/03/2026;AT0080000816000000202301110215520
+438;Neuhold Marco;Fliesenblitz und Pflasterblitz;;Firma;;office@fliesenblitz.at;TW_209;EEG TW;;AT0082000818100000000000001652101
+438;Neuhold Marco;Fliesenblitz und Pflasterblitz;;Firma;;office@fliesenblitz.at;TW_209;EEG TW;;AT0082000818100000000000001654501
+438;Neuhold Marco;Fliesenblitz und Pflasterblitz;;Firma;;office@fliesenblitz.at;TW_209;EEG TW;;AT0080000818100000202410090460347
+439;Schinnerl;Brigitte & Georg;;Familie;;schurli.schinnerl@gmail.com;WS_28;EEG WS;;
+440;Weberhofer;Franz;;Herr;;franz.weberhofer@aon.at;TW_180;EEG TW;12/03/2026;AT0082000816000000000000000915401
+441;Inh. Gerald Temmel-Klampfer;Trinkexpress;;Firma;;office@trinkexpress.at;TWS_135;EEG TWS;24/03/2026;AT0082000816000000000000003304201
+442;Pöllabauer;Sonja;;Frau;;panoramaweg1@outlook.com;WN_20;EEG WN;25/02/2026;AT0080000819000000000000000145187
+443;Kleinhappel;Ingeborg;;Frau;;ingeborg.kleinhappel@gmail.com;TWS_132;EEG TWS;04/03/2026;AT0082000816000000000000002150101
+444;Zorn;Rudolf & Christine;;Familie;;;TWS_133;EEG TWS;04/03/2026;AT0082000816000000000000001578401
+445;Sarajlic;Abdulah;;Herr;;abi.sarajlic@gmx.net;TW_182;EEG TW;03/09/2026;AT0082000816200000000000002546701
+446;Wilhelm;Fritz;;Herr;;gasthaus.wilhelm@gmail.com;TW_184;EEG TW;25/04/2026;AT0082000816000000000000000946701
+447;Kulmer;Stefan;;Herr;;kulmer.stefan@gmail.com;TW_183;EEG TW;25/03/2026;AT0082000000000000000000004672201
+448;Tieber;Maria;;Frau;;maria_tieber@gmx.at;TW_185;EEG TW;12/03/2026;AT0082000816000000000000002129601
+449;Meixner;Daniel;;Herr;;dmeixner74@gmail.com;TWS_134;EEG TWS;12/03/2026;AT0082000816000000000000000634001
+450;Mauthner;Karin;;Frau;;office@obstbau-mauthner.at;;EEG XX;;AT00800008970000000000000053698
+451;Mauthner;Michael;;Herr;;office@obstbau-mauthner.at;WS_26;EEG WS;12/03/2026;AT0080000816000000000000000117751
+452;Mauthner;Alexander;;Herr;;office@obstbau-mauthner.at;TW_186;EEG TW;09/04/2026;AT0080000816000000202305240268149
+453;Kleinburger;Stefan & Melanie;;Familie;;melaniekleinburger2@gmail.com;TW_187;EEG TW;24/03/2026;AT0080000816000000000000000056022
+454;Haas;Anna Lena & Benedikt;;Familie;;benedikt.haas@gmx.at;TWS_142;EEG TWS;16/04/2026;AT0082000816000000000000003317801
+455;Interiordesign by Beatrice M-F;;;Firma;;home@interiordesignbybeatrice.at;TWS_139;EEG TWS;09/04/2026;AT0082000000000000000000000187001
+456;Kropf;Irmgard;;Frau;;wk@wernerkropf.at;TWS_136;EEG TWS;09/04/2026;AT0082000000000000000000000880301
+456;Kropf;Irmgard;;Frau;;wk@wernerkropf.at;TWS_136;EEG TWS;09/04/2026;AT0082000000000000000000000880302
+457;Kropf;Werner;;Herr;;wk@wernerkropf.at;TW_188;EEG TW;;
+458;Scharler Zengerer;MEG;;Firma;;elisabeth@scharler.cc;WTE_10;EEG WTE ST;28/04/2026;AT0081300000000000000000004963701
+458;Scharler Zengerer;MEG;;Firma;;elisabeth@scharler.cc;WTE_10;EEG WTE ST;23/04/2026;AT0081300000000000000000004963702
+459;Scharler-Zenz;Elisabeth;Ing.;Firma;;elisabeth@scharler.cc;TWS_137;EEG TWS;09/04/2026;AT0082000818100000000000000481502
+459;Scharler-Zenz;Elisabeth;Ing.;Firma;;elisabeth@scharler.cc;TWS_137;EEG TWS;14/08/2026;AT0082000000000000000000004503401
+460;Elmer;Silke;;Frau;;buero@meineheimat.eu;TWS_138;EEG TWS;04/06/2026;AT0080000816000000000000000063045
+461;Pfeiffer;Stefan;;Herr;;spfeiffer@gmx.at;TWS_140;EEG TWS;22/05/2026;AT0082000818100000000000000482301
+461;Pfeiffer;Stefan;;Herr;;spfeiffer@gmx.at;TWS_140;EEG TWS;22/05/2026;AT0080000818100000202201280105735
+463;Geßlbauer;Franz;;Herr;;bf.gesslbauer@aon.at;TWS_141;EEG TWS;16/04/2026;AT0080000816000000201812190065618
+464;Haidenhofer;Werner;;Herr;;haidiw@gmx.at;WTE_11;EEG WTE ST;;AT0081300000000000000000001547201
+465;Höfler;Erika;;Frau;;;;EEG WN;;AT0082000819100000000000000734901
+466;Hutter;Andreas;Ing.;Herr;;andi-hutter@gmx.at;TW_190;EEG TW;24/04/2026;AT0080000816000000202210170174515
+467;Sommersguter;Helmut;;Herr;;oladuma-eeg@yahoo.com;WS_27;EEG WS;07/05/2026;AT0080000816000000202003160072835
+468;Hofstätter;Alfred;;Herr;;alfredhofstaetter@gmail.com;TWS_143;EEG TWS;22/05/2026;AT0082000000000000000000004674801
+469;Höfler;Johann;;Herr;;hannes-drums@gmx.at;WN_22;EEG WN;;AT0082000818400000000000003434801
+470;Kerschbaumer;Bernd;;Herr;;kfz.kerschbaumer@gmail.com;WN_23;EEG WN;25/07/2026;AT0080000819100000000000000066587
+470;Kerschbaumer;Bernd;;Herr;;kfz.kerschbaumer@gmail.com;WN_23;EEG WN;25/07/2026;AT0080000819000000202012100079281
+471;Gatternig;Walter;;Herr;;walter.gatternig@gmail.com;TWS_144;EEG TWS;20/05/2026;AT0082000000000000000000004380601
+471;Gatternig;Walter;;Herr;;walter.gatternig@gmail.com;TWS_144;EEG TWS;20/05/2026;AT0082000816000000000000003302101
+472;Modes;Heribert;;Herr;;;;EEG WTE ST;;
+473;Raith TW;Tanja;;Frau;;tanja.adlmann@gmx.at;TW_189;EEG TW;27/05/2026;AT0080000816000000202409240459355
+474;Strobl;Emmerich;;Herr;;emmerich-johannes.strobl@e-netze.at;TW_191;EEG TW;19/06/2026;AT0080000816000000202108120096139
+475;Planner;Andreas;;Herr;;andreasplanner@gmx.at;TW_192;EEG TW;14/07/2026;AT0082000818200000000000000966101
+475;Planner;Andreas;;Herr;;andreasplanner@gmx.at;TW_192;EEG TW;14/07/2026;AT0080000818200000202106020093406
+477;Inh. Robert Schinnerl;Hasis Bogensport;;Firma;;office@hasis-bogensport.at;TW_193;EEG TW;23/06/2026;AT0082000816000000000000003965801
+478;Brückler;Johann;;Herr;;walburga.siebenhofer@mailbox.org;TW_194;EEG TW;01/07/2026;AT0080000816000000000000000040096
+478;Brückler;Johann;;Herr;;walburga.siebenhofer@mailbox.org;TW_194;EEG TW;01/07/2026;AT0080000816000000202407310426273
+479;Schoberer TW;Sieglinde;;Frau;;sigusat@yahoo.de;TW_195;EEG TW;25/06/2026;AT0080000816000000202511130578814
+480;Grabner;Johann;;Herr;;mgrabner@gmx.at;TW_196;EEG TW;28/07/2026;AT0082000816000000000000002111801
+481;Gabbichler;Gerhard;;Herr;;gerhard.gabbichler@lieb.at;TW_197;EEG TW;07/07/2026;AT0080000816000000202601280590922
+481;Gabbichler;Gerhard;;Herr;;gerhard.gabbichler@lieb.at;TW_197;EEG TW;07/07/2026;AT0082000000000000000000004670601
+482;Mautner;Daniel;Ing.;Herr;;mautner@ziro.at;TWS_146;EEG TWS;18/07/2026;AT0082000818100000000000001629301
+483;Heuberger;Reinhold;;Herr;;citaxgt77@gmail.com;TW_198;EEG TW;03/07/2026;AT0082000816000000000000003937701
+484;Höller;Hermann;;Herr;;hermann.hoeller13@gmail.com;TW_199;EEG TW;13/08/2026;AT0082000000000000000000004565801
+485;Prem;Christof;;Herr;;christof.prem@gmail.com;TWS_147;EEG TWS;13/08/2026;AT0082000000000000000000000666601
+486;Bleimuth;Wolfgang;;Herr;;wb@plenzengreith.com;TW_200;EEG TW;13/08/2026;AT0082000806100000000000000859001
+486;Bleimuth;Wolfgang;;Herr;;wb@plenzengreith.com;TW_200;EEG TW;13/08/2026;AT0080000816200000202410250471346
+488;GmbH;Gastronomie David Leiner;;Firma;;willkommen@landseele.at;TWS_153;EEG TWS;21/08/2026;AT0080000818100000202210140173983
+489;GmbH;TDL;;Firma;;office@tdlgmbh.com;;EEG WTE ST;01/10/2026;AT00813000000R0000000000000004414
+490;Muj;Ciprian-Emanuel;;Herr;;mujciprian@gmail.com;TWS_148;EEG TWS;13/08/2026;AT0082000816000000000000000388801
+491;Meißl;Wirtshaus;;Firma;;gh@wirtmeissl.com;TW_201;EEG TW;;AT0082000000000000000000003207002
+491;Meißl;Wirtshaus;;Firma;;gh@wirtmeissl.com;TW_201;EEG TW;13/08/2026;AT0082000000000000000000000953801
+492;Stibor Thomas;Gasthof zur neuen Post;;;;stibor@gasthof-stibor.com;WTE_13;EEG WTE;01/09/2026;AT0081300000000000000000001454302
+493;Weinfurter;Gabriele;;Frau;;gabi.weinfurter7@gmail.com;TWS_149;EEG TWS;19/08/2026;AT0082000816000000000000003099501
+494;Hotel-Restaurant;Hammer GmbH;;Firma;;office@hotel-hammer.at;TWS_150;EEG TWS;26/09/2026;AT0080000816000000202606100629613
+495;Stoppacher;Reinhard;;Herr;;stoppacher@energieoase.or.at;TW_202;EEG TW;;AT0080000816000000201809050061739
+496;Maier;Philipp;;Herr;;phitschmaier@gmail.com;TW_203;EEG TW;;AT0082000816000000000000001408101
+497;Maier;Manuel;;Herr;;maier.manuel09@gmail.com;TWS_151;EEG TWS;;AT0082000816000000000000002289401
+498;Tandl;Ewald;;Herr;;ewaldt92@gmail.com;TWS_152;EEG TWS;25/08/2026;AT0082000816000000000000003443001
+499;Leiner;David;;Herr;;office@tdlgmbh.com;TW_204;EEG TW;21/08/2026;AT0082000816000000000000004324401
+500;Enzensberger;Harald;DI;Herr;;harald@enzensberger.at;TW_205;EEG TW;21/08/2026;AT0082000816000000000000003989301
+501;Stockner;Hannes;;Herr;;hannes.19285@gmx.at;TW_206;EEG TW;24/09/2026;AT0082000816000000000000002878201
+502;Suppan;Erich;;Herr;;erich.f.suppan@gmail.com;TWS_154;EEG TWS;19/09/2026;AT0080000816000000000000000078140
+503;Wiedenegger;Hermine;;Frau;;;TW_208;EEG TW;26/09/2026;AT0082000816000000000000000939901
+504;Grüner;Herbert;;Herr;;herbert.gruener@hotmail.com;;EEG TW;;AT0080000816000000202011240078871
+504;Grüner;Herbert;;Herr;;herbert.gruener@hotmail.com;;EEG TW;;AT0082000816000000000000002842801
+505;Lendl;Hannes;;Herr;;;TW_211;EEG TW;;AT0082000816000000000000001937601
+505;Lendl;Hannes;;Herr;;;TW_211;EEG TW;;AT0080000816000000202204190115552
