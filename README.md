@@ -35,6 +35,8 @@ Wichtige Einstellungen in `src\EGWNCentral.Api\appsettings.json`:
 
    `dotnet ef database update --project .\src\EGWNCentral.Infrastructure\EGWNCentral.Infrastructure.csproj --startup-project .\src\EGWNCentral.Api\EGWNCentral.Api.csproj`
 
+   Die Migration fügt die model-managed Seed-Daten für Kunden, Zählpunkte, Gemeinschaften und Teilnahmen hinzu.
+
 3. API starten:
 
    `dotnet run --project .\src\EGWNCentral.Api\EGWNCentral.Api.csproj`
