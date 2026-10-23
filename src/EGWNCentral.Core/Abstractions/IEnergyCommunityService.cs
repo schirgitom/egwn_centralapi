@@ -8,9 +8,9 @@ public interface IEnergyCommunityService
 
     Task<EnergyCommunity?> GetByIdAsync(Guid id, CancellationToken cancellationToken = default);
 
-    Task<EnergyCommunity> CreateAsync(string name, CancellationToken cancellationToken = default);
+    Task<EnergyCommunity> CreateAsync(string name, string? source = null, CancellationToken cancellationToken = default);
 
-    Task<EnergyCommunity?> UpdateAsync(Guid id, string name, CancellationToken cancellationToken = default);
+    Task<EnergyCommunity?> UpdateAsync(Guid id, string name, string? source, CancellationToken cancellationToken = default);
 
     Task<bool> DeleteAsync(Guid id, CancellationToken cancellationToken = default);
 

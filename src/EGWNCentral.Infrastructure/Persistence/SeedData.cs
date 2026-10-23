@@ -1162,17 +1162,17 @@ public static class ModelSeedData
 
     private static readonly EnergyCommunity[] CommunitySeeds =
     [
-        new EnergyCommunity { Id = CreateId("community", "EEG U"), Name = "EEG U", CreatedAtUtc = SeededAtUtc },
-        new EnergyCommunity { Id = CreateId("community", "EEG TW"), Name = "EEG TW", CreatedAtUtc = SeededAtUtc },
-        new EnergyCommunity { Id = CreateId("community", "GEA B65"), Name = "GEA B65", CreatedAtUtc = SeededAtUtc },
-        new EnergyCommunity { Id = CreateId("community", "GEA U11"), Name = "GEA U11", CreatedAtUtc = SeededAtUtc },
-        new EnergyCommunity { Id = CreateId("community", "EEG WS"), Name = "EEG WS", CreatedAtUtc = SeededAtUtc },
-        new EnergyCommunity { Id = CreateId("community", "EEG TWS"), Name = "EEG TWS", CreatedAtUtc = SeededAtUtc },
-        new EnergyCommunity { Id = CreateId("community", "EEG WN"), Name = "EEG WN", CreatedAtUtc = SeededAtUtc },
-        new EnergyCommunity { Id = CreateId("community", "EEG TE"), Name = "EEG TE", CreatedAtUtc = SeededAtUtc },
-        new EnergyCommunity { Id = CreateId("community", "EEG WTE ST"), Name = "EEG WTE ST", CreatedAtUtc = SeededAtUtc },
-        new EnergyCommunity { Id = CreateId("community", "EEG XX"), Name = "EEG XX", CreatedAtUtc = SeededAtUtc },
-        new EnergyCommunity { Id = CreateId("community", "EEG WTE"), Name = "EEG WTE", CreatedAtUtc = SeededAtUtc },
+        new EnergyCommunity { Id = CreateId("community", "EEG U"), Name = "EEG U", Source = null, CreatedAtUtc = SeededAtUtc },
+        new EnergyCommunity { Id = CreateId("community", "EEG TW"), Name = "EEG TW", Source = null, CreatedAtUtc = SeededAtUtc },
+        new EnergyCommunity { Id = CreateId("community", "GEA B65"), Name = "GEA B65", Source = null, CreatedAtUtc = SeededAtUtc },
+        new EnergyCommunity { Id = CreateId("community", "GEA U11"), Name = "GEA U11", Source = null, CreatedAtUtc = SeededAtUtc },
+        new EnergyCommunity { Id = CreateId("community", "EEG WS"), Name = "EEG WS", Source = null, CreatedAtUtc = SeededAtUtc },
+        new EnergyCommunity { Id = CreateId("community", "EEG TWS"), Name = "EEG TWS", Source = null, CreatedAtUtc = SeededAtUtc },
+        new EnergyCommunity { Id = CreateId("community", "EEG WN"), Name = "EEG WN", Source = null, CreatedAtUtc = SeededAtUtc },
+        new EnergyCommunity { Id = CreateId("community", "EEG TE"), Name = "EEG TE", Source = null, CreatedAtUtc = SeededAtUtc },
+        new EnergyCommunity { Id = CreateId("community", "EEG WTE ST"), Name = "EEG WTE ST", Source = null, CreatedAtUtc = SeededAtUtc },
+        new EnergyCommunity { Id = CreateId("community", "EEG XX"), Name = "EEG XX", Source = null, CreatedAtUtc = SeededAtUtc },
+        new EnergyCommunity { Id = CreateId("community", "EEG WTE"), Name = "EEG WTE", Source = null, CreatedAtUtc = SeededAtUtc },
     ];
 
     public static void Configure(ModelBuilder modelBuilder)

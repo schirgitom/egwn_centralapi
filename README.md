@@ -60,3 +60,5 @@ Zaehlpunkte koennen mehreren Energiegemeinschaften zugeordnet werden. Der Teilna
 
 - `PUT /api/energy-communities/{communityId}/metering-points/{meteringPointId}` mit `{"participationPercentage": 75}`
 - `DELETE /api/energy-communities/{communityId}/metering-points/{meteringPointId}` entfernt die Zuordnung.
+
+Energiegemeinschaften koennen optional eine `source`-Angabe enthalten. Sie wird in der Datenbankspalte `Quelle` gespeichert und kann beim Erstellen oder Aktualisieren mitgegeben werden.

@@ -32,7 +32,7 @@ public sealed class EnergyCommunitiesController(IEnergyCommunityService energyCo
     {
         try
         {
-            var community = await energyCommunityService.CreateAsync(request.Name, cancellationToken);
+            var community = await energyCommunityService.CreateAsync(request.Name, request.Source, cancellationToken);
             return CreatedAtAction(nameof(GetById), new { id = community.Id }, Map(community));
         }
         catch (ArgumentException ex)
@@ -49,7 +49,7 @@ public sealed class EnergyCommunitiesController(IEnergyCommunityService energyCo
     {
         try
         {
-            var community = await energyCommunityService.UpdateAsync(id, request.Name, cancellationToken);
+            var community = await energyCommunityService.UpdateAsync(id, request.Name, request.Source, cancellationToken);
             return community is null ? NotFound() : Ok(Map(community));
         }
         catch (ArgumentException ex)
@@ -83,6 +83,8 @@ public sealed class EnergyCommunitiesController(IEnergyCommunityService energyCo
             return Ok(new CommunityParticipationResponse(
                 meteringPoint.Id,
                 meteringPoint.MeteringPointCode,
+                meteringPoint.Customer.CustomerNumber,
+                meteringPoint.Customer.Name,
                 participation.ParticipationPercentage));
         }
         catch (ArgumentOutOfRangeException ex)
@@ -110,11 +112,14 @@ public sealed class EnergyCommunitiesController(IEnergyCommunityService energyCo
         return new EnergyCommunityResponse(
             community.Id,
             community.Name,
+            community.Source,
             community.Participations
                 .Where(x => x.MeteringPoint is not null)
                 .Select(x => new CommunityParticipationResponse(
                     x.MeteringPointId,
                     x.MeteringPoint.MeteringPointCode,
+                    x.MeteringPoint.Customer.CustomerNumber,
+                    x.MeteringPoint.Customer.Name,
                     x.ParticipationPercentage))
                 .ToArray(),
             community.CreatedAtUtc,

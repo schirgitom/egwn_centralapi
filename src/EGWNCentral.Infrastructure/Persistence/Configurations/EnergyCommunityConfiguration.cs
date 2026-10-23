@@ -14,6 +14,10 @@ public sealed class EnergyCommunityConfiguration : IEntityTypeConfiguration<Ener
             .HasMaxLength(200)
             .IsRequired();
 
+        builder.Property(x => x.Source)
+            .HasColumnName("Quelle")
+            .HasMaxLength(500);
+
         builder.HasMany(x => x.Participations)
             .WithOne(x => x.EnergyCommunity)
             .HasForeignKey(x => x.EnergyCommunityId)

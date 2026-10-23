@@ -7,6 +7,25 @@ namespace EGWNCentral.Tests.Infrastructure;
 public sealed class EnergyCommunityServiceTests
 {
     [Fact]
+    public async Task CreateAndUpdateAsync_ShouldNormalizeAndPersistSource()
+    {
+        await using var dbContext = CreateDbContext();
+        var service = new EnergyCommunityService(new UnitOfWork(dbContext));
+
+        var community = await service.CreateAsync("Community One", "  energy-provider  ");
+
+        Assert.Equal("energy-provider", community.Source);
+
+        var updated = await service.UpdateAsync(community.Id, "Community One", "  market-api  ");
+
+        Assert.Equal("market-api", updated?.Source);
+
+        var cleared = await service.UpdateAsync(community.Id, "Community One", null);
+
+        Assert.Null(cleared?.Source);
+    }
+
+    [Fact]
     public async Task SetParticipationAsync_AllowsMeteringPointInMultipleCommunitiesWithIndependentPercentages()
     {
         await using var dbContext = CreateDbContext();
@@ -24,9 +43,14 @@ public sealed class EnergyCommunityServiceTests
 
         Assert.Equal(65, firstParticipation.ParticipationPercentage);
         Assert.Equal(meteringPoint.Id, firstParticipation.MeteringPoint.Id);
+        Assert.Equal(customer.CustomerNumber, firstParticipation.MeteringPoint.Customer.CustomerNumber);
         Assert.Equal(80, secondParticipation.ParticipationPercentage);
         Assert.Equal(35, updatedParticipation.ParticipationPercentage);
         Assert.Equal(2, await dbContext.CommunityParticipations.CountAsync());
+
+        var community = await communityService.GetByIdAsync(firstCommunity.Id);
+        var participation = Assert.Single(community!.Participations);
+        Assert.Equal(customer.Name, participation.MeteringPoint.Customer.Name);
     }
 
     [Theory]
