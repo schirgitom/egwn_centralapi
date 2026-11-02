@@ -27,9 +27,12 @@ public sealed class CustomerConfiguration : IEntityTypeConfiguration<Customer>
             .HasFilter("\"IsDeleted\" = false");
 
         builder.HasMany(x => x.MeteringPoints)
-            .WithOne(x => x.Customer)
-            .HasForeignKey(x => x.CustomerId)
-            .OnDelete(DeleteBehavior.Restrict);
+            .WithMany(x => x.Customers)
+            .UsingEntity<Dictionary<string, object>>(
+                "CustomerMeteringPoints",
+                right => right.HasOne<MeteringPoint>().WithMany().HasForeignKey("MeteringPointId"),
+                left => left.HasOne<Customer>().WithMany().HasForeignKey("CustomerId"),
+                join => join.HasKey("CustomerId", "MeteringPointId"));
 
         builder.HasQueryFilter(x => !x.IsDeleted);
     }

@@ -14,6 +14,9 @@ public sealed class SeedDataTests
 
         Assert.Equal(459, await dbContext.Customers.CountAsync());
         Assert.Equal(681, await dbContext.MeteringPoints.CountAsync());
+        Assert.Equal(681, await dbContext.Set<Dictionary<string, object>>("CustomerMeteringPoints").CountAsync());
+        Assert.All(await dbContext.MeteringPoints.Include(x => x.Customers).ToListAsync(),
+            meter => Assert.NotEmpty(meter.Customers));
         Assert.Equal(11, await dbContext.EnergyCommunities.CountAsync());
         var communityNames = await dbContext.EnergyCommunities
             .Select(x => x.Name)
@@ -31,9 +34,9 @@ public sealed class SeedDataTests
         Assert.Equal("6", customer.CustomerNumber);
 
         var sharedMeter = await dbContext.MeteringPoints
-            .Include(x => x.Customer)
+            .Include(x => x.Customers)
             .SingleAsync(x => x.MeteringPointCode == "AT0080000816000000201803050055335");
-        Assert.Equal("9", sharedMeter.Customer.CustomerNumber);
+        Assert.Equal("9", Assert.Single(sharedMeter.Customers).CustomerNumber);
         Assert.Equal("generation", sharedMeter.EnergyDirection);
         Assert.Equal(2, await dbContext.CommunityParticipations.CountAsync(x => x.MeteringPointId == sharedMeter.Id));
 

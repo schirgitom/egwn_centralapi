@@ -22,6 +22,3428 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
 
+            modelBuilder.Entity("CustomerMeteringPoints", b =>
+                {
+                    b.Property<Guid>("CustomerId")
+                        .HasColumnType("uuid");
+
+                    b.Property<Guid>("MeteringPointId")
+                        .HasColumnType("uuid");
+
+                    b.HasKey("CustomerId", "MeteringPointId");
+
+                    b.HasIndex("MeteringPointId");
+
+                    b.ToTable("CustomerMeteringPoints");
+
+                    b.HasData(
+                        new
+                        {
+                            CustomerId = new Guid("218e0f3a-879b-1058-c62f-e8de075fa797"),
+                            MeteringPointId = new Guid("ef047e71-5b9a-ed04-a1cb-b43264ff2b67")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("43acd285-4cac-0190-1f3a-2e0adfc856ac"),
+                            MeteringPointId = new Guid("8ffda967-29c5-e16e-87b8-bb1db7370674")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("43acd285-4cac-0190-1f3a-2e0adfc856ac"),
+                            MeteringPointId = new Guid("c2111bf2-9de5-6c98-a3ce-f85921026427")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("43acd285-4cac-0190-1f3a-2e0adfc856ac"),
+                            MeteringPointId = new Guid("6f03a1db-ca0f-ad70-3564-e3cb782d59f5")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("d3d81866-00f6-73b9-eaea-efd9a73dfe1f"),
+                            MeteringPointId = new Guid("8bed9ae2-5fe1-b2c2-795b-39740d106ddc")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("1ad4efba-f1bb-6795-9994-cf211b7272fd"),
+                            MeteringPointId = new Guid("d85f95b1-3639-31f9-4fc9-1042effe8df9")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("1ad4efba-f1bb-6795-9994-cf211b7272fd"),
+                            MeteringPointId = new Guid("e3fdcba4-7368-5651-e897-67bf38745781")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("e58bb602-e608-ccf0-303a-44c68d65e10d"),
+                            MeteringPointId = new Guid("bfdad804-392b-60ae-afc8-00ac789f6979")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("e58bb602-e608-ccf0-303a-44c68d65e10d"),
+                            MeteringPointId = new Guid("2e7e0b5b-3c49-d719-3501-860fa5100675")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("e58bb602-e608-ccf0-303a-44c68d65e10d"),
+                            MeteringPointId = new Guid("46037f73-2503-bce8-1d7b-a9e8ab918290")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("336445c9-a74c-eb38-d6b4-d3b7980f9f16"),
+                            MeteringPointId = new Guid("66dbf53c-88a0-0a21-1372-d7b92bde0293")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("336445c9-a74c-eb38-d6b4-d3b7980f9f16"),
+                            MeteringPointId = new Guid("c870cc25-d689-5d31-bdc4-9f97057f4c72")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("336445c9-a74c-eb38-d6b4-d3b7980f9f16"),
+                            MeteringPointId = new Guid("530021c4-1cd2-58bb-0f97-cc739f104946")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("336445c9-a74c-eb38-d6b4-d3b7980f9f16"),
+                            MeteringPointId = new Guid("9ac72409-85ec-5d65-2a9d-40dd3eb97832")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("336445c9-a74c-eb38-d6b4-d3b7980f9f16"),
+                            MeteringPointId = new Guid("79825680-b9be-9f06-b03e-868e5baab623")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("336445c9-a74c-eb38-d6b4-d3b7980f9f16"),
+                            MeteringPointId = new Guid("6c55b8d4-58d4-bbb3-6177-819ad226505d")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("336445c9-a74c-eb38-d6b4-d3b7980f9f16"),
+                            MeteringPointId = new Guid("50449caa-ef93-86aa-3ca5-945a180c04f1")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("336445c9-a74c-eb38-d6b4-d3b7980f9f16"),
+                            MeteringPointId = new Guid("d13d3072-2598-0bd0-b8c1-dcd052a91efc")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("364ed966-d65c-a1db-c756-eb1abc4c4b43"),
+                            MeteringPointId = new Guid("a6f0250d-5d1f-f0ba-4672-dd4a42b333a5")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("e21898a7-0045-927c-13dd-5c23aab23d4b"),
+                            MeteringPointId = new Guid("d37b1d6a-a238-16c6-9bd4-031dfabbedac")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("7828e932-8ed8-d15c-8d9a-98d0e0b20aa9"),
+                            MeteringPointId = new Guid("5c42bb8d-8738-2628-acb9-257ecb393396")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("83cf7d50-74d7-bfcb-4c41-cff361cec025"),
+                            MeteringPointId = new Guid("b5c75c2f-730e-8d9c-40bd-2735b04da324")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("143a76e6-b351-d791-405e-7dc1d2d88cbd"),
+                            MeteringPointId = new Guid("ad364d22-eb39-4762-afb6-e0b46067d10b")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("143a76e6-b351-d791-405e-7dc1d2d88cbd"),
+                            MeteringPointId = new Guid("f9d676a5-83a7-1ff8-02ce-6c786b100f06")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("a70faea4-4a6c-ddca-3bba-35a358bb4ec4"),
+                            MeteringPointId = new Guid("0f1843ac-b538-8b8b-7937-241b5c95b4e9")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("c0807871-32a9-e085-0426-830dfc512b52"),
+                            MeteringPointId = new Guid("4a869124-47a4-a75e-7e2d-e99bb0b3877f")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("4ee805f8-1821-9601-d681-08f021bc50ae"),
+                            MeteringPointId = new Guid("fbaacfe6-7d58-a583-6b11-39396682726c")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("111dc07c-d94b-82db-5f6a-53ca287c2908"),
+                            MeteringPointId = new Guid("cec10323-1cf9-727d-ae51-9d7255d9fb85")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("90b17337-72b4-9079-6d7f-7898b7680b77"),
+                            MeteringPointId = new Guid("fa8429db-1bfd-2b3b-14c5-e17d9d302254")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("b65da3fb-239b-3e8d-893f-578b70526312"),
+                            MeteringPointId = new Guid("df072fb9-7d99-aede-728a-24e1ce976d6f")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("4d608625-9ec1-8e76-cb45-4b0eb398a91b"),
+                            MeteringPointId = new Guid("741aa35c-d35d-c706-19a6-63f22fd929d5")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("4d608625-9ec1-8e76-cb45-4b0eb398a91b"),
+                            MeteringPointId = new Guid("bfb0623a-b289-c7bd-d0a3-e2e4ad1b7d1a")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("c77b3606-4052-dcd8-f69e-e6601f501b3e"),
+                            MeteringPointId = new Guid("3532a1d9-fa72-85e7-d359-29c75dabc770")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("6db77350-409a-4a7d-9383-e92bcd83d70b"),
+                            MeteringPointId = new Guid("841aa636-6642-56df-b57b-5a345fea6cfd")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("6db77350-409a-4a7d-9383-e92bcd83d70b"),
+                            MeteringPointId = new Guid("e1c07234-f17a-0177-4cd2-6025fca20b35")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("b5b6ff5d-4894-2a47-f188-e17e4ae0d624"),
+                            MeteringPointId = new Guid("e3384cac-353a-3313-99c3-256420a04064")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("b5b6ff5d-4894-2a47-f188-e17e4ae0d624"),
+                            MeteringPointId = new Guid("bbb8f503-5ece-bbd4-fa0c-44cbc3c7bb0b")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("d78743b8-c57b-db61-a71a-160ca1bf9086"),
+                            MeteringPointId = new Guid("962e18da-0380-c341-5697-a2433f6eaf96")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("d78743b8-c57b-db61-a71a-160ca1bf9086"),
+                            MeteringPointId = new Guid("73c4305e-7846-a9d7-1a8d-358fccc587a8")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("54c6dd37-2e17-27de-0de7-c62cd109f077"),
+                            MeteringPointId = new Guid("910d2fc6-6d3a-3938-2302-51e952adde9b")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("8edb6e6f-30e9-6582-f251-3eb2890c9967"),
+                            MeteringPointId = new Guid("f1109f5d-e9db-3b9e-bd2f-5118725ecb50")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("8edb6e6f-30e9-6582-f251-3eb2890c9967"),
+                            MeteringPointId = new Guid("a7263a9c-019f-e624-f780-85f55bf30b7e")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("8edb6e6f-30e9-6582-f251-3eb2890c9967"),
+                            MeteringPointId = new Guid("56c805de-f235-b5da-f22f-7250f3847a1c")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("1fea674a-fc75-1627-a28d-e9f79dd91fbe"),
+                            MeteringPointId = new Guid("89a4e9aa-f116-a46a-846a-11b09a25043b")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("1fea674a-fc75-1627-a28d-e9f79dd91fbe"),
+                            MeteringPointId = new Guid("af318c62-1657-da20-da54-31134aae4103")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("1fea674a-fc75-1627-a28d-e9f79dd91fbe"),
+                            MeteringPointId = new Guid("dee211c8-f7b6-8ae6-bda8-bcf2189f3e52")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("1fea674a-fc75-1627-a28d-e9f79dd91fbe"),
+                            MeteringPointId = new Guid("8fd8d889-7a81-59d4-b56f-6be3b79a6754")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("1fea674a-fc75-1627-a28d-e9f79dd91fbe"),
+                            MeteringPointId = new Guid("68dd066c-d6d3-12d8-1f6a-0a55bd67b683")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("1fea674a-fc75-1627-a28d-e9f79dd91fbe"),
+                            MeteringPointId = new Guid("c6855c14-2b42-086d-4c12-549b07ca9037")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("1fea674a-fc75-1627-a28d-e9f79dd91fbe"),
+                            MeteringPointId = new Guid("d0e484f7-7048-3c57-5077-fc1daea94879")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("1fea674a-fc75-1627-a28d-e9f79dd91fbe"),
+                            MeteringPointId = new Guid("2a582092-2ffc-2b09-4755-82b40e502ccc")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("1fea674a-fc75-1627-a28d-e9f79dd91fbe"),
+                            MeteringPointId = new Guid("96890bde-0a86-f36a-e076-1ccc40157009")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("1fea674a-fc75-1627-a28d-e9f79dd91fbe"),
+                            MeteringPointId = new Guid("201487e4-7321-ab94-5153-10f67f1a0106")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("1fea674a-fc75-1627-a28d-e9f79dd91fbe"),
+                            MeteringPointId = new Guid("ee01716a-b3ae-1640-e7e8-7a649df02dfe")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("1fea674a-fc75-1627-a28d-e9f79dd91fbe"),
+                            MeteringPointId = new Guid("ec403c56-3607-1e96-329f-4c658c3fa466")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("1fea674a-fc75-1627-a28d-e9f79dd91fbe"),
+                            MeteringPointId = new Guid("0ef660d3-6b19-541b-4150-0bffcb37f623")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("1fea674a-fc75-1627-a28d-e9f79dd91fbe"),
+                            MeteringPointId = new Guid("bd3bfe98-de65-bfb3-69a6-b87723d3c654")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("1fea674a-fc75-1627-a28d-e9f79dd91fbe"),
+                            MeteringPointId = new Guid("8416a93f-6dd8-dbba-c1a6-75ac888c0348")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("1fea674a-fc75-1627-a28d-e9f79dd91fbe"),
+                            MeteringPointId = new Guid("19421a54-3110-5cf6-de54-320686a27d47")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("1fea674a-fc75-1627-a28d-e9f79dd91fbe"),
+                            MeteringPointId = new Guid("4646859f-adb3-a4d2-04c9-b05587518be5")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("1fea674a-fc75-1627-a28d-e9f79dd91fbe"),
+                            MeteringPointId = new Guid("382e6011-d8c4-9255-d4d1-102bcdec556a")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("1fea674a-fc75-1627-a28d-e9f79dd91fbe"),
+                            MeteringPointId = new Guid("b8ffef5b-c4ac-e071-584a-5d1b5fa2af08")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("21b51cf7-75c1-ffc4-31e0-d75514481acf"),
+                            MeteringPointId = new Guid("d8ea0ef6-628c-d025-34be-f9d8496c3625")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("3c1a5484-53dd-be99-da2e-a983ff5d06fc"),
+                            MeteringPointId = new Guid("773d4271-3ff5-78f8-8fc3-d4142d851fda")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("3c1a5484-53dd-be99-da2e-a983ff5d06fc"),
+                            MeteringPointId = new Guid("1f4e1363-4d2f-3be0-3916-ecfe81bbc741")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("70081a9b-0a9c-1fa7-3401-69ddde89e52c"),
+                            MeteringPointId = new Guid("b334ebc9-ee2b-c873-c3ae-960855fc70d2")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("70081a9b-0a9c-1fa7-3401-69ddde89e52c"),
+                            MeteringPointId = new Guid("b2a8cb65-166c-158c-f5d8-cd137e1b04db")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("87bf26e3-3887-7c2a-c42f-70cdd4deb567"),
+                            MeteringPointId = new Guid("0438375a-c0ec-6d43-3b18-30ede5cf930c")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("513b56ac-eb76-6360-5f46-e9e2a56a7942"),
+                            MeteringPointId = new Guid("b28fb7bf-6100-9150-bc3a-41931fb22537")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("513b56ac-eb76-6360-5f46-e9e2a56a7942"),
+                            MeteringPointId = new Guid("547e7b70-2d98-938c-31a8-15924cab35f0")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("b5eee575-5230-5551-221f-b59b14e86786"),
+                            MeteringPointId = new Guid("1ad51006-eb65-748a-3bbd-0afaa130b0a2")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("313294e5-7d57-16c6-b03d-354583ea8282"),
+                            MeteringPointId = new Guid("cc9754d1-b03c-6e29-425c-f5381360e59e")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("313294e5-7d57-16c6-b03d-354583ea8282"),
+                            MeteringPointId = new Guid("768a398e-49ec-a787-ae55-e06de292e9b1")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("fd2bf267-988b-1b2e-d0db-fecc6f68ae2b"),
+                            MeteringPointId = new Guid("b02341c1-35d5-5901-a4fb-6a34a085a6a3")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("fd2bf267-988b-1b2e-d0db-fecc6f68ae2b"),
+                            MeteringPointId = new Guid("0417f1f6-013d-fd8b-8b15-c03e2d90fb87")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("0fb3ae00-076f-7b38-2226-b966ebdb72c1"),
+                            MeteringPointId = new Guid("1bb625cc-ff08-6fd7-9ecb-bb2cfda14099")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("0fb3ae00-076f-7b38-2226-b966ebdb72c1"),
+                            MeteringPointId = new Guid("f5bb63bd-9b8b-1e15-3d60-ac8f9bc8c2f0")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("a49142ad-9a06-a9f4-c67d-4a06c6eb9bbf"),
+                            MeteringPointId = new Guid("714e4f1d-d2bb-34d1-6c3c-96b3a5189fb3")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("a49142ad-9a06-a9f4-c67d-4a06c6eb9bbf"),
+                            MeteringPointId = new Guid("41ee2eb1-1da6-68f8-a403-8f2f63726fab")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("6f443636-56eb-2b73-6068-029e33942881"),
+                            MeteringPointId = new Guid("f21d1eec-a6f3-39f5-c501-ff28be64d10a")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("6f443636-56eb-2b73-6068-029e33942881"),
+                            MeteringPointId = new Guid("ba357487-227f-b5c6-9a98-2b2c3ec7a7dd")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("e9c5ed92-bd96-d2f9-69e0-a71602b21d3a"),
+                            MeteringPointId = new Guid("a4a542c9-077d-cfce-3611-e2b558feb183")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("e9c5ed92-bd96-d2f9-69e0-a71602b21d3a"),
+                            MeteringPointId = new Guid("001d675d-7534-0a42-15fa-651b7f0ba49b")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("bd306cba-284a-a06b-bd93-c0451ef3f42b"),
+                            MeteringPointId = new Guid("26f4f392-7034-ee57-de01-50c12140b5fa")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("bd306cba-284a-a06b-bd93-c0451ef3f42b"),
+                            MeteringPointId = new Guid("85ae7141-5d6c-d73e-589d-8fc6b6e1b429")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("dbed09e7-1f72-24da-e748-14e96180b661"),
+                            MeteringPointId = new Guid("ba71e052-2390-015a-8092-c855e8b5a455")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("dbed09e7-1f72-24da-e748-14e96180b661"),
+                            MeteringPointId = new Guid("38d3fa0a-e876-4645-995e-4867905a00c7")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("201a2795-76c2-54f9-6847-8ae96dbdd33d"),
+                            MeteringPointId = new Guid("e17d1e75-6c24-de34-055c-54381bae0c22")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("a7f100b3-5c24-6126-7e49-ab1d7fe26840"),
+                            MeteringPointId = new Guid("f9672152-5e99-dd4f-f655-f5109f35fdd4")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("98c6c6d8-271a-db05-ba6b-23adda15d2b8"),
+                            MeteringPointId = new Guid("b0a16908-76fb-9c87-1a91-5f69496b6b04")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("da934a24-86ad-b8e9-48b7-6388c98a3e63"),
+                            MeteringPointId = new Guid("be57bd2c-c95c-7d37-eace-7b72859606ab")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("da934a24-86ad-b8e9-48b7-6388c98a3e63"),
+                            MeteringPointId = new Guid("943b8d7c-5aa9-9f7f-3b1d-e9d0cde1473d")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("7b884bd1-f479-bce6-6d84-3d5e544a77d8"),
+                            MeteringPointId = new Guid("2808e9a7-1e1d-2de2-43b4-27ecc6f13810")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("9a2c5f86-bd86-5cbc-978b-b12eb2073e6c"),
+                            MeteringPointId = new Guid("647297cd-3098-2fa2-189b-fbe3ca70413f")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("6cc27938-5f38-9c3b-b1ac-c13ecb7a9baf"),
+                            MeteringPointId = new Guid("20235a9f-5b9b-01f1-a7bf-8acf3c358211")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("6cc27938-5f38-9c3b-b1ac-c13ecb7a9baf"),
+                            MeteringPointId = new Guid("58ebfe0c-1c1b-d4d7-c994-8bfeb8cb0784")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("4d2fca80-47d4-b366-c819-df199e20a3d2"),
+                            MeteringPointId = new Guid("9db54e39-a31f-33c5-eb65-16de058753a9")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("083917fd-d389-da4f-a34d-f805c2ff7347"),
+                            MeteringPointId = new Guid("fe17bec9-c12f-ab49-41ca-63022c8fc03b")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("0470db8e-8dad-f18a-7f7a-4d7fa4c5944c"),
+                            MeteringPointId = new Guid("ef33dbef-efe8-05db-e0ed-c7104fedcd5a")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("0470db8e-8dad-f18a-7f7a-4d7fa4c5944c"),
+                            MeteringPointId = new Guid("8dce60e7-ae03-dbd5-a232-dd28f7d5c07d")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("26ae226b-c171-2389-e4cd-a874fafda1e3"),
+                            MeteringPointId = new Guid("c98fda51-08ef-ff1c-f871-5d7957104ef5")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("26ae226b-c171-2389-e4cd-a874fafda1e3"),
+                            MeteringPointId = new Guid("f7a328e8-0220-aaa9-d37c-c6ed716a5f2b")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("8b727f6c-7b99-d597-4c19-bd5a26ca8451"),
+                            MeteringPointId = new Guid("d5571310-20a5-d668-e7b5-31c2382d91fe")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("8b727f6c-7b99-d597-4c19-bd5a26ca8451"),
+                            MeteringPointId = new Guid("d68268f8-4167-589d-6a7a-8c80caf46f8d")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("d94866df-5040-4544-53a7-cde3244c2f79"),
+                            MeteringPointId = new Guid("8d5a56e3-ba10-8aa5-a26b-4d13296b0600")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("8567c93d-1c6e-0e4d-1024-db3317b269b9"),
+                            MeteringPointId = new Guid("e1b235a6-479a-799a-05b3-b1d3e7639a21")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("537b826b-a9ed-4cfd-ac5b-42bf79928864"),
+                            MeteringPointId = new Guid("1ac54199-b909-4b1c-6f70-147e517d7316")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("537b826b-a9ed-4cfd-ac5b-42bf79928864"),
+                            MeteringPointId = new Guid("2e424597-7450-513a-3707-2ff0780be0b7")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("1df838ce-2bcc-76c1-1f13-38c82656fd45"),
+                            MeteringPointId = new Guid("3cae5e62-7adb-1a95-91ca-0d4aa44d3807")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("bf98c312-2130-94e7-b6fe-6eb01fe5cd9f"),
+                            MeteringPointId = new Guid("b2a747d0-ca62-977f-b2cb-a02ca9dd5949")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("bf98c312-2130-94e7-b6fe-6eb01fe5cd9f"),
+                            MeteringPointId = new Guid("f37fce59-10cc-62ce-c5cb-164e42e36fee")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("e42f9f49-9e49-a4d6-0ea2-5226f981ef12"),
+                            MeteringPointId = new Guid("2df0d405-458d-b8e0-7350-d3712f651aed")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("e42f9f49-9e49-a4d6-0ea2-5226f981ef12"),
+                            MeteringPointId = new Guid("8ba1ecfa-1b96-dc4a-73c6-7d314aa53040")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("aa61febb-c7c4-b945-4074-38dcbc9d6ff8"),
+                            MeteringPointId = new Guid("9cb3e3c4-101f-2fcf-5010-7c8eb87fa3c3")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("aa61febb-c7c4-b945-4074-38dcbc9d6ff8"),
+                            MeteringPointId = new Guid("ab321e18-f627-4924-4a30-b6528af0ecb0")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("5f0ce931-8922-55a3-ad4f-08e26726c0e4"),
+                            MeteringPointId = new Guid("1f1b30f5-7ff7-6e9b-2864-4569717008cf")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("76892c1a-b2b6-a26f-89e1-15a4a4a9ff4d"),
+                            MeteringPointId = new Guid("20d5169b-45c5-beb8-4640-5d8fd7374f21")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("20dcfff0-43cf-16f0-9711-a875a645085e"),
+                            MeteringPointId = new Guid("f9cfbf93-19eb-0bdb-f837-8fd4392366f2")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("20dcfff0-43cf-16f0-9711-a875a645085e"),
+                            MeteringPointId = new Guid("dfddb19d-0e2a-ba5c-6868-460d1eb2fdf6")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("ffca2d3f-4702-ab1d-4f4d-883d378a92ef"),
+                            MeteringPointId = new Guid("6c09b16c-f27d-701d-a2a7-59e6b36ea1c5")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("ffca2d3f-4702-ab1d-4f4d-883d378a92ef"),
+                            MeteringPointId = new Guid("39daeb5f-d38b-1eed-8079-ac7e7ba6e4ab")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("a39369c8-3bc4-bc0e-6c41-d3ac8dc819bd"),
+                            MeteringPointId = new Guid("477d158c-12df-aca6-edbd-b3d6c60d0df2")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("1126893c-391e-61e4-7585-80557952d0cd"),
+                            MeteringPointId = new Guid("cbf185ef-4f0f-0979-4ff8-3e4b9bd9d67a")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("1126893c-391e-61e4-7585-80557952d0cd"),
+                            MeteringPointId = new Guid("af5015d6-6c19-1adb-4328-d2fb3ae695b8")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("1126893c-391e-61e4-7585-80557952d0cd"),
+                            MeteringPointId = new Guid("9ab7b095-1e3a-3a13-76b0-fbd3134aed20")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("b96a5335-d019-6468-ab90-e8695ec85aeb"),
+                            MeteringPointId = new Guid("c5745cba-1a5c-9571-8df0-75f83456abb4")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("b41a5bb1-39d1-efd6-78c3-73256abbc7e6"),
+                            MeteringPointId = new Guid("689a6a1c-6b84-7cf1-c0b5-7fef85493855")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("5dbc0b76-cf70-3d95-c79e-af65ac29aa9e"),
+                            MeteringPointId = new Guid("e7e5deb0-8cdb-237c-4609-68a179d0c12e")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("5dbc0b76-cf70-3d95-c79e-af65ac29aa9e"),
+                            MeteringPointId = new Guid("8edbb852-8a4b-009f-e6a2-e384001fd094")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("55823e36-ac80-fdff-8813-e7e8d50dae77"),
+                            MeteringPointId = new Guid("c430a8c6-f58c-ebb9-0cb3-0ac5ac957279")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("9fbf0fe0-22e8-ea42-dd85-cda7dd952644"),
+                            MeteringPointId = new Guid("49fa0c5a-05eb-c863-d93c-df3762423b07")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("1cf924b0-61a9-7862-c9bf-6b4ac402a130"),
+                            MeteringPointId = new Guid("4f050f1e-aa3b-3d5b-df12-c9506b210f2e")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("ae3ca3ac-ebfa-d41e-d56c-d0b92135f59b"),
+                            MeteringPointId = new Guid("aacc1662-160c-d585-5c82-fe59d473b2b4")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("4efc3164-cf8c-46d4-4982-8cbd7bcb80e6"),
+                            MeteringPointId = new Guid("28ab7eb0-f404-25a0-ef45-70b7f3bc6004")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("e08057d1-55aa-8932-64e4-cfb701e65d91"),
+                            MeteringPointId = new Guid("35e17716-541a-aa6f-6c3e-8eaa7488be60")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("c45be0d9-adba-36b5-01da-f8ab4191c1a6"),
+                            MeteringPointId = new Guid("35b870a7-1b7c-690c-d408-7a01410f82b8")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("9fbc7565-5831-8595-50a2-7aedff28c43d"),
+                            MeteringPointId = new Guid("9eb3e67c-6b05-2c94-d16f-6cf50fe3cabb")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("9fbc7565-5831-8595-50a2-7aedff28c43d"),
+                            MeteringPointId = new Guid("fb94b031-c97f-42d9-242f-0a5f21972302")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("ebc23f35-8b20-a894-6044-5c6941cf5ca6"),
+                            MeteringPointId = new Guid("042450b3-44dd-d16a-f01b-850bcb790533")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("092fcc0f-9926-7ea0-fb9d-ba0fee77cd5a"),
+                            MeteringPointId = new Guid("bc605a57-f0ed-ab20-896e-7320cf2ab3fa")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("092fcc0f-9926-7ea0-fb9d-ba0fee77cd5a"),
+                            MeteringPointId = new Guid("6fa676d9-5446-a91c-5c63-addb0319883a")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("5067485e-a1d4-2dce-ec24-955d8fff8421"),
+                            MeteringPointId = new Guid("1736ac71-c5d8-b751-bc90-23abc548f100")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("b19b5fc7-343a-58ec-4871-05762405f95a"),
+                            MeteringPointId = new Guid("7c6d1901-d3ee-8f6c-26c1-b9ec2dbe23a5")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("b19b5fc7-343a-58ec-4871-05762405f95a"),
+                            MeteringPointId = new Guid("9e3d23c0-9122-908f-3e9e-30e43c20ea9d")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("ade583e3-89bc-a133-9017-e485bf86ac9f"),
+                            MeteringPointId = new Guid("8162514f-9473-ce1f-c881-26664a9adcb4")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("ade583e3-89bc-a133-9017-e485bf86ac9f"),
+                            MeteringPointId = new Guid("4762c32f-79f7-af91-c823-c2c59c149464")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("ade583e3-89bc-a133-9017-e485bf86ac9f"),
+                            MeteringPointId = new Guid("abace5d2-90b6-fa70-2eba-ecaebab9edba")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("9976aa71-db88-6a44-8e3e-6484f1b2376a"),
+                            MeteringPointId = new Guid("302aa597-a9e2-eb3c-7ea4-2a11afd48a4a")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("798e9908-db35-b510-baaf-7e5031421ffe"),
+                            MeteringPointId = new Guid("d5f8478b-a17b-5698-d2a6-0d37a3a7ec4e")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("0cb44ea8-b29a-2072-85b5-80ad342e4309"),
+                            MeteringPointId = new Guid("8b96873c-192e-216f-e436-0b7fac74bf9f")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("616e76bf-6be6-b3de-b8a0-f2d2300ae423"),
+                            MeteringPointId = new Guid("b579ccb8-e441-d56a-9deb-7446e3f00c44")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("616e76bf-6be6-b3de-b8a0-f2d2300ae423"),
+                            MeteringPointId = new Guid("9e9e665c-99fb-2ede-3f15-bab4c3523a69")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("989c0340-3585-c4d5-f2ab-a0daf524fa7f"),
+                            MeteringPointId = new Guid("a6fe2507-ad19-3a9c-766a-38952c21763d")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("80d8980c-43c6-ac1e-ce7d-178190077d64"),
+                            MeteringPointId = new Guid("5f0c3b31-909f-1c1c-a922-7b73fbc3c131")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("80d8980c-43c6-ac1e-ce7d-178190077d64"),
+                            MeteringPointId = new Guid("97c505ac-fb0a-21e7-734d-0e42092302af")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("42e5df99-8a7a-f554-48f1-93b0386fb87c"),
+                            MeteringPointId = new Guid("935a3832-f40b-2908-c2a7-434f3a34882d")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("e152d25a-db03-6e7c-217d-6f63e9899cd9"),
+                            MeteringPointId = new Guid("687b0a1e-5c79-22c1-d74b-cb5b0a202292")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("ca56fc23-e253-1b48-04aa-4c363dc800f5"),
+                            MeteringPointId = new Guid("29497da8-43ed-27f2-d7c3-d1d0d9617ab8")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("ca56fc23-e253-1b48-04aa-4c363dc800f5"),
+                            MeteringPointId = new Guid("a8f312e7-729a-d18e-8caf-91e0993e0a2e")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("7d6dde30-d5e1-1a23-e4f7-a4af8cdb1074"),
+                            MeteringPointId = new Guid("62921347-3fe0-fd61-b54b-e407a2929e6a")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("7d6dde30-d5e1-1a23-e4f7-a4af8cdb1074"),
+                            MeteringPointId = new Guid("5ed65a19-2055-5d8c-3976-a5033bbb7f22")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("abe1f133-f38e-050e-67d1-17e4eac32343"),
+                            MeteringPointId = new Guid("a0b65403-86df-f7de-7148-2bfd2b38d937")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("0cc4ff47-ae73-8b27-272d-1af626e1b4de"),
+                            MeteringPointId = new Guid("3ccf802c-94de-6db3-0858-da19e31d8cd1")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("0cc4ff47-ae73-8b27-272d-1af626e1b4de"),
+                            MeteringPointId = new Guid("3af499e6-3408-6958-c796-a01f84ebbac6")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("c31bf8b5-6bc5-8b88-41a4-992456a3d193"),
+                            MeteringPointId = new Guid("3b6cc142-b48f-3dbb-e511-5ea988c348d2")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("de0f966c-fb50-c145-bef4-fff562bb76f7"),
+                            MeteringPointId = new Guid("1b62ccaf-7d71-709e-e8fa-e5ee3c45e1a2")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("de0f966c-fb50-c145-bef4-fff562bb76f7"),
+                            MeteringPointId = new Guid("109caf33-a00e-86db-5986-07b7f9d35c6c")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("bf2295f1-6c88-ca34-658f-b249b6bc26f5"),
+                            MeteringPointId = new Guid("78762416-97ff-1c0f-e84f-f8d13f12d871")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("bf2295f1-6c88-ca34-658f-b249b6bc26f5"),
+                            MeteringPointId = new Guid("a2881394-4dd0-865c-cf1d-d485ad15aabd")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("863e7a1b-cdd1-f485-e8ed-b9b4c510aaf8"),
+                            MeteringPointId = new Guid("a59b8260-9304-8395-ab69-54b29734ac17")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("30aa9dce-ac2e-8f1b-5144-324142ee4e16"),
+                            MeteringPointId = new Guid("6416a5c9-1d0d-31c5-1277-9a55d4f3f156")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("e9a47253-da66-af44-4641-039da83ccee6"),
+                            MeteringPointId = new Guid("de0a0b59-29b8-7f17-a3e2-6d1cf4184635")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("22f0bc22-d834-1cbf-4a79-0f9f5fae4c93"),
+                            MeteringPointId = new Guid("405632f9-9a69-a15f-c440-34dd82df78c7")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("22f0bc22-d834-1cbf-4a79-0f9f5fae4c93"),
+                            MeteringPointId = new Guid("142a21f5-3fde-8376-be93-cacd122a9af8")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("c7a4cbc2-385d-9cdc-69ae-d2ed60f69d07"),
+                            MeteringPointId = new Guid("ad595759-47a5-017f-475f-ef2c7ce0032a")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("72643121-1921-d8f0-5097-a661fe2c270f"),
+                            MeteringPointId = new Guid("a492bfee-c8ca-eccf-41b9-887fa6a77e11")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("d224fe9d-4d2c-dd42-7ec9-eaba907236de"),
+                            MeteringPointId = new Guid("7d393c2f-a91c-cdca-a66b-ba01eea0a6b4")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("bcc8dc57-d97b-b4d9-7cf5-4929c5350ebb"),
+                            MeteringPointId = new Guid("ffe7a05b-7caa-a490-cfbd-17208fc24538")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("c519ec02-548d-98ce-1004-777fcb8fa449"),
+                            MeteringPointId = new Guid("61832f4e-ed77-f53f-d877-bef7fd4b8ea7")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("25e39894-2fbc-3c3b-43b8-248719dfa849"),
+                            MeteringPointId = new Guid("639e435d-347d-1288-0b37-d98a5696666b")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("25e39894-2fbc-3c3b-43b8-248719dfa849"),
+                            MeteringPointId = new Guid("ac42f2b6-3bb2-68cc-f0f0-7ccd083f2baa")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("60a4d2e9-a0b1-aa76-7629-60cf3f1922c8"),
+                            MeteringPointId = new Guid("dd6a43db-e7b0-30a7-8ccf-92eda7b63698")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("60a4d2e9-a0b1-aa76-7629-60cf3f1922c8"),
+                            MeteringPointId = new Guid("9dd69492-7394-a256-5668-f04a413bfc3b")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("7be8d116-8059-16c6-ba63-5fa740f5e2c1"),
+                            MeteringPointId = new Guid("bbf48b92-3dee-7bb7-50bb-4bf162ff15b4")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("7be8d116-8059-16c6-ba63-5fa740f5e2c1"),
+                            MeteringPointId = new Guid("6adfa4fb-75f3-9682-2b3a-d29be5490ebe")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("27adadb1-1a31-2028-3200-de6892f20643"),
+                            MeteringPointId = new Guid("1bad26e3-0c2f-2904-899a-bc1425cda12a")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("9e9e9863-6741-d929-9aba-4605bf21d9bf"),
+                            MeteringPointId = new Guid("8733c2a9-fa54-3590-7717-cd18e2c0e2e6")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("0c6aea9c-ac6d-db3d-2be3-23774cb2b3f4"),
+                            MeteringPointId = new Guid("dafd08c7-b5d5-e89e-0a35-347e2139d5a5")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("977976e6-15b8-0409-cfa2-10f7deb5d0ae"),
+                            MeteringPointId = new Guid("aa414456-8803-b82c-1aac-087d8c837adf")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("977976e6-15b8-0409-cfa2-10f7deb5d0ae"),
+                            MeteringPointId = new Guid("301d21b9-9fcb-d309-a4ae-bb653a759748")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("2cb635d2-896b-e8f2-0b6b-067e7cffedb7"),
+                            MeteringPointId = new Guid("11cd6c1b-fd54-2889-f312-165ec1f301e5")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("bdbf4439-28ab-5d54-ed91-3e872169eaa5"),
+                            MeteringPointId = new Guid("95c3313c-01e0-b8b8-2eac-ba593fdc515c")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("bdbf4439-28ab-5d54-ed91-3e872169eaa5"),
+                            MeteringPointId = new Guid("dd194ca7-8a86-c762-166a-0b567319d6a9")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("7e22e22f-eaa3-92e9-f4e7-07f23925b0a8"),
+                            MeteringPointId = new Guid("e0e5cff7-e7c2-0ddc-11a7-3bf5ff3c4b11")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("7e22e22f-eaa3-92e9-f4e7-07f23925b0a8"),
+                            MeteringPointId = new Guid("88d2cce2-c175-27c4-1ee6-7da8b2a71b95")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("7cec173c-06a9-72ef-3850-094f557bbe52"),
+                            MeteringPointId = new Guid("9bab033c-7526-d04c-fcf3-37c01f24aaed")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("fd7dfad4-fe0f-7417-812f-d554f5675221"),
+                            MeteringPointId = new Guid("21ef8314-f479-5a4b-e9a4-b0f08fa219ef")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("adac599b-b08d-c474-7089-bcc1cc028dbf"),
+                            MeteringPointId = new Guid("edc24f40-69d2-9a23-4694-e82a30d6428d")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("adac599b-b08d-c474-7089-bcc1cc028dbf"),
+                            MeteringPointId = new Guid("62fcd715-f5c3-6830-70bb-562b8a489a60")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("71410a21-e1d1-ef9e-0ee4-66c44aae869a"),
+                            MeteringPointId = new Guid("f4ff891f-2938-25c2-964e-d7aa293b94ec")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("71410a21-e1d1-ef9e-0ee4-66c44aae869a"),
+                            MeteringPointId = new Guid("df2f42b1-903e-655a-3189-fd739cd13b67")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("69ef6501-963b-3c60-381b-953fee6c8f93"),
+                            MeteringPointId = new Guid("3905557d-5c30-d091-3a04-7a64b871a579")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("f78436d4-c8b0-4fc9-8996-f17d47f58b0b"),
+                            MeteringPointId = new Guid("e6d93f0d-69ef-55b1-17d6-288d9004e62a")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("f78436d4-c8b0-4fc9-8996-f17d47f58b0b"),
+                            MeteringPointId = new Guid("3c57c294-f683-8b56-cee4-90f6a2e98eb3")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("38ded216-9385-10b3-c225-5ac603823e8a"),
+                            MeteringPointId = new Guid("4317ce4c-7752-3a1e-43bf-6ced508aacd4")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("38ded216-9385-10b3-c225-5ac603823e8a"),
+                            MeteringPointId = new Guid("943a7c08-cc9a-e677-c368-84fc48049086")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("835e0c8b-77a7-d0e6-c5a8-f31ab818207d"),
+                            MeteringPointId = new Guid("f035ad1b-12bd-8149-5366-56ff1638fe97")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("835e0c8b-77a7-d0e6-c5a8-f31ab818207d"),
+                            MeteringPointId = new Guid("1a827fd8-d6ce-0f52-429a-fb24ae6d8c9d")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("7fce0753-536c-dda3-8b61-61108466c944"),
+                            MeteringPointId = new Guid("1eb37960-6178-45b7-7cac-2434376c4d4b")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("cb563f98-1067-b1a0-fec9-969a30b40a85"),
+                            MeteringPointId = new Guid("0d67ebb7-6722-12f1-9aef-075bd2c3454c")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("10d0801b-d1ff-d16d-3582-986e480a6015"),
+                            MeteringPointId = new Guid("5bcc712a-2cb7-92f0-930e-50037fe459ad")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("8577d306-388b-4943-22ce-c22121b8e3c0"),
+                            MeteringPointId = new Guid("be220ba7-4d1d-42a1-3149-ed8595a5868d")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("70c8e75b-7683-a45b-7a2b-c8a73d9fd790"),
+                            MeteringPointId = new Guid("dcc9d7ec-822e-17b9-c4a9-6fdbaf0d8974")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("70c8e75b-7683-a45b-7a2b-c8a73d9fd790"),
+                            MeteringPointId = new Guid("e4fa0eb1-9851-6677-45c7-278e31040149")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("e1a503ce-bb0c-4179-819e-7dbd09f14c22"),
+                            MeteringPointId = new Guid("dd92d822-df47-4a52-19b2-cb93eb0a797f")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("e1fd632f-7a86-e83b-0311-797430168219"),
+                            MeteringPointId = new Guid("248d0267-d0a9-5a84-9e66-ebc500b715f0")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("e1fd632f-7a86-e83b-0311-797430168219"),
+                            MeteringPointId = new Guid("57255940-3f4a-01a3-96db-59fc309fd874")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("79cb790d-e702-1874-4da6-fdbda01e1620"),
+                            MeteringPointId = new Guid("47b89dc3-18ae-fd72-5ee0-86d7e1735c36")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("79cb790d-e702-1874-4da6-fdbda01e1620"),
+                            MeteringPointId = new Guid("fe352361-6ebe-51a8-fffa-60c5f2aafa30")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("6c4ea4ee-70a7-8947-64d5-0267f36c9ea2"),
+                            MeteringPointId = new Guid("45bc992b-66c4-730f-89e1-fde10fbcbae7")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("70bda7c6-0fef-c10f-9ed5-758c4e46b8e9"),
+                            MeteringPointId = new Guid("7bc5ba4f-2ad6-f737-982c-15a89b4da636")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("57a86034-5cad-f0d3-a4b3-2a76048b6a95"),
+                            MeteringPointId = new Guid("36581f01-5dd3-f276-c993-37dfd961819c")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("68c95eca-e9c7-4687-67ca-49d42fea1179"),
+                            MeteringPointId = new Guid("3d65b93f-ebb4-6a07-b7b7-a30c9744acc7")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("29c53d8b-0024-d38f-b7df-c08128dc7f7d"),
+                            MeteringPointId = new Guid("28c3df81-173b-1a91-c9e6-e43749f52945")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("29c53d8b-0024-d38f-b7df-c08128dc7f7d"),
+                            MeteringPointId = new Guid("63d2d299-0a6b-87dd-b21b-9b66b94ca371")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("905f2a27-62a8-ef06-cf00-a376f970a2f3"),
+                            MeteringPointId = new Guid("e595ce45-c154-a1a1-0aa0-d56d629afdbc")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("4e3ecad5-7e2d-1c73-9596-27d514f7ffc5"),
+                            MeteringPointId = new Guid("c358f94a-89af-f309-f3fb-d04a9dd1705f")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("bd90e12c-de32-980b-1689-d7fe40a43bfd"),
+                            MeteringPointId = new Guid("2f8bed29-6891-32c6-1e3a-04c3c45556f6")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("bd90e12c-de32-980b-1689-d7fe40a43bfd"),
+                            MeteringPointId = new Guid("7cc4114d-7730-3c7d-9dfd-7f10166a0596")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("ca18a712-1a2c-bc13-eee0-624d4de6536c"),
+                            MeteringPointId = new Guid("39054db0-6a08-913d-647a-76c197f026ed")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("b3a96ac7-e05a-d279-511c-4db1ed1be383"),
+                            MeteringPointId = new Guid("a6045217-5a46-0efd-b0ef-51dc4e8ec971")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("b3a96ac7-e05a-d279-511c-4db1ed1be383"),
+                            MeteringPointId = new Guid("5cf1eb73-5505-2050-f1ef-1694be4f668d")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("d350acde-406f-487a-cb5c-acaee72d98d1"),
+                            MeteringPointId = new Guid("bf06e5c6-f623-5d1c-6e07-29b7134e0ca9")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("ede092f1-6539-d73c-6fe2-5c91df8fb025"),
+                            MeteringPointId = new Guid("67685cbe-b9de-68d1-7a2b-971ad0744402")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("ede092f1-6539-d73c-6fe2-5c91df8fb025"),
+                            MeteringPointId = new Guid("3c2abcd6-a621-e041-ce98-fde9a3e5d4ec")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("ede092f1-6539-d73c-6fe2-5c91df8fb025"),
+                            MeteringPointId = new Guid("6dbb5a21-8b6a-bf13-cd3d-d325304b703d")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("2c8ddd63-e04c-2785-288d-cfa86cb6c071"),
+                            MeteringPointId = new Guid("82beda47-1604-cb3b-9191-711c89113f00")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("21c4934c-62ff-1506-85dd-c2e55419e3ff"),
+                            MeteringPointId = new Guid("7d959b23-c412-ee75-83fd-3f69f45670bc")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("9291a6ce-6948-2702-b9d6-a5a0ae413e91"),
+                            MeteringPointId = new Guid("763c46bd-6d68-a1c9-f2d1-08e06a65db3e")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("a7406165-ae51-1e1e-ed91-bc12bc977022"),
+                            MeteringPointId = new Guid("0b6db0e8-1b3e-2a0e-523e-048a9e02b97f")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("1a4ff5f5-0887-4d85-3f93-3b9479e440c4"),
+                            MeteringPointId = new Guid("107fb22f-c595-e762-4884-8d93aea23763")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("1a4ff5f5-0887-4d85-3f93-3b9479e440c4"),
+                            MeteringPointId = new Guid("28aaa883-b34f-9add-9960-ab95b748c607")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("75319fa9-886c-fe08-1015-db957c876ebb"),
+                            MeteringPointId = new Guid("d3332018-24ab-30c2-b67e-9b531110183e")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("75319fa9-886c-fe08-1015-db957c876ebb"),
+                            MeteringPointId = new Guid("70c74d41-ffcd-a48e-1f03-ed9fe9a28e17")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("75c77a21-cde8-f0df-8064-76d28fecd732"),
+                            MeteringPointId = new Guid("022cef88-5155-e09f-08b1-f56e820bf3b2")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("f545596d-c2aa-d08b-0253-916d453a7815"),
+                            MeteringPointId = new Guid("c23f4a0f-e41c-7975-3ce2-491a9a01420b")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("f545596d-c2aa-d08b-0253-916d453a7815"),
+                            MeteringPointId = new Guid("1ff09ae2-68e3-29c3-d5bd-a118321dbc81")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("f636a2a5-b7dc-3eb6-b286-60b26412fedf"),
+                            MeteringPointId = new Guid("0f2c2b15-d4ee-ea3a-d3af-e4ebf7faff5b")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("9f94306b-0174-94cc-7e6f-c31c21c747c2"),
+                            MeteringPointId = new Guid("e4ba74cd-9074-de88-52d3-7a9386b632e0")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("4248d30b-a2e1-b877-90dd-2c6ecc293ec4"),
+                            MeteringPointId = new Guid("059f4d9b-ff81-967d-0a33-62f64fcfc482")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("4248d30b-a2e1-b877-90dd-2c6ecc293ec4"),
+                            MeteringPointId = new Guid("a8e14862-bdc6-1c9c-b223-723e5ed2e641")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("4248d30b-a2e1-b877-90dd-2c6ecc293ec4"),
+                            MeteringPointId = new Guid("d09399b5-5133-cb8a-42b5-be957a9e55e3")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("cd02f4a7-f439-c3ad-20f5-883415d6235f"),
+                            MeteringPointId = new Guid("66a82fc5-8979-d2b9-613f-c3c30bb513a6")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("eaa54947-ad15-da80-ecbb-5c0fcebbd86e"),
+                            MeteringPointId = new Guid("a71e5739-5713-d813-09ea-851dcad4ea16")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("59b602c2-68a7-9768-3df8-9ca61dcf23b6"),
+                            MeteringPointId = new Guid("869f55e0-7f90-521b-22f7-7fad43843513")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("3f5fcfef-a97f-5807-01d1-6e79cc303f87"),
+                            MeteringPointId = new Guid("c069b93e-9218-fd0b-bea4-56365f1dc32f")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("3f5fcfef-a97f-5807-01d1-6e79cc303f87"),
+                            MeteringPointId = new Guid("76ff4fdc-d135-eba5-f81f-61f1e6f7bb67")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("13d7d5a8-a957-ac8e-29e4-afce7ef72d0b"),
+                            MeteringPointId = new Guid("96e57454-65ec-adde-fbba-9619e5c43a40")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("13d7d5a8-a957-ac8e-29e4-afce7ef72d0b"),
+                            MeteringPointId = new Guid("3610f243-13ad-36a0-baad-d4a7d2b93ec0")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("d55334f4-1396-b85b-df17-a8b917b1009d"),
+                            MeteringPointId = new Guid("058ba443-43b8-c131-72d5-41ffa6fb9c70")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("d55334f4-1396-b85b-df17-a8b917b1009d"),
+                            MeteringPointId = new Guid("24d743f3-62d1-83f5-857c-82cbb5eb9803")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("d55334f4-1396-b85b-df17-a8b917b1009d"),
+                            MeteringPointId = new Guid("a42df142-73b3-c273-2f95-7b966e55f2d7")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("cb38c566-a76b-e73d-f6a7-10a137c4d642"),
+                            MeteringPointId = new Guid("6d920294-abe6-a1a4-672b-d9471c4d3c5d")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("cb38c566-a76b-e73d-f6a7-10a137c4d642"),
+                            MeteringPointId = new Guid("d5b92a75-2d87-6186-0b04-c861149aae06")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("54f6b28f-04f2-a9ee-6628-c0a87b0b68d6"),
+                            MeteringPointId = new Guid("5033f216-9042-6c46-930c-57fbdbf0af33")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("41fc84d0-d1c2-b39a-6f53-3d30a7f6d2e8"),
+                            MeteringPointId = new Guid("a9483aa1-e78f-5ade-9fca-5aa4951c9b55")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("c326956b-b90c-4326-bf04-e9d1bc7bdc6c"),
+                            MeteringPointId = new Guid("9e9e69f3-f0cd-21ed-97ff-6e068567cdc1")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("c5521a4f-d5dd-cd0d-e3ed-af773d4ea8d2"),
+                            MeteringPointId = new Guid("3e3bc408-18b5-5821-d046-7414bfee5ab8")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("c5521a4f-d5dd-cd0d-e3ed-af773d4ea8d2"),
+                            MeteringPointId = new Guid("d03d1bd0-d7f4-0c7a-9681-e88f4054a60c")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("eb891436-fca1-65ce-08c6-139b9028529d"),
+                            MeteringPointId = new Guid("fdacdd2e-e6d9-06be-b9af-7fb1e2e97a61")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("eb891436-fca1-65ce-08c6-139b9028529d"),
+                            MeteringPointId = new Guid("74b4fc74-93db-7fbc-d8d4-47f040b16ad3")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("793b1a01-2211-2baa-af00-9d655fc7e421"),
+                            MeteringPointId = new Guid("efb64cc2-6824-350a-4058-94cdbbd28497")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("793b1a01-2211-2baa-af00-9d655fc7e421"),
+                            MeteringPointId = new Guid("761c0d00-2e73-14e1-feb7-49943f6ee7f4")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("fb965b81-c4b5-3ada-4dab-8a336d8a6a68"),
+                            MeteringPointId = new Guid("dfc0dcd8-5d9f-01c5-6660-1595f95532a9")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("2383bc60-978a-7715-a433-0bc585514c0e"),
+                            MeteringPointId = new Guid("ca833158-a907-5f7f-c2fd-c1098b5a784d")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("8bfb1b54-17fd-f295-f410-b61469787f28"),
+                            MeteringPointId = new Guid("ccc35f57-e239-3ae9-f879-13bcdacba72e")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("8bfb1b54-17fd-f295-f410-b61469787f28"),
+                            MeteringPointId = new Guid("bbdd602b-bef7-9806-19f3-19e0f5d66fc0")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("cc5ced4f-0fe4-c151-9ca2-bbf6b98c2f47"),
+                            MeteringPointId = new Guid("be9b916d-aed3-31cf-e9c4-f397b2b0ce2f")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("2c5e47eb-30c7-fe42-3890-74894d135629"),
+                            MeteringPointId = new Guid("86ac35ac-e413-4d74-78f4-a26d19577728")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("b31ea8b8-a61e-c950-396d-486b0077e7cb"),
+                            MeteringPointId = new Guid("e1548087-c63b-3ab0-d5de-7eb7e9be0393")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("b31ea8b8-a61e-c950-396d-486b0077e7cb"),
+                            MeteringPointId = new Guid("36ef3acd-27b7-caff-7e04-625dd492d9b9")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("c6216a8d-54be-7c69-a44d-3d22a082bf8e"),
+                            MeteringPointId = new Guid("ed5b1e4a-41af-c7d9-a0a7-f3d64ea97e36")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("8917e6f3-2849-dd36-3493-0b84a5582ca0"),
+                            MeteringPointId = new Guid("b496011d-e3ee-a5c6-b92c-7fdabd5a2216")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("8917e6f3-2849-dd36-3493-0b84a5582ca0"),
+                            MeteringPointId = new Guid("33ceb49d-d678-4787-bf1b-24a68991c4a0")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("72435b75-2a48-a13c-eeef-b0df5d57c290"),
+                            MeteringPointId = new Guid("637f7f78-6d5e-73de-df37-373f2c055adc")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("4052f088-157b-963c-3929-9ebbda883d61"),
+                            MeteringPointId = new Guid("30f58c54-da6c-95bc-0c0e-f1063fc86b14")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("4052f088-157b-963c-3929-9ebbda883d61"),
+                            MeteringPointId = new Guid("405cbcf9-33f0-d75f-4cb5-19df1116277e")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("701fa9dd-e5e4-9080-5aa5-4b12f7becfaa"),
+                            MeteringPointId = new Guid("032c2401-0375-07fe-b159-11da0e6f0773")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("f59826bf-267f-ce8f-5c8d-dc61cc8918ad"),
+                            MeteringPointId = new Guid("271ea670-344e-5555-a153-44ca0e862bcb")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("5eb0bb6f-7a1f-daff-264c-e76e4f72668c"),
+                            MeteringPointId = new Guid("d279bae0-ef6d-9688-0232-a6c458589611")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("94401bfc-e5c1-2b49-19cd-0335d30de363"),
+                            MeteringPointId = new Guid("70afd01a-3b81-2146-9b9a-1846ac0190f5")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("35c45197-c362-a47c-e346-79cd6ee908d3"),
+                            MeteringPointId = new Guid("8f0b1dd3-e0d6-4833-07ed-6b568e0df38e")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("8777b8bb-bdea-a85a-b832-31e686ef369b"),
+                            MeteringPointId = new Guid("b7ed7bdc-00cc-8a2e-7880-14e7dc1a6411")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("0c48c080-646b-7aa6-abbb-d8c93dcf6d4f"),
+                            MeteringPointId = new Guid("9c235fbc-e7be-cca1-f7b5-a35718f5136c")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("d2fe83eb-2ff8-e4e1-e22e-05e5e1998f64"),
+                            MeteringPointId = new Guid("2275aa38-2431-555d-8ca8-c9bf800615dc")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("d2fe83eb-2ff8-e4e1-e22e-05e5e1998f64"),
+                            MeteringPointId = new Guid("aa3dd45a-ac2e-b5b4-6006-3ee70437d64f")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("ac3036b2-0382-b668-b534-c6e1897ee209"),
+                            MeteringPointId = new Guid("46e8c4d6-a35f-ebbe-f6c8-7be4909386b0")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("8ca2b82b-ed57-9b20-3430-c619ce20ef41"),
+                            MeteringPointId = new Guid("c68ce818-6273-c9ef-5788-ef21e8062105")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("ad53e7b0-c7bf-c8ba-9cec-c9dfcbc960ad"),
+                            MeteringPointId = new Guid("051e8df0-0637-c6a5-8296-643434efc751")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("ad53e7b0-c7bf-c8ba-9cec-c9dfcbc960ad"),
+                            MeteringPointId = new Guid("87c3b781-6b5d-4e78-3999-f8d5975c4812")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("47c2a649-d517-da0f-0bfe-79444a5becb6"),
+                            MeteringPointId = new Guid("1ee33b13-d66e-127d-82da-0e74c1496da7")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("65dd5360-e800-4abf-de5f-d8bf4ab531cd"),
+                            MeteringPointId = new Guid("94b1843f-08bb-c87f-b331-8f0829a7da1b")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("cab639a7-a03a-9fc3-24ed-d75e47d00d47"),
+                            MeteringPointId = new Guid("2e4b79f7-9615-7bd3-aacb-5dfcc7fd1f74")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("cab639a7-a03a-9fc3-24ed-d75e47d00d47"),
+                            MeteringPointId = new Guid("ae7800ae-d61b-fa74-3627-d9b46a3ce557")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("9066f36f-161e-5f68-e21d-3c1a69687ba1"),
+                            MeteringPointId = new Guid("4894f6ac-a561-05ac-1934-2035f70f84ab")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("0ace7856-33ee-62f1-7fbe-5c5364436ed4"),
+                            MeteringPointId = new Guid("50111cc1-9de8-b816-c3ce-b7ead7c8871b")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("75bea43f-ee78-ebbd-30e4-a4f7735e9b14"),
+                            MeteringPointId = new Guid("1f18cfcf-812a-c77d-89a5-a9f7eeaa95b4")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("8361c0d6-b2b4-bb57-e596-3b990e2be405"),
+                            MeteringPointId = new Guid("07b7ca20-ef4b-5f7e-e412-354428671253")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("8e0a3c5c-ed75-2216-4f3f-934fdbbe000e"),
+                            MeteringPointId = new Guid("70931e28-b916-ddfb-f981-5254baaefe07")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("405d8a39-7915-7966-c2bf-b6326540301f"),
+                            MeteringPointId = new Guid("33b265df-ff0f-81f0-3cd5-25dca9463840")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("3f531593-041b-25a0-c43d-97dbb8e98669"),
+                            MeteringPointId = new Guid("6a4b23e8-c24a-e2f4-0802-9b5d8be98955")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("94adf4e6-9abe-fbab-9562-9357874a27cb"),
+                            MeteringPointId = new Guid("a4b2e12c-aa8b-f8b9-1b28-9022d7f042ac")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("f0c73577-6131-826e-5db7-250631dbf561"),
+                            MeteringPointId = new Guid("66639a89-c463-2b6c-16fd-a6b2ca21f843")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("b3bc877f-93dd-8d29-fe22-1dc5543a49c8"),
+                            MeteringPointId = new Guid("8afe904e-1879-8e76-9187-4029c3e4a9ed")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("55e7fc4a-29fe-0ec5-3a0a-821deb2211a3"),
+                            MeteringPointId = new Guid("a447d97e-c1a4-d94e-24e9-c17a66f9a006")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("55e7fc4a-29fe-0ec5-3a0a-821deb2211a3"),
+                            MeteringPointId = new Guid("9ef69a17-ccb3-b090-9b75-5a30868c7425")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("14b07473-71fd-3941-7c39-5939d6894258"),
+                            MeteringPointId = new Guid("6d99c0b3-a725-d31b-cdd0-1571024765a7")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("2eb71d58-0cfa-a8e6-9bad-db7aa0c9e842"),
+                            MeteringPointId = new Guid("edfa220d-6d02-a1f7-36b0-c93ceb245a73")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("d5116adf-aa06-cf7e-05e1-5b966296c044"),
+                            MeteringPointId = new Guid("07b288e7-7b2d-ee12-a8c5-8e700d63e003")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("5973666b-c4b0-a2e5-8472-09e0d1593c63"),
+                            MeteringPointId = new Guid("eab3a781-f880-8286-3ac7-0fea8c875661")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("ace85be4-d10a-57a3-5d3c-9ab82dd99f97"),
+                            MeteringPointId = new Guid("156bee3a-ea65-40a6-6532-21dac9a2bf44")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("d9b71542-16b9-e3f7-1e2c-4b8ec33496b0"),
+                            MeteringPointId = new Guid("1f0d37fc-cf05-1abe-f20c-1abd06ac23a1")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("2334ffbf-462d-1c40-fddd-489ab14be63f"),
+                            MeteringPointId = new Guid("74fbab6c-87fc-8a8f-0fc5-fcd145c78ee7")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("2334ffbf-462d-1c40-fddd-489ab14be63f"),
+                            MeteringPointId = new Guid("9892f1b7-afb1-eb7a-dbc8-d1f0d4dc0eef")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("ad32ca90-2306-d6c7-828e-b91d7d888878"),
+                            MeteringPointId = new Guid("06aa72f4-0ab3-7bc8-486b-71077c8995a2")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("4d232a2f-5468-984d-f8da-3f1f9366fd4c"),
+                            MeteringPointId = new Guid("49bcff81-4884-ee8c-dcca-11a8c984c70d")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("4d232a2f-5468-984d-f8da-3f1f9366fd4c"),
+                            MeteringPointId = new Guid("d1fa823a-142b-ed51-e23b-e446a4bacd8e")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("0679baa0-748c-c53f-66c8-c283d6f88394"),
+                            MeteringPointId = new Guid("f315eec6-5dd2-bc28-6d6d-d938d06675a6")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("0679baa0-748c-c53f-66c8-c283d6f88394"),
+                            MeteringPointId = new Guid("6351dd47-3a47-0262-832f-a098e7ed6c46")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("847209d3-47ea-7367-6d38-05927a7a0c74"),
+                            MeteringPointId = new Guid("f8e7eaef-de9b-bcfb-e2d4-308e2bde3341")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("b85dcaa7-7789-c4f0-3ab7-7f75dbefba57"),
+                            MeteringPointId = new Guid("450ea2e8-a215-bd6a-76c2-83d581fc6f31")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("9ba0c84d-bad1-3a69-fefb-f821d38b86e1"),
+                            MeteringPointId = new Guid("9e7ee618-cbcb-07a7-1972-a0844ed26d8e")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("87be524e-3eca-3766-8ba2-1a85853a3113"),
+                            MeteringPointId = new Guid("53fa49a5-ef6d-c55d-b394-652b9fb7ee43")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("87be524e-3eca-3766-8ba2-1a85853a3113"),
+                            MeteringPointId = new Guid("278ae8bd-2378-f17e-a588-ed60bb18f001")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("19788350-afb0-20bc-a45f-db128f20e8e6"),
+                            MeteringPointId = new Guid("464bf117-f926-bc80-b6bf-1d9ce790e443")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("161ab4af-5da9-90da-982d-92c4dba8ef39"),
+                            MeteringPointId = new Guid("9fb0ff5e-11d2-25b5-17c8-101666e2cce8")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("144feeaf-de89-ab9d-b2f3-ffc46b562d8e"),
+                            MeteringPointId = new Guid("fdbadb16-6ea8-2e66-e0af-b9de3c5285d2")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("f4eeaac2-b5ff-bbed-95ff-4a6bebc6bb03"),
+                            MeteringPointId = new Guid("c440834a-5968-764a-d19a-2096bdd933e6")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("9b64568a-dfc7-5ed5-5564-0e40d0e8577f"),
+                            MeteringPointId = new Guid("a0fc2630-edc3-6eeb-2992-f45e8c695278")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("9b64568a-dfc7-5ed5-5564-0e40d0e8577f"),
+                            MeteringPointId = new Guid("e7ec5760-406f-eca9-a8a4-18da9f052bf7")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("b42046be-6511-0367-c9bd-c480f972f466"),
+                            MeteringPointId = new Guid("982bcb6d-35ea-a1ee-fe43-169200fc88c1")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("0d663ec4-2fc3-faf2-2f05-6185e3d4bc3a"),
+                            MeteringPointId = new Guid("7aaf957d-e218-cade-ceac-10e881506b4a")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("2ab20968-c894-efe0-144f-b35f06656229"),
+                            MeteringPointId = new Guid("48064699-fcf3-c4d7-75b3-50793c8a69ae")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("2ab20968-c894-efe0-144f-b35f06656229"),
+                            MeteringPointId = new Guid("fcddc9de-e066-e1cf-1ae5-6659da9c316a")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("332ce86e-d324-c82d-dc89-8fc08ee19b54"),
+                            MeteringPointId = new Guid("18f4be18-db8e-0591-d782-497081959929")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("332ce86e-d324-c82d-dc89-8fc08ee19b54"),
+                            MeteringPointId = new Guid("d42da919-66d7-3eb9-a15c-b30eb910126c")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("8d7945db-cd59-7ff2-d0f9-2b3ac6e81bd9"),
+                            MeteringPointId = new Guid("c84b30f9-cd6e-08af-09c4-946570faf85d")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("824e4c78-0719-a272-16d0-a3d772338838"),
+                            MeteringPointId = new Guid("4f5fd7d8-c894-d130-8bd0-c331a7900582")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("824e4c78-0719-a272-16d0-a3d772338838"),
+                            MeteringPointId = new Guid("52febade-ac74-16a0-17d7-8e0fd0c3bdb4")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("b26134d4-1205-a9c3-25c5-a6cb92166834"),
+                            MeteringPointId = new Guid("c1b7b46c-a47f-e052-f8f2-7b191b964ddd")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("d4e40cf6-fef3-2b16-85ee-8de5b4e14e16"),
+                            MeteringPointId = new Guid("2bb91f87-4f2e-8cd7-ac1e-bb3fa874106a")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("f74be8a7-00ab-eb9a-b9b0-1b96f1e4b245"),
+                            MeteringPointId = new Guid("1c528fdd-90e2-e640-d506-0899cef2f1e7")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("f74be8a7-00ab-eb9a-b9b0-1b96f1e4b245"),
+                            MeteringPointId = new Guid("27823bcb-c5d5-6143-f42b-7da2f101b78a")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("9187cf06-c384-19f8-d99c-90202eef5b4f"),
+                            MeteringPointId = new Guid("a2ba16a1-5de2-0f88-e397-15473db3c7f8")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("4907f81a-fda1-ccd0-f540-973a52283935"),
+                            MeteringPointId = new Guid("67a5b66c-6847-e3e3-22d9-45f905ff130f")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("3cd54d9d-5f66-9812-915d-9f28e33a2afc"),
+                            MeteringPointId = new Guid("79897ded-320e-1f91-00ae-d06dce073c54")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("28ce7737-8612-7625-a512-b4e2b633c86d"),
+                            MeteringPointId = new Guid("394c2715-dd2c-7365-c576-4c32c1657179")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("802ef222-6d02-0ab7-7b6c-8470423b5205"),
+                            MeteringPointId = new Guid("b9b476b2-21f7-af4b-c9ba-f719f32b4c63")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("c0b3301a-654a-9701-7c63-d767161d9aa2"),
+                            MeteringPointId = new Guid("6d8b8dd7-6c21-a92b-992d-d24bffe896ec")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("161b6ca5-7d46-06fc-f3cc-0e97e2a70314"),
+                            MeteringPointId = new Guid("d0ba92ef-e52a-43bc-bb05-6b890cc06f7c")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("b2e805e4-8bb7-5de1-61e2-808a7889b09d"),
+                            MeteringPointId = new Guid("f0543da5-ebca-d3d3-7f72-2e1987c4fdb8")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("4e654d08-e475-6314-8305-1e92aaf3471a"),
+                            MeteringPointId = new Guid("5a0a2edc-6015-af5d-9da7-06f981baacae")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("4e654d08-e475-6314-8305-1e92aaf3471a"),
+                            MeteringPointId = new Guid("fedd9e17-37f5-89f4-b12b-d971fefb0a94")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("e7b34dfa-6d14-1223-77e9-1aeb00361c36"),
+                            MeteringPointId = new Guid("bea6404c-5f4a-dcd2-d128-9161f76eab6c")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("e7b34dfa-6d14-1223-77e9-1aeb00361c36"),
+                            MeteringPointId = new Guid("96fbf499-b09c-b9cb-bf9e-6dc993a1a280")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("ac86078a-a009-e29d-c2ce-faebace17e17"),
+                            MeteringPointId = new Guid("9cf63721-16fb-2470-27c3-68ce4b928998")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("ac86078a-a009-e29d-c2ce-faebace17e17"),
+                            MeteringPointId = new Guid("2dd947cc-9be1-51e9-5c45-167556a5cf82")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("ac86078a-a009-e29d-c2ce-faebace17e17"),
+                            MeteringPointId = new Guid("d3bca44e-6c92-425b-15e3-a4bd3b909575")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("ac86078a-a009-e29d-c2ce-faebace17e17"),
+                            MeteringPointId = new Guid("36d5a7ac-7b09-7ea5-7321-626eae458959")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("ac86078a-a009-e29d-c2ce-faebace17e17"),
+                            MeteringPointId = new Guid("08cd1f9f-ae93-a716-a396-aaeaeca73c69")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("ac86078a-a009-e29d-c2ce-faebace17e17"),
+                            MeteringPointId = new Guid("6870f5dc-39d2-af90-c274-51bc8f13c85d")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("de8d0b5e-7534-126b-1a07-71146cd6fa38"),
+                            MeteringPointId = new Guid("2c4e467b-cd6d-767b-b40d-025e6a95897b")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("de8d0b5e-7534-126b-1a07-71146cd6fa38"),
+                            MeteringPointId = new Guid("f22d512b-cd31-4368-6a3b-5b36bfc61153")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("2d5ffe2a-a34b-7b9d-e6a2-40ea68a157a6"),
+                            MeteringPointId = new Guid("1deaed58-e2d5-7bf3-449e-54c7e79058ea")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("e5c1cf0a-3ab3-ce94-7b7a-781c5d9f9fc7"),
+                            MeteringPointId = new Guid("e3948568-ccf3-439a-bcc5-571d64812777")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("4048d796-63e3-1141-0751-c33bdc3f5b81"),
+                            MeteringPointId = new Guid("20b075e3-6eaa-af3c-193a-69f05f076ef1")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("4048d796-63e3-1141-0751-c33bdc3f5b81"),
+                            MeteringPointId = new Guid("9e765bd0-03ae-b65d-a6f0-e7032789b987")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("994776b6-bc76-3976-ff19-49fa4244a08c"),
+                            MeteringPointId = new Guid("3a49353a-f7b4-1dd0-a51e-77de27882f88")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("994776b6-bc76-3976-ff19-49fa4244a08c"),
+                            MeteringPointId = new Guid("e32edf75-19a1-6ed3-dc17-b984b901b9b3")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("34988bd7-e19c-c89c-2b5d-ef2ef61815e4"),
+                            MeteringPointId = new Guid("bd8c1110-7cb1-5589-3ca4-0d7fc9e42eee")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("34988bd7-e19c-c89c-2b5d-ef2ef61815e4"),
+                            MeteringPointId = new Guid("130d0967-360f-df33-5e44-e42709d964a9")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("6844602c-e397-90d0-98e7-ff4a66e19c50"),
+                            MeteringPointId = new Guid("0cf5adf0-4993-e7ae-8cb8-a65505c87f83")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("6844602c-e397-90d0-98e7-ff4a66e19c50"),
+                            MeteringPointId = new Guid("89900fb0-d004-e5e4-33f4-7214a5a3c685")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("e1ff3d02-8474-3ee2-9aba-df88016aaed1"),
+                            MeteringPointId = new Guid("a3f1c6e2-f692-f255-6d36-afbbe4eb5d4f")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("e1ff3d02-8474-3ee2-9aba-df88016aaed1"),
+                            MeteringPointId = new Guid("fd0baf2b-12a7-d237-47bc-a994b0d4ea39")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("1aa6ce35-63cc-c89b-d512-4795cd9d0b0f"),
+                            MeteringPointId = new Guid("85e054b6-9429-56cf-0fd4-167737778fbc")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("f6c6912f-9233-800c-08f9-8351268da29d"),
+                            MeteringPointId = new Guid("d64279b9-1382-2010-8d76-5d039e31dec6")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("f6c6912f-9233-800c-08f9-8351268da29d"),
+                            MeteringPointId = new Guid("9938a4b6-742f-96ca-7ab6-fc7643d46232")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("d51b2a32-f13e-0015-72ca-8096b5e1ad1e"),
+                            MeteringPointId = new Guid("c555228c-d227-fa73-28a7-f4ce2105eac4")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("cbf0bc37-4efe-a7c2-9667-0153c58e58ff"),
+                            MeteringPointId = new Guid("19354c96-6cb0-16cd-d875-109ba56ce6fe")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("cbf0bc37-4efe-a7c2-9667-0153c58e58ff"),
+                            MeteringPointId = new Guid("c0a03dee-28d3-a496-1efe-575acf697faf")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("41079c11-2a0c-e03c-3702-b7af7b2591a9"),
+                            MeteringPointId = new Guid("7c7079ad-c4c8-5a30-9887-2095e5ffdfde")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("22ffb2c5-e3c8-cdc1-5b35-74ab85f53ad6"),
+                            MeteringPointId = new Guid("8cfb1878-55da-12b9-e36d-710dc5231742")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("ebef804b-37c2-7441-ebe3-0c088eb1f99f"),
+                            MeteringPointId = new Guid("30bd1e21-02f7-1f70-76e8-6dc3531657e7")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("6766aaab-94ac-eea9-7de2-b501dcba97da"),
+                            MeteringPointId = new Guid("ab35cf2d-a6d9-7c1e-e806-bba01f4e8ae3")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("6766aaab-94ac-eea9-7de2-b501dcba97da"),
+                            MeteringPointId = new Guid("a35c1b23-4e42-e82f-62c0-55bfc15441f2")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("bef25c01-dfa4-ce7e-755e-fb173d14ddca"),
+                            MeteringPointId = new Guid("08ca0b8e-0191-f704-5064-64b0ea23e03b")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("8d38ef63-3222-0574-d196-7720c7736aaf"),
+                            MeteringPointId = new Guid("758ed6b7-dddc-0f25-082f-86a68baf3572")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("2f2c95d8-d07e-b780-3b1c-433fbf6b17e7"),
+                            MeteringPointId = new Guid("7b352d55-c398-e849-9856-d56945723703")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("f9c4e4b3-7010-61f9-2e87-2c1ffbdd4675"),
+                            MeteringPointId = new Guid("5ac7d97d-fb0f-4742-6c0e-887cc6865e69")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("f9c4e4b3-7010-61f9-2e87-2c1ffbdd4675"),
+                            MeteringPointId = new Guid("3dc407c1-6851-66ca-ebe5-bfb2db50c197")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("8587788c-94f0-9a4a-40a7-6ba2bbe80e59"),
+                            MeteringPointId = new Guid("3bc7d1bc-03c1-91c6-a654-293598416d55")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("44d77c5d-9d86-8829-3876-b48821642f50"),
+                            MeteringPointId = new Guid("37cb8173-78d6-f77d-8a07-39c0b8a6b343")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("8de01c4a-c01e-625c-ddc4-0dd07562c4d6"),
+                            MeteringPointId = new Guid("c58d57a9-106a-f044-0917-19a71bddd577")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("cac7da9c-260e-df60-fa5b-443c0f978994"),
+                            MeteringPointId = new Guid("7e677449-01a5-8e9e-1b29-5fb66a54dd92")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("d59ef591-7ee2-8cb8-b25b-24f9a744c7c6"),
+                            MeteringPointId = new Guid("56a0348e-70e5-1c5b-a9d8-d8d73070da73")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("d59ef591-7ee2-8cb8-b25b-24f9a744c7c6"),
+                            MeteringPointId = new Guid("d5c9ac6e-3a66-6131-1790-77ff4708ff6f")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("39703375-c7c5-4a61-2d10-4d14b0706254"),
+                            MeteringPointId = new Guid("cd5c5854-d9c5-5e84-ccd9-756312f0c2b8")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("8c498c95-1bc6-6db4-05e1-9e24dafafff7"),
+                            MeteringPointId = new Guid("0d3cd335-7e56-5149-2745-f255ba12c30d")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("fac7e95e-179a-5475-5078-272d40c4828a"),
+                            MeteringPointId = new Guid("e67b1b4c-a183-16e8-5248-a5fe818e2377")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("9d4c7e38-2ae3-c07b-d8d5-131425739778"),
+                            MeteringPointId = new Guid("7c501587-6819-8cea-ef22-a1ddbc9d952d")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("fc5921aa-1d72-3ae9-195a-df566ea2dde3"),
+                            MeteringPointId = new Guid("5ff9e7ca-2cba-14b3-68c8-2ad9522297d8")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("03a74c54-d742-a4ee-a72e-40a044ecad98"),
+                            MeteringPointId = new Guid("17fa2c86-5cd5-a3e4-f2c5-6ee89fccfa8a")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("c7231a56-e35a-ed3b-afbb-47c53a54dc1b"),
+                            MeteringPointId = new Guid("68093cb5-4373-2827-c556-87326ad023cc")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("34c143cb-2e0f-b879-c8bf-2094199e5db6"),
+                            MeteringPointId = new Guid("775dba64-1201-7734-c5c1-d7e88ff14f0a")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("34c143cb-2e0f-b879-c8bf-2094199e5db6"),
+                            MeteringPointId = new Guid("5d931509-21cf-8e94-d242-b90105b03f5f")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("858bb8b9-1531-f74c-4701-8b8653ad5596"),
+                            MeteringPointId = new Guid("8de53bbe-77c2-1d70-4a22-367dd1bb8735")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("48088e56-5441-337c-936a-9c1f21f9fa6b"),
+                            MeteringPointId = new Guid("163e2e94-775f-99fb-a3eb-5458592b1aa3")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("48088e56-5441-337c-936a-9c1f21f9fa6b"),
+                            MeteringPointId = new Guid("301e1e72-82c4-6e78-049d-31baaf551c4e")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("9d6f16fd-717f-47ba-9403-5e9ecee2da3f"),
+                            MeteringPointId = new Guid("ede48ef5-1753-77c1-be9f-0d2950d19d7c")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("a26bd5af-07fd-2d1f-f125-7869fb206f20"),
+                            MeteringPointId = new Guid("6d0bc1f2-d5fe-9c68-4983-9ef58e0c309f")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("c22d04e0-4dc0-dcbb-717b-e0a3e25311dd"),
+                            MeteringPointId = new Guid("e43ce3dc-4c7c-3dc8-ca0e-c24adb29fdf3")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("c22d04e0-4dc0-dcbb-717b-e0a3e25311dd"),
+                            MeteringPointId = new Guid("4dfd5b31-5dca-a01a-d85f-fadd7f353ccc")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("c22d04e0-4dc0-dcbb-717b-e0a3e25311dd"),
+                            MeteringPointId = new Guid("2bbde86d-0806-855c-dadc-24f60fee6b7e")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("c22d04e0-4dc0-dcbb-717b-e0a3e25311dd"),
+                            MeteringPointId = new Guid("40107976-792f-7ed5-b687-bbd59e5cfdbc")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("c22d04e0-4dc0-dcbb-717b-e0a3e25311dd"),
+                            MeteringPointId = new Guid("b3841615-eb1d-7fa5-4e4f-d484c5d800da")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("c22d04e0-4dc0-dcbb-717b-e0a3e25311dd"),
+                            MeteringPointId = new Guid("14ae9808-4a22-9a82-e07a-bb8341ee9c95")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("c22d04e0-4dc0-dcbb-717b-e0a3e25311dd"),
+                            MeteringPointId = new Guid("548f33c2-044c-9a34-335a-6d77d11516ea")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("c22d04e0-4dc0-dcbb-717b-e0a3e25311dd"),
+                            MeteringPointId = new Guid("965a491d-a2dd-af66-e307-55c8570157d6")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("c22d04e0-4dc0-dcbb-717b-e0a3e25311dd"),
+                            MeteringPointId = new Guid("cc4e580a-c92e-4851-c63c-6300f8eba14c")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("c22d04e0-4dc0-dcbb-717b-e0a3e25311dd"),
+                            MeteringPointId = new Guid("36376047-b110-4e75-d989-38075adbbe45")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("c22d04e0-4dc0-dcbb-717b-e0a3e25311dd"),
+                            MeteringPointId = new Guid("d3e67adb-5cbe-76a3-b1ef-2783a41b3c59")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("b469bed4-796c-e9b0-ea2e-5ca5192049d8"),
+                            MeteringPointId = new Guid("e1158bf9-18ef-1e59-7a5e-30b022a47533")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("b469bed4-796c-e9b0-ea2e-5ca5192049d8"),
+                            MeteringPointId = new Guid("2f058faf-03dd-4b14-d19d-de2b9591ac61")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("b469bed4-796c-e9b0-ea2e-5ca5192049d8"),
+                            MeteringPointId = new Guid("ddb52c9f-7f2a-1b97-6ce1-41bda14ddac1")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("a680c6b7-e584-d6c7-33bf-6d57f2eb99a8"),
+                            MeteringPointId = new Guid("6c351c31-4028-7719-e3fa-b4d54a804076")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("34aeb28e-bfb7-4495-00ed-a388f8b402b8"),
+                            MeteringPointId = new Guid("3151c8e2-2c77-db7c-c147-f33e5537d377")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("4f138e39-7ae9-8d3f-7454-30680dc58180"),
+                            MeteringPointId = new Guid("063d426c-0d34-e681-3858-891bb47d5e99")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("4f138e39-7ae9-8d3f-7454-30680dc58180"),
+                            MeteringPointId = new Guid("a0aa35f8-e4b8-603c-7545-ec11b5483317")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("e967cf6c-92a4-004e-b91c-4dd1ad4f0257"),
+                            MeteringPointId = new Guid("2fc17ec3-74a5-15ea-6e5b-88f3694e375e")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("e8245b05-f900-be25-559b-05332c292040"),
+                            MeteringPointId = new Guid("0249f83e-edb2-79fa-1f1d-6daebfb4aa79")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("fc0962ca-a4ab-3544-09d9-94ff2a41183e"),
+                            MeteringPointId = new Guid("aec92dfb-c5a8-d251-665e-3c97c3209e7d")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("fc0962ca-a4ab-3544-09d9-94ff2a41183e"),
+                            MeteringPointId = new Guid("54bb279d-8ddc-10f0-0e83-8aacb530f891")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("fc0962ca-a4ab-3544-09d9-94ff2a41183e"),
+                            MeteringPointId = new Guid("707e8230-ccac-cb30-58e9-ec50afba3840")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("0226a55f-5f70-eae5-9b5c-11662c5a54d6"),
+                            MeteringPointId = new Guid("ad9c2000-b828-3d81-f703-b7f70fb36cef")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("0226a55f-5f70-eae5-9b5c-11662c5a54d6"),
+                            MeteringPointId = new Guid("04e6af00-c60e-1a74-e0c9-82ac0f0b1998")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("a821dbbe-e408-edb0-1977-27bc309e057b"),
+                            MeteringPointId = new Guid("fd3391f8-9acf-74fb-bfe8-6a8e96adb634")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("a821dbbe-e408-edb0-1977-27bc309e057b"),
+                            MeteringPointId = new Guid("ec54eb56-44bc-3eb8-236c-942d33cd1b11")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("31edb99e-f375-17d7-811e-857a38b3fff8"),
+                            MeteringPointId = new Guid("464570de-32f3-5433-ebbb-26560bcdbbb9")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("31edb99e-f375-17d7-811e-857a38b3fff8"),
+                            MeteringPointId = new Guid("b770ab31-2fa4-8458-835e-ac83405a3fda")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("ee017436-48a4-2053-4b44-8bc51bdf0a36"),
+                            MeteringPointId = new Guid("634b3029-a539-dd06-a561-889bdf8464d2")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("2fb0ae2c-a523-27e5-115c-7a11018d1f6b"),
+                            MeteringPointId = new Guid("c42da1e8-0ef1-a6a7-e0dc-2f7a764646db")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("94d7078d-95bf-1e7b-21bd-04b5823cb12e"),
+                            MeteringPointId = new Guid("4f881323-4fad-0edf-1bc3-e56db2c1a1b5")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("b4df3e60-8bfa-3df1-07a0-20746302a213"),
+                            MeteringPointId = new Guid("b8bf52ed-a2dd-51b9-089b-65eeaec455ee")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("b4df3e60-8bfa-3df1-07a0-20746302a213"),
+                            MeteringPointId = new Guid("c1429253-8468-7172-3e4a-8967f8eb1a6a")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("b9637216-ab62-56bc-b60e-cda87e3c16c9"),
+                            MeteringPointId = new Guid("8e2f87f4-0b3e-fde9-8d63-8f77c916d5fd")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("b9637216-ab62-56bc-b60e-cda87e3c16c9"),
+                            MeteringPointId = new Guid("8e1dc94c-d7e4-172b-fab8-82343397c785")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("fbdaa63d-08d9-a91f-b9d1-94336d3a4a3b"),
+                            MeteringPointId = new Guid("1d65bd8d-6dd0-8906-4fdb-e927c4e5f6f1")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("8f4742db-bcec-11a6-3809-ee1607b89739"),
+                            MeteringPointId = new Guid("79afc2ee-6f3d-75bd-73fc-8a9095aed5eb")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("02c85f79-4d4d-eb4f-e971-a2107b12a8e8"),
+                            MeteringPointId = new Guid("0831e5c9-5af7-2248-0501-4cef24d32eb1")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("02c85f79-4d4d-eb4f-e971-a2107b12a8e8"),
+                            MeteringPointId = new Guid("16fa563a-c58f-0bb4-9868-af370071a522")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("30444294-06c5-dadb-ce56-75b706d4e9a3"),
+                            MeteringPointId = new Guid("bc2e552a-dc3f-fd20-669c-3fea9c8b5562")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("30444294-06c5-dadb-ce56-75b706d4e9a3"),
+                            MeteringPointId = new Guid("06c42656-6d7b-760f-0225-c89ecf04f8e1")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("6a1fd5bc-9af3-0ad9-23b8-d3f8cce89550"),
+                            MeteringPointId = new Guid("8c19ba25-8f89-1c9d-65e2-76338098b249")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("f40fea06-1fde-5684-ed6c-37417ec5ea5d"),
+                            MeteringPointId = new Guid("662a4146-1bfb-caf7-1699-b215ab8f3aac")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("f40fea06-1fde-5684-ed6c-37417ec5ea5d"),
+                            MeteringPointId = new Guid("a858c98b-77c6-db89-d57a-1acf22ac7f45")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("e19cd5bc-2b97-788e-d31c-15ca12b1a654"),
+                            MeteringPointId = new Guid("d0978288-39b9-dee5-a4ed-3702c9a0e335")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("09076d7a-64f3-3a8f-c8b6-ab1b01b205f2"),
+                            MeteringPointId = new Guid("93fa2447-825b-4f83-fd2b-4b0d4913e95c")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("67b6cffd-b2af-3604-95e0-a492171e10af"),
+                            MeteringPointId = new Guid("dfae4ec8-8c86-ddda-837f-02f4752312a3")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("2882baaa-5b28-159d-6105-9b3ea8796b01"),
+                            MeteringPointId = new Guid("ba793922-f35c-7b6b-f450-90ddb1c6d406")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("2882baaa-5b28-159d-6105-9b3ea8796b01"),
+                            MeteringPointId = new Guid("cd353768-ea25-df67-a180-22d2ddb89e89")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("da0e1e7b-1ca5-5474-c33c-f0c066970a7d"),
+                            MeteringPointId = new Guid("ed5019a4-bee5-9ca7-0621-ab1541e93bbc")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("fe9d07e3-26e5-bcf7-3634-ec12d0a8095d"),
+                            MeteringPointId = new Guid("e1b685a0-a3e3-28fa-5517-3bb254ea2892")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("fe9d07e3-26e5-bcf7-3634-ec12d0a8095d"),
+                            MeteringPointId = new Guid("e74348c2-c0ae-5b19-39f4-e9465da48477")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("64b9345a-6616-2501-d289-ea12d1f6c053"),
+                            MeteringPointId = new Guid("7b73c8eb-0099-1635-cfb0-df4196f01577")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("64b9345a-6616-2501-d289-ea12d1f6c053"),
+                            MeteringPointId = new Guid("ac8c5100-828a-0525-771e-40a1563b8c17")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("64b9345a-6616-2501-d289-ea12d1f6c053"),
+                            MeteringPointId = new Guid("523294b8-890f-241c-c1e3-ae2e2324444c")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("64b9345a-6616-2501-d289-ea12d1f6c053"),
+                            MeteringPointId = new Guid("b3f483bb-f0f1-2487-b29c-44e2cf79d3e2")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("79dcc7fc-825d-9226-5adb-5e30673d411e"),
+                            MeteringPointId = new Guid("124059f4-b3ac-a342-0b1e-7a856b711c36")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("21e4da34-b43c-1811-9fdf-e04b448c9d92"),
+                            MeteringPointId = new Guid("df2c8ada-208e-abe6-33c6-f6ae2d132863")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("34da3b06-78c8-a8f0-2321-b93c319c3a4a"),
+                            MeteringPointId = new Guid("18632d83-e145-474f-291f-73fd0efa0cd2")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("87c68976-9901-c0b6-ac66-6fe61b037a1c"),
+                            MeteringPointId = new Guid("b26b1a7e-e2ba-e1e5-685a-b3c539fa66f2")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("d36725a1-3dc7-34d0-13ee-61b03e2b02b1"),
+                            MeteringPointId = new Guid("bda49407-6be5-e4e6-5894-e7d08a359faa")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("a1c3fb0d-28a7-7388-8bbf-babb25a3fea4"),
+                            MeteringPointId = new Guid("60f13cfc-2f11-2123-57b5-933fd1b8569e")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("b7e73783-eb93-99d0-45b1-88ac7a7b9376"),
+                            MeteringPointId = new Guid("69474fe1-12c2-09ef-9ff8-3bb7b47deffb")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("b7e73783-eb93-99d0-45b1-88ac7a7b9376"),
+                            MeteringPointId = new Guid("1b1d7d44-cdbd-f345-06af-706536f19eb0")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("4e422a02-32e5-176d-ad7a-5abe117711d1"),
+                            MeteringPointId = new Guid("33716ae6-25f3-d709-ad62-2c37354ab262")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("4e422a02-32e5-176d-ad7a-5abe117711d1"),
+                            MeteringPointId = new Guid("e6c8da92-6b45-08c4-9d8f-eca2871c21b0")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("287b00f6-bb2f-3302-89c5-f1a5e842b119"),
+                            MeteringPointId = new Guid("cbd9b6b4-32b5-d850-d139-d2c66f3f7c28")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("287b00f6-bb2f-3302-89c5-f1a5e842b119"),
+                            MeteringPointId = new Guid("00e64f17-3bbb-c08b-d388-e5960f1f73d3")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("b4172ba1-194f-339b-8317-14f9c592439d"),
+                            MeteringPointId = new Guid("d9da5c40-62e5-c8a2-54e4-ef1962be18dd")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("b4172ba1-194f-339b-8317-14f9c592439d"),
+                            MeteringPointId = new Guid("46a516d8-2a8e-6482-0731-51f6f144e46b")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("be41f501-2b1f-17d6-4c9c-aa5c439164e6"),
+                            MeteringPointId = new Guid("3a3a5b29-e595-576a-2599-2bcf5e1993fa")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("e03e7e90-ff5d-fe88-5d89-853fde48152a"),
+                            MeteringPointId = new Guid("48a993cc-bc4a-a8c7-05bd-7ecfde225221")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("3a2342bb-cb24-1ee1-acd3-e7799e95d78b"),
+                            MeteringPointId = new Guid("ea1aea0d-3524-2ebc-7c85-f7d06e8619a6")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("da8dd578-e9ae-2c27-6706-8f4cc413d886"),
+                            MeteringPointId = new Guid("2d5531b4-7c2a-ebaa-288c-18031fdc020f")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("da8dd578-e9ae-2c27-6706-8f4cc413d886"),
+                            MeteringPointId = new Guid("80fa7129-a05a-421b-48eb-bb2a7cc4d494")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("e44ef94e-042c-0f82-2961-79b86b9db999"),
+                            MeteringPointId = new Guid("448d3d2a-efb1-6c57-bb73-7d9146b6b683")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("a13957db-bc3c-8860-573b-25679113455d"),
+                            MeteringPointId = new Guid("1c735191-eb56-9060-3078-4d8bfd47c6a9")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("aa9b83ae-3644-e54d-bd20-1792a1217486"),
+                            MeteringPointId = new Guid("fe59fe7a-8532-eb44-3e45-e79a8ac479ec")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("aa9b83ae-3644-e54d-bd20-1792a1217486"),
+                            MeteringPointId = new Guid("37a1a234-ddb1-839d-33a6-e9f1ca214252")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("3bc98842-4ce9-89b7-97fa-934b85b9bb2c"),
+                            MeteringPointId = new Guid("ebb7ba9d-94e9-a244-e6f7-901d3b968070")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("3bc98842-4ce9-89b7-97fa-934b85b9bb2c"),
+                            MeteringPointId = new Guid("dcea6cfd-0726-3de6-1a13-5098c7639bad")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("1a05d73c-8ee1-b267-01a1-d8c5bfd31f66"),
+                            MeteringPointId = new Guid("d447dc98-7c3f-b14b-858e-045e327c098f")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("1a05d73c-8ee1-b267-01a1-d8c5bfd31f66"),
+                            MeteringPointId = new Guid("dfb4c402-2e0b-4040-3ab7-4effa4fe0dca")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("5b889cd5-f4fe-2db9-ee52-df9813ef2edf"),
+                            MeteringPointId = new Guid("ea476cc1-4a4f-9bac-5527-b02a7398c21c")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("5b889cd5-f4fe-2db9-ee52-df9813ef2edf"),
+                            MeteringPointId = new Guid("74150b44-c54a-aa7e-f2fb-aba0b771539f")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("c6884562-e4e3-c708-0042-6590cb49b87e"),
+                            MeteringPointId = new Guid("3e9f710f-1098-2d0d-6ae4-f06777b5aa51")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("8a2082b6-3e1d-3e34-3f57-54913f081d44"),
+                            MeteringPointId = new Guid("e5e55472-cbc6-7c5c-0fdf-3c2b501baa8d")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("d6a1f5bc-1b27-9da5-6a3b-f3171c7900f5"),
+                            MeteringPointId = new Guid("ee443f9e-d52e-34c5-e527-70f2555c62d4")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("d6a1f5bc-1b27-9da5-6a3b-f3171c7900f5"),
+                            MeteringPointId = new Guid("1f51f8fb-9c44-9524-58ff-ffbd8b37bcd6")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("70fcc680-775d-186b-6cdb-b4bb7161a163"),
+                            MeteringPointId = new Guid("55b5e932-a4d3-c78d-7a7f-e2eaf372c1fd")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("648801da-15b4-42e8-5ac2-8a0f61daa001"),
+                            MeteringPointId = new Guid("20399d70-d766-f807-4ea6-991682e5c0bb")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("b13ee735-b139-31d8-28e0-1b63c6d6ae7a"),
+                            MeteringPointId = new Guid("bb09530f-8337-03b2-0174-9c4adc32caee")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("93fb65c2-d02c-ab82-8cd9-3ee3a4e6a7e5"),
+                            MeteringPointId = new Guid("40fb672e-3d7f-a71a-f712-3cc8d1a98df4")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("db9ab6dd-8750-51b5-7bb5-6216f54b16a2"),
+                            MeteringPointId = new Guid("19f424b6-e241-9e36-4d3c-2277927534bc")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("db9ab6dd-8750-51b5-7bb5-6216f54b16a2"),
+                            MeteringPointId = new Guid("00188970-ddc2-f9c6-371c-6df4aaaca3b4")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("98dbf6f6-072a-ffa9-59c7-1c35f0068ede"),
+                            MeteringPointId = new Guid("7e113784-8a41-82f2-e819-08b7f7cddc9a")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("98dbf6f6-072a-ffa9-59c7-1c35f0068ede"),
+                            MeteringPointId = new Guid("37f1adff-4d2b-43bd-3aa4-7c1f9ef3cfce")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("247ae6ee-8670-f241-956e-412ad7220ac9"),
+                            MeteringPointId = new Guid("30f5aee4-8c93-a210-94aa-e705b5f12c9b")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("68d066bc-235d-b49f-5b78-89981015a77e"),
+                            MeteringPointId = new Guid("6bec22bb-723c-19c4-e77d-a108efbd2ff1")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("68d066bc-235d-b49f-5b78-89981015a77e"),
+                            MeteringPointId = new Guid("953ceb4b-5ead-07f7-4c3e-c989d9fc975c")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("e74ad5e8-8f20-bb17-252f-14296a9c22d7"),
+                            MeteringPointId = new Guid("d4d165ea-aad8-69ec-fa6d-3b78abc7ba35")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("084790ce-06ba-bf81-fc0d-613b7023bc69"),
+                            MeteringPointId = new Guid("9acf4868-0dfa-f795-2843-7210bc49f1de")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("36bf659d-3da8-65f5-716f-d792c507e3e5"),
+                            MeteringPointId = new Guid("9b567bb4-1f93-dad9-d2ed-5a1d9541633d")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("3aec2088-79b8-92ec-4be0-de9ec4af5921"),
+                            MeteringPointId = new Guid("70cd55d2-81e8-52d5-a61b-09d6fe6e4541")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("f01743c5-fefa-7642-6e36-0d4a1ff82a88"),
+                            MeteringPointId = new Guid("7c9a6475-d40a-bccb-180b-9da257e2dc39")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("4a4afcd6-4c46-1b67-7796-3551dd6840ce"),
+                            MeteringPointId = new Guid("fc2ee886-0ee3-7779-d539-74876d746b0d")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("4a4afcd6-4c46-1b67-7796-3551dd6840ce"),
+                            MeteringPointId = new Guid("ebd2f9ef-be82-e69a-7370-b6e9d5e900e7")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("1bc79319-c42b-bb6a-8d7a-42592c320af7"),
+                            MeteringPointId = new Guid("62b44c75-e57e-76e8-b21c-5b7f9699062b")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("55bc0be7-bed2-47e0-4a60-ba84ad22c3ee"),
+                            MeteringPointId = new Guid("0b348471-deaa-f3e1-38ae-c3b05f3d65b3")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("55bc0be7-bed2-47e0-4a60-ba84ad22c3ee"),
+                            MeteringPointId = new Guid("69875c65-1a98-fa27-0748-683580ac8755")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("dfe74aa6-59b0-06f2-55f1-3b82758406c1"),
+                            MeteringPointId = new Guid("a208ea2b-d18c-3cc9-d166-af5f36ff823f")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("dfe74aa6-59b0-06f2-55f1-3b82758406c1"),
+                            MeteringPointId = new Guid("32f9cf4d-11e9-5b42-358e-35b4a0370a12")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("8d582161-15c1-7b77-36ba-e0ec3951376a"),
+                            MeteringPointId = new Guid("efcdb5aa-889d-5ae6-ef31-38257642dfb7")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("8d582161-15c1-7b77-36ba-e0ec3951376a"),
+                            MeteringPointId = new Guid("1e70a9d6-9e54-4a16-92c6-c2d60da7b074")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("d820a86d-9df0-df64-3c55-710da59238d3"),
+                            MeteringPointId = new Guid("2f8a450f-8831-6d59-bda0-e4a41f992002")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("d820a86d-9df0-df64-3c55-710da59238d3"),
+                            MeteringPointId = new Guid("1c285ee0-169c-ecdc-fd15-ac7742d59f62")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("0bc38566-9216-226d-071c-3c28bd3016b6"),
+                            MeteringPointId = new Guid("e84d9b14-dc3b-d8c3-a8c0-bbf77f853023")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("0bc38566-9216-226d-071c-3c28bd3016b6"),
+                            MeteringPointId = new Guid("32579c46-d420-33e2-46b0-59055fff7247")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("c4d5c028-5b14-aa8c-19c3-0c38d8bc69e3"),
+                            MeteringPointId = new Guid("a053a730-ee24-dcbc-4d28-74aa2cdfda65")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("06e4ef18-7668-c219-0377-b1d4c8b5fee1"),
+                            MeteringPointId = new Guid("bbcd61ad-27d9-2b26-b07e-ac5bf72743cd")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("06e4ef18-7668-c219-0377-b1d4c8b5fee1"),
+                            MeteringPointId = new Guid("d197fa4e-5c89-3a3b-aca3-408f42440bb9")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("06e4ef18-7668-c219-0377-b1d4c8b5fee1"),
+                            MeteringPointId = new Guid("76651e3f-009c-cf3d-b03d-27e7b643ea32")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("4175461a-c7cd-8d4a-0d56-118527ceb2c5"),
+                            MeteringPointId = new Guid("a2fd5138-8929-ee85-9699-bd94cb496867")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("4175461a-c7cd-8d4a-0d56-118527ceb2c5"),
+                            MeteringPointId = new Guid("ba405e92-fe00-111a-924b-a78fc6f3a406")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("580a8a90-bbb4-8069-26ec-61d254468cfe"),
+                            MeteringPointId = new Guid("088b4d89-ff84-f985-5578-c03219fea806")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("b402edcc-5661-6b32-b179-256213e038ef"),
+                            MeteringPointId = new Guid("a8ad3bf6-ed43-43cf-75f4-989b89b1807e")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("b402edcc-5661-6b32-b179-256213e038ef"),
+                            MeteringPointId = new Guid("23c1eb12-1b55-0249-767b-6a3bc1bbde43")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("945a83fe-06bf-180b-66bc-ee6fd65a1f78"),
+                            MeteringPointId = new Guid("ae0958c6-1b20-3df2-a1a1-26b9879a6764")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("27730718-371f-a80b-d03b-3ea3cd90b85e"),
+                            MeteringPointId = new Guid("959717a7-c591-a3f6-9fae-7e3e90f5fd63")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("27730718-371f-a80b-d03b-3ea3cd90b85e"),
+                            MeteringPointId = new Guid("3b5bffb6-1fa1-8ab3-d8bf-7b663f463192")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("fc55758a-68c4-831d-f83c-25fccfdde609"),
+                            MeteringPointId = new Guid("9ac92c9b-35a3-13e2-10e6-f61b5dec792c")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("fc55758a-68c4-831d-f83c-25fccfdde609"),
+                            MeteringPointId = new Guid("f22a5709-f5a6-33fb-7ebf-6338394037d7")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("d7f410cd-5702-3ff8-f803-cf8bdd6222e3"),
+                            MeteringPointId = new Guid("c230aebc-5ad8-fd17-a467-167f6298e3ef")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("d7f410cd-5702-3ff8-f803-cf8bdd6222e3"),
+                            MeteringPointId = new Guid("6c3778f6-b6c6-6180-f6e0-cae62a5d26c0")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("30f3872c-a693-1c1a-ecd5-461078e4c0a5"),
+                            MeteringPointId = new Guid("e30a4a11-970c-cba9-b4d5-0677bcbac047")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("30f3872c-a693-1c1a-ecd5-461078e4c0a5"),
+                            MeteringPointId = new Guid("e164bde5-3b6f-56fd-7b3d-d4f992f1ba23")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("30f3872c-a693-1c1a-ecd5-461078e4c0a5"),
+                            MeteringPointId = new Guid("c5d12723-c158-8ed5-a133-db0c9c37409b")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("30f3872c-a693-1c1a-ecd5-461078e4c0a5"),
+                            MeteringPointId = new Guid("e4c07fb2-0f04-807a-313b-502da267a8d0")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("30f3872c-a693-1c1a-ecd5-461078e4c0a5"),
+                            MeteringPointId = new Guid("3983eaf6-76ae-7ed8-672b-45425f24f19a")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("30f3872c-a693-1c1a-ecd5-461078e4c0a5"),
+                            MeteringPointId = new Guid("3a2bcff3-8d2c-9bd8-84f0-9cd588d37410")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("30f3872c-a693-1c1a-ecd5-461078e4c0a5"),
+                            MeteringPointId = new Guid("ce9556c5-9389-2ccc-e0d1-7c1951448b5c")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("f2a9586b-f63a-05a4-9a2f-3e2cf3b74982"),
+                            MeteringPointId = new Guid("dbf8a016-28cf-3cf2-275a-b652a9f06bcb")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("f2a9586b-f63a-05a4-9a2f-3e2cf3b74982"),
+                            MeteringPointId = new Guid("7281320f-3d5f-31e5-39fb-78be994a0572")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("8bd72dc7-bd29-3c81-55f8-29e8b6ff3100"),
+                            MeteringPointId = new Guid("e988bb0c-a4ea-1847-e6c8-ba5c4dd65438")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("46672bf5-9a60-9f75-70a9-5c03b6896e84"),
+                            MeteringPointId = new Guid("fb4cb22a-7dd6-d352-c983-ef238cc75f96")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("a62875e1-3af4-0a16-9047-a3c903fdeae5"),
+                            MeteringPointId = new Guid("18f649e7-9b86-1d7d-3445-d8f9941a36ec")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("a62875e1-3af4-0a16-9047-a3c903fdeae5"),
+                            MeteringPointId = new Guid("4a3be571-4449-0b83-8e97-156a643226b1")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("ae854b22-f100-2d6c-31f2-da6139ad614a"),
+                            MeteringPointId = new Guid("98ea45dc-0068-cd15-75a6-3c28ad42b146")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("ae854b22-f100-2d6c-31f2-da6139ad614a"),
+                            MeteringPointId = new Guid("3f2cbe5b-ac8c-c9f2-be51-fe99e742f7e1")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("f369c55c-895c-d558-6bef-1f39d4861d1d"),
+                            MeteringPointId = new Guid("caa1c370-f32c-6f06-d44a-4fd68c54ca70")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("f369c55c-895c-d558-6bef-1f39d4861d1d"),
+                            MeteringPointId = new Guid("7b49fe07-3c83-78c1-d1b6-edd0271ffb2d")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("45db5f3e-b399-ac4b-9f67-1a3e50d7bbeb"),
+                            MeteringPointId = new Guid("677e8a61-c916-955a-d7a3-0d817c859477")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("45db5f3e-b399-ac4b-9f67-1a3e50d7bbeb"),
+                            MeteringPointId = new Guid("b8e5e3f6-7af7-c2aa-7439-3d081e81fc7c")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("f895b4a6-c9d8-26e8-3737-5720ac871a4a"),
+                            MeteringPointId = new Guid("e3826858-2c3c-d3d2-13bf-62aa77a3add0")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("f895b4a6-c9d8-26e8-3737-5720ac871a4a"),
+                            MeteringPointId = new Guid("5595e5d3-a352-e69f-3c5e-7b914dd9ff12")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("b9af4ba3-8619-6dd3-fdbf-3dcb52b05158"),
+                            MeteringPointId = new Guid("aca0f225-998b-1b66-64e7-69b5273c8685")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("695e40ee-b7ac-526c-c2f9-1053cda5a1d4"),
+                            MeteringPointId = new Guid("22dd7a6e-d7a7-efa8-1839-cd3f422d9c9b")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("a366b844-26cd-db61-f178-482a4dcdb397"),
+                            MeteringPointId = new Guid("588284a9-a278-1ea4-f46f-dd5b5488be84")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("88af1afa-0158-e066-ffdc-045093e7a76b"),
+                            MeteringPointId = new Guid("5d76eac7-f0f9-457e-dd44-cbd67d7e1764")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("88af1afa-0158-e066-ffdc-045093e7a76b"),
+                            MeteringPointId = new Guid("bdeb8df6-8c67-083a-595f-691ddd61f786")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("43aabb42-8230-3226-41e7-9a3fc8e2482f"),
+                            MeteringPointId = new Guid("21a713ae-ec2e-7d48-67f6-8460d6762d7a")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("86384620-ca05-6b30-c663-923fe6665022"),
+                            MeteringPointId = new Guid("6370f937-f50c-4d7a-edb6-8d8dcf5a973b")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("19bf82fc-9673-c828-90fa-62b154771155"),
+                            MeteringPointId = new Guid("c876ee62-b956-38b1-adcb-c7b7bb71cb43")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("d5b12348-37e4-304a-bb93-b30bbd2ab78f"),
+                            MeteringPointId = new Guid("757978ed-a053-6a5a-88ec-3de0553ca1e7")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("842cf92a-fd2f-5218-1bbe-0133c2ed5200"),
+                            MeteringPointId = new Guid("2d7b71d5-227f-58bd-2d93-cba3d41c5398")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("a3c884d5-1653-318a-dfe3-a81393b81785"),
+                            MeteringPointId = new Guid("e2a67f77-591b-3294-729f-d46b6ab7f0b6")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("a3c884d5-1653-318a-dfe3-a81393b81785"),
+                            MeteringPointId = new Guid("69619984-03bc-8048-efc4-9961198d29c0")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("09ca6f3f-cb7f-de2a-efdd-e12e97a8730a"),
+                            MeteringPointId = new Guid("521aa7ee-6777-80a6-0953-b75f6eeaf1e6")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("43034566-90b3-914a-6c38-41e26bc6c8e1"),
+                            MeteringPointId = new Guid("71b74a11-0bdf-693b-10cd-bbd1ad06afec")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("43034566-90b3-914a-6c38-41e26bc6c8e1"),
+                            MeteringPointId = new Guid("6251d208-74c2-f06f-d0a4-715a76fd04ba")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("06e3b4c4-2e4b-6713-dca9-e1e419f4cc5f"),
+                            MeteringPointId = new Guid("6ffafb8f-d5f3-be9f-bd78-94dccbe87788")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("06e3b4c4-2e4b-6713-dca9-e1e419f4cc5f"),
+                            MeteringPointId = new Guid("3cafc2be-95d8-cb7d-b537-7a513a961f80")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("a645b316-442b-31db-beac-8d0745e98db1"),
+                            MeteringPointId = new Guid("d3089161-4a29-b210-f486-0f71fac60761")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("e6ed0893-1630-5f0e-102c-6fb90cb758de"),
+                            MeteringPointId = new Guid("c543ba0e-e9e1-2020-398b-425a8f7d0f31")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("f7c4a1a2-7755-4191-dfbb-df1c37985bad"),
+                            MeteringPointId = new Guid("cf0fcf7c-b900-e57f-108d-3988cf2ba0f2")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("d04e8adb-9b5c-7e94-4247-a000bf9a92fc"),
+                            MeteringPointId = new Guid("0865ed80-f380-6e12-622d-5f04b82acd08")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("adbf13ee-b41c-e77b-88d1-45b16ff1552d"),
+                            MeteringPointId = new Guid("f83d340e-90cb-a25c-dba0-357d42c8073e")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("702aee64-982f-ebf5-eb51-310dd29695e2"),
+                            MeteringPointId = new Guid("4d4c9164-2533-8d53-9423-6cb46ec51da8")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("702aee64-982f-ebf5-eb51-310dd29695e2"),
+                            MeteringPointId = new Guid("9c04c25b-fad5-f4a7-3c55-14abcf52cb55")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("702aee64-982f-ebf5-eb51-310dd29695e2"),
+                            MeteringPointId = new Guid("c9f18e0f-6be5-1a59-ceb9-19a91ff7433c")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("942262ad-b0f2-79dd-65ab-4e0b778bca50"),
+                            MeteringPointId = new Guid("d06a5ef7-af56-5560-e937-24a7d01a449f")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("942262ad-b0f2-79dd-65ab-4e0b778bca50"),
+                            MeteringPointId = new Guid("ac008edc-56af-62a8-f17a-674f8bc12a75")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("41c45d1a-c3b2-d109-dae5-de85bff80383"),
+                            MeteringPointId = new Guid("cc1fbf1c-cca0-364a-a7e7-35c35e7436e2")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("41c45d1a-c3b2-d109-dae5-de85bff80383"),
+                            MeteringPointId = new Guid("67d5f300-87dd-eca8-4f65-2e8500ef6a65")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("0063680e-f111-a908-5d87-1402faa4867d"),
+                            MeteringPointId = new Guid("c24c4265-544b-766b-3051-dd74fbacdec7")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("0063680e-f111-a908-5d87-1402faa4867d"),
+                            MeteringPointId = new Guid("04c28f60-74dd-1b93-25b6-a41d2d5d634b")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("0063680e-f111-a908-5d87-1402faa4867d"),
+                            MeteringPointId = new Guid("9f572a3e-634b-0d86-62e0-ea6978cc3f81")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("17515825-12b3-3738-7f97-73f5c5f45f55"),
+                            MeteringPointId = new Guid("6074d64d-d3e5-327d-7b45-b4e4ec14879a")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("1d4f0b28-c225-46b0-7585-b96aedf9a2ac"),
+                            MeteringPointId = new Guid("9d64ce97-e603-b2a0-261e-97992eaabea7")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("eebef973-fc0c-0f48-cb0e-23c5b8c2daef"),
+                            MeteringPointId = new Guid("06670193-6ef9-56c3-ad3e-a593d4d569ea")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("caa2080e-6e66-fa9b-4e58-3f0905a6b4dd"),
+                            MeteringPointId = new Guid("4f3b6a62-0d6e-38b9-41f3-704ccd7270b1")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("23dcd963-eae2-1f15-86a2-970b158e4769"),
+                            MeteringPointId = new Guid("7aea7733-95b6-2070-c04a-684650d4a066")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("8483af5d-9440-5a2f-8b55-8d795293f9ae"),
+                            MeteringPointId = new Guid("4c596ab8-20e5-154e-aa69-d8e33a5d968c")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("9d626cfb-ce6f-86a5-1eef-1cedea6880b1"),
+                            MeteringPointId = new Guid("2fcf8b60-a87d-b416-e7ac-a17745e826e2")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("7db8f70e-ddab-803d-a0bf-30dcc443c4d1"),
+                            MeteringPointId = new Guid("8c9116ee-4c03-883b-06cb-1f85a3da53d8")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("bcc2aaa7-5f04-0876-b5b9-111f71851153"),
+                            MeteringPointId = new Guid("28a40f10-8266-3497-65d2-a5db5d0d0334")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("daa6038f-81c1-6ee1-c736-ce59aaecdd50"),
+                            MeteringPointId = new Guid("3df304ae-97e9-4620-2774-c0ea1ce816a5")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("1e46db9c-8698-9b9b-bfe7-715d28b30911"),
+                            MeteringPointId = new Guid("7ed86074-7701-22c1-ec66-64b673765946")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("ff5adab2-73b4-2ac9-695a-9114634417c9"),
+                            MeteringPointId = new Guid("22fa7f22-7a2a-a78c-20bc-ce914093cfe7")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("f099de5d-101b-af50-1b7c-2f7b2b2e7262"),
+                            MeteringPointId = new Guid("ad2fa0c8-9fdc-7a51-8621-bb5fd9fbec7f")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("5117f69d-b684-ea35-6d26-bdef33e58600"),
+                            MeteringPointId = new Guid("12e54b13-3ad9-67ae-7011-7d54f0f291a0")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("eac19984-aa7b-9985-210d-da71e58b2640"),
+                            MeteringPointId = new Guid("d33d45a4-787c-2bb7-eab5-139f7c8e6b62")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("fc4d16e8-196b-150d-4232-f92490b0fcad"),
+                            MeteringPointId = new Guid("79ee30d4-5447-aa3b-af00-99ed9d46faef")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("f8274681-0e97-c1d1-6650-f164c9e27850"),
+                            MeteringPointId = new Guid("88c65b5b-d49f-c84a-d03e-993e20238c36")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("f8274681-0e97-c1d1-6650-f164c9e27850"),
+                            MeteringPointId = new Guid("40d7e575-db87-90d6-f025-118bc7ba549a")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("f3c2cade-ee67-9e2e-df88-c847f5232895"),
+                            MeteringPointId = new Guid("40ef26be-af7f-6a9b-dd25-40673ee8116f")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("f3c2cade-ee67-9e2e-df88-c847f5232895"),
+                            MeteringPointId = new Guid("c77d592e-8fdb-e27e-e6a4-9a5eb2707dfd")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("075f230b-1b36-70aa-6601-abd74d5a59be"),
+                            MeteringPointId = new Guid("6ced1ab3-b710-7303-f164-65268636ee66")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("075f230b-1b36-70aa-6601-abd74d5a59be"),
+                            MeteringPointId = new Guid("6f0d39c3-deb1-8101-56b1-ec3e835e111b")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("0266078e-de8f-869e-c6e5-53a303a0cc1d"),
+                            MeteringPointId = new Guid("9c407e7c-2809-0a8c-5689-828594237822")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("87e75cdd-cca7-9dc8-a569-386cc96ad2c9"),
+                            MeteringPointId = new Guid("47195786-bdbf-3295-f37c-212854d124b6")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("87e75cdd-cca7-9dc8-a569-386cc96ad2c9"),
+                            MeteringPointId = new Guid("1c23d39b-7093-cb40-9c21-3670f62ade04")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("46fc39c5-b2df-f613-5a8b-5a9b60529283"),
+                            MeteringPointId = new Guid("c20e10da-99e9-9ad9-7548-a6632722afc5")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("046c598c-091a-5219-939e-ae3048d1c8fb"),
+                            MeteringPointId = new Guid("2ea714aa-9300-e1eb-01fe-4d42812805a7")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("652887f8-3419-7f62-bef7-008af95f233b"),
+                            MeteringPointId = new Guid("f2402bba-9b44-4503-ac8c-e45ec86daa77")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("b19bfa3d-c335-286f-7ede-eaf304bd5f25"),
+                            MeteringPointId = new Guid("399cc0ba-b2f1-4ff0-5403-e70afd5bcba0")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("a1569d16-219d-4592-7da2-5e2407a0b564"),
+                            MeteringPointId = new Guid("e22e1d8f-ad36-96c2-2311-beee0e596c6c")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("95a9606c-9e8e-1503-6c4e-a334d598ebfe"),
+                            MeteringPointId = new Guid("9d2dfac6-56ab-a14e-ae4d-b460b41101fe")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("5ab118d3-ab77-56b7-1b20-ce3cbb79cf9a"),
+                            MeteringPointId = new Guid("b092d012-a48a-bf1a-dffc-875d524a627e")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("bf3754a1-74ad-c455-9271-a8655669303e"),
+                            MeteringPointId = new Guid("44cb0dde-1ce9-bd9a-1d19-eeb2c639764d")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("bf3754a1-74ad-c455-9271-a8655669303e"),
+                            MeteringPointId = new Guid("8f16072e-8c15-f89a-1a82-18c0713789c2")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("c49218c1-021f-91e3-71a0-451b61d4933c"),
+                            MeteringPointId = new Guid("f4cac118-afca-c3c3-2e83-9dec23138f56")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("c49218c1-021f-91e3-71a0-451b61d4933c"),
+                            MeteringPointId = new Guid("d5ace41a-7e43-2a2d-f63b-5deb6c83f4f7")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("d95b3a0b-52e3-f5fa-0467-32ed1cb5dbca"),
+                            MeteringPointId = new Guid("0866d5c0-d9a9-f924-4e1f-f22d439ccb4b")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("d1b1afa3-6bf6-0884-c34e-b9ee24c384fa"),
+                            MeteringPointId = new Guid("e0989a03-d850-0141-ad79-9d509b174bae")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("4ad2d72f-5ff1-94b8-f654-e834be4188f7"),
+                            MeteringPointId = new Guid("d11c9002-57cf-b62d-cb9a-50d52b6b6784")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("4ad2d72f-5ff1-94b8-f654-e834be4188f7"),
+                            MeteringPointId = new Guid("fae1e0ac-4166-4def-30d7-59091890845a")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("46421108-0f4b-72b1-f3f1-859f1660aa76"),
+                            MeteringPointId = new Guid("60c5577b-1998-4ddb-d4b5-1e69c00ddb6b")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("8690ee57-4364-dcd1-97d1-7ca7c27bd887"),
+                            MeteringPointId = new Guid("fcd09948-fe71-a1b8-446d-975e196057ba")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("8acca2c1-4f17-efdd-db19-b37f0a823c09"),
+                            MeteringPointId = new Guid("802a7f08-c1f1-af1e-369c-d926be858e03")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("db745b33-da6d-1663-1ab3-9648d265a566"),
+                            MeteringPointId = new Guid("f31e1f02-1f3e-37ce-855d-d39a64b0e175")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("db745b33-da6d-1663-1ab3-9648d265a566"),
+                            MeteringPointId = new Guid("1c0ace18-1e43-9043-937b-f8edbf076711")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("f935fedd-b079-8609-7ef7-2dfd9ec292d4"),
+                            MeteringPointId = new Guid("485c851d-b568-3f37-b3df-8c5dd54e7254")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("ee88c98c-e801-7e34-d6fe-39aaa8ee442e"),
+                            MeteringPointId = new Guid("ea4385a3-851d-d295-31c9-24bb4308b477")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("b895e19b-daec-619c-33e7-bafebf509fdb"),
+                            MeteringPointId = new Guid("67be9bed-f0e5-b988-8310-3f5548b96336")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("94e31945-2f3f-6f2f-2afa-9f65fa9f7b4d"),
+                            MeteringPointId = new Guid("4f9e56e6-6d3f-95df-37a3-b2b0b388aac9")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("a5423034-80ff-f76f-a5f5-76fa7a767366"),
+                            MeteringPointId = new Guid("ef0dec38-b51d-c022-4834-6a7ea59fd92c")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("a5423034-80ff-f76f-a5f5-76fa7a767366"),
+                            MeteringPointId = new Guid("e4f44516-a4ac-0540-dcb4-1225681f781b")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("2351a220-7210-93af-3bcf-51eb1b4b3cc1"),
+                            MeteringPointId = new Guid("277cefd6-ab0a-6144-f135-9ed57e558e72")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("687eb3ce-6514-4b41-8d42-6d20def61054"),
+                            MeteringPointId = new Guid("cd26df0a-2332-df8c-29fe-795aebd88ba8")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("8da36636-be12-e69f-e6a8-dfaec757e6a3"),
+                            MeteringPointId = new Guid("022dd4b1-c250-127c-fbd4-c08eae7e11ae")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("8b3840fd-7c79-d3bf-d1f5-75033761e3fe"),
+                            MeteringPointId = new Guid("44062ddd-ea60-8f18-9612-08b88b8f7e22")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("8b3840fd-7c79-d3bf-d1f5-75033761e3fe"),
+                            MeteringPointId = new Guid("121f8968-6ded-f630-4cda-5d0108f21e29")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("238e576b-7d9d-d7ad-e59c-0ebc58244808"),
+                            MeteringPointId = new Guid("ddaefed0-5944-f2d9-2692-af0c164839da")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("23fe7268-c768-1973-48da-b81e9c7d873d"),
+                            MeteringPointId = new Guid("d2eda190-4998-d1b5-80c8-f3581cabbaa1")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("d79dd0db-265e-8677-16bf-d6adfe5468f6"),
+                            MeteringPointId = new Guid("a29cf9d2-888f-26f5-e420-0db1f6655f5f")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("77837546-2b67-2a0e-7a59-a3a26ee96bf9"),
+                            MeteringPointId = new Guid("9c145446-5ebe-4b10-31cf-84b379ad8abe")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("d1f072aa-4ca7-58dc-6130-9cefac813d82"),
+                            MeteringPointId = new Guid("de588182-2195-6afd-f681-8ef3f1bb2202")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("91a13c5f-406b-740c-121d-62f66116f7c2"),
+                            MeteringPointId = new Guid("28f5f341-2b91-844b-2c1f-2608e9dd8419")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("882dcb4e-cf42-1cd7-b27b-bdbeca8c4432"),
+                            MeteringPointId = new Guid("0907cb2f-85de-843d-a39e-d4cc28a76063")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("601c2afe-6e8d-e0bc-7ad3-878fc22c8dae"),
+                            MeteringPointId = new Guid("b4e11004-38dc-5664-7b83-8d58e779f148")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("db5cc6f5-f675-89f9-d2ce-1afda59318e6"),
+                            MeteringPointId = new Guid("d0e7e48e-28bd-fc03-4afe-dcb859cd1626")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("5f850c1e-976b-4a52-d8a1-7c793cd62ce5"),
+                            MeteringPointId = new Guid("595cd36f-f309-fa41-5dd7-a017a4e9fda6")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("8152d030-4ee5-24f9-163d-2edc8bd6f4e8"),
+                            MeteringPointId = new Guid("d570a6c2-8ea5-b495-c74b-12e35e30ff52")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("99f830d4-8de8-9b29-99e8-224679bf2855"),
+                            MeteringPointId = new Guid("414d4fd2-52c1-509f-c817-70da27f095c0")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("03bef92a-e1bd-7a9b-a707-8dc96cac7b66"),
+                            MeteringPointId = new Guid("de9d3a8d-6d3a-43e3-9108-acfa3be2a385")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("03bef92a-e1bd-7a9b-a707-8dc96cac7b66"),
+                            MeteringPointId = new Guid("4c2f5cce-0368-7d2e-79dd-6f365f187ff7")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("e7ec8545-1637-f2a8-06a9-a1e367196e7c"),
+                            MeteringPointId = new Guid("93697a9e-a1bd-17cf-51e8-96fb40f9fb02")
+                        },
+                        new
+                        {
+                            CustomerId = new Guid("e7ec8545-1637-f2a8-06a9-a1e367196e7c"),
+                            MeteringPointId = new Guid("f5ff4642-033e-6193-d1ae-15a33f95eab5")
+                        });
+                });
+
             modelBuilder.Entity("EGWNCentral.Core.Domain.Entities.CommunityParticipation", b =>
                 {
                     b.Property<Guid>("Id")
@@ -10060,9 +13482,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                     b.Property<DateTimeOffset>("CreatedAtUtc")
                         .HasColumnType("timestamp with time zone");
 
-                    b.Property<Guid>("CustomerId")
-                        .HasColumnType("uuid");
-
                     b.Property<DateTimeOffset?>("DeletedAtUtc")
                         .HasColumnType("timestamp with time zone");
 
@@ -10088,8 +13507,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("CustomerId");
-
                     b.HasIndex("MeteringPointCode")
                         .IsUnique()
                         .HasFilter("\"IsDeleted\" = false");
@@ -10101,7 +13518,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("ef047e71-5b9a-ed04-a1cb-b43264ff2b67"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("218e0f3a-879b-1058-c62f-e8de075fa797"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000000935801"
@@ -10110,7 +13526,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("8ffda967-29c5-e16e-87b8-bb1db7370674"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("43acd285-4cac-0190-1f3a-2e0adfc856ac"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000000925201"
@@ -10119,7 +13534,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("c2111bf2-9de5-6c98-a3ce-f85921026427"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("43acd285-4cac-0190-1f3a-2e0adfc856ac"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000000925202"
@@ -10128,7 +13542,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("6f03a1db-ca0f-ad70-3564-e3cb782d59f5"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("43acd285-4cac-0190-1f3a-2e0adfc856ac"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000202303290250696"
@@ -10137,7 +13550,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("8bed9ae2-5fe1-b2c2-795b-39740d106ddc"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("d3d81866-00f6-73b9-eaea-efd9a73dfe1f"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000202208230155174"
@@ -10146,7 +13558,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("d85f95b1-3639-31f9-4fc9-1042effe8df9"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("1ad4efba-f1bb-6795-9994-cf211b7272fd"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000003197401"
@@ -10155,7 +13566,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("e3fdcba4-7368-5651-e897-67bf38745781"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("1ad4efba-f1bb-6795-9994-cf211b7272fd"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000202210200175458"
@@ -10164,7 +13574,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("bfdad804-392b-60ae-afc8-00ac789f6979"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("e58bb602-e608-ccf0-303a-44c68d65e10d"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000202007090074750"
@@ -10173,7 +13582,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("2e7e0b5b-3c49-d719-3501-860fa5100675"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("e58bb602-e608-ccf0-303a-44c68d65e10d"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000000000000122169"
@@ -10182,7 +13590,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("46037f73-2503-bce8-1d7b-a9e8ab918290"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("e58bb602-e608-ccf0-303a-44c68d65e10d"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000202008060075287"
@@ -10191,7 +13598,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("66dbf53c-88a0-0a21-1372-d7b92bde0293"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("336445c9-a74c-eb38-d6b4-d3b7980f9f16"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000201803050055336"
@@ -10200,7 +13606,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("c870cc25-d689-5d31-bdc4-9f97057f4c72"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("336445c9-a74c-eb38-d6b4-d3b7980f9f16"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000000937101"
@@ -10209,7 +13614,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("530021c4-1cd2-58bb-0f97-cc739f104946"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("336445c9-a74c-eb38-d6b4-d3b7980f9f16"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000201803050055335"
@@ -10218,7 +13622,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("9ac72409-85ec-5d65-2a9d-40dd3eb97832"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("336445c9-a74c-eb38-d6b4-d3b7980f9f16"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000202103230088275"
@@ -10227,7 +13630,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("79825680-b9be-9f06-b03e-868e5baab623"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("336445c9-a74c-eb38-d6b4-d3b7980f9f16"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000002997701"
@@ -10236,7 +13638,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("6c55b8d4-58d4-bbb3-6177-819ad226505d"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("336445c9-a74c-eb38-d6b4-d3b7980f9f16"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000000000000000000004607401"
@@ -10245,7 +13646,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("50449caa-ef93-86aa-3ca5-945a180c04f1"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("336445c9-a74c-eb38-d6b4-d3b7980f9f16"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000000000000000000004607601"
@@ -10254,7 +13654,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("d13d3072-2598-0bd0-b8c1-dcd052a91efc"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("336445c9-a74c-eb38-d6b4-d3b7980f9f16"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000000635701"
@@ -10263,7 +13662,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("a6f0250d-5d1f-f0ba-4672-dd4a42b333a5"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("364ed966-d65c-a1db-c756-eb1abc4c4b43"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000003271501"
@@ -10272,7 +13670,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("d37b1d6a-a238-16c6-9bd4-031dfabbedac"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("e21898a7-0045-927c-13dd-5c23aab23d4b"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000000000000072048"
@@ -10281,7 +13678,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("5c42bb8d-8738-2628-acb9-257ecb393396"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("7828e932-8ed8-d15c-8d9a-98d0e0b20aa9"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000000887501"
@@ -10290,7 +13686,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("b5c75c2f-730e-8d9c-40bd-2735b04da324"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("83cf7d50-74d7-bfcb-4c41-cff361cec025"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000818100000000000001622401"
@@ -10299,7 +13694,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("ad364d22-eb39-4762-afb6-e0b46067d10b"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("143a76e6-b351-d791-405e-7dc1d2d88cbd"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000818100000000000001638001"
@@ -10308,7 +13702,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("f9d676a5-83a7-1ff8-02ce-6c786b100f06"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("143a76e6-b351-d791-405e-7dc1d2d88cbd"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000818100000201607210040147"
@@ -10317,7 +13710,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("0f1843ac-b538-8b8b-7937-241b5c95b4e9"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("a70faea4-4a6c-ddca-3bba-35a358bb4ec4"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000000000000112968"
@@ -10326,7 +13718,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("4a869124-47a4-a75e-7e2d-e99bb0b3877f"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("c0807871-32a9-e085-0426-830dfc512b52"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000000000000112969"
@@ -10335,7 +13726,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("fbaacfe6-7d58-a583-6b11-39396682726c"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("4ee805f8-1821-9601-d681-08f021bc50ae"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000000000000112971"
@@ -10344,7 +13734,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("cec10323-1cf9-727d-ae51-9d7255d9fb85"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("111dc07c-d94b-82db-5f6a-53ca287c2908"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000000918201"
@@ -10353,7 +13742,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("fa8429db-1bfd-2b3b-14c5-e17d9d302254"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("90b17337-72b4-9079-6d7f-7898b7680b77"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000003281601"
@@ -10362,7 +13750,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("df072fb9-7d99-aede-728a-24e1ce976d6f"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("b65da3fb-239b-3e8d-893f-578b70526312"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000000935301"
@@ -10371,7 +13758,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("741aa35c-d35d-c706-19a6-63f22fd929d5"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("4d608625-9ec1-8e76-cb45-4b0eb398a91b"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000001691001"
@@ -10380,7 +13766,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("bfb0623a-b289-c7bd-d0a3-e2e4ad1b7d1a"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("4d608625-9ec1-8e76-cb45-4b0eb398a91b"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000202311280337421"
@@ -10389,7 +13774,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("3532a1d9-fa72-85e7-d359-29c75dabc770"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("c77b3606-4052-dcd8-f69e-e6601f501b3e"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000818100000000000001673501"
@@ -10398,7 +13782,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("841aa636-6642-56df-b57b-5a345fea6cfd"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("6db77350-409a-4a7d-9383-e92bcd83d70b"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000001397802"
@@ -10407,7 +13790,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("e1c07234-f17a-0177-4cd2-6025fca20b35"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("6db77350-409a-4a7d-9383-e92bcd83d70b"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000001397801"
@@ -10416,7 +13798,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("e3384cac-353a-3313-99c3-256420a04064"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("b5b6ff5d-4894-2a47-f188-e17e4ae0d624"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000202207010137300"
@@ -10425,7 +13806,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("bbb8f503-5ece-bbd4-fa0c-44cbc3c7bb0b"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("b5b6ff5d-4894-2a47-f188-e17e4ae0d624"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000000882001"
@@ -10434,7 +13814,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("962e18da-0380-c341-5697-a2433f6eaf96"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("d78743b8-c57b-db61-a71a-160ca1bf9086"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000202207010137303"
@@ -10443,7 +13822,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("73c4305e-7846-a9d7-1a8d-358fccc587a8"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("d78743b8-c57b-db61-a71a-160ca1bf9086"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000000000000000000000884801"
@@ -10452,7 +13830,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("910d2fc6-6d3a-3938-2302-51e952adde9b"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("54c6dd37-2e17-27de-0de7-c62cd109f077"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000000000000000000004628701"
@@ -10461,7 +13838,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("f1109f5d-e9db-3b9e-bd2f-5118725ecb50"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("8edb6e6f-30e9-6582-f251-3eb2890c9967"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000201311100020197"
@@ -10470,7 +13846,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("a7263a9c-019f-e624-f780-85f55bf30b7e"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("8edb6e6f-30e9-6582-f251-3eb2890c9967"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000000918301"
@@ -10479,7 +13854,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("56c805de-f235-b5da-f22f-7250f3847a1c"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("8edb6e6f-30e9-6582-f251-3eb2890c9967"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000000000000108046"
@@ -10488,7 +13862,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("89a4e9aa-f116-a46a-846a-11b09a25043b"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("1fea674a-fc75-1627-a28d-e9f79dd91fbe"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000000000000052510"
@@ -10497,7 +13870,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("af318c62-1657-da20-da54-31134aae4103"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("1fea674a-fc75-1627-a28d-e9f79dd91fbe"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000000000000052584"
@@ -10506,7 +13878,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("dee211c8-f7b6-8ae6-bda8-bcf2189f3e52"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("1fea674a-fc75-1627-a28d-e9f79dd91fbe"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000003894801"
@@ -10515,7 +13886,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("8fd8d889-7a81-59d4-b56f-6be3b79a6754"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("1fea674a-fc75-1627-a28d-e9f79dd91fbe"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000004236201"
@@ -10524,7 +13894,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("68dd066c-d6d3-12d8-1f6a-0a55bd67b683"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("1fea674a-fc75-1627-a28d-e9f79dd91fbe"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000004113801"
@@ -10533,7 +13902,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("c6855c14-2b42-086d-4c12-549b07ca9037"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("1fea674a-fc75-1627-a28d-e9f79dd91fbe"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000004090101"
@@ -10542,7 +13910,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("d0e484f7-7048-3c57-5077-fc1daea94879"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("1fea674a-fc75-1627-a28d-e9f79dd91fbe"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000004090001"
@@ -10551,7 +13918,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("2a582092-2ffc-2b09-4755-82b40e502ccc"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("1fea674a-fc75-1627-a28d-e9f79dd91fbe"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000003823901"
@@ -10560,7 +13926,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("96890bde-0a86-f36a-e076-1ccc40157009"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("1fea674a-fc75-1627-a28d-e9f79dd91fbe"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000003432201"
@@ -10569,7 +13934,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("201487e4-7321-ab94-5153-10f67f1a0106"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("1fea674a-fc75-1627-a28d-e9f79dd91fbe"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000003802702"
@@ -10578,7 +13942,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("ee01716a-b3ae-1640-e7e8-7a649df02dfe"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("1fea674a-fc75-1627-a28d-e9f79dd91fbe"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000003404902"
@@ -10587,7 +13950,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("ec403c56-3607-1e96-329f-4c658c3fa466"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("1fea674a-fc75-1627-a28d-e9f79dd91fbe"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000002296201"
@@ -10596,7 +13958,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("0ef660d3-6b19-541b-4150-0bffcb37f623"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("1fea674a-fc75-1627-a28d-e9f79dd91fbe"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000000712301"
@@ -10605,7 +13966,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("bd3bfe98-de65-bfb3-69a6-b87723d3c654"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("1fea674a-fc75-1627-a28d-e9f79dd91fbe"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000000933301"
@@ -10614,7 +13974,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("8416a93f-6dd8-dbba-c1a6-75ac888c0348"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("1fea674a-fc75-1627-a28d-e9f79dd91fbe"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000000000000000000004460201"
@@ -10623,7 +13982,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("19421a54-3110-5cf6-de54-320686a27d47"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("1fea674a-fc75-1627-a28d-e9f79dd91fbe"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000004090201"
@@ -10632,7 +13990,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("4646859f-adb3-a4d2-04c9-b05587518be5"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("1fea674a-fc75-1627-a28d-e9f79dd91fbe"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000201908080069960"
@@ -10641,7 +13998,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("382e6011-d8c4-9255-d4d1-102bcdec556a"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("1fea674a-fc75-1627-a28d-e9f79dd91fbe"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000201908080069959"
@@ -10650,7 +14006,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("b8ffef5b-c4ac-e071-584a-5d1b5fa2af08"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("1fea674a-fc75-1627-a28d-e9f79dd91fbe"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000202003270072976"
@@ -10659,7 +14014,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("d8ea0ef6-628c-d025-34be-f9d8496c3625"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("21b51cf7-75c1-ffc4-31e0-d75514481acf"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000818400000000000001203201"
@@ -10668,7 +14022,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("773d4271-3ff5-78f8-8fc3-d4142d851fda"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("3c1a5484-53dd-be99-da2e-a983ff5d06fc"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000000939701"
@@ -10677,7 +14030,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("1f4e1363-4d2f-3be0-3916-ecfe81bbc741"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("3c1a5484-53dd-be99-da2e-a983ff5d06fc"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000202203170109497"
@@ -10686,7 +14038,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("b334ebc9-ee2b-c873-c3ae-960855fc70d2"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("70081a9b-0a9c-1fa7-3401-69ddde89e52c"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000818300000000000001706301"
@@ -10695,7 +14046,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("b2a8cb65-166c-158c-f5d8-cd137e1b04db"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("70081a9b-0a9c-1fa7-3401-69ddde89e52c"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000818300000201611100041934"
@@ -10704,7 +14054,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("0438375a-c0ec-6d43-3b18-30ede5cf930c"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("87bf26e3-3887-7c2a-c42f-70cdd4deb567"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000000000000000000002885301"
@@ -10713,7 +14062,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("b28fb7bf-6100-9150-bc3a-41931fb22537"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("513b56ac-eb76-6360-5f46-e9e2a56a7942"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000000000000083250"
@@ -10722,7 +14070,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("547e7b70-2d98-938c-31a8-15924cab35f0"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("513b56ac-eb76-6360-5f46-e9e2a56a7942"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000202205020119653"
@@ -10731,7 +14078,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("1ad51006-eb65-748a-3bbd-0afaa130b0a2"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("b5eee575-5230-5551-221f-b59b14e86786"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000004334101"
@@ -10740,7 +14086,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("cc9754d1-b03c-6e29-425c-f5381360e59e"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("313294e5-7d57-16c6-b03d-354583ea8282"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000000936101"
@@ -10749,7 +14094,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("768a398e-49ec-a787-ae55-e06de292e9b1"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("313294e5-7d57-16c6-b03d-354583ea8282"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000202202230107393"
@@ -10758,7 +14102,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("b02341c1-35d5-5901-a4fb-6a34a085a6a3"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("fd2bf267-988b-1b2e-d0db-fecc6f68ae2b"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000004172901"
@@ -10767,7 +14110,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("0417f1f6-013d-fd8b-8b15-c03e2d90fb87"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("fd2bf267-988b-1b2e-d0db-fecc6f68ae2b"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000000000000000000004601801"
@@ -10776,7 +14118,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("1bb625cc-ff08-6fd7-9ecb-bb2cfda14099"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("0fb3ae00-076f-7b38-2226-b966ebdb72c1"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000004043401"
@@ -10785,7 +14126,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("f5bb63bd-9b8b-1e15-3d60-ac8f9bc8c2f0"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("0fb3ae00-076f-7b38-2226-b966ebdb72c1"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000202511200579138"
@@ -10794,7 +14134,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("714e4f1d-d2bb-34d1-6c3c-96b3a5189fb3"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("a49142ad-9a06-a9f4-c67d-4a06c6eb9bbf"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000201210290012942"
@@ -10803,7 +14142,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("41ee2eb1-1da6-68f8-a403-8f2f63726fab"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("a49142ad-9a06-a9f4-c67d-4a06c6eb9bbf"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000000000000000000004487501"
@@ -10812,7 +14150,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("f21d1eec-a6f3-39f5-c501-ff28be64d10a"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("6f443636-56eb-2b73-6068-029e33942881"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000002086801"
@@ -10821,7 +14158,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("ba357487-227f-b5c6-9a98-2b2c3ec7a7dd"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("6f443636-56eb-2b73-6068-029e33942881"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000202311210336933"
@@ -10830,7 +14166,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("a4a542c9-077d-cfce-3611-e2b558feb183"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("e9c5ed92-bd96-d2f9-69e0-a71602b21d3a"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000000000000103858"
@@ -10839,7 +14174,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("001d675d-7534-0a42-15fa-651b7f0ba49b"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("e9c5ed92-bd96-d2f9-69e0-a71602b21d3a"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000201809250061879"
@@ -10848,7 +14182,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("26f4f392-7034-ee57-de01-50c12140b5fa"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("bd306cba-284a-a06b-bd93-c0451ef3f42b"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000001938701"
@@ -10857,7 +14190,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("85ae7141-5d6c-d73e-589d-8fc6b6e1b429"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("bd306cba-284a-a06b-bd93-c0451ef3f42b"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000202307190295505"
@@ -10866,7 +14198,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("ba71e052-2390-015a-8092-c855e8b5a455"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("dbed09e7-1f72-24da-e748-14e96180b661"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000002554801"
@@ -10875,7 +14206,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("38d3fa0a-e876-4645-995e-4867905a00c7"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("dbed09e7-1f72-24da-e748-14e96180b661"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000202411180472591"
@@ -10884,7 +14214,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("e17d1e75-6c24-de34-055c-54381bae0c22"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("201a2795-76c2-54f9-6847-8ae96dbdd33d"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000000936901"
@@ -10893,7 +14222,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("f9672152-5e99-dd4f-f655-f5109f35fdd4"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("a7f100b3-5c24-6126-7e49-ab1d7fe26840"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000806200000000000000292201"
@@ -10902,7 +14230,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("b0a16908-76fb-9c87-1a91-5f69496b6b04"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("98c6c6d8-271a-db05-ba6b-23adda15d2b8"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000002171001"
@@ -10911,7 +14238,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("be57bd2c-c95c-7d37-eace-7b72859606ab"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("da934a24-86ad-b8e9-48b7-6388c98a3e63"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000002452801"
@@ -10920,7 +14246,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("943b8d7c-5aa9-9f7f-3b1d-e9d0cde1473d"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("da934a24-86ad-b8e9-48b7-6388c98a3e63"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000000000000000000004527101"
@@ -10929,7 +14254,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("2808e9a7-1e1d-2de2-43b4-27ecc6f13810"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("7b884bd1-f479-bce6-6d84-3d5e544a77d8"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000004180701"
@@ -10938,7 +14262,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("647297cd-3098-2fa2-189b-fbe3ca70413f"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("9a2c5f86-bd86-5cbc-978b-b12eb2073e6c"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000806100000000000002865101"
@@ -10947,7 +14270,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("20235a9f-5b9b-01f1-a7bf-8acf3c358211"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("6cc27938-5f38-9c3b-b1ac-c13ecb7a9baf"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000003626101"
@@ -10956,7 +14278,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("58ebfe0c-1c1b-d4d7-c994-8bfeb8cb0784"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("6cc27938-5f38-9c3b-b1ac-c13ecb7a9baf"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000201310250020010"
@@ -10965,7 +14286,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("9db54e39-a31f-33c5-eb65-16de058753a9"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("4d2fca80-47d4-b366-c819-df199e20a3d2"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000002116301"
@@ -10974,7 +14294,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("fe17bec9-c12f-ab49-41ca-63022c8fc03b"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("083917fd-d389-da4f-a34d-f805c2ff7347"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000004234801"
@@ -10983,7 +14302,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("ef33dbef-efe8-05db-e0ed-c7104fedcd5a"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("0470db8e-8dad-f18a-7f7a-4d7fa4c5944c"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000002125201"
@@ -10992,7 +14310,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("8dce60e7-ae03-dbd5-a232-dd28f7d5c07d"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("0470db8e-8dad-f18a-7f7a-4d7fa4c5944c"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000002125901"
@@ -11001,7 +14318,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("c98fda51-08ef-ff1c-f871-5d7957104ef5"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("26ae226b-c171-2389-e4cd-a874fafda1e3"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000000946001"
@@ -11010,7 +14326,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("f7a328e8-0220-aaa9-d37c-c6ed716a5f2b"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("26ae226b-c171-2389-e4cd-a874fafda1e3"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000202107220094681"
@@ -11019,7 +14334,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("d5571310-20a5-d668-e7b5-31c2382d91fe"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("8b727f6c-7b99-d597-4c19-bd5a26ca8451"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000002725401"
@@ -11028,7 +14342,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("d68268f8-4167-589d-6a7a-8c80caf46f8d"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("8b727f6c-7b99-d597-4c19-bd5a26ca8451"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000201311190020380"
@@ -11037,7 +14350,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("8d5a56e3-ba10-8aa5-a26b-4d13296b0600"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("d94866df-5040-4544-53a7-cde3244c2f79"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000000000000000000004608001"
@@ -11046,7 +14358,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("e1b235a6-479a-799a-05b3-b1d3e7639a21"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("8567c93d-1c6e-0e4d-1024-db3317b269b9"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000004116901"
@@ -11055,7 +14366,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("1ac54199-b909-4b1c-6f70-147e517d7316"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("537b826b-a9ed-4cfd-ac5b-42bf79928864"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000202207180139383"
@@ -11064,7 +14374,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("2e424597-7450-513a-3707-2ff0780be0b7"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("537b826b-a9ed-4cfd-ac5b-42bf79928864"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000000449201"
@@ -11073,7 +14382,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("3cae5e62-7adb-1a95-91ca-0d4aa44d3807"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("1df838ce-2bcc-76c1-1f13-38c82656fd45"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000000660101"
@@ -11082,7 +14390,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("b2a747d0-ca62-977f-b2cb-a02ca9dd5949"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("bf98c312-2130-94e7-b6fe-6eb01fe5cd9f"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000002561501"
@@ -11091,7 +14398,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("f37fce59-10cc-62ce-c5cb-164e42e36fee"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("bf98c312-2130-94e7-b6fe-6eb01fe5cd9f"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000000000000000000004683501"
@@ -11100,7 +14406,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("2df0d405-458d-b8e0-7350-d3712f651aed"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("e42f9f49-9e49-a4d6-0ea2-5226f981ef12"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000002487201"
@@ -11109,7 +14414,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("8ba1ecfa-1b96-dc4a-73c6-7d314aa53040"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("e42f9f49-9e49-a4d6-0ea2-5226f981ef12"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000202502170499671"
@@ -11118,7 +14422,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("9cb3e3c4-101f-2fcf-5010-7c8eb87fa3c3"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("aa61febb-c7c4-b945-4074-38dcbc9d6ff8"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000002409001"
@@ -11127,7 +14430,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("ab321e18-f627-4924-4a30-b6528af0ecb0"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("aa61febb-c7c4-b945-4074-38dcbc9d6ff8"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000201705030044080"
@@ -11136,7 +14438,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("1f1b30f5-7ff7-6e9b-2864-4569717008cf"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("5f0ce931-8922-55a3-ad4f-08e26726c0e4"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000818100000000000002455701"
@@ -11145,7 +14446,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("20d5169b-45c5-beb8-4640-5d8fd7374f21"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("76892c1a-b2b6-a26f-89e1-15a4a4a9ff4d"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000000402001"
@@ -11154,7 +14454,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("f9cfbf93-19eb-0bdb-f837-8fd4392366f2"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("20dcfff0-43cf-16f0-9711-a875a645085e"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000004319201"
@@ -11163,7 +14462,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("dfddb19d-0e2a-ba5c-6868-460d1eb2fdf6"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("20dcfff0-43cf-16f0-9711-a875a645085e"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000201708100046773"
@@ -11172,7 +14470,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("6c09b16c-f27d-701d-a2a7-59e6b36ea1c5"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("ffca2d3f-4702-ab1d-4f4d-883d378a92ef"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000002273001"
@@ -11181,7 +14478,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("39daeb5f-d38b-1eed-8079-ac7e7ba6e4ab"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("ffca2d3f-4702-ab1d-4f4d-883d378a92ef"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000000634301"
@@ -11190,7 +14486,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("477d158c-12df-aca6-edbd-b3d6c60d0df2"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("a39369c8-3bc4-bc0e-6c41-d3ac8dc819bd"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000000475501"
@@ -11199,7 +14494,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("cbf185ef-4f0f-0979-4ff8-3e4b9bd9d67a"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("1126893c-391e-61e4-7585-80557952d0cd"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000002625201"
@@ -11208,7 +14502,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("af5015d6-6c19-1adb-4328-d2fb3ae695b8"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("1126893c-391e-61e4-7585-80557952d0cd"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000002086401"
@@ -11217,7 +14510,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("9ab7b095-1e3a-3a13-76b0-fbd3134aed20"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("1126893c-391e-61e4-7585-80557952d0cd"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000000000000064975"
@@ -11226,7 +14518,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("c5745cba-1a5c-9571-8df0-75f83456abb4"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("b96a5335-d019-6468-ab90-e8695ec85aeb"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000001588001"
@@ -11235,7 +14526,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("689a6a1c-6b84-7cf1-c0b5-7fef85493855"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("b41a5bb1-39d1-efd6-78c3-73256abbc7e6"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000000000000000000004425401"
@@ -11244,7 +14534,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("e7e5deb0-8cdb-237c-4609-68a179d0c12e"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("5dbc0b76-cf70-3d95-c79e-af65ac29aa9e"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000003037901"
@@ -11253,7 +14542,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("8edbb852-8a4b-009f-e6a2-e384001fd094"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("5dbc0b76-cf70-3d95-c79e-af65ac29aa9e"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000202204250117985"
@@ -11262,7 +14550,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("c430a8c6-f58c-ebb9-0cb3-0ac5ac957279"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("55823e36-ac80-fdff-8813-e7e8d50dae77"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000000000000000000004434101"
@@ -11271,7 +14558,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("49fa0c5a-05eb-c863-d93c-df3762423b07"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("9fbf0fe0-22e8-ea42-dd85-cda7dd952644"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000002113401"
@@ -11280,7 +14566,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("4f050f1e-aa3b-3d5b-df12-c9506b210f2e"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("1cf924b0-61a9-7862-c9bf-6b4ac402a130"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000000410201"
@@ -11289,7 +14574,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("aacc1662-160c-d585-5c82-fe59d473b2b4"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("ae3ca3ac-ebfa-d41e-d56c-d0b92135f59b"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000000937301"
@@ -11298,7 +14582,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("28ab7eb0-f404-25a0-ef45-70b7f3bc6004"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("4efc3164-cf8c-46d4-4982-8cbd7bcb80e6"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000000474501"
@@ -11307,7 +14590,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("35e17716-541a-aa6f-6c3e-8eaa7488be60"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("e08057d1-55aa-8932-64e4-cfb701e65d91"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000000000000000000004486101"
@@ -11316,7 +14598,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("35b870a7-1b7c-690c-d408-7a01410f82b8"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("c45be0d9-adba-36b5-01da-f8ab4191c1a6"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000000940201"
@@ -11325,7 +14606,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("9eb3e67c-6b05-2c94-d16f-6cf50fe3cabb"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("9fbc7565-5831-8595-50a2-7aedff28c43d"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000000000000000000002109401"
@@ -11334,7 +14614,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("fb94b031-c97f-42d9-242f-0a5f21972302"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("9fbc7565-5831-8595-50a2-7aedff28c43d"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000000000000000000005106401"
@@ -11343,7 +14622,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("042450b3-44dd-d16a-f01b-850bcb790533"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("ebc23f35-8b20-a894-6044-5c6941cf5ca6"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000000941201"
@@ -11352,7 +14630,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("bc605a57-f0ed-ab20-896e-7320cf2ab3fa"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("092fcc0f-9926-7ea0-fb9d-ba0fee77cd5a"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000000000000099122"
@@ -11361,7 +14638,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("6fa676d9-5446-a91c-5c63-addb0319883a"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("092fcc0f-9926-7ea0-fb9d-ba0fee77cd5a"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000202304050251993"
@@ -11370,7 +14646,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("1736ac71-c5d8-b751-bc90-23abc548f100"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("5067485e-a1d4-2dce-ec24-955d8fff8421"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000001696001"
@@ -11379,7 +14654,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("7c6d1901-d3ee-8f6c-26c1-b9ec2dbe23a5"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("b19b5fc7-343a-58ec-4871-05762405f95a"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000001910701"
@@ -11388,7 +14662,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("9e3d23c0-9122-908f-3e9e-30e43c20ea9d"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("b19b5fc7-343a-58ec-4871-05762405f95a"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000001910702"
@@ -11397,7 +14670,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("8162514f-9473-ce1f-c881-26664a9adcb4"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("ade583e3-89bc-a133-9017-e485bf86ac9f"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000818200000000000000979601"
@@ -11406,7 +14678,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("4762c32f-79f7-af91-c823-c2c59c149464"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("ade583e3-89bc-a133-9017-e485bf86ac9f"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000818200000000000000979602"
@@ -11415,7 +14686,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("abace5d2-90b6-fa70-2eba-ecaebab9edba"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("ade583e3-89bc-a133-9017-e485bf86ac9f"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000000000000000000004572001"
@@ -11424,7 +14694,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("302aa597-a9e2-eb3c-7ea4-2a11afd48a4a"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("9976aa71-db88-6a44-8e3e-6484f1b2376a"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000002158001"
@@ -11433,7 +14702,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("d5f8478b-a17b-5698-d2a6-0d37a3a7ec4e"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("798e9908-db35-b510-baaf-7e5031421ffe"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000002738601"
@@ -11442,7 +14710,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("8b96873c-192e-216f-e436-0b7fac74bf9f"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("0cb44ea8-b29a-2072-85b5-80ad342e4309"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000000934601"
@@ -11451,7 +14718,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("b579ccb8-e441-d56a-9deb-7446e3f00c44"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("616e76bf-6be6-b3de-b8a0-f2d2300ae423"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000000000000000000000935901"
@@ -11460,7 +14726,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("9e9e665c-99fb-2ede-3f15-bab4c3523a69"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("616e76bf-6be6-b3de-b8a0-f2d2300ae423"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000202109230098261"
@@ -11469,7 +14734,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("a6fe2507-ad19-3a9c-766a-38952c21763d"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("989c0340-3585-c4d5-f2ab-a0daf524fa7f"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000001422201"
@@ -11478,7 +14742,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("5f0c3b31-909f-1c1c-a922-7b73fbc3c131"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("80d8980c-43c6-ac1e-ce7d-178190077d64"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000003911201"
@@ -11487,7 +14750,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("97c505ac-fb0a-21e7-734d-0e42092302af"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("80d8980c-43c6-ac1e-ce7d-178190077d64"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000202407020424513"
@@ -11496,7 +14758,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("935a3832-f40b-2908-c2a7-434f3a34882d"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("42e5df99-8a7a-f554-48f1-93b0386fb87c"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000202105160091903"
@@ -11505,7 +14766,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("687b0a1e-5c79-22c1-d74b-cb5b0a202292"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("e152d25a-db03-6e7c-217d-6f63e9899cd9"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000000000000000000004541201"
@@ -11514,7 +14774,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("29497da8-43ed-27f2-d7c3-d1d0d9617ab8"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("ca56fc23-e253-1b48-04aa-4c363dc800f5"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000000000000000000004362001"
@@ -11523,7 +14782,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("a8f312e7-729a-d18e-8caf-91e0993e0a2e"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("ca56fc23-e253-1b48-04aa-4c363dc800f5"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000202205240122560"
@@ -11532,7 +14790,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("62921347-3fe0-fd61-b54b-e407a2929e6a"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("7d6dde30-d5e1-1a23-e4f7-a4af8cdb1074"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000000000000074899"
@@ -11541,7 +14798,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("5ed65a19-2055-5d8c-3976-a5033bbb7f22"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("7d6dde30-d5e1-1a23-e4f7-a4af8cdb1074"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000202205090120724"
@@ -11550,7 +14806,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("a0b65403-86df-f7de-7148-2bfd2b38d937"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("abe1f133-f38e-050e-67d1-17e4eac32343"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000000000000115587"
@@ -11559,7 +14814,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("3ccf802c-94de-6db3-0858-da19e31d8cd1"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("0cc4ff47-ae73-8b27-272d-1af626e1b4de"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000000895801"
@@ -11568,7 +14822,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("3af499e6-3408-6958-c796-a01f84ebbac6"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("0cc4ff47-ae73-8b27-272d-1af626e1b4de"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000003652101"
@@ -11577,7 +14830,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("3b6cc142-b48f-3dbb-e511-5ea988c348d2"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("c31bf8b5-6bc5-8b88-41a4-992456a3d193"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000002212701"
@@ -11586,7 +14838,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("1b62ccaf-7d71-709e-e8fa-e5ee3c45e1a2"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("de0f966c-fb50-c145-bef4-fff562bb76f7"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000002789401"
@@ -11595,7 +14846,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("109caf33-a00e-86db-5986-07b7f9d35c6c"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("de0f966c-fb50-c145-bef4-fff562bb76f7"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000002789402"
@@ -11604,7 +14854,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("78762416-97ff-1c0f-e84f-f8d13f12d871"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("bf2295f1-6c88-ca34-658f-b249b6bc26f5"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000202210130173360"
@@ -11613,7 +14862,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("a2881394-4dd0-865c-cf1d-d485ad15aabd"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("bf2295f1-6c88-ca34-658f-b249b6bc26f5"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000003683101"
@@ -11622,7 +14870,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("a59b8260-9304-8395-ab69-54b29734ac17"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("863e7a1b-cdd1-f485-e8ed-b9b4c510aaf8"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000818200000000000003953401"
@@ -11631,7 +14878,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("6416a5c9-1d0d-31c5-1277-9a55d4f3f156"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("30aa9dce-ac2e-8f1b-5144-324142ee4e16"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000000000000000000004520701"
@@ -11640,7 +14886,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("de0a0b59-29b8-7f17-a3e2-6d1cf4184635"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("e9a47253-da66-af44-4641-039da83ccee6"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000004156401"
@@ -11649,7 +14894,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("405632f9-9a69-a15f-c440-34dd82df78c7"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("22f0bc22-d834-1cbf-4a79-0f9f5fae4c93"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000202208170153730"
@@ -11658,7 +14902,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("142a21f5-3fde-8376-be93-cacd122a9af8"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("22f0bc22-d834-1cbf-4a79-0f9f5fae4c93"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000000586201"
@@ -11667,7 +14910,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("ad595759-47a5-017f-475f-ef2c7ce0032a"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("c7a4cbc2-385d-9cdc-69ae-d2ed60f69d07"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000000397701"
@@ -11676,7 +14918,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("a492bfee-c8ca-eccf-41b9-887fa6a77e11"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("72643121-1921-d8f0-5097-a661fe2c270f"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000818100000000000005012102"
@@ -11685,7 +14926,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("7d393c2f-a91c-cdca-a66b-ba01eea0a6b4"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("d224fe9d-4d2c-dd42-7ec9-eaba907236de"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000818100000000000004024801"
@@ -11694,7 +14934,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("ffe7a05b-7caa-a490-cfbd-17208fc24538"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("bcc8dc57-d97b-b4d9-7cf5-4929c5350ebb"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000000946101"
@@ -11703,7 +14942,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("61832f4e-ed77-f53f-d877-bef7fd4b8ea7"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("c519ec02-548d-98ce-1004-777fcb8fa449"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000002979601"
@@ -11712,7 +14950,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("639e435d-347d-1288-0b37-d98a5696666b"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("25e39894-2fbc-3c3b-43b8-248719dfa849"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000003397601"
@@ -11721,7 +14958,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("ac42f2b6-3bb2-68cc-f0f0-7ccd083f2baa"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("25e39894-2fbc-3c3b-43b8-248719dfa849"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000201409170023077"
@@ -11730,7 +14966,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("dd6a43db-e7b0-30a7-8ccf-92eda7b63698"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("60a4d2e9-a0b1-aa76-7629-60cf3f1922c8"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000003710501"
@@ -11739,7 +14974,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("9dd69492-7394-a256-5668-f04a413bfc3b"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("60a4d2e9-a0b1-aa76-7629-60cf3f1922c8"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000003710502"
@@ -11748,7 +14982,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("bbf48b92-3dee-7bb7-50bb-4bf162ff15b4"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("7be8d116-8059-16c6-ba63-5fa740f5e2c1"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000201703300042888"
@@ -11757,7 +14990,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("6adfa4fb-75f3-9682-2b3a-d29be5490ebe"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("7be8d116-8059-16c6-ba63-5fa740f5e2c1"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000004044801"
@@ -11766,7 +14998,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("1bad26e3-0c2f-2904-899a-bc1425cda12a"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("27adadb1-1a31-2028-3200-de6892f20643"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000000938901"
@@ -11775,7 +15006,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("8733c2a9-fa54-3590-7717-cd18e2c0e2e6"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("9e9e9863-6741-d929-9aba-4605bf21d9bf"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000002435901"
@@ -11784,7 +15014,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("dafd08c7-b5d5-e89e-0a35-347e2139d5a5"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("0c6aea9c-ac6d-db3d-2be3-23774cb2b3f4"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000002444901"
@@ -11793,7 +15022,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("aa414456-8803-b82c-1aac-087d8c837adf"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("977976e6-15b8-0409-cfa2-10f7deb5d0ae"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000202207190139521"
@@ -11802,7 +15030,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("301d21b9-9fcb-d309-a4ae-bb653a759748"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("977976e6-15b8-0409-cfa2-10f7deb5d0ae"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000003687901"
@@ -11811,7 +15038,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("11cd6c1b-fd54-2889-f312-165ec1f301e5"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("2cb635d2-896b-e8f2-0b6b-067e7cffedb7"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000818100000000000000066469"
@@ -11820,7 +15046,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("95c3313c-01e0-b8b8-2eac-ba593fdc515c"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("bdbf4439-28ab-5d54-ed91-3e872169eaa5"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816200000000000000064637"
@@ -11829,7 +15054,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("dd194ca7-8a86-c762-166a-0b567319d6a9"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("bdbf4439-28ab-5d54-ed91-3e872169eaa5"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816200000202105070091694"
@@ -11838,7 +15062,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("e0e5cff7-e7c2-0ddc-11a7-3bf5ff3c4b11"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("7e22e22f-eaa3-92e9-f4e7-07f23925b0a8"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000000000000094392"
@@ -11847,7 +15070,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("88d2cce2-c175-27c4-1ee6-7da8b2a71b95"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("7e22e22f-eaa3-92e9-f4e7-07f23925b0a8"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000201803260055755"
@@ -11856,7 +15078,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("9bab033c-7526-d04c-fcf3-37c01f24aaed"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("7cec173c-06a9-72ef-3850-094f557bbe52"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000002109701"
@@ -11865,7 +15086,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("21ef8314-f479-5a4b-e9a4-b0f08fa219ef"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("fd7dfad4-fe0f-7417-812f-d554f5675221"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000818100000000000001601501"
@@ -11874,7 +15094,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("edc24f40-69d2-9a23-4694-e82a30d6428d"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("adac599b-b08d-c474-7089-bcc1cc028dbf"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000003189501"
@@ -11883,7 +15102,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("62fcd715-f5c3-6830-70bb-562b8a489a60"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("adac599b-b08d-c474-7089-bcc1cc028dbf"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000003189502"
@@ -11892,7 +15110,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("f4ff891f-2938-25c2-964e-d7aa293b94ec"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("71410a21-e1d1-ef9e-0ee4-66c44aae869a"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000818100000000000000072322"
@@ -11901,7 +15118,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("df2f42b1-903e-655a-3189-fd739cd13b67"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("71410a21-e1d1-ef9e-0ee4-66c44aae869a"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000818100000202303070244401"
@@ -11910,7 +15126,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("3905557d-5c30-d091-3a04-7a64b871a579"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("69ef6501-963b-3c60-381b-953fee6c8f93"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000003542301"
@@ -11919,7 +15134,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("e6d93f0d-69ef-55b1-17d6-288d9004e62a"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("f78436d4-c8b0-4fc9-8996-f17d47f58b0b"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000000000000000000002562901"
@@ -11928,7 +15142,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("3c57c294-f683-8b56-cee4-90f6a2e98eb3"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("f78436d4-c8b0-4fc9-8996-f17d47f58b0b"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000000000000000000002562902"
@@ -11937,7 +15150,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("4317ce4c-7752-3a1e-43bf-6ced508aacd4"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("38ded216-9385-10b3-c225-5ac603823e8a"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000202410090460345"
@@ -11946,7 +15158,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("943a7c08-cc9a-e677-c368-84fc48049086"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("38ded216-9385-10b3-c225-5ac603823e8a"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000000000000078421"
@@ -11955,7 +15166,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("f035ad1b-12bd-8149-5366-56ff1638fe97"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("835e0c8b-77a7-d0e6-c5a8-f31ab818207d"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000000465601"
@@ -11964,7 +15174,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("1a827fd8-d6ce-0f52-429a-fb24ae6d8c9d"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("835e0c8b-77a7-d0e6-c5a8-f31ab818207d"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000202301130215852"
@@ -11973,7 +15182,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("1eb37960-6178-45b7-7cac-2434376c4d4b"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("7fce0753-536c-dda3-8b61-61108466c944"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000000885701"
@@ -11982,7 +15190,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("0d67ebb7-6722-12f1-9aef-075bd2c3454c"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("cb563f98-1067-b1a0-fec9-969a30b40a85"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000004158301"
@@ -11991,7 +15198,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("5bcc712a-2cb7-92f0-930e-50037fe459ad"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("10d0801b-d1ff-d16d-3582-986e480a6015"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000001890101"
@@ -12000,7 +15206,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("be220ba7-4d1d-42a1-3149-ed8595a5868d"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("8577d306-388b-4943-22ce-c22121b8e3c0"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000000899201"
@@ -12009,7 +15214,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("dcc9d7ec-822e-17b9-c4a9-6fdbaf0d8974"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("70c8e75b-7683-a45b-7a2b-c8a73d9fd790"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000001583101"
@@ -12018,7 +15222,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("e4fa0eb1-9851-6677-45c7-278e31040149"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("70c8e75b-7683-a45b-7a2b-c8a73d9fd790"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000202405150411184"
@@ -12027,7 +15230,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("dd92d822-df47-4a52-19b2-cb93eb0a797f"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("e1a503ce-bb0c-4179-819e-7dbd09f14c22"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000004131101"
@@ -12036,7 +15238,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("248d0267-d0a9-5a84-9e66-ebc500b715f0"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("e1fd632f-7a86-e83b-0311-797430168219"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000003250601"
@@ -12045,7 +15246,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("57255940-3f4a-01a3-96db-59fc309fd874"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("e1fd632f-7a86-e83b-0311-797430168219"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000000461101"
@@ -12054,7 +15254,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("47b89dc3-18ae-fd72-5ee0-86d7e1735c36"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("79cb790d-e702-1874-4da6-fdbda01e1620"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000818100000202210170174036"
@@ -12063,7 +15262,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("fe352361-6ebe-51a8-fffa-60c5f2aafa30"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("79cb790d-e702-1874-4da6-fdbda01e1620"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000818100000000000000478701"
@@ -12072,7 +15270,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("45bc992b-66c4-730f-89e1-fde10fbcbae7"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("6c4ea4ee-70a7-8947-64d5-0267f36c9ea2"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000002084701"
@@ -12081,7 +15278,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("7bc5ba4f-2ad6-f737-982c-15a89b4da636"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("70bda7c6-0fef-c10f-9ed5-758c4e46b8e9"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000002114201"
@@ -12090,7 +15286,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("36581f01-5dd3-f276-c993-37dfd961819c"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("57a86034-5cad-f0d3-a4b3-2a76048b6a95"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000002110701"
@@ -12099,7 +15294,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("3d65b93f-ebb4-6a07-b7b7-a30c9744acc7"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("68c95eca-e9c7-4687-67ca-49d42fea1179"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000003470101"
@@ -12108,7 +15302,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("28c3df81-173b-1a91-c9e6-e43749f52945"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("29c53d8b-0024-d38f-b7df-c08128dc7f7d"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000000885301"
@@ -12117,7 +15310,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("63d2d299-0a6b-87dd-b21b-9b66b94ca371"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("29c53d8b-0024-d38f-b7df-c08128dc7f7d"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000202008180075477"
@@ -12126,7 +15318,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("e595ce45-c154-a1a1-0aa0-d56d629afdbc"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("905f2a27-62a8-ef06-cf00-a376f970a2f3"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000000000000000000004444901"
@@ -12135,7 +15326,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("c358f94a-89af-f309-f3fb-d04a9dd1705f"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("4e3ecad5-7e2d-1c73-9596-27d514f7ffc5"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000003765801"
@@ -12144,7 +15334,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("2f8bed29-6891-32c6-1e3a-04c3c45556f6"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("bd90e12c-de32-980b-1689-d7fe40a43bfd"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000000000000092650"
@@ -12153,7 +15342,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("7cc4114d-7730-3c7d-9dfd-7f10166a0596"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("bd90e12c-de32-980b-1689-d7fe40a43bfd"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000202308310309786"
@@ -12162,7 +15350,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("39054db0-6a08-913d-647a-76c197f026ed"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("ca18a712-1a2c-bc13-eee0-624d4de6536c"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000003560201"
@@ -12171,7 +15358,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("a6045217-5a46-0efd-b0ef-51dc4e8ec971"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("b3a96ac7-e05a-d279-511c-4db1ed1be383"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000818100000000000002820201"
@@ -12180,7 +15366,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("5cf1eb73-5505-2050-f1ef-1694be4f668d"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("b3a96ac7-e05a-d279-511c-4db1ed1be383"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000818100000000000002820202"
@@ -12189,7 +15374,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("bf06e5c6-f623-5d1c-6e07-29b7134e0ca9"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("d350acde-406f-487a-cb5c-acaee72d98d1"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000202206270126755"
@@ -12198,7 +15382,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("67685cbe-b9de-68d1-7a2b-971ad0744402"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("ede092f1-6539-d73c-6fe2-5c91df8fb025"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000000000000069555"
@@ -12207,7 +15390,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("3c2abcd6-a621-e041-ce98-fde9a3e5d4ec"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("ede092f1-6539-d73c-6fe2-5c91df8fb025"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000202410180460864"
@@ -12216,7 +15398,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("6dbb5a21-8b6a-bf13-cd3d-d325304b703d"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("ede092f1-6539-d73c-6fe2-5c91df8fb025"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000202507230542253"
@@ -12225,7 +15406,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("82beda47-1604-cb3b-9191-711c89113f00"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("2c8ddd63-e04c-2785-288d-cfa86cb6c071"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000000471101"
@@ -12234,7 +15414,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("7d959b23-c412-ee75-83fd-3f69f45670bc"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("21c4934c-62ff-1506-85dd-c2e55419e3ff"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000000884201"
@@ -12243,7 +15422,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("763c46bd-6d68-a1c9-f2d1-08e06a65db3e"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("9291a6ce-6948-2702-b9d6-a5a0ae413e91"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000000884901"
@@ -12252,7 +15430,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("0b6db0e8-1b3e-2a0e-523e-048a9e02b97f"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("a7406165-ae51-1e1e-ed91-bc12bc977022"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000002980601"
@@ -12261,7 +15438,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("107fb22f-c595-e762-4884-8d93aea23763"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("1a4ff5f5-0887-4d85-3f93-3b9479e440c4"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000002176101"
@@ -12270,7 +15446,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("28aaa883-b34f-9add-9960-ab95b748c607"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("1a4ff5f5-0887-4d85-3f93-3b9479e440c4"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000202303220248971"
@@ -12279,7 +15454,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("d3332018-24ab-30c2-b67e-9b531110183e"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("75319fa9-886c-fe08-1015-db957c876ebb"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000002248001"
@@ -12288,7 +15462,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("70c74d41-ffcd-a48e-1f03-ed9fe9a28e17"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("75319fa9-886c-fe08-1015-db957c876ebb"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000000000000000000004652001"
@@ -12297,7 +15470,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("022cef88-5155-e09f-08b1-f56e820bf3b2"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("75c77a21-cde8-f0df-8064-76d28fecd732"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000000886101"
@@ -12306,7 +15478,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("c23f4a0f-e41c-7975-3ce2-491a9a01420b"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("f545596d-c2aa-d08b-0253-916d453a7815"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000004277801"
@@ -12315,7 +15486,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("1ff09ae2-68e3-29c3-d5bd-a118321dbc81"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("f545596d-c2aa-d08b-0253-916d453a7815"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000202604160605636"
@@ -12324,7 +15494,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("0f2c2b15-d4ee-ea3a-d3af-e4ebf7faff5b"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("f636a2a5-b7dc-3eb6-b286-60b26412fedf"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000004042401"
@@ -12333,7 +15502,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("e4ba74cd-9074-de88-52d3-7a9386b632e0"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("9f94306b-0174-94cc-7e6f-c31c21c747c2"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000003795201"
@@ -12342,7 +15510,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("059f4d9b-ff81-967d-0a33-62f64fcfc482"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("4248d30b-a2e1-b877-90dd-2c6ecc293ec4"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000000000000138618"
@@ -12351,7 +15518,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("a8e14862-bdc6-1c9c-b223-723e5ed2e641"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("4248d30b-a2e1-b877-90dd-2c6ecc293ec4"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000202404290409838"
@@ -12360,7 +15526,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("d09399b5-5133-cb8a-42b5-be957a9e55e3"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("4248d30b-a2e1-b877-90dd-2c6ecc293ec4"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000002087701"
@@ -12369,7 +15534,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("66a82fc5-8979-d2b9-613f-c3c30bb513a6"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("cd02f4a7-f439-c3ad-20f5-883415d6235f"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000000000000000000004681901"
@@ -12378,7 +15542,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("a71e5739-5713-d813-09ea-851dcad4ea16"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("eaa54947-ad15-da80-ecbb-5c0fcebbd86e"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000004269401"
@@ -12387,7 +15550,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("869f55e0-7f90-521b-22f7-7fad43843513"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("59b602c2-68a7-9768-3df8-9ca61dcf23b6"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000818400000000000000036701"
@@ -12396,7 +15558,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("c069b93e-9218-fd0b-bea4-56365f1dc32f"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("3f5fcfef-a97f-5807-01d1-6e79cc303f87"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000002748201"
@@ -12405,7 +15566,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("76ff4fdc-d135-eba5-f81f-61f1e6f7bb67"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("3f5fcfef-a97f-5807-01d1-6e79cc303f87"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000002748202"
@@ -12414,7 +15574,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("96e57454-65ec-adde-fbba-9619e5c43a40"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("13d7d5a8-a957-ac8e-29e4-afce7ef72d0b"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000202006240074442"
@@ -12423,7 +15582,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("3610f243-13ad-36a0-baad-d4a7d2b93ec0"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("13d7d5a8-a957-ac8e-29e4-afce7ef72d0b"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000002617601"
@@ -12432,7 +15590,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("058ba443-43b8-c131-72d5-41ffa6fb9c70"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("d55334f4-1396-b85b-df17-a8b917b1009d"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000000473401"
@@ -12441,7 +15598,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("24d743f3-62d1-83f5-857c-82cbb5eb9803"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("d55334f4-1396-b85b-df17-a8b917b1009d"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000000467601"
@@ -12450,7 +15606,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("a42df142-73b3-c273-2f95-7b966e55f2d7"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("d55334f4-1396-b85b-df17-a8b917b1009d"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000202109230098248"
@@ -12459,7 +15614,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("6d920294-abe6-a1a4-672b-d9471c4d3c5d"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("cb38c566-a76b-e73d-f6a7-10a137c4d642"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000000906401"
@@ -12468,7 +15622,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("d5b92a75-2d87-6186-0b04-c861149aae06"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("cb38c566-a76b-e73d-f6a7-10a137c4d642"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000202509110554636"
@@ -12477,7 +15630,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("5033f216-9042-6c46-930c-57fbdbf0af33"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("54f6b28f-04f2-a9ee-6628-c0a87b0b68d6"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000000905501"
@@ -12486,7 +15638,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("a9483aa1-e78f-5ade-9fca-5aa4951c9b55"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("41fc84d0-d1c2-b39a-6f53-3d30a7f6d2e8"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000000934301"
@@ -12495,7 +15646,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("9e9e69f3-f0cd-21ed-97ff-6e068567cdc1"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("c326956b-b90c-4326-bf04-e9d1bc7bdc6c"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000003345801"
@@ -12504,7 +15654,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("3e3bc408-18b5-5821-d046-7414bfee5ab8"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("c5521a4f-d5dd-cd0d-e3ed-af773d4ea8d2"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000000697401"
@@ -12513,7 +15662,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("d03d1bd0-d7f4-0c7a-9681-e88f4054a60c"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("c5521a4f-d5dd-cd0d-e3ed-af773d4ea8d2"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000000000000000000004528701"
@@ -12522,7 +15670,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("fdacdd2e-e6d9-06be-b9af-7fb1e2e97a61"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("eb891436-fca1-65ce-08c6-139b9028529d"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000004264101"
@@ -12531,7 +15678,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("74b4fc74-93db-7fbc-d8d4-47f040b16ad3"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("eb891436-fca1-65ce-08c6-139b9028529d"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000202209230159841"
@@ -12540,7 +15686,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("efb64cc2-6824-350a-4058-94cdbbd28497"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("793b1a01-2211-2baa-af00-9d655fc7e421"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000002088101"
@@ -12549,7 +15694,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("761c0d00-2e73-14e1-feb7-49943f6ee7f4"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("793b1a01-2211-2baa-af00-9d655fc7e421"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000000000000000000004527601"
@@ -12558,7 +15702,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("dfc0dcd8-5d9f-01c5-6660-1595f95532a9"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("fb965b81-c4b5-3ada-4dab-8a336d8a6a68"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000000883401"
@@ -12567,7 +15710,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("ca833158-a907-5f7f-c2fd-c1098b5a784d"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("2383bc60-978a-7715-a433-0bc585514c0e"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000819200000000000000067001"
@@ -12576,7 +15718,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("ccc35f57-e239-3ae9-f879-13bcdacba72e"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("8bfb1b54-17fd-f295-f410-b61469787f28"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000000944501"
@@ -12585,7 +15726,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("bbdd602b-bef7-9806-19f3-19e0f5d66fc0"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("8bfb1b54-17fd-f295-f410-b61469787f28"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000202301240217618"
@@ -12594,7 +15734,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("be9b916d-aed3-31cf-e9c4-f397b2b0ce2f"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("cc5ced4f-0fe4-c151-9ca2-bbf6b98c2f47"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000003204301"
@@ -12603,7 +15742,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("86ac35ac-e413-4d74-78f4-a26d19577728"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("2c5e47eb-30c7-fe42-3890-74894d135629"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000002460501"
@@ -12612,7 +15750,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("e1548087-c63b-3ab0-d5de-7eb7e9be0393"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("b31ea8b8-a61e-c950-396d-486b0077e7cb"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000003631601"
@@ -12621,7 +15758,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("36ef3acd-27b7-caff-7e04-625dd492d9b9"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("b31ea8b8-a61e-c950-396d-486b0077e7cb"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000201904040068798"
@@ -12630,7 +15766,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("ed5b1e4a-41af-c7d9-a0a7-f3d64ea97e36"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("c6216a8d-54be-7c69-a44d-3d22a082bf8e"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000818100000000000000113782"
@@ -12639,7 +15774,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("b496011d-e3ee-a5c6-b92c-7fdabd5a2216"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("8917e6f3-2849-dd36-3493-0b84a5582ca0"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000000889701"
@@ -12648,7 +15782,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("33ceb49d-d678-4787-bf1b-24a68991c4a0"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("8917e6f3-2849-dd36-3493-0b84a5582ca0"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000000000000000000004625101"
@@ -12657,7 +15790,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("637f7f78-6d5e-73de-df37-373f2c055adc"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("72435b75-2a48-a13c-eeef-b0df5d57c290"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000002532401"
@@ -12666,7 +15798,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("30f58c54-da6c-95bc-0c0e-f1063fc86b14"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("4052f088-157b-963c-3929-9ebbda883d61"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000002149101"
@@ -12675,7 +15806,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("405cbcf9-33f0-d75f-4cb5-19df1116277e"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("4052f088-157b-963c-3929-9ebbda883d61"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000202404180398826"
@@ -12684,7 +15814,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("032c2401-0375-07fe-b159-11da0e6f0773"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("701fa9dd-e5e4-9080-5aa5-4b12f7becfaa"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000000889201"
@@ -12693,7 +15822,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("271ea670-344e-5555-a153-44ca0e862bcb"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("f59826bf-267f-ce8f-5c8d-dc61cc8918ad"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000000888701"
@@ -12702,7 +15830,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("d279bae0-ef6d-9688-0232-a6c458589611"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("5eb0bb6f-7a1f-daff-264c-e76e4f72668c"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000818100000000000004016301"
@@ -12711,7 +15838,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("70afd01a-3b81-2146-9b9a-1846ac0190f5"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("94401bfc-e5c1-2b49-19cd-0335d30de363"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000003449501"
@@ -12720,7 +15846,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("8f0b1dd3-e0d6-4833-07ed-6b568e0df38e"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("35c45197-c362-a47c-e346-79cd6ee908d3"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000002124001"
@@ -12729,7 +15854,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("b7ed7bdc-00cc-8a2e-7880-14e7dc1a6411"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("8777b8bb-bdea-a85a-b832-31e686ef369b"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000000000000000000004358601"
@@ -12738,7 +15862,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("9c235fbc-e7be-cca1-f7b5-a35718f5136c"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("0c48c080-646b-7aa6-abbb-d8c93dcf6d4f"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000818400000000000003436301"
@@ -12747,7 +15870,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("2275aa38-2431-555d-8ca8-c9bf800615dc"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("d2fe83eb-2ff8-e4e1-e22e-05e5e1998f64"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000000000000063875"
@@ -12756,7 +15878,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("aa3dd45a-ac2e-b5b4-6006-3ee70437d64f"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("d2fe83eb-2ff8-e4e1-e22e-05e5e1998f64"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000202203280111111"
@@ -12765,7 +15886,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("46e8c4d6-a35f-ebbe-f6c8-7be4909386b0"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("ac3036b2-0382-b668-b534-c6e1897ee209"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000000882901"
@@ -12774,7 +15894,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("c68ce818-6273-c9ef-5788-ef21e8062105"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("8ca2b82b-ed57-9b20-3430-c619ce20ef41"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000003067301"
@@ -12783,7 +15902,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("051e8df0-0637-c6a5-8296-643434efc751"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("ad53e7b0-c7bf-c8ba-9cec-c9dfcbc960ad"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000202204250118118"
@@ -12792,7 +15910,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("87c3b781-6b5d-4e78-3999-f8d5975c4812"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("ad53e7b0-c7bf-c8ba-9cec-c9dfcbc960ad"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000003815601"
@@ -12801,7 +15918,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("1ee33b13-d66e-127d-82da-0e74c1496da7"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("47c2a649-d517-da0f-0bfe-79444a5becb6"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000003897701"
@@ -12810,7 +15926,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("94b1843f-08bb-c87f-b331-8f0829a7da1b"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("65dd5360-e800-4abf-de5f-d8bf4ab531cd"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000000936401"
@@ -12819,7 +15934,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("2e4b79f7-9615-7bd3-aacb-5dfcc7fd1f74"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("cab639a7-a03a-9fc3-24ed-d75e47d00d47"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000000000000133435"
@@ -12828,7 +15942,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("ae7800ae-d61b-fa74-3627-d9b46a3ce557"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("cab639a7-a03a-9fc3-24ed-d75e47d00d47"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000202208240154388"
@@ -12837,7 +15950,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("4894f6ac-a561-05ac-1934-2035f70f84ab"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("9066f36f-161e-5f68-e21d-3c1a69687ba1"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000000714601"
@@ -12846,7 +15958,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("50111cc1-9de8-b816-c3ce-b7ead7c8871b"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("0ace7856-33ee-62f1-7fbe-5c5364436ed4"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816200000000000000533301"
@@ -12855,7 +15966,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("1f18cfcf-812a-c77d-89a5-a9f7eeaa95b4"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("75bea43f-ee78-ebbd-30e4-a4f7735e9b14"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000003513601"
@@ -12864,7 +15974,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("07b7ca20-ef4b-5f7e-e412-354428671253"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("8361c0d6-b2b4-bb57-e596-3b990e2be405"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000818400000000000000910901"
@@ -12873,7 +15982,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("70931e28-b916-ddfb-f981-5254baaefe07"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("8e0a3c5c-ed75-2216-4f3f-934fdbbe000e"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000000889601"
@@ -12882,7 +15990,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("33b265df-ff0f-81f0-3cd5-25dca9463840"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("405d8a39-7915-7966-c2bf-b6326540301f"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000002426001"
@@ -12891,7 +15998,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("6a4b23e8-c24a-e2f4-0802-9b5d8be98955"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("3f531593-041b-25a0-c43d-97dbb8e98669"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000818100000000000004149001"
@@ -12900,7 +16006,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("a4b2e12c-aa8b-f8b9-1b28-9022d7f042ac"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("94adf4e6-9abe-fbab-9562-9357874a27cb"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000001595801"
@@ -12909,7 +16014,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("66639a89-c463-2b6c-16fd-a6b2ca21f843"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("f0c73577-6131-826e-5db7-250631dbf561"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000003787401"
@@ -12918,7 +16022,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("8afe904e-1879-8e76-9187-4029c3e4a9ed"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("b3bc877f-93dd-8d29-fe22-1dc5543a49c8"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000000000000069120"
@@ -12927,7 +16030,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("a447d97e-c1a4-d94e-24e9-c17a66f9a006"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("55e7fc4a-29fe-0ec5-3a0a-821deb2211a3"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000000889401"
@@ -12936,7 +16038,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("9ef69a17-ccb3-b090-9b75-5a30868c7425"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("55e7fc4a-29fe-0ec5-3a0a-821deb2211a3"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000202204040112246"
@@ -12945,7 +16046,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("6d99c0b3-a725-d31b-cdd0-1571024765a7"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("14b07473-71fd-3941-7c39-5939d6894258"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000000000000000000004366601"
@@ -12954,7 +16054,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("edfa220d-6d02-a1f7-36b0-c93ceb245a73"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("2eb71d58-0cfa-a8e6-9bad-db7aa0c9e842"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000000000000000000004622501"
@@ -12963,7 +16062,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("07b288e7-7b2d-ee12-a8c5-8e700d63e003"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("d5116adf-aa06-cf7e-05e1-5b966296c044"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000002811501"
@@ -12972,7 +16070,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("eab3a781-f880-8286-3ac7-0fea8c875661"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("5973666b-c4b0-a2e5-8472-09e0d1593c63"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000002454201"
@@ -12981,7 +16078,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("156bee3a-ea65-40a6-6532-21dac9a2bf44"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("ace85be4-d10a-57a3-5d3c-9ab82dd99f97"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000000000000000000004396301"
@@ -12990,7 +16086,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("1f0d37fc-cf05-1abe-f20c-1abd06ac23a1"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("d9b71542-16b9-e3f7-1e2c-4b8ec33496b0"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000000934401"
@@ -12999,7 +16094,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("74fbab6c-87fc-8a8f-0fc5-fcd145c78ee7"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("2334ffbf-462d-1c40-fddd-489ab14be63f"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000000000000000000003924501"
@@ -13008,7 +16102,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("9892f1b7-afb1-eb7a-dbc8-d1f0d4dc0eef"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("2334ffbf-462d-1c40-fddd-489ab14be63f"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000202207260140322"
@@ -13017,7 +16110,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("06aa72f4-0ab3-7bc8-486b-71077c8995a2"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("ad32ca90-2306-d6c7-828e-b91d7d888878"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000003369001"
@@ -13026,7 +16118,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("49bcff81-4884-ee8c-dcca-11a8c984c70d"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("4d232a2f-5468-984d-f8da-3f1f9366fd4c"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000202304120252729"
@@ -13035,7 +16126,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("d1fa823a-142b-ed51-e23b-e446a4bacd8e"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("4d232a2f-5468-984d-f8da-3f1f9366fd4c"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000003323101"
@@ -13044,7 +16134,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("f315eec6-5dd2-bc28-6d6d-d938d06675a6"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("0679baa0-748c-c53f-66c8-c283d6f88394"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000818100000202205270122379"
@@ -13053,7 +16142,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("6351dd47-3a47-0262-832f-a098e7ed6c46"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("0679baa0-748c-c53f-66c8-c283d6f88394"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000818100000000000001600401"
@@ -13062,7 +16150,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("f8e7eaef-de9b-bcfb-e2d4-308e2bde3341"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("847209d3-47ea-7367-6d38-05927a7a0c74"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000819100000000000000729601"
@@ -13071,7 +16158,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("450ea2e8-a215-bd6a-76c2-83d581fc6f31"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("b85dcaa7-7789-c4f0-3ab7-7f75dbefba57"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000001207401"
@@ -13080,7 +16166,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("9e7ee618-cbcb-07a7-1972-a0844ed26d8e"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("9ba0c84d-bad1-3a69-fefb-f821d38b86e1"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000202212290214221"
@@ -13089,7 +16174,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("53fa49a5-ef6d-c55d-b394-652b9fb7ee43"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("87be524e-3eca-3766-8ba2-1a85853a3113"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000001693201"
@@ -13098,7 +16182,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("278ae8bd-2378-f17e-a588-ed60bb18f001"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("87be524e-3eca-3766-8ba2-1a85853a3113"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000201410230023380"
@@ -13107,7 +16190,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("464bf117-f926-bc80-b6bf-1d9ce790e443"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("19788350-afb0-20bc-a45f-db128f20e8e6"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000000000000000000004529401"
@@ -13116,7 +16198,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("9fb0ff5e-11d2-25b5-17c8-101666e2cce8"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("161ab4af-5da9-90da-982d-92c4dba8ef39"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000819100000000000000735001"
@@ -13125,7 +16206,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("fdbadb16-6ea8-2e66-e0af-b9de3c5285d2"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("144feeaf-de89-ab9d-b2f3-ffc46b562d8e"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000818200000000000001945601"
@@ -13134,7 +16214,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("c440834a-5968-764a-d19a-2096bdd933e6"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("f4eeaac2-b5ff-bbed-95ff-4a6bebc6bb03"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000004158701"
@@ -13143,7 +16222,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("a0fc2630-edc3-6eeb-2992-f45e8c695278"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("9b64568a-dfc7-5ed5-5564-0e40d0e8577f"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000818100000000000001632801"
@@ -13152,7 +16230,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("e7ec5760-406f-eca9-a8a4-18da9f052bf7"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("9b64568a-dfc7-5ed5-5564-0e40d0e8577f"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000818100000202501210486525"
@@ -13161,7 +16238,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("982bcb6d-35ea-a1ee-fe43-169200fc88c1"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("b42046be-6511-0367-c9bd-c480f972f466"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000000392601"
@@ -13170,7 +16246,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("7aaf957d-e218-cade-ceac-10e881506b4a"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("0d663ec4-2fc3-faf2-2f05-6185e3d4bc3a"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000000888001"
@@ -13179,7 +16254,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("48064699-fcf3-c4d7-75b3-50793c8a69ae"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("2ab20968-c894-efe0-144f-b35f06656229"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000000910801"
@@ -13188,7 +16262,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("fcddc9de-e066-e1cf-1ae5-6659da9c316a"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("2ab20968-c894-efe0-144f-b35f06656229"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000202202150106718"
@@ -13197,7 +16270,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("18f4be18-db8e-0591-d782-497081959929"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("332ce86e-d324-c82d-dc89-8fc08ee19b54"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000002152001"
@@ -13206,7 +16278,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("d42da919-66d7-3eb9-a15c-b30eb910126c"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("332ce86e-d324-c82d-dc89-8fc08ee19b54"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000202504090515526"
@@ -13215,7 +16286,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("c84b30f9-cd6e-08af-09c4-946570faf85d"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("8d7945db-cd59-7ff2-d0f9-2b3ac6e81bd9"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000002401601"
@@ -13224,7 +16294,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("4f5fd7d8-c894-d130-8bd0-c331a7900582"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("824e4c78-0719-a272-16d0-a3d772338838"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000819100000000000000756301"
@@ -13233,7 +16302,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("52febade-ac74-16a0-17d7-8e0fd0c3bdb4"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("824e4c78-0719-a272-16d0-a3d772338838"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000819100000202501230486936"
@@ -13242,7 +16310,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("c1b7b46c-a47f-e052-f8f2-7b191b964ddd"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("b26134d4-1205-a9c3-25c5-a6cb92166834"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000000883901"
@@ -13251,7 +16318,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("2bb91f87-4f2e-8cd7-ac1e-bb3fa874106a"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("d4e40cf6-fef3-2b16-85ee-8de5b4e14e16"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000003420001"
@@ -13260,7 +16326,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("1c528fdd-90e2-e640-d506-0899cef2f1e7"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("f74be8a7-00ab-eb9a-b9b0-1b96f1e4b245"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000000000000000000004528801"
@@ -13269,7 +16334,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("27823bcb-c5d5-6143-f42b-7da2f101b78a"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("f74be8a7-00ab-eb9a-b9b0-1b96f1e4b245"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000004274601"
@@ -13278,7 +16342,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("a2ba16a1-5de2-0f88-e397-15473db3c7f8"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("9187cf06-c384-19f8-d99c-90202eef5b4f"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000003354401"
@@ -13287,7 +16350,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("67a5b66c-6847-e3e3-22d9-45f905ff130f"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("4907f81a-fda1-ccd0-f540-973a52283935"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000202406200423782"
@@ -13296,7 +16358,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("79897ded-320e-1f91-00ae-d06dce073c54"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("3cd54d9d-5f66-9812-915d-9f28e33a2afc"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000202501070485069"
@@ -13305,7 +16366,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("394c2715-dd2c-7365-c576-4c32c1657179"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("28ce7737-8612-7625-a512-b4e2b633c86d"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000003536001"
@@ -13314,7 +16374,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("b9b476b2-21f7-af4b-c9ba-f719f32b4c63"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("802ef222-6d02-0ab7-7b6c-8470423b5205"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000818100000000000001676901"
@@ -13323,7 +16382,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("6d8b8dd7-6c21-a92b-992d-d24bffe896ec"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("c0b3301a-654a-9701-7c63-d767161d9aa2"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000003889301"
@@ -13332,7 +16390,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("d0ba92ef-e52a-43bc-bb05-6b890cc06f7c"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("161b6ca5-7d46-06fc-f3cc-0e97e2a70314"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000003390401"
@@ -13341,7 +16398,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("f0543da5-ebca-d3d3-7f72-2e1987c4fdb8"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("b2e805e4-8bb7-5de1-61e2-808a7889b09d"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000003388701"
@@ -13350,7 +16406,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("5a0a2edc-6015-af5d-9da7-06f981baacae"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("4e654d08-e475-6314-8305-1e92aaf3471a"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT00813000000R0000000000000007343"
@@ -13359,7 +16414,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("fedd9e17-37f5-89f4-b12b-d971fefb0a94"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("4e654d08-e475-6314-8305-1e92aaf3471a"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0081300000000000000000009672201"
@@ -13368,7 +16422,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("bea6404c-5f4a-dcd2-d128-9161f76eab6c"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("e7b34dfa-6d14-1223-77e9-1aeb00361c36"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT00813000000R0000000000000003044"
@@ -13377,7 +16430,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("96fbf499-b09c-b9cb-bf9e-6dc993a1a280"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("e7b34dfa-6d14-1223-77e9-1aeb00361c36"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0081300000000000000000009095301"
@@ -13386,7 +16438,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("9cf63721-16fb-2470-27c3-68ce4b928998"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("ac86078a-a009-e29d-c2ce-faebace17e17"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT00813000000R0000000000000006102"
@@ -13395,7 +16446,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("2dd947cc-9be1-51e9-5c45-167556a5cf82"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("ac86078a-a009-e29d-c2ce-faebace17e17"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0081300000000000000000001072002"
@@ -13404,7 +16454,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("d3bca44e-6c92-425b-15e3-a4bd3b909575"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("ac86078a-a009-e29d-c2ce-faebace17e17"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0081300000000000000000010205901"
@@ -13413,7 +16462,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("36d5a7ac-7b09-7ea5-7321-626eae458959"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("ac86078a-a009-e29d-c2ce-faebace17e17"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT00813000000R0000000000000007365"
@@ -13422,7 +16470,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("08cd1f9f-ae93-a716-a396-aaeaeca73c69"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("ac86078a-a009-e29d-c2ce-faebace17e17"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0081300000000000000000010220201"
@@ -13431,7 +16478,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("6870f5dc-39d2-af90-c274-51bc8f13c85d"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("ac86078a-a009-e29d-c2ce-faebace17e17"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT00813000000R0000000000000007464"
@@ -13440,7 +16486,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("2c4e467b-cd6d-767b-b40d-025e6a95897b"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("de8d0b5e-7534-126b-1a07-71146cd6fa38"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0081300000000000000000004204201"
@@ -13449,7 +16494,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("f22d512b-cd31-4368-6a3b-5b36bfc61153"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("de8d0b5e-7534-126b-1a07-71146cd6fa38"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT00813000000R0000000000000003321"
@@ -13458,7 +16502,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("1deaed58-e2d5-7bf3-449e-54c7e79058ea"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("2d5ffe2a-a34b-7b9d-e6a2-40ea68a157a6"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0081300000000000000000009714201"
@@ -13467,7 +16510,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("e3948568-ccf3-439a-bcc5-571d64812777"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("e5c1cf0a-3ab3-ce94-7b7a-781c5d9f9fc7"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000819100000000000004160001"
@@ -13476,7 +16518,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("20b075e3-6eaa-af3c-193a-69f05f076ef1"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("4048d796-63e3-1141-0751-c33bdc3f5b81"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000002219501"
@@ -13485,7 +16526,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("9e765bd0-03ae-b65d-a6f0-e7032789b987"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("4048d796-63e3-1141-0751-c33bdc3f5b81"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000202011100078407"
@@ -13494,7 +16534,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("3a49353a-f7b4-1dd0-a51e-77de27882f88"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("994776b6-bc76-3976-ff19-49fa4244a08c"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000004191401"
@@ -13503,7 +16542,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("e32edf75-19a1-6ed3-dc17-b984b901b9b3"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("994776b6-bc76-3976-ff19-49fa4244a08c"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000202209260160255"
@@ -13512,7 +16550,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("bd8c1110-7cb1-5589-3ca4-0d7fc9e42eee"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("34988bd7-e19c-c89c-2b5d-ef2ef61815e4"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000202407310426262"
@@ -13521,7 +16558,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("130d0967-360f-df33-5e44-e42709d964a9"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("34988bd7-e19c-c89c-2b5d-ef2ef61815e4"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000000000000095105"
@@ -13530,7 +16566,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("0cf5adf0-4993-e7ae-8cb8-a65505c87f83"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("6844602c-e397-90d0-98e7-ff4a66e19c50"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000000000000067492"
@@ -13539,7 +16574,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("89900fb0-d004-e5e4-33f4-7214a5a3c685"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("6844602c-e397-90d0-98e7-ff4a66e19c50"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000202003110072717"
@@ -13548,7 +16582,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("a3f1c6e2-f692-f255-6d36-afbbe4eb5d4f"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("e1ff3d02-8474-3ee2-9aba-df88016aaed1"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000202208180154119"
@@ -13557,7 +16590,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("fd0baf2b-12a7-d237-47bc-a994b0d4ea39"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("e1ff3d02-8474-3ee2-9aba-df88016aaed1"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000000000000000000004526001"
@@ -13566,7 +16598,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("85e054b6-9429-56cf-0fd4-167737778fbc"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("1aa6ce35-63cc-c89b-d512-4795cd9d0b0f"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000002147701"
@@ -13575,7 +16606,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("d64279b9-1382-2010-8d76-5d039e31dec6"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("f6c6912f-9233-800c-08f9-8351268da29d"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000001691101"
@@ -13584,7 +16614,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("9938a4b6-742f-96ca-7ab6-fc7643d46232"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("f6c6912f-9233-800c-08f9-8351268da29d"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000202409060458340"
@@ -13593,7 +16622,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("c555228c-d227-fa73-28a7-f4ce2105eac4"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("d51b2a32-f13e-0015-72ca-8096b5e1ad1e"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000004173101"
@@ -13602,7 +16630,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("19354c96-6cb0-16cd-d875-109ba56ce6fe"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("cbf0bc37-4efe-a7c2-9667-0153c58e58ff"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000000000000000000004118701"
@@ -13611,7 +16638,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("c0a03dee-28d3-a496-1efe-575acf697faf"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("cbf0bc37-4efe-a7c2-9667-0153c58e58ff"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000202307260296293"
@@ -13620,7 +16646,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("7c7079ad-c4c8-5a30-9887-2095e5ffdfde"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("41079c11-2a0c-e03c-3702-b7af7b2591a9"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000202303210248132"
@@ -13629,7 +16654,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("8cfb1878-55da-12b9-e36d-710dc5231742"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("22ffb2c5-e3c8-cdc1-5b35-74ab85f53ad6"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000202302210232243"
@@ -13638,7 +16662,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("30bd1e21-02f7-1f70-76e8-6dc3531657e7"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("ebef804b-37c2-7441-ebe3-0c088eb1f99f"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000002114801"
@@ -13647,7 +16670,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("ab35cf2d-a6d9-7c1e-e806-bba01f4e8ae3"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("6766aaab-94ac-eea9-7de2-b501dcba97da"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000000000000000000000677501"
@@ -13656,7 +16678,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("a35c1b23-4e42-e82f-62c0-55bfc15441f2"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("6766aaab-94ac-eea9-7de2-b501dcba97da"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000000000000153698"
@@ -13665,7 +16686,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("08ca0b8e-0191-f704-5064-64b0ea23e03b"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("bef25c01-dfa4-ce7e-755e-fb173d14ddca"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000002920201"
@@ -13674,7 +16694,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("758ed6b7-dddc-0f25-082f-86a68baf3572"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("8d38ef63-3222-0574-d196-7720c7736aaf"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000201704100042956"
@@ -13683,7 +16702,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("7b352d55-c398-e849-9856-d56945723703"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("2f2c95d8-d07e-b780-3b1c-433fbf6b17e7"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816300000000000001328801"
@@ -13692,7 +16710,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("5ac7d97d-fb0f-4742-6c0e-887cc6865e69"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("f9c4e4b3-7010-61f9-2e87-2c1ffbdd4675"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000000462101"
@@ -13701,7 +16718,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("3dc407c1-6851-66ca-ebe5-bfb2db50c197"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("f9c4e4b3-7010-61f9-2e87-2c1ffbdd4675"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000201404240022067"
@@ -13710,7 +16726,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("3bc7d1bc-03c1-91c6-a654-293598416d55"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("8587788c-94f0-9a4a-40a7-6ba2bbe80e59"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000819000000202411050471847"
@@ -13719,7 +16734,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("37cb8173-78d6-f77d-8a07-39c0b8a6b343"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("44d77c5d-9d86-8829-3876-b48821642f50"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000817200000000000002615001"
@@ -13728,7 +16742,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("c58d57a9-106a-f044-0917-19a71bddd577"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("8de01c4a-c01e-625c-ddc4-0dd07562c4d6"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000000910501"
@@ -13737,7 +16750,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("7e677449-01a5-8e9e-1b29-5fb66a54dd92"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("cac7da9c-260e-df60-fa5b-443c0f978994"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000000000000000000004657101"
@@ -13746,7 +16758,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("56a0348e-70e5-1c5b-a9d8-d8d73070da73"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("d59ef591-7ee2-8cb8-b25b-24f9a744c7c6"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000000934701"
@@ -13755,7 +16766,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("d5c9ac6e-3a66-6131-1790-77ff4708ff6f"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("d59ef591-7ee2-8cb8-b25b-24f9a744c7c6"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000201612210042403"
@@ -13764,7 +16774,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("cd5c5854-d9c5-5e84-ccd9-756312f0c2b8"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("39703375-c7c5-4a61-2d10-4d14b0706254"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000001411701"
@@ -13773,7 +16782,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("0d3cd335-7e56-5149-2745-f255ba12c30d"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("8c498c95-1bc6-6db4-05e1-9e24dafafff7"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000202212010211521"
@@ -13782,7 +16790,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("e67b1b4c-a183-16e8-5248-a5fe818e2377"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("fac7e95e-179a-5475-5078-272d40c4828a"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000000000000000000004445701"
@@ -13791,7 +16798,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("7c501587-6819-8cea-ef22-a1ddbc9d952d"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("9d4c7e38-2ae3-c07b-d8d5-131425739778"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816200000000000000570001"
@@ -13800,7 +16806,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("5ff9e7ca-2cba-14b3-68c8-2ad9522297d8"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("fc5921aa-1d72-3ae9-195a-df566ea2dde3"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000000000000000000004660501"
@@ -13809,7 +16814,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("17fa2c86-5cd5-a3e4-f2c5-6ee89fccfa8a"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("03a74c54-d742-a4ee-a72e-40a044ecad98"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000002117501"
@@ -13818,7 +16822,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("68093cb5-4373-2827-c556-87326ad023cc"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("c7231a56-e35a-ed3b-afbb-47c53a54dc1b"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT00813000000R0000000000000007592"
@@ -13827,7 +16830,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("775dba64-1201-7734-c5c1-d7e88ff14f0a"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("34c143cb-2e0f-b879-c8bf-2094199e5db6"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000821100000202107270094761"
@@ -13836,7 +16838,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("5d931509-21cf-8e94-d242-b90105b03f5f"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("34c143cb-2e0f-b879-c8bf-2094199e5db6"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000821100000000000001645001"
@@ -13845,7 +16846,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("8de53bbe-77c2-1d70-4a22-367dd1bb8735"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("858bb8b9-1531-f74c-4701-8b8653ad5596"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000002085701"
@@ -13854,7 +16854,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("163e2e94-775f-99fb-a3eb-5458592b1aa3"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("48088e56-5441-337c-936a-9c1f21f9fa6b"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000002088201"
@@ -13863,7 +16862,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("301e1e72-82c4-6e78-049d-31baaf551c4e"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("48088e56-5441-337c-936a-9c1f21f9fa6b"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000000000000000000004571201"
@@ -13872,7 +16870,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("ede48ef5-1753-77c1-be9f-0d2950d19d7c"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("9d6f16fd-717f-47ba-9403-5e9ecee2da3f"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000818100000000000000455501"
@@ -13881,7 +16878,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("6d0bc1f2-d5fe-9c68-4983-9ef58e0c309f"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("a26bd5af-07fd-2d1f-f125-7869fb206f20"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000867300000000000001788101"
@@ -13890,7 +16886,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("e43ce3dc-4c7c-3dc8-ca0e-c24adb29fdf3"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("c22d04e0-4dc0-dcbb-717b-e0a3e25311dd"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000818100000000000003777501"
@@ -13899,7 +16894,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("4dfd5b31-5dca-a01a-d85f-fadd7f353ccc"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("c22d04e0-4dc0-dcbb-717b-e0a3e25311dd"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000818100000000000003777701"
@@ -13908,7 +16902,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("2bbde86d-0806-855c-dadc-24f60fee6b7e"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("c22d04e0-4dc0-dcbb-717b-e0a3e25311dd"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000818100000000000003777601"
@@ -13917,7 +16910,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("40107976-792f-7ed5-b687-bbd59e5cfdbc"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("c22d04e0-4dc0-dcbb-717b-e0a3e25311dd"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000818100000000000003830601"
@@ -13926,7 +16918,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("b3841615-eb1d-7fa5-4e4f-d484c5d800da"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("c22d04e0-4dc0-dcbb-717b-e0a3e25311dd"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000818100000000000003789901"
@@ -13935,7 +16926,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("14ae9808-4a22-9a82-e07a-bb8341ee9c95"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("c22d04e0-4dc0-dcbb-717b-e0a3e25311dd"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000818100000000000003799401"
@@ -13944,7 +16934,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("548f33c2-044c-9a34-335a-6d77d11516ea"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("c22d04e0-4dc0-dcbb-717b-e0a3e25311dd"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000818100000000000003795001"
@@ -13953,7 +16942,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("965a491d-a2dd-af66-e307-55c8570157d6"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("c22d04e0-4dc0-dcbb-717b-e0a3e25311dd"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000000000000000000003789201"
@@ -13962,7 +16950,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("cc4e580a-c92e-4851-c63c-6300f8eba14c"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("c22d04e0-4dc0-dcbb-717b-e0a3e25311dd"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000818100000000000003812001"
@@ -13971,7 +16958,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("36376047-b110-4e75-d989-38075adbbe45"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("c22d04e0-4dc0-dcbb-717b-e0a3e25311dd"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000818100000000000003825501"
@@ -13980,7 +16966,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("d3e67adb-5cbe-76a3-b1ef-2783a41b3c59"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("c22d04e0-4dc0-dcbb-717b-e0a3e25311dd"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000818100000000000003795102"
@@ -13989,7 +16974,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("e1158bf9-18ef-1e59-7a5e-30b022a47533"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("b469bed4-796c-e9b0-ea2e-5ca5192049d8"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000818100000000000000457401"
@@ -13998,7 +16982,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("2f058faf-03dd-4b14-d19d-de2b9591ac61"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("b469bed4-796c-e9b0-ea2e-5ca5192049d8"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000818100000000000000456901"
@@ -14007,7 +16990,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("ddb52c9f-7f2a-1b97-6ce1-41bda14ddac1"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("b469bed4-796c-e9b0-ea2e-5ca5192049d8"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000818100000202209140158315"
@@ -14016,7 +16998,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("6c351c31-4028-7719-e3fa-b4d54a804076"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("a680c6b7-e584-d6c7-33bf-6d57f2eb99a8"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000818100000000000004296001"
@@ -14025,7 +17006,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("3151c8e2-2c77-db7c-c147-f33e5537d377"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("34aeb28e-bfb7-4495-00ed-a388f8b402b8"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0072500818100000000000000000003"
@@ -14034,7 +17014,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("063d426c-0d34-e681-3858-891bb47d5e99"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("4f138e39-7ae9-8d3f-7454-30680dc58180"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000000887801"
@@ -14043,7 +17022,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("a0aa35f8-e4b8-603c-7545-ec11b5483317"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("4f138e39-7ae9-8d3f-7454-30680dc58180"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000000887802"
@@ -14052,7 +17030,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("2fc17ec3-74a5-15ea-6e5b-88f3694e375e"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("e967cf6c-92a4-004e-b91c-4dd1ad4f0257"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0081300000000000000000002724501"
@@ -14061,7 +17038,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("0249f83e-edb2-79fa-1f1d-6daebfb4aa79"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("e8245b05-f900-be25-559b-05332c292040"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000000000000000000002505101"
@@ -14070,7 +17046,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("aec92dfb-c5a8-d251-665e-3c97c3209e7d"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("fc0962ca-a4ab-3544-09d9-94ff2a41183e"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000202211140188635"
@@ -14079,7 +17054,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("54bb279d-8ddc-10f0-0e83-8aacb530f891"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("fc0962ca-a4ab-3544-09d9-94ff2a41183e"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000002125301"
@@ -14088,7 +17062,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("707e8230-ccac-cb30-58e9-ec50afba3840"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("fc0962ca-a4ab-3544-09d9-94ff2a41183e"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000000000000123364"
@@ -14097,7 +17070,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("ad9c2000-b828-3d81-f703-b7f70fb36cef"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("0226a55f-5f70-eae5-9b5c-11662c5a54d6"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0081300000000000000000001245401"
@@ -14106,7 +17078,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("04e6af00-c60e-1a74-e0c9-82ac0f0b1998"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("0226a55f-5f70-eae5-9b5c-11662c5a54d6"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT00813000000R0000000000000001578"
@@ -14115,7 +17086,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("fd3391f8-9acf-74fb-bfe8-6a8e96adb634"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("a821dbbe-e408-edb0-1977-27bc309e057b"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000002637801"
@@ -14124,7 +17094,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("ec54eb56-44bc-3eb8-236c-942d33cd1b11"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("a821dbbe-e408-edb0-1977-27bc309e057b"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000202010210077946"
@@ -14133,7 +17102,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("464570de-32f3-5433-ebbb-26560bcdbbb9"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("31edb99e-f375-17d7-811e-857a38b3fff8"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000818200000000000004160901"
@@ -14142,7 +17110,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("b770ab31-2fa4-8458-835e-ac83405a3fda"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("31edb99e-f375-17d7-811e-857a38b3fff8"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000000000000000000004528401"
@@ -14151,7 +17118,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("634b3029-a539-dd06-a561-889bdf8464d2"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("ee017436-48a4-2053-4b44-8bc51bdf0a36"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000202402010351633"
@@ -14160,7 +17126,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("c42da1e8-0ef1-a6a7-e0dc-2f7a764646db"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("2fb0ae2c-a523-27e5-115c-7a11018d1f6b"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000202204050112789"
@@ -14169,7 +17134,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("4f881323-4fad-0edf-1bc3-e56db2c1a1b5"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("94d7078d-95bf-1e7b-21bd-04b5823cb12e"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000202303290250943"
@@ -14178,7 +17142,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("b8bf52ed-a2dd-51b9-089b-65eeaec455ee"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("b4df3e60-8bfa-3df1-07a0-20746302a213"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000000465901"
@@ -14187,7 +17150,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("c1429253-8468-7172-3e4a-8967f8eb1a6a"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("b4df3e60-8bfa-3df1-07a0-20746302a213"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000202112210102405"
@@ -14196,7 +17158,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("8e2f87f4-0b3e-fde9-8d63-8f77c916d5fd"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("b9637216-ab62-56bc-b60e-cda87e3c16c9"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000000000000000000004686801"
@@ -14205,7 +17166,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("8e1dc94c-d7e4-172b-fab8-82343397c785"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("b9637216-ab62-56bc-b60e-cda87e3c16c9"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000818200000000000000704501"
@@ -14214,7 +17174,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("1d65bd8d-6dd0-8906-4fdb-e927c4e5f6f1"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("fbdaa63d-08d9-a91f-b9d1-94336d3a4a3b"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000818400000000000002728401"
@@ -14223,7 +17182,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("79afc2ee-6f3d-75bd-73fc-8a9095aed5eb"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("8f4742db-bcec-11a6-3809-ee1607b89739"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0081300000000000000000009878901"
@@ -14232,7 +17190,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("0831e5c9-5af7-2248-0501-4cef24d32eb1"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("02c85f79-4d4d-eb4f-e971-a2107b12a8e8"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000002698901"
@@ -14241,7 +17198,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("16fa563a-c58f-0bb4-9868-af370071a522"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("02c85f79-4d4d-eb4f-e971-a2107b12a8e8"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000202604130605171"
@@ -14250,7 +17206,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("bc2e552a-dc3f-fd20-669c-3fea9c8b5562"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("30444294-06c5-dadb-ce56-75b706d4e9a3"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816200000000000004167501"
@@ -14259,7 +17214,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("06c42656-6d7b-760f-0225-c89ecf04f8e1"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("30444294-06c5-dadb-ce56-75b706d4e9a3"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816200000202503310514618"
@@ -14268,7 +17222,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("8c19ba25-8f89-1c9d-65e2-76338098b249"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("6a1fd5bc-9af3-0ad9-23b8-d3f8cce89550"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000000000000053147"
@@ -14277,7 +17230,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("662a4146-1bfb-caf7-1699-b215ab8f3aac"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("f40fea06-1fde-5684-ed6c-37417ec5ea5d"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000002129401"
@@ -14286,7 +17238,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("a858c98b-77c6-db89-d57a-1acf22ac7f45"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("f40fea06-1fde-5684-ed6c-37417ec5ea5d"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000202009030075815"
@@ -14295,7 +17246,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("d0978288-39b9-dee5-a4ed-3702c9a0e335"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("e19cd5bc-2b97-788e-d31c-15ca12b1a654"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000004133801"
@@ -14304,7 +17254,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("93fa2447-825b-4f83-fd2b-4b0d4913e95c"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("09076d7a-64f3-3a8f-c8b6-ab1b01b205f2"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000000000000000000004508801"
@@ -14313,7 +17262,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("dfae4ec8-8c86-ddda-837f-02f4752312a3"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("67b6cffd-b2af-3604-95e0-a492171e10af"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000818400000000000001720301"
@@ -14322,7 +17270,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("ba793922-f35c-7b6b-f450-90ddb1c6d406"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("2882baaa-5b28-159d-6105-9b3ea8796b01"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000818200000000000000704801"
@@ -14331,7 +17278,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("cd353768-ea25-df67-a180-22d2ddb89e89"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("2882baaa-5b28-159d-6105-9b3ea8796b01"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000818200000201305140017972"
@@ -14340,7 +17286,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("ed5019a4-bee5-9ca7-0621-ab1541e93bbc"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("da0e1e7b-1ca5-5474-c33c-f0c066970a7d"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000001234201"
@@ -14349,7 +17294,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("e1b685a0-a3e3-28fa-5517-3bb254ea2892"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("fe9d07e3-26e5-bcf7-3634-ec12d0a8095d"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000000000000000000006197701"
@@ -14358,7 +17302,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("e74348c2-c0ae-5b19-39f4-e9465da48477"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("fe9d07e3-26e5-bcf7-3634-ec12d0a8095d"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000819000000202209200159119"
@@ -14367,7 +17310,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("7b73c8eb-0099-1635-cfb0-df4196f01577"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("64b9345a-6616-2501-d289-ea12d1f6c053"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000819000000000000000130123"
@@ -14376,7 +17318,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("ac8c5100-828a-0525-771e-40a1563b8c17"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("64b9345a-6616-2501-d289-ea12d1f6c053"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000819000000202209200159122"
@@ -14385,7 +17326,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("523294b8-890f-241c-c1e3-ae2e2324444c"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("64b9345a-6616-2501-d289-ea12d1f6c053"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000000000000000000006128401"
@@ -14394,7 +17334,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("b3f483bb-f0f1-2487-b29c-44e2cf79d3e2"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("64b9345a-6616-2501-d289-ea12d1f6c053"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000819000000202209200159120"
@@ -14403,7 +17342,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("124059f4-b3ac-a342-0b1e-7a856b711c36"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("79dcc7fc-825d-9226-5adb-5e30673d411e"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000000000000000000006179501"
@@ -14412,7 +17350,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("df2c8ada-208e-abe6-33c6-f6ae2d132863"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("21e4da34-b43c-1811-9fdf-e04b448c9d92"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000819000000000000000086514"
@@ -14421,7 +17358,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("18632d83-e145-474f-291f-73fd0efa0cd2"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("34da3b06-78c8-a8f0-2321-b93c319c3a4a"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000000931701"
@@ -14430,7 +17366,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("b26b1a7e-e2ba-e1e5-685a-b3c539fa66f2"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("87c68976-9901-c0b6-ac66-6fe61b037a1c"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000818200000000000000706501"
@@ -14439,7 +17374,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("bda49407-6be5-e4e6-5894-e7d08a359faa"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("d36725a1-3dc7-34d0-13ee-61b03e2b02b1"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000003407901"
@@ -14448,7 +17382,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("60f13cfc-2f11-2123-57b5-933fd1b8569e"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("a1c3fb0d-28a7-7388-8bbf-babb25a3fea4"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000818100000000000000106706"
@@ -14457,7 +17390,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("69474fe1-12c2-09ef-9ff8-3bb7b47deffb"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("b7e73783-eb93-99d0-45b1-88ac7a7b9376"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000818200000000000000950101"
@@ -14466,7 +17398,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("1b1d7d44-cdbd-f345-06af-706536f19eb0"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("b7e73783-eb93-99d0-45b1-88ac7a7b9376"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000818200000202208080152435"
@@ -14475,7 +17406,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("33716ae6-25f3-d709-ad62-2c37354ab262"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("4e422a02-32e5-176d-ad7a-5abe117711d1"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000002111501"
@@ -14484,7 +17414,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("e6c8da92-6b45-08c4-9d8f-eca2871c21b0"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("4e422a02-32e5-176d-ad7a-5abe117711d1"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000202002050071916"
@@ -14493,7 +17422,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("cbd9b6b4-32b5-d850-d139-d2c66f3f7c28"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("287b00f6-bb2f-3302-89c5-f1a5e842b119"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000819000000000000001480001"
@@ -14502,7 +17430,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("00e64f17-3bbb-c08b-d388-e5960f1f73d3"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("287b00f6-bb2f-3302-89c5-f1a5e842b119"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000819000000202412030483624"
@@ -14511,7 +17438,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("d9da5c40-62e5-c8a2-54e4-ef1962be18dd"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("b4172ba1-194f-339b-8317-14f9c592439d"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000002919102"
@@ -14520,7 +17446,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("46a516d8-2a8e-6482-0731-51f6f144e46b"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("b4172ba1-194f-339b-8317-14f9c592439d"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000002919101"
@@ -14529,7 +17454,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("3a3a5b29-e595-576a-2599-2bcf5e1993fa"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("be41f501-2b1f-17d6-4c9c-aa5c439164e6"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000000000000000000004586901"
@@ -14538,7 +17462,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("48a993cc-bc4a-a8c7-05bd-7ecfde225221"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("e03e7e90-ff5d-fe88-5d89-853fde48152a"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000000930101"
@@ -14547,7 +17470,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("ea1aea0d-3524-2ebc-7c85-f7d06e8619a6"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("3a2342bb-cb24-1ee1-acd3-e7799e95d78b"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000002084301"
@@ -14556,7 +17478,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("2d5531b4-7c2a-ebaa-288c-18031fdc020f"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("da8dd578-e9ae-2c27-6706-8f4cc413d886"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000003745801"
@@ -14565,7 +17486,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("80fa7129-a05a-421b-48eb-bb2a7cc4d494"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("da8dd578-e9ae-2c27-6706-8f4cc413d886"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000202209210159218"
@@ -14574,7 +17494,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("448d3d2a-efb1-6c57-bb73-7d9146b6b683"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("e44ef94e-042c-0f82-2961-79b86b9db999"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000003134101"
@@ -14583,7 +17502,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("1c735191-eb56-9060-3078-4d8bfd47c6a9"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("a13957db-bc3c-8860-573b-25679113455d"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000806300000201307310019120"
@@ -14592,7 +17510,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("fe59fe7a-8532-eb44-3e45-e79a8ac479ec"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("aa9b83ae-3644-e54d-bd20-1792a1217486"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000000000000049873"
@@ -14601,7 +17518,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("37a1a234-ddb1-839d-33a6-e9f1ca214252"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("aa9b83ae-3644-e54d-bd20-1792a1217486"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816400000202502260500686"
@@ -14610,7 +17526,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("ebb7ba9d-94e9-a244-e6f7-901d3b968070"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("3bc98842-4ce9-89b7-97fa-934b85b9bb2c"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000002146801"
@@ -14619,7 +17534,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("dcea6cfd-0726-3de6-1a13-5098c7639bad"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("3bc98842-4ce9-89b7-97fa-934b85b9bb2c"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816400000202502280500973"
@@ -14628,7 +17542,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("d447dc98-7c3f-b14b-858e-045e327c098f"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("1a05d73c-8ee1-b267-01a1-d8c5bfd31f66"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000000930701"
@@ -14637,7 +17550,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("dfb4c402-2e0b-4040-3ab7-4effa4fe0dca"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("1a05d73c-8ee1-b267-01a1-d8c5bfd31f66"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000202301050214907"
@@ -14646,7 +17558,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("ea476cc1-4a4f-9bac-5527-b02a7398c21c"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("5b889cd5-f4fe-2db9-ee52-df9813ef2edf"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000004005401"
@@ -14655,7 +17566,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("74150b44-c54a-aa7e-f2fb-aba0b771539f"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("5b889cd5-f4fe-2db9-ee52-df9813ef2edf"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000202306150271606"
@@ -14664,7 +17574,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("3e9f710f-1098-2d0d-6ae4-f06777b5aa51"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("c6884562-e4e3-c708-0042-6590cb49b87e"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000000000000000000004412001"
@@ -14673,7 +17582,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("e5e55472-cbc6-7c5c-0fdf-3c2b501baa8d"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("8a2082b6-3e1d-3e34-3f57-54913f081d44"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000818100000000000000125979"
@@ -14682,7 +17590,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("ee443f9e-d52e-34c5-e527-70f2555c62d4"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("d6a1f5bc-1b27-9da5-6a3b-f3171c7900f5"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000002748602"
@@ -14691,7 +17598,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("1f51f8fb-9c44-9524-58ff-ffbd8b37bcd6"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("d6a1f5bc-1b27-9da5-6a3b-f3171c7900f5"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000002748601"
@@ -14700,7 +17606,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("55b5e932-a4d3-c78d-7a7f-e2eaf372c1fd"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("70fcc680-775d-186b-6cdb-b4bb7161a163"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000818100000000000000247001"
@@ -14709,7 +17614,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("20399d70-d766-f807-4ea6-991682e5c0bb"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("648801da-15b4-42e8-5ac2-8a0f61daa001"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000002765701"
@@ -14718,7 +17622,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("bb09530f-8337-03b2-0174-9c4adc32caee"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("b13ee735-b139-31d8-28e0-1b63c6d6ae7a"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000818100000000000003712801"
@@ -14727,7 +17630,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("40fb672e-3d7f-a71a-f712-3cc8d1a98df4"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("93fb65c2-d02c-ab82-8cd9-3ee3a4e6a7e5"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000003187101"
@@ -14736,7 +17638,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("19f424b6-e241-9e36-4d3c-2277927534bc"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("db9ab6dd-8750-51b5-7bb5-6216f54b16a2"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000000463401"
@@ -14745,7 +17646,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("00188970-ddc2-f9c6-371c-6df4aaaca3b4"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("db9ab6dd-8750-51b5-7bb5-6216f54b16a2"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000202301310228682"
@@ -14754,7 +17654,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("7e113784-8a41-82f2-e819-08b7f7cddc9a"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("98dbf6f6-072a-ffa9-59c7-1c35f0068ede"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000000000000053517"
@@ -14763,7 +17662,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("37f1adff-4d2b-43bd-3aa4-7c1f9ef3cfce"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("98dbf6f6-072a-ffa9-59c7-1c35f0068ede"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000202403270386833"
@@ -14772,7 +17670,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("30f5aee4-8c93-a210-94aa-e705b5f12c9b"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("247ae6ee-8670-f241-956e-412ad7220ac9"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000000000000056009"
@@ -14781,7 +17678,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("6bec22bb-723c-19c4-e77d-a108efbd2ff1"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("68d066bc-235d-b49f-5b78-89981015a77e"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000000000000000000004527801"
@@ -14790,7 +17686,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("953ceb4b-5ead-07f7-4c3e-c989d9fc975c"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("68d066bc-235d-b49f-5b78-89981015a77e"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000001436301"
@@ -14799,7 +17694,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("d4d165ea-aad8-69ec-fa6d-3b78abc7ba35"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("e74ad5e8-8f20-bb17-252f-14296a9c22d7"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000000448701"
@@ -14808,7 +17702,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("9acf4868-0dfa-f795-2843-7210bc49f1de"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("084790ce-06ba-bf81-fc0d-613b7023bc69"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000003918601"
@@ -14817,7 +17710,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("9b567bb4-1f93-dad9-d2ed-5a1d9541633d"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("36bf659d-3da8-65f5-716f-d792c507e3e5"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000001406401"
@@ -14826,7 +17718,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("70cd55d2-81e8-52d5-a61b-09d6fe6e4541"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("3aec2088-79b8-92ec-4be0-de9ec4af5921"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000000000000104484"
@@ -14835,7 +17726,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("7c9a6475-d40a-bccb-180b-9da257e2dc39"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("f01743c5-fefa-7642-6e36-0d4a1ff82a88"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000000000000104485"
@@ -14844,7 +17734,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("fc2ee886-0ee3-7779-d539-74876d746b0d"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("4a4afcd6-4c46-1b67-7796-3551dd6840ce"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000002102601"
@@ -14853,7 +17742,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("ebd2f9ef-be82-e69a-7370-b6e9d5e900e7"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("4a4afcd6-4c46-1b67-7796-3551dd6840ce"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000202303210248187"
@@ -14862,7 +17750,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("62b44c75-e57e-76e8-b21c-5b7f9699062b"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("1bc79319-c42b-bb6a-8d7a-42592c320af7"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000000000000000000000592601"
@@ -14871,7 +17758,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("0b348471-deaa-f3e1-38ae-c3b05f3d65b3"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("55bc0be7-bed2-47e0-4a60-ba84ad22c3ee"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000000914501"
@@ -14880,7 +17766,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("69875c65-1a98-fa27-0748-683580ac8755"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("55bc0be7-bed2-47e0-4a60-ba84ad22c3ee"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000201512030035353"
@@ -14889,7 +17774,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("a208ea2b-d18c-3cc9-d166-af5f36ff823f"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("dfe74aa6-59b0-06f2-55f1-3b82758406c1"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000818100000000000000044953"
@@ -14898,7 +17782,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("32f9cf4d-11e9-5b42-358e-35b4a0370a12"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("dfe74aa6-59b0-06f2-55f1-3b82758406c1"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000818100000202107290095815"
@@ -14907,7 +17790,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("efcdb5aa-889d-5ae6-ef31-38257642dfb7"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("8d582161-15c1-7b77-36ba-e0ec3951376a"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000818100000000000000128950"
@@ -14916,7 +17798,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("1e70a9d6-9e54-4a16-92c6-c2d60da7b074"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("8d582161-15c1-7b77-36ba-e0ec3951376a"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000818100000202211080187804"
@@ -14925,7 +17806,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("2f8a450f-8831-6d59-bda0-e4a41f992002"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("d820a86d-9df0-df64-3c55-710da59238d3"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000000000000097650"
@@ -14934,7 +17814,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("1c285ee0-169c-ecdc-fd15-ac7742d59f62"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("d820a86d-9df0-df64-3c55-710da59238d3"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000202210110173049"
@@ -14943,7 +17822,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("e84d9b14-dc3b-d8c3-a8c0-bbf77f853023"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("0bc38566-9216-226d-071c-3c28bd3016b6"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000004301001"
@@ -14952,7 +17830,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("32579c46-d420-33e2-46b0-59055fff7247"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("0bc38566-9216-226d-071c-3c28bd3016b6"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000000000000113907"
@@ -14961,7 +17838,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("a053a730-ee24-dcbc-4d28-74aa2cdfda65"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("c4d5c028-5b14-aa8c-19c3-0c38d8bc69e3"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000002524101"
@@ -14970,7 +17846,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("bbcd61ad-27d9-2b26-b07e-ac5bf72743cd"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("06e4ef18-7668-c219-0377-b1d4c8b5fee1"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816200000000000003930801"
@@ -14979,7 +17854,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("d197fa4e-5c89-3a3b-aca3-408f42440bb9"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("06e4ef18-7668-c219-0377-b1d4c8b5fee1"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816200000000000002249001"
@@ -14988,7 +17862,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("76651e3f-009c-cf3d-b03d-27e7b643ea32"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("06e4ef18-7668-c219-0377-b1d4c8b5fee1"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816200000201302140016950"
@@ -14997,7 +17870,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("a2fd5138-8929-ee85-9699-bd94cb496867"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("4175461a-c7cd-8d4a-0d56-118527ceb2c5"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000002372501"
@@ -15006,7 +17878,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("ba405e92-fe00-111a-924b-a78fc6f3a406"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("4175461a-c7cd-8d4a-0d56-118527ceb2c5"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000202303210248196"
@@ -15015,7 +17886,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("088b4d89-ff84-f985-5578-c03219fea806"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("580a8a90-bbb4-8069-26ec-61d254468cfe"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816200000000000000874301"
@@ -15024,7 +17894,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("a8ad3bf6-ed43-43cf-75f4-989b89b1807e"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("b402edcc-5661-6b32-b179-256213e038ef"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000000000000086434"
@@ -15033,7 +17902,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("23c1eb12-1b55-0249-767b-6a3bc1bbde43"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("b402edcc-5661-6b32-b179-256213e038ef"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000202209200159194"
@@ -15042,7 +17910,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("ae0958c6-1b20-3df2-a1a1-26b9879a6764"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("945a83fe-06bf-180b-66bc-ee6fd65a1f78"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000000713001"
@@ -15051,7 +17918,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("959717a7-c591-a3f6-9fae-7e3e90f5fd63"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("27730718-371f-a80b-d03b-3ea3cd90b85e"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000000000000040096"
@@ -15060,7 +17926,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("3b5bffb6-1fa1-8ab3-d8bf-7b663f463192"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("27730718-371f-a80b-d03b-3ea3cd90b85e"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000202407310426273"
@@ -15069,7 +17934,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("9ac92c9b-35a3-13e2-10e6-f61b5dec792c"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("fc55758a-68c4-831d-f83c-25fccfdde609"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000001943001"
@@ -15078,7 +17942,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("f22a5709-f5a6-33fb-7ebf-6338394037d7"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("fc55758a-68c4-831d-f83c-25fccfdde609"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000201407140022637"
@@ -15087,7 +17950,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("c230aebc-5ad8-fd17-a467-167f6298e3ef"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("d7f410cd-5702-3ff8-f803-cf8bdd6222e3"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000000000000075523"
@@ -15096,7 +17958,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("6c3778f6-b6c6-6180-f6e0-cae62a5d26c0"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("d7f410cd-5702-3ff8-f803-cf8bdd6222e3"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000202403130385521"
@@ -15105,7 +17966,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("e30a4a11-970c-cba9-b4d5-0677bcbac047"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("30f3872c-a693-1c1a-ecd5-461078e4c0a5"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000000000000000000002465501"
@@ -15114,7 +17974,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("e164bde5-3b6f-56fd-7b3d-d4f992f1ba23"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("30f3872c-a693-1c1a-ecd5-461078e4c0a5"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000000000000000000002465502"
@@ -15123,7 +17982,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("c5d12723-c158-8ed5-a133-db0c9c37409b"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("30f3872c-a693-1c1a-ecd5-461078e4c0a5"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000000000000000000002614301"
@@ -15132,7 +17990,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("e4c07fb2-0f04-807a-313b-502da267a8d0"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("30f3872c-a693-1c1a-ecd5-461078e4c0a5"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000000000000000000003497101"
@@ -15141,7 +17998,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("3983eaf6-76ae-7ed8-672b-45425f24f19a"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("30f3872c-a693-1c1a-ecd5-461078e4c0a5"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000000000000000000003497102"
@@ -15150,7 +18006,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("3a2bcff3-8d2c-9bd8-84f0-9cd588d37410"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("30f3872c-a693-1c1a-ecd5-461078e4c0a5"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000000000000000000002614302"
@@ -15159,7 +18014,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("ce9556c5-9389-2ccc-e0d1-7c1951448b5c"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("30f3872c-a693-1c1a-ecd5-461078e4c0a5"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000201703300042896"
@@ -15168,7 +18022,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("dbf8a016-28cf-3cf2-275a-b652a9f06bcb"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("f2a9586b-f63a-05a4-9a2f-3e2cf3b74982"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0081300000000000000000009770401"
@@ -15177,7 +18030,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("7281320f-3d5f-31e5-39fb-78be994a0572"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("f2a9586b-f63a-05a4-9a2f-3e2cf3b74982"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT00813000000R0000000000000004922"
@@ -15186,7 +18038,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("e988bb0c-a4ea-1847-e6c8-ba5c4dd65438"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("8bd72dc7-bd29-3c81-55f8-29e8b6ff3100"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000003400201"
@@ -15195,7 +18046,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("fb4cb22a-7dd6-d352-c983-ef238cc75f96"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("46672bf5-9a60-9f75-70a9-5c03b6896e84"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000000889501"
@@ -15204,7 +18054,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("18f649e7-9b86-1d7d-3445-d8f9941a36ec"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("a62875e1-3af4-0a16-9047-a3c903fdeae5"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000818100000000000003091201"
@@ -15213,7 +18062,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("4a3be571-4449-0b83-8e97-156a643226b1"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("a62875e1-3af4-0a16-9047-a3c903fdeae5"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000818100000202108030095934"
@@ -15222,7 +18070,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("98ea45dc-0068-cd15-75a6-3c28ad42b146"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("ae854b22-f100-2d6c-31f2-da6139ad614a"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000000933601"
@@ -15231,7 +18078,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("3f2cbe5b-ac8c-c9f2-be51-fe99e742f7e1"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("ae854b22-f100-2d6c-31f2-da6139ad614a"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000202211290210652"
@@ -15240,7 +18086,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("caa1c370-f32c-6f06-d44a-4fd68c54ca70"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("f369c55c-895c-d558-6bef-1f39d4861d1d"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000002107801"
@@ -15249,7 +18094,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("7b49fe07-3c83-78c1-d1b6-edd0271ffb2d"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("f369c55c-895c-d558-6bef-1f39d4861d1d"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000202106070093492"
@@ -15258,7 +18102,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("677e8a61-c916-955a-d7a3-0d817c859477"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("45db5f3e-b399-ac4b-9f67-1a3e50d7bbeb"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000003048001"
@@ -15267,7 +18110,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("b8e5e3f6-7af7-c2aa-7439-3d081e81fc7c"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("45db5f3e-b399-ac4b-9f67-1a3e50d7bbeb"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000202208050152124"
@@ -15276,7 +18118,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("e3826858-2c3c-d3d2-13bf-62aa77a3add0"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("f895b4a6-c9d8-26e8-3737-5720ac871a4a"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000000445601"
@@ -15285,7 +18126,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("5595e5d3-a352-e69f-3c5e-7b914dd9ff12"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("f895b4a6-c9d8-26e8-3737-5720ac871a4a"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000201709280048069"
@@ -15294,7 +18134,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("aca0f225-998b-1b66-64e7-69b5273c8685"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("b9af4ba3-8619-6dd3-fdbf-3dcb52b05158"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000000000000000000004511601"
@@ -15303,7 +18142,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("22dd7a6e-d7a7-efa8-1839-cd3f422d9c9b"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("695e40ee-b7ac-526c-c2f9-1053cda5a1d4"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000003388801"
@@ -15312,7 +18150,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("588284a9-a278-1ea4-f46f-dd5b5488be84"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("a366b844-26cd-db61-f178-482a4dcdb397"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000003141301"
@@ -15321,7 +18158,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("5d76eac7-f0f9-457e-dd44-cbd67d7e1764"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("88af1afa-0158-e066-ffdc-045093e7a76b"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000004245001"
@@ -15330,7 +18166,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("bdeb8df6-8c67-083a-595f-691ddd61f786"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("88af1afa-0158-e066-ffdc-045093e7a76b"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000004245002"
@@ -15339,7 +18174,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("21a713ae-ec2e-7d48-67f6-8460d6762d7a"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("43aabb42-8230-3226-41e7-9a3fc8e2482f"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000002425401"
@@ -15348,7 +18182,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("6370f937-f50c-4d7a-edb6-8d8dcf5a973b"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("86384620-ca05-6b30-c663-923fe6665022"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0081300000000000000000009894901"
@@ -15357,7 +18190,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("c876ee62-b956-38b1-adcb-c7b7bb71cb43"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("19bf82fc-9673-c828-90fa-62b154771155"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000819100000000000000251101"
@@ -15366,7 +18198,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("757978ed-a053-6a5a-88ec-3de0553ca1e7"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("d5b12348-37e4-304a-bb93-b30bbd2ab78f"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000819000000000000001470901"
@@ -15375,7 +18206,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("2d7b71d5-227f-58bd-2d93-cba3d41c5398"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("842cf92a-fd2f-5218-1bbe-0133c2ed5200"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000001443001"
@@ -15384,7 +18214,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("e2a67f77-591b-3294-729f-d46b6ab7f0b6"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("a3c884d5-1653-318a-dfe3-a81393b81785"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000000910401"
@@ -15393,7 +18222,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("69619984-03bc-8048-efc4-9961198d29c0"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("a3c884d5-1653-318a-dfe3-a81393b81785"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000202303070244684"
@@ -15402,7 +18230,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("521aa7ee-6777-80a6-0953-b75f6eeaf1e6"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("09ca6f3f-cb7f-de2a-efdd-e12e97a8730a"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000003633801"
@@ -15411,7 +18238,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("71b74a11-0bdf-693b-10cd-bbd1ad06afec"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("43034566-90b3-914a-6c38-41e26bc6c8e1"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0081300000000000000000002774701"
@@ -15420,7 +18246,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("6251d208-74c2-f06f-d0a4-715a76fd04ba"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("43034566-90b3-914a-6c38-41e26bc6c8e1"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0081300000000000000000001483401"
@@ -15429,7 +18254,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("6ffafb8f-d5f3-be9f-bd78-94dccbe87788"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("06e3b4c4-2e4b-6713-dca9-e1e419f4cc5f"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000002085001"
@@ -15438,7 +18262,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("3cafc2be-95d8-cb7d-b537-7a513a961f80"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("06e3b4c4-2e4b-6713-dca9-e1e419f4cc5f"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000201304180017612"
@@ -15447,7 +18270,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("d3089161-4a29-b210-f486-0f71fac60761"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("a645b316-442b-31db-beac-8d0745e98db1"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000002470501"
@@ -15456,7 +18278,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("c543ba0e-e9e1-2020-398b-425a8f7d0f31"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("e6ed0893-1630-5f0e-102c-6fb90cb758de"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000818100000000000001629701"
@@ -15465,7 +18286,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("cf0fcf7c-b900-e57f-108d-3988cf2ba0f2"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("f7c4a1a2-7755-4191-dfbb-df1c37985bad"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816300000000000001876101"
@@ -15474,7 +18294,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("0865ed80-f380-6e12-622d-5f04b82acd08"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("d04e8adb-9b5c-7e94-4247-a000bf9a92fc"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000003574901"
@@ -15483,7 +18302,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("f83d340e-90cb-a25c-dba0-357d42c8073e"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("adbf13ee-b41c-e77b-88d1-45b16ff1552d"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000003941701"
@@ -15492,7 +18310,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("4d4c9164-2533-8d53-9423-6cb46ec51da8"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("702aee64-982f-ebf5-eb51-310dd29695e2"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000818400000000000001242601"
@@ -15501,7 +18318,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("9c04c25b-fad5-f4a7-3c55-14abcf52cb55"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("702aee64-982f-ebf5-eb51-310dd29695e2"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000818400000000000001242701"
@@ -15510,7 +18326,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("c9f18e0f-6be5-1a59-ceb9-19a91ff7433c"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("702aee64-982f-ebf5-eb51-310dd29695e2"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000818400000000000001242702"
@@ -15519,7 +18334,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("d06a5ef7-af56-5560-e937-24a7d01a449f"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("942262ad-b0f2-79dd-65ab-4e0b778bca50"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT00813000000R0000000000000011491"
@@ -15528,7 +18342,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("ac008edc-56af-62a8-f17a-674f8bc12a75"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("942262ad-b0f2-79dd-65ab-4e0b778bca50"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0081300000000000000000001538001"
@@ -15537,7 +18350,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("cc1fbf1c-cca0-364a-a7e7-35c35e7436e2"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("41c45d1a-c3b2-d109-dae5-de85bff80383"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000000000000106651"
@@ -15546,7 +18358,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("67d5f300-87dd-eca8-4f65-2e8500ef6a65"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("41c45d1a-c3b2-d109-dae5-de85bff80383"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000202301110215520"
@@ -15555,7 +18366,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("c24c4265-544b-766b-3051-dd74fbacdec7"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("0063680e-f111-a908-5d87-1402faa4867d"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000818100000000000001652101"
@@ -15564,7 +18374,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("04c28f60-74dd-1b93-25b6-a41d2d5d634b"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("0063680e-f111-a908-5d87-1402faa4867d"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000818100000000000001654501"
@@ -15573,7 +18382,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("9f572a3e-634b-0d86-62e0-ea6978cc3f81"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("0063680e-f111-a908-5d87-1402faa4867d"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000818100000202410090460347"
@@ -15582,7 +18390,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("6074d64d-d3e5-327d-7b45-b4e4ec14879a"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("17515825-12b3-3738-7f97-73f5c5f45f55"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000000915401"
@@ -15591,7 +18398,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("9d64ce97-e603-b2a0-261e-97992eaabea7"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("1d4f0b28-c225-46b0-7585-b96aedf9a2ac"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000003304201"
@@ -15600,7 +18406,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("06670193-6ef9-56c3-ad3e-a593d4d569ea"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("eebef973-fc0c-0f48-cb0e-23c5b8c2daef"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000819000000000000000145187"
@@ -15609,7 +18414,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("4f3b6a62-0d6e-38b9-41f3-704ccd7270b1"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("caa2080e-6e66-fa9b-4e58-3f0905a6b4dd"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000002150101"
@@ -15618,7 +18422,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("7aea7733-95b6-2070-c04a-684650d4a066"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("23dcd963-eae2-1f15-86a2-970b158e4769"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000001578401"
@@ -15627,7 +18430,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("4c596ab8-20e5-154e-aa69-d8e33a5d968c"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("8483af5d-9440-5a2f-8b55-8d795293f9ae"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816200000000000002546701"
@@ -15636,7 +18438,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("2fcf8b60-a87d-b416-e7ac-a17745e826e2"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("9d626cfb-ce6f-86a5-1eef-1cedea6880b1"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000000946701"
@@ -15645,7 +18446,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("8c9116ee-4c03-883b-06cb-1f85a3da53d8"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("7db8f70e-ddab-803d-a0bf-30dcc443c4d1"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000000000000000000004672201"
@@ -15654,7 +18454,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("28a40f10-8266-3497-65d2-a5db5d0d0334"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("bcc2aaa7-5f04-0876-b5b9-111f71851153"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000002129601"
@@ -15663,7 +18462,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("3df304ae-97e9-4620-2774-c0ea1ce816a5"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("daa6038f-81c1-6ee1-c736-ce59aaecdd50"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000000634001"
@@ -15672,7 +18470,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("7ed86074-7701-22c1-ec66-64b673765946"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("1e46db9c-8698-9b9b-bfe7-715d28b30911"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT00800008970000000000000053698"
@@ -15681,7 +18478,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("22fa7f22-7a2a-a78c-20bc-ce914093cfe7"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("ff5adab2-73b4-2ac9-695a-9114634417c9"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000000000000117751"
@@ -15690,7 +18486,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("ad2fa0c8-9fdc-7a51-8621-bb5fd9fbec7f"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("f099de5d-101b-af50-1b7c-2f7b2b2e7262"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000202305240268149"
@@ -15699,7 +18494,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("12e54b13-3ad9-67ae-7011-7d54f0f291a0"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("5117f69d-b684-ea35-6d26-bdef33e58600"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000000000000056022"
@@ -15708,7 +18502,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("d33d45a4-787c-2bb7-eab5-139f7c8e6b62"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("eac19984-aa7b-9985-210d-da71e58b2640"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000003317801"
@@ -15717,7 +18510,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("79ee30d4-5447-aa3b-af00-99ed9d46faef"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("fc4d16e8-196b-150d-4232-f92490b0fcad"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000000000000000000000187001"
@@ -15726,7 +18518,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("88c65b5b-d49f-c84a-d03e-993e20238c36"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("f8274681-0e97-c1d1-6650-f164c9e27850"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000000000000000000000880301"
@@ -15735,7 +18526,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("40d7e575-db87-90d6-f025-118bc7ba549a"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("f8274681-0e97-c1d1-6650-f164c9e27850"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000000000000000000000880302"
@@ -15744,7 +18534,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("40ef26be-af7f-6a9b-dd25-40673ee8116f"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("f3c2cade-ee67-9e2e-df88-c847f5232895"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0081300000000000000000004963701"
@@ -15753,7 +18542,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("c77d592e-8fdb-e27e-e6a4-9a5eb2707dfd"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("f3c2cade-ee67-9e2e-df88-c847f5232895"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0081300000000000000000004963702"
@@ -15762,7 +18550,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("6ced1ab3-b710-7303-f164-65268636ee66"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("075f230b-1b36-70aa-6601-abd74d5a59be"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000818100000000000000481502"
@@ -15771,7 +18558,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("6f0d39c3-deb1-8101-56b1-ec3e835e111b"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("075f230b-1b36-70aa-6601-abd74d5a59be"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000000000000000000004503401"
@@ -15780,7 +18566,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("9c407e7c-2809-0a8c-5689-828594237822"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("0266078e-de8f-869e-c6e5-53a303a0cc1d"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000000000000063045"
@@ -15789,7 +18574,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("47195786-bdbf-3295-f37c-212854d124b6"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("87e75cdd-cca7-9dc8-a569-386cc96ad2c9"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000818100000000000000482301"
@@ -15798,7 +18582,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("1c23d39b-7093-cb40-9c21-3670f62ade04"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("87e75cdd-cca7-9dc8-a569-386cc96ad2c9"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000818100000202201280105735"
@@ -15807,7 +18590,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("c20e10da-99e9-9ad9-7548-a6632722afc5"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("46fc39c5-b2df-f613-5a8b-5a9b60529283"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000201812190065618"
@@ -15816,7 +18598,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("2ea714aa-9300-e1eb-01fe-4d42812805a7"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("046c598c-091a-5219-939e-ae3048d1c8fb"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0081300000000000000000001547201"
@@ -15825,7 +18606,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("f2402bba-9b44-4503-ac8c-e45ec86daa77"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("652887f8-3419-7f62-bef7-008af95f233b"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000819100000000000000734901"
@@ -15834,7 +18614,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("399cc0ba-b2f1-4ff0-5403-e70afd5bcba0"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("b19bfa3d-c335-286f-7ede-eaf304bd5f25"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000202210170174515"
@@ -15843,7 +18622,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("e22e1d8f-ad36-96c2-2311-beee0e596c6c"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("a1569d16-219d-4592-7da2-5e2407a0b564"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000202003160072835"
@@ -15852,7 +18630,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("9d2dfac6-56ab-a14e-ae4d-b460b41101fe"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("95a9606c-9e8e-1503-6c4e-a334d598ebfe"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000000000000000000004674801"
@@ -15861,7 +18638,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("b092d012-a48a-bf1a-dffc-875d524a627e"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("5ab118d3-ab77-56b7-1b20-ce3cbb79cf9a"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000818400000000000003434801"
@@ -15870,7 +18646,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("44cb0dde-1ce9-bd9a-1d19-eeb2c639764d"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("bf3754a1-74ad-c455-9271-a8655669303e"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000819100000000000000066587"
@@ -15879,7 +18654,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("8f16072e-8c15-f89a-1a82-18c0713789c2"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("bf3754a1-74ad-c455-9271-a8655669303e"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000819000000202012100079281"
@@ -15888,7 +18662,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("f4cac118-afca-c3c3-2e83-9dec23138f56"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("c49218c1-021f-91e3-71a0-451b61d4933c"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000000000000000000004380601"
@@ -15897,7 +18670,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("d5ace41a-7e43-2a2d-f63b-5deb6c83f4f7"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("c49218c1-021f-91e3-71a0-451b61d4933c"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000003302101"
@@ -15906,7 +18678,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("0866d5c0-d9a9-f924-4e1f-f22d439ccb4b"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("d95b3a0b-52e3-f5fa-0467-32ed1cb5dbca"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000202409240459355"
@@ -15915,7 +18686,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("e0989a03-d850-0141-ad79-9d509b174bae"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("d1b1afa3-6bf6-0884-c34e-b9ee24c384fa"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000202108120096139"
@@ -15924,7 +18694,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("d11c9002-57cf-b62d-cb9a-50d52b6b6784"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("4ad2d72f-5ff1-94b8-f654-e834be4188f7"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000818200000000000000966101"
@@ -15933,7 +18702,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("fae1e0ac-4166-4def-30d7-59091890845a"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("4ad2d72f-5ff1-94b8-f654-e834be4188f7"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000818200000202106020093406"
@@ -15942,7 +18710,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("60c5577b-1998-4ddb-d4b5-1e69c00ddb6b"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("46421108-0f4b-72b1-f3f1-859f1660aa76"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000003965801"
@@ -15951,7 +18718,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("fcd09948-fe71-a1b8-446d-975e196057ba"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("8690ee57-4364-dcd1-97d1-7ca7c27bd887"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000202511130578814"
@@ -15960,7 +18726,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("802a7f08-c1f1-af1e-369c-d926be858e03"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("8acca2c1-4f17-efdd-db19-b37f0a823c09"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000002111801"
@@ -15969,7 +18734,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("f31e1f02-1f3e-37ce-855d-d39a64b0e175"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("db745b33-da6d-1663-1ab3-9648d265a566"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000202601280590922"
@@ -15978,7 +18742,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("1c0ace18-1e43-9043-937b-f8edbf076711"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("db745b33-da6d-1663-1ab3-9648d265a566"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000000000000000000004670601"
@@ -15987,7 +18750,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("485c851d-b568-3f37-b3df-8c5dd54e7254"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("f935fedd-b079-8609-7ef7-2dfd9ec292d4"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000818100000000000001629301"
@@ -15996,7 +18758,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("ea4385a3-851d-d295-31c9-24bb4308b477"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("ee88c98c-e801-7e34-d6fe-39aaa8ee442e"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000003937701"
@@ -16005,7 +18766,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("67be9bed-f0e5-b988-8310-3f5548b96336"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("b895e19b-daec-619c-33e7-bafebf509fdb"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000000000000000000004565801"
@@ -16014,7 +18774,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("4f9e56e6-6d3f-95df-37a3-b2b0b388aac9"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("94e31945-2f3f-6f2f-2afa-9f65fa9f7b4d"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000000000000000000000666601"
@@ -16023,7 +18782,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("ef0dec38-b51d-c022-4834-6a7ea59fd92c"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("a5423034-80ff-f76f-a5f5-76fa7a767366"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000806100000000000000859001"
@@ -16032,7 +18790,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("e4f44516-a4ac-0540-dcb4-1225681f781b"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("a5423034-80ff-f76f-a5f5-76fa7a767366"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816200000202410250471346"
@@ -16041,7 +18798,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("277cefd6-ab0a-6144-f135-9ed57e558e72"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("2351a220-7210-93af-3bcf-51eb1b4b3cc1"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000818100000202210140173983"
@@ -16050,7 +18806,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("cd26df0a-2332-df8c-29fe-795aebd88ba8"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("687eb3ce-6514-4b41-8d42-6d20def61054"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT00813000000R0000000000000004414"
@@ -16059,7 +18814,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("022dd4b1-c250-127c-fbd4-c08eae7e11ae"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("8da36636-be12-e69f-e6a8-dfaec757e6a3"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000000388801"
@@ -16068,7 +18822,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("44062ddd-ea60-8f18-9612-08b88b8f7e22"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("8b3840fd-7c79-d3bf-d1f5-75033761e3fe"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000000000000000000003207002"
@@ -16077,7 +18830,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("121f8968-6ded-f630-4cda-5d0108f21e29"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("8b3840fd-7c79-d3bf-d1f5-75033761e3fe"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000000000000000000000953801"
@@ -16086,7 +18838,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("ddaefed0-5944-f2d9-2692-af0c164839da"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("238e576b-7d9d-d7ad-e59c-0ebc58244808"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0081300000000000000000001454302"
@@ -16095,7 +18846,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("d2eda190-4998-d1b5-80c8-f3581cabbaa1"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("23fe7268-c768-1973-48da-b81e9c7d873d"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000003099501"
@@ -16104,7 +18854,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("a29cf9d2-888f-26f5-e420-0db1f6655f5f"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("d79dd0db-265e-8677-16bf-d6adfe5468f6"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000202606100629613"
@@ -16113,7 +18862,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("9c145446-5ebe-4b10-31cf-84b379ad8abe"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("77837546-2b67-2a0e-7a59-a3a26ee96bf9"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000201809050061739"
@@ -16122,7 +18870,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("de588182-2195-6afd-f681-8ef3f1bb2202"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("d1f072aa-4ca7-58dc-6130-9cefac813d82"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000001408101"
@@ -16131,7 +18878,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("28f5f341-2b91-844b-2c1f-2608e9dd8419"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("91a13c5f-406b-740c-121d-62f66116f7c2"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000002289401"
@@ -16140,7 +18886,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("0907cb2f-85de-843d-a39e-d4cc28a76063"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("882dcb4e-cf42-1cd7-b27b-bdbeca8c4432"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000003443001"
@@ -16149,7 +18894,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("b4e11004-38dc-5664-7b83-8d58e779f148"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("601c2afe-6e8d-e0bc-7ad3-878fc22c8dae"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000004324401"
@@ -16158,7 +18902,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("d0e7e48e-28bd-fc03-4afe-dcb859cd1626"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("db5cc6f5-f675-89f9-d2ce-1afda59318e6"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000003989301"
@@ -16167,7 +18910,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("595cd36f-f309-fa41-5dd7-a017a4e9fda6"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("5f850c1e-976b-4a52-d8a1-7c793cd62ce5"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000002878201"
@@ -16176,7 +18918,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("d570a6c2-8ea5-b495-c74b-12e35e30ff52"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("8152d030-4ee5-24f9-163d-2edc8bd6f4e8"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000000000000078140"
@@ -16185,7 +18926,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("414d4fd2-52c1-509f-c817-70da27f095c0"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("99f830d4-8de8-9b29-99e8-224679bf2855"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000000939901"
@@ -16194,7 +18934,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("de9d3a8d-6d3a-43e3-9108-acfa3be2a385"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("03bef92a-e1bd-7a9b-a707-8dc96cac7b66"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000202011240078871"
@@ -16203,7 +18942,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("4c2f5cce-0368-7d2e-79dd-6f365f187ff7"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("03bef92a-e1bd-7a9b-a707-8dc96cac7b66"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000002842801"
@@ -16212,7 +18950,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("93697a9e-a1bd-17cf-51e8-96fb40f9fb02"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("e7ec8545-1637-f2a8-06a9-a1e367196e7c"),
                             EnergyDirection = "consumption",
                             IsDeleted = false,
                             MeteringPointCode = "AT0082000816000000000000001937601"
@@ -16221,11 +18958,25 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         {
                             Id = new Guid("f5ff4642-033e-6193-d1ae-15a33f95eab5"),
                             CreatedAtUtc = new DateTimeOffset(new DateTime(2026, 10, 9, 0, 0, 0, 0, DateTimeKind.Unspecified), new TimeSpan(0, 0, 0, 0, 0)),
-                            CustomerId = new Guid("e7ec8545-1637-f2a8-06a9-a1e367196e7c"),
                             EnergyDirection = "generation",
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000202204190115552"
                         });
+                });
+
+            modelBuilder.Entity("CustomerMeteringPoints", b =>
+                {
+                    b.HasOne("EGWNCentral.Core.Domain.Entities.Customer", null)
+                        .WithMany()
+                        .HasForeignKey("CustomerId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("EGWNCentral.Core.Domain.Entities.MeteringPoint", null)
+                        .WithMany()
+                        .HasForeignKey("MeteringPointId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("EGWNCentral.Core.Domain.Entities.CommunityParticipation", b =>
@@ -16245,22 +18996,6 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                     b.Navigation("EnergyCommunity");
 
                     b.Navigation("MeteringPoint");
-                });
-
-            modelBuilder.Entity("EGWNCentral.Core.Domain.Entities.MeteringPoint", b =>
-                {
-                    b.HasOne("EGWNCentral.Core.Domain.Entities.Customer", "Customer")
-                        .WithMany("MeteringPoints")
-                        .HasForeignKey("CustomerId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
-
-                    b.Navigation("Customer");
-                });
-
-            modelBuilder.Entity("EGWNCentral.Core.Domain.Entities.Customer", b =>
-                {
-                    b.Navigation("MeteringPoints");
                 });
 
             modelBuilder.Entity("EGWNCentral.Core.Domain.Entities.EnergyCommunity", b =>

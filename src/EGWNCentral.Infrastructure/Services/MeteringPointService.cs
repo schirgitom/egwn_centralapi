@@ -10,6 +10,7 @@ public sealed class MeteringPointService(IUnitOfWork unitOfWork) : IMeteringPoin
     public async Task<IReadOnlyCollection<MeteringPoint>> GetAllAsync(CancellationToken cancellationToken = default)
     {
         return await unitOfWork.MeteringPoints.Query(asNoTracking: true)
+            .Include(x => x.Customers)
             .OrderBy(x => x.MeteringPointCode)
             .ToListAsync(cancellationToken);
     }
@@ -17,16 +18,13 @@ public sealed class MeteringPointService(IUnitOfWork unitOfWork) : IMeteringPoin
     public Task<MeteringPoint?> GetByIdAsync(Guid id, CancellationToken cancellationToken = default)
     {
         return unitOfWork.MeteringPoints.Query(asNoTracking: true)
+            .Include(x => x.Customers)
             .FirstOrDefaultAsync(x => x.Id == id, cancellationToken);
     }
 
-    public async Task<MeteringPoint> CreateAsync(Guid customerId, string meteringPointCode, string energyDirection, string? description, CancellationToken cancellationToken = default)
+    public async Task<MeteringPoint> CreateAsync(IReadOnlyCollection<Guid> customerIds, string meteringPointCode, string energyDirection, string? description, CancellationToken cancellationToken = default)
     {
-        var customerExists = await unitOfWork.Customers.Query(asNoTracking: true).AnyAsync(x => x.Id == customerId, cancellationToken);
-        if (!customerExists)
-        {
-            throw new KeyNotFoundException($"Customer '{customerId}' not found.");
-        }
+        var customers = await LoadCustomersAsync(customerIds, cancellationToken);
 
         var normalizedCode = Normalize(meteringPointCode);
         var normalizedEnergyDirection = NormalizeEnergyDirection(energyDirection);
@@ -40,7 +38,7 @@ public sealed class MeteringPointService(IUnitOfWork unitOfWork) : IMeteringPoin
 
         var meteringPoint = new MeteringPoint
         {
-            CustomerId = customerId,
+            Customers = customers,
             MeteringPointCode = normalizedCode,
             EnergyDirection = normalizedEnergyDirection,
             Description = NormalizeNullable(description)
@@ -51,22 +49,36 @@ public sealed class MeteringPointService(IUnitOfWork unitOfWork) : IMeteringPoin
         return meteringPoint;
     }
 
-    public async Task<MeteringPoint?> UpdateAsync(Guid id, string? description, string? energyDirection, CancellationToken cancellationToken = default)
+    public async Task<MeteringPoint?> UpdateAsync(Guid id, string? description, string? energyDirection, IReadOnlyCollection<Guid>? customerIds = null, CancellationToken cancellationToken = default)
     {
-        var meteringPoint = await unitOfWork.MeteringPoints.GetByIdAsync(id, cancellationToken);
+        var meteringPoint = await unitOfWork.MeteringPoints.Query()
+            .Include(x => x.Customers)
+            .FirstOrDefaultAsync(x => x.Id == id, cancellationToken);
         if (meteringPoint is null)
         {
             return null;
         }
+
+        var customers = customerIds is null ? null : await LoadCustomersAsync(customerIds, cancellationToken);
+        var normalizedEnergyDirection = energyDirection is null ? null : NormalizeEnergyDirection(energyDirection);
 
         if (description is not null)
         {
             meteringPoint.Description = NormalizeNullable(description);
         }
 
-        if (energyDirection is not null)
+        if (normalizedEnergyDirection is not null)
         {
-            meteringPoint.EnergyDirection = NormalizeEnergyDirection(energyDirection);
+            meteringPoint.EnergyDirection = normalizedEnergyDirection;
+        }
+
+        if (customers is not null)
+        {
+            meteringPoint.Customers.Clear();
+            foreach (var customer in customers)
+            {
+                meteringPoint.Customers.Add(customer);
+            }
         }
 
         await unitOfWork.SaveChangesAsync(cancellationToken);
@@ -84,6 +96,27 @@ public sealed class MeteringPointService(IUnitOfWork unitOfWork) : IMeteringPoin
         unitOfWork.MeteringPoints.Remove(meteringPoint);
         await unitOfWork.SaveChangesAsync(cancellationToken);
         return true;
+    }
+
+    private async Task<List<Customer>> LoadCustomersAsync(IReadOnlyCollection<Guid> customerIds, CancellationToken cancellationToken)
+    {
+        ArgumentNullException.ThrowIfNull(customerIds);
+        var ids = customerIds.Distinct().ToList();
+        if (ids.Count == 0 || ids.Contains(Guid.Empty))
+        {
+            throw new ArgumentException("At least one non-empty customer ID is required.", nameof(customerIds));
+        }
+
+        var customers = await unitOfWork.Customers.Query()
+            .Where(x => ids.Contains(x.Id))
+            .ToListAsync(cancellationToken);
+        var missingIds = ids.Except(customers.Select(x => x.Id)).ToArray();
+        if (missingIds.Length != 0)
+        {
+            throw new KeyNotFoundException($"Customers not found: {string.Join(", ", missingIds)}.");
+        }
+
+        return customers;
     }
 
     private static string Normalize(string value)

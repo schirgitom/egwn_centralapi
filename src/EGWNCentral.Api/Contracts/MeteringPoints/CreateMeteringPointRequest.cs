@@ -4,7 +4,8 @@ namespace EGWNCentral.Api.Contracts.MeteringPoints;
 
 public sealed class CreateMeteringPointRequest
 {
-    public Guid CustomerId { get; set; }
+    [Required, MinLength(1)]
+    public Guid[] CustomerIds { get; set; } = [];
 
     public string MeteringPointCode { get; set; } = string.Empty;
 

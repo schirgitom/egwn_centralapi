@@ -79,13 +79,7 @@ public sealed class EnergyCommunitiesController(IEnergyCommunityService energyCo
                 meteringPointId,
                 request.ParticipationPercentage,
                 cancellationToken);
-            var meteringPoint = participation.MeteringPoint;
-            return Ok(new CommunityParticipationResponse(
-                meteringPoint.Id,
-                meteringPoint.MeteringPointCode,
-                meteringPoint.Customer.CustomerNumber,
-                meteringPoint.Customer.Name,
-                participation.ParticipationPercentage));
+            return Ok(MapParticipation(participation));
         }
         catch (ArgumentOutOfRangeException ex)
         {
@@ -115,14 +109,22 @@ public sealed class EnergyCommunitiesController(IEnergyCommunityService energyCo
             community.Source,
             community.Participations
                 .Where(x => x.MeteringPoint is not null)
-                .Select(x => new CommunityParticipationResponse(
-                    x.MeteringPointId,
-                    x.MeteringPoint.MeteringPointCode,
-                    x.MeteringPoint.Customer.CustomerNumber,
-                    x.MeteringPoint.Customer.Name,
-                    x.ParticipationPercentage))
+                .Select(MapParticipation)
                 .ToArray(),
             community.CreatedAtUtc,
             community.UpdatedAtUtc);
+    }
+
+    private static CommunityParticipationResponse MapParticipation(CommunityParticipation participation)
+    {
+        return new CommunityParticipationResponse(
+            participation.MeteringPointId,
+            participation.MeteringPoint.MeteringPointCode,
+            participation.MeteringPoint.Customers
+                .OrderBy(x => x.CustomerNumber)
+                .ThenBy(x => x.Id)
+                .Select(x => new ParticipationCustomerResponse(x.Id, x.CustomerNumber, x.Name))
+                .ToArray(),
+            participation.ParticipationPercentage);
     }
 }

@@ -7,6 +7,26 @@ namespace EGWNCentral.Tests.Infrastructure;
 public sealed class EnergyCommunityServiceTests
 {
     [Fact]
+    public async Task ParticipationQueries_ShouldLoadAllCustomersOfSharedMeter()
+    {
+        await using var dbContext = CreateDbContext();
+        var unitOfWork = new UnitOfWork(dbContext);
+        var customers = new CustomerService(unitOfWork);
+        var first = await customers.CreateAsync("K-1", "First", null);
+        var second = await customers.CreateAsync("K-2", "Second", null);
+        var meter = await new MeteringPointService(unitOfWork).CreateAsync([first.Id, second.Id], "AT-SHARED", "consumption", null);
+        var service = new EnergyCommunityService(unitOfWork);
+        var community = await service.CreateAsync("Shared community");
+
+        var participation = await service.SetParticipationAsync(community.Id, meter.Id, 75);
+        Assert.Equal(2, participation.MeteringPoint.Customers.Count);
+        dbContext.ChangeTracker.Clear();
+
+        Assert.Equal(2, Assert.Single((await service.GetByIdAsync(community.Id))!.Participations).MeteringPoint.Customers.Count);
+        Assert.Equal(2, Assert.Single(Assert.Single(await service.GetAllAsync()).Participations).MeteringPoint.Customers.Count);
+    }
+
+    [Fact]
     public async Task CreateAndUpdateAsync_ShouldNormalizeAndPersistSource()
     {
         await using var dbContext = CreateDbContext();
@@ -32,7 +52,7 @@ public sealed class EnergyCommunityServiceTests
         var unitOfWork = new UnitOfWork(dbContext);
         var customer = await new CustomerService(unitOfWork).CreateAsync("K-500", "Shared Customer", null);
         var meteringPoint = await new MeteringPointService(unitOfWork)
-            .CreateAsync(customer.Id, "AT001000000000000000000000000005", "consumption", null);
+            .CreateAsync([customer.Id], "AT001000000000000000000000000005", "consumption", null);
         var communityService = new EnergyCommunityService(unitOfWork);
         var firstCommunity = await communityService.CreateAsync("Community One");
         var secondCommunity = await communityService.CreateAsync("Community Two");
@@ -43,14 +63,14 @@ public sealed class EnergyCommunityServiceTests
 
         Assert.Equal(65, firstParticipation.ParticipationPercentage);
         Assert.Equal(meteringPoint.Id, firstParticipation.MeteringPoint.Id);
-        Assert.Equal(customer.CustomerNumber, firstParticipation.MeteringPoint.Customer.CustomerNumber);
+        Assert.Equal(customer.CustomerNumber, Assert.Single(firstParticipation.MeteringPoint.Customers).CustomerNumber);
         Assert.Equal(80, secondParticipation.ParticipationPercentage);
         Assert.Equal(35, updatedParticipation.ParticipationPercentage);
         Assert.Equal(2, await dbContext.CommunityParticipations.CountAsync());
 
         var community = await communityService.GetByIdAsync(firstCommunity.Id);
         var participation = Assert.Single(community!.Participations);
-        Assert.Equal(customer.Name, participation.MeteringPoint.Customer.Name);
+        Assert.Equal(customer.Name, Assert.Single(participation.MeteringPoint.Customers).Name);
     }
 
     [Theory]

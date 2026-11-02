@@ -68,12 +68,17 @@ public sealed class CustomerService(IUnitOfWork unitOfWork) : ICustomerService
         }
 
         var meteringPoints = await unitOfWork.MeteringPoints.Query()
-            .Where(x => x.CustomerId == id)
+            .Include(x => x.Customers)
+            .Where(x => x.Customers.Any(customer => customer.Id == id))
             .ToListAsync(cancellationToken);
 
         foreach (var meteringPoint in meteringPoints)
         {
-            unitOfWork.MeteringPoints.Remove(meteringPoint);
+            meteringPoint.Customers.Remove(customer);
+            if (!meteringPoint.Customers.Any(x => x.Id != id && !x.IsDeleted))
+            {
+                unitOfWork.MeteringPoints.Remove(meteringPoint);
+            }
         }
 
         unitOfWork.Customers.Remove(customer);

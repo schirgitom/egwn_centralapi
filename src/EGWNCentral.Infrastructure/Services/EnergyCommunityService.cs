@@ -12,7 +12,7 @@ public sealed class EnergyCommunityService(IUnitOfWork unitOfWork) : IEnergyComm
         return await unitOfWork.EnergyCommunities.Query(asNoTracking: true)
             .Include(x => x.Participations)
             .ThenInclude(x => x.MeteringPoint)
-            .ThenInclude(x => x.Customer)
+            .ThenInclude(x => x.Customers)
             .OrderBy(x => x.Name)
             .ToListAsync(cancellationToken);
     }
@@ -22,7 +22,7 @@ public sealed class EnergyCommunityService(IUnitOfWork unitOfWork) : IEnergyComm
         return unitOfWork.EnergyCommunities.Query(asNoTracking: true)
             .Include(x => x.Participations)
             .ThenInclude(x => x.MeteringPoint)
-            .ThenInclude(x => x.Customer)
+            .ThenInclude(x => x.Customers)
             .FirstOrDefaultAsync(x => x.Id == id, cancellationToken);
     }
 
@@ -120,7 +120,7 @@ public sealed class EnergyCommunityService(IUnitOfWork unitOfWork) : IEnergyComm
         await unitOfWork.SaveChangesAsync(cancellationToken);
         return await unitOfWork.CommunityParticipations.Query(asNoTracking: true)
             .Include(x => x.MeteringPoint)
-            .ThenInclude(x => x.Customer)
+            .ThenInclude(x => x.Customers)
             .SingleAsync(x => x.Id == participation.Id, cancellationToken);
     }
 

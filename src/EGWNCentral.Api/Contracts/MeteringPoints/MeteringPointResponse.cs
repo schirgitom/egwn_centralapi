@@ -2,7 +2,7 @@ namespace EGWNCentral.Api.Contracts.MeteringPoints;
 
 public sealed record MeteringPointResponse(
     Guid Id,
-    Guid CustomerId,
+    IReadOnlyCollection<Guid> CustomerIds,
     string MeteringPointCode,
     string EnergyDirection,
     string? Description,
