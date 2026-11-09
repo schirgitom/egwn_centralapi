@@ -50,7 +50,8 @@ public sealed class SeedDataTests
     private static ApplicationDbContext CreateDbContext(string databaseName)
     {
         var options = new DbContextOptionsBuilder<ApplicationDbContext>()
-            .UseInMemoryDatabase(databaseName)
+            // InMemory cannot evaluate PostgreSQL defaults for model-managed registration codes.
+            .UseInMemoryDatabase(databaseName, options => options.EnableNullChecks(false))
             .Options;
 
         return new ApplicationDbContext(options);

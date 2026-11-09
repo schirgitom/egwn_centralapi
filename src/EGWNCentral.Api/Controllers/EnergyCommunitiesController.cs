@@ -18,6 +18,20 @@ public sealed class EnergyCommunitiesController(IEnergyCommunityService energyCo
         return Ok(communities.Select(Map).ToArray());
     }
 
+    [HttpGet("by-source")]
+    public async Task<ActionResult<IReadOnlyCollection<EnergyCommunityResponse>>> GetEnergyCommunitiesPerSource(
+        [FromQuery] string? source,
+        CancellationToken cancellationToken)
+    {
+        if (string.IsNullOrWhiteSpace(source))
+        {
+            return BadRequest("Source cannot be empty.");
+        }
+
+        var communities = await energyCommunityService.GetBySourceAsync(source, cancellationToken);
+        return Ok(communities.Select(Map).ToArray());
+    }
+
     [HttpGet("{id:guid}")]
     public async Task<ActionResult<EnergyCommunityResponse>> GetById(Guid id, CancellationToken cancellationToken)
     {
@@ -32,7 +46,7 @@ public sealed class EnergyCommunitiesController(IEnergyCommunityService energyCo
     {
         try
         {
-            var community = await energyCommunityService.CreateAsync(request.Name, request.Source, cancellationToken);
+            var community = await energyCommunityService.CreateAsync(request.Name, request.Source, request.SourceId, cancellationToken);
             return CreatedAtAction(nameof(GetById), new { id = community.Id }, Map(community));
         }
         catch (ArgumentException ex)
@@ -49,7 +63,7 @@ public sealed class EnergyCommunitiesController(IEnergyCommunityService energyCo
     {
         try
         {
-            var community = await energyCommunityService.UpdateAsync(id, request.Name, request.Source, cancellationToken);
+            var community = await energyCommunityService.UpdateAsync(id, request.Name, request.Source, request.SourceId, cancellationToken);
             return community is null ? NotFound() : Ok(Map(community));
         }
         catch (ArgumentException ex)
@@ -107,6 +121,7 @@ public sealed class EnergyCommunitiesController(IEnergyCommunityService energyCo
             community.Id,
             community.Name,
             community.Source,
+            community.SourceId,
             community.Participations
                 .Where(x => x.MeteringPoint is not null)
                 .Select(MapParticipation)

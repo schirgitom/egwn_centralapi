@@ -9,32 +9,46 @@ public sealed class EnergyCommunityService(IUnitOfWork unitOfWork) : IEnergyComm
 {
     public async Task<IReadOnlyCollection<EnergyCommunity>> GetAllAsync(CancellationToken cancellationToken = default)
     {
-        return await unitOfWork.EnergyCommunities.Query(asNoTracking: true)
-            .Include(x => x.Participations)
-            .ThenInclude(x => x.MeteringPoint)
-            .ThenInclude(x => x.Customers)
+        return await QueryWithParticipations()
+            .OrderBy(x => x.Name)
+            .ToListAsync(cancellationToken);
+    }
+
+    public async Task<IReadOnlyCollection<EnergyCommunity>> GetBySourceAsync(string source, CancellationToken cancellationToken = default)
+    {
+        ArgumentException.ThrowIfNullOrWhiteSpace(source);
+        var normalizedSource = source.Trim();
+        return await QueryWithParticipations()
+            .Where(x => x.Source == normalizedSource)
             .OrderBy(x => x.Name)
             .ToListAsync(cancellationToken);
     }
 
     public Task<EnergyCommunity?> GetByIdAsync(Guid id, CancellationToken cancellationToken = default)
     {
+        return QueryWithParticipations()
+            .FirstOrDefaultAsync(x => x.Id == id, cancellationToken);
+    }
+
+    private IQueryable<EnergyCommunity> QueryWithParticipations()
+    {
         return unitOfWork.EnergyCommunities.Query(asNoTracking: true)
             .Include(x => x.Participations)
             .ThenInclude(x => x.MeteringPoint)
-            .ThenInclude(x => x.Customers)
-            .FirstOrDefaultAsync(x => x.Id == id, cancellationToken);
+            .ThenInclude(x => x.Customers);
     }
 
     public async Task<EnergyCommunity> CreateAsync(
         string name,
         string? source = null,
+        string? sourceId = null,
         CancellationToken cancellationToken = default)
     {
         var community = new EnergyCommunity
         {
             Name = Normalize(name),
-            Source = NormalizeOptional(source)
+            Source = NormalizeOptional(source),
+            SourceId = NormalizeOptional(sourceId)
         };
         await unitOfWork.EnergyCommunities.AddAsync(community, cancellationToken);
         await unitOfWork.SaveChangesAsync(cancellationToken);
@@ -45,6 +59,7 @@ public sealed class EnergyCommunityService(IUnitOfWork unitOfWork) : IEnergyComm
         Guid id,
         string name,
         string? source,
+        string? sourceId,
         CancellationToken cancellationToken = default)
     {
         var community = await unitOfWork.EnergyCommunities.GetByIdAsync(id, cancellationToken);
@@ -55,6 +70,7 @@ public sealed class EnergyCommunityService(IUnitOfWork unitOfWork) : IEnergyComm
 
         community.Name = Normalize(name);
         community.Source = NormalizeOptional(source);
+        community.SourceId = NormalizeOptional(sourceId);
         await unitOfWork.SaveChangesAsync(cancellationToken);
         return community;
     }

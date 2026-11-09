@@ -9,4 +9,7 @@ public sealed class CreateEnergyCommunityRequest
 
     [MaxLength(500)]
     public string? Source { get; set; }
+
+    [MaxLength(500)]
+    public string? SourceId { get; set; }
 }

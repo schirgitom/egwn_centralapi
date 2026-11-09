@@ -20,6 +20,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\src\EGWNCentral.Api\EGWNCentral.Api.csproj" />
     <ProjectReference Include="..\..\src\EGWNCentral.Core\EGWNCentral.Core.csproj" />
     <ProjectReference Include="..\..\src\EGWNCentral.Infrastructure\EGWNCentral.Infrastructure.csproj" />
   </ItemGroup>

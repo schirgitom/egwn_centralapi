@@ -19,6 +19,16 @@ public sealed class CustomerConfiguration : IEntityTypeConfiguration<Customer>
             .HasMaxLength(200)
             .IsRequired();
 
+        builder.Property(x => x.RegistrationCode)
+            .HasMaxLength(6)
+            .ValueGeneratedOnAdd()
+            .HasDefaultValueSql("generate_customer_registration_code()")
+            .IsRequired();
+
+        builder.HasIndex(x => x.RegistrationCode).IsUnique();
+        builder.ToTable("Customers", table => table.HasCheckConstraint(
+            "CK_Customers_RegistrationCode_Format", "\"RegistrationCode\" ~ '^[A-NP-Z1-9]{6}$'"));
+
         builder.Property(x => x.Email)
             .HasMaxLength(320);
 

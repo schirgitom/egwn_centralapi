@@ -6,5 +6,7 @@ public sealed class EnergyCommunity : SoftDeletableEntity
 
     public string? Source { get; set; }
 
+    public string? SourceId { get; set; }
+
     public ICollection<CommunityParticipation> Participations { get; set; } = new List<CommunityParticipation>();
 }

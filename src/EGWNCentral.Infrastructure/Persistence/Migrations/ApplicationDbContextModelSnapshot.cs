@@ -9675,6 +9675,13 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         .HasMaxLength(200)
                         .HasColumnType("character varying(200)");
 
+                    b.Property<string>("RegistrationCode")
+                        .IsRequired()
+                        .ValueGeneratedOnAdd()
+                        .HasMaxLength(6)
+                        .HasColumnType("character varying(6)")
+                        .HasDefaultValueSql("generate_customer_registration_code()");
+
                     b.Property<DateTimeOffset?>("UpdatedAtUtc")
                         .HasColumnType("timestamp with time zone");
 
@@ -9684,7 +9691,13 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         .IsUnique()
                         .HasFilter("\"IsDeleted\" = false");
 
-                    b.ToTable("Customers");
+                    b.HasIndex("RegistrationCode")
+                        .IsUnique();
+
+                    b.ToTable("Customers", null, t =>
+                        {
+                            t.HasCheckConstraint("CK_Customers_RegistrationCode_Format", "\"RegistrationCode\" ~ '^[A-NP-Z1-9]{6}$'");
+                        });
 
                     b.HasData(
                         new
@@ -13383,8 +13396,11 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
 
                     b.Property<string>("Source")
                         .HasMaxLength(500)
-                        .HasColumnType("character varying(500)")
-                        .HasColumnName("Quelle");
+                        .HasColumnType("character varying(500)");
+
+                    b.Property<string>("SourceId")
+                        .HasMaxLength(500)
+                        .HasColumnType("character varying(500)");
 
                     b.Property<DateTimeOffset?>("UpdatedAtUtc")
                         .HasColumnType("timestamp with time zone");
@@ -18962,6 +18978,25 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                             IsDeleted = false,
                             MeteringPointCode = "AT0080000816000000202204190115552"
                         });
+                });
+
+            modelBuilder.Entity("EGWNCentral.Infrastructure.Messaging.OutboxMessage", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .HasColumnType("uuid");
+
+                    b.Property<DateTimeOffset>("OccurredAtUtc")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<string>("Payload")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("OccurredAtUtc");
+
+                    b.ToTable("CustomerCreatedOutbox", (string)null);
                 });
 
             modelBuilder.Entity("CustomerMeteringPoints", b =>
