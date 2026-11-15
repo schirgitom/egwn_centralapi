@@ -12,5 +12,7 @@ public interface IUnitOfWork
 
     IRepository<CommunityParticipation> CommunityParticipations { get; }
 
+    void RotateRegistrationCode(Customer customer, string registrationCode);
+
     Task<int> SaveChangesAsync(CancellationToken cancellationToken = default);
 }

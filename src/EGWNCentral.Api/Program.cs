@@ -5,6 +5,7 @@ using EGWNCentral.Api.Services;
 using EGWNCentral.Infrastructure;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
+using Npgsql;
 using Serilog;
 using Winton.Extensions.Configuration.Consul;
 
@@ -56,6 +57,16 @@ public class Program
 
         builder.Services.Configure<JwtOptions>(builder.Configuration.GetSection(JwtOptions.SectionName));
         builder.Services.Configure<AuthOptions>(builder.Configuration.GetSection(AuthOptions.SectionName));
+        builder.Services.AddOptions<InternalRegistrationOptions>()
+            .Bind(builder.Configuration.GetSection(InternalRegistrationOptions.SectionName))
+            .Validate(options => !string.IsNullOrWhiteSpace(options.Token) &&
+                                 !options.Token.Any(char.IsControl) &&
+                                 Encoding.UTF8.GetByteCount(options.Token) >= 32,
+                "InternalRegistration:Token must contain at least 32 UTF-8 bytes.")
+            .Validate(options => !string.IsNullOrWhiteSpace(options.TicketSigningKey) &&
+                                 Encoding.UTF8.GetByteCount(options.TicketSigningKey) >= 32,
+                "InternalRegistration:TicketSigningKey must contain at least 32 UTF-8 bytes.")
+            .ValidateOnStart();
 
         var jwtOptions = builder.Configuration.GetSection(JwtOptions.SectionName).Get<JwtOptions>()
             ?? throw new InvalidOperationException("Jwt configuration is required.");
@@ -69,6 +80,7 @@ public class Program
 
         builder.Services.AddInfrastructure(builder.Configuration);
         builder.Services.AddSingleton<JwtTokenService>();
+        builder.Services.AddSingleton<RegistrationTicketService>();
 
         builder.Services
             .AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
@@ -85,7 +97,9 @@ public class Program
                     IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtOptions.SigningKey)),
                     ClockSkew = TimeSpan.FromMinutes(1)
                 };
-            });
+            })
+            .AddScheme<Microsoft.AspNetCore.Authentication.AuthenticationSchemeOptions, InternalBearerAuthenticationHandler>(
+                InternalBearerDefaults.AuthenticationScheme, _ => { });
 
         builder.Services.AddAuthorization();
         builder.Services.AddControllers();
@@ -93,6 +107,16 @@ public class Program
 
 
         var app = builder.Build();
+
+        var databaseConnection = new NpgsqlConnectionStringBuilder(
+            app.Configuration.GetConnectionString("DefaultConnection"));
+        app.Logger.LogInformation(
+            "Using database server {DatabaseHost}:{DatabasePort}, database {DatabaseName}, user {DatabaseUser}",
+            databaseConnection.Host,
+            databaseConnection.Port,
+            databaseConnection.Database,
+            databaseConnection.Username);
+
         if (app.Environment.IsDevelopment())
         {
             app.MapOpenApi("/swagger/v1/swagger.json");

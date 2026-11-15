@@ -13489,6 +13489,25 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                         });
                 });
 
+            modelBuilder.Entity("EGWNCentral.Core.Domain.Entities.KeycloakMembership", b =>
+                {
+                    b.Property<string>("KeycloakUserId")
+                        .HasMaxLength(255)
+                        .HasColumnType("character varying(255)");
+
+                    b.Property<DateTimeOffset>("CreatedAtUtc")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<Guid>("CustomerId")
+                        .HasColumnType("uuid");
+
+                    b.HasKey("KeycloakUserId");
+
+                    b.HasIndex("CustomerId");
+
+                    b.ToTable("KeycloakMemberships");
+                });
+
             modelBuilder.Entity("EGWNCentral.Core.Domain.Entities.MeteringPoint", b =>
                 {
                     b.Property<Guid>("Id")
@@ -19031,6 +19050,15 @@ namespace EGWNCentral.Infrastructure.Persistence.Migrations
                     b.Navigation("EnergyCommunity");
 
                     b.Navigation("MeteringPoint");
+                });
+
+            modelBuilder.Entity("EGWNCentral.Core.Domain.Entities.KeycloakMembership", b =>
+                {
+                    b.HasOne("EGWNCentral.Core.Domain.Entities.Customer", null)
+                        .WithMany()
+                        .HasForeignKey("CustomerId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("EGWNCentral.Core.Domain.Entities.EnergyCommunity", b =>

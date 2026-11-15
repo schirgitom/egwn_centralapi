@@ -52,6 +52,23 @@ public sealed class CustomerServiceTests
     }
 
     [Fact]
+    public async Task RotateRegistrationCodeAsync_ShouldIssueNewCodeAndUpdateSnapshot()
+    {
+        await using var dbContext = CreateDbContext();
+        var service = new CustomerService(new UnitOfWork(dbContext));
+        var customer = await service.CreateAsync("K-300", "Rotate Customer", null);
+        var oldCode = customer.RegistrationCode;
+
+        var newCode = await service.RotateRegistrationCodeAsync(customer.Id);
+
+        Assert.NotNull(newCode);
+        Assert.NotEqual(oldCode, newCode);
+        Assert.Equal(newCode, (await dbContext.Customers.SingleAsync(x => x.Id == customer.Id)).RegistrationCode);
+        var snapshot = await dbContext.OutboxMessages.OrderBy(x => x.OccurredAtUtc).LastAsync();
+        Assert.Contains(newCode, snapshot.Payload);
+    }
+
+    [Fact]
     public async Task DeleteAsync_ShouldSoftDeleteCustomerAndMeteringPoints()
     {
         await using var dbContext = CreateDbContext();

@@ -64,6 +64,17 @@ public sealed class CustomersController(ICustomerService customerService) : Cont
         return deleted ? NoContent() : NotFound();
     }
 
+    [HttpPost("{id:guid}/registration-code/rotate")]
+    public async Task<ActionResult<RegistrationCodeResponse>> RotateRegistrationCode(
+        Guid id,
+        CancellationToken cancellationToken)
+    {
+        var registrationCode = await customerService.RotateRegistrationCodeAsync(id, cancellationToken);
+        return registrationCode is null
+            ? NotFound()
+            : Ok(new RegistrationCodeResponse(registrationCode));
+    }
+
     private static CustomerResponse Map(Customer customer)
     {
         return new CustomerResponse(

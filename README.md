@@ -25,6 +25,8 @@ Wichtige Einstellungen in `src\EGWNCentral.Api\appsettings.json`:
 - `ConnectionStrings:DefaultConnection`
 - `Jwt:Issuer`, `Jwt:Audience`, `Jwt:SigningKey`, `Jwt:ExpirationMinutes`
 - `Auth:Username`, `Auth:Password` (V1 Login fuer Token-Endpoint)
+- `InternalRegistration:Token`, `InternalRegistration:TicketSigningKey`
+  (nur ueber Secrets/Umgebungsvariablen setzen; beide mindestens 32 UTF-8-Bytes)
 - `Consul:Enabled`, `Consul:Address`, `Consul:Key`
 - `Seq:Url`
 - `RabbitMQ:Enabled`, `RabbitMQ:HostName`, `RabbitMQ:Port`, `RabbitMQ:VirtualHost`
@@ -127,10 +129,12 @@ einschliesslich Seed-Datensaetzen mit zufaelligen Codes. Sie erzeugt keine
 nachtraeglichen RabbitMQ-Events; Bestandskunden senden den Code bei ihrer
 naechsten relevanten Aenderung. Bereits gespeicherte Outbox-Nachrichten bleiben
 unveraendert und koennen den Code noch nicht enthalten.
-Der Code wird nicht aus Name, Kundennummer oder Kunden-ID abgeleitet und ist
-kein implementierter Einmalcode: Ablauf, Verbrauch und Registrierung sind
-nicht Bestandteil dieser API. Codes nicht protokollieren; den Zugriff auf
-Datenbank und RabbitMQ auf berechtigte Dienste beschraenken.
+Der Code wird nicht aus Name, Kundennummer oder Kunden-ID abgeleitet. Die
+geschuetzte Route `POST /api/customers/{id}/registration-code/rotate` erzeugt
+einen neuen Code und gibt ihn einmalig in der Antwort zurueck; ausstehende
+Kunden-Snapshots werden mit dem neuen Code aktualisiert. Codes nicht
+protokollieren; den Zugriff auf Datenbank und RabbitMQ auf berechtigte Dienste
+beschraenken.
 Die Folgemigration `ShortenCustomerRegistrationCode` ersetzt bisherige lange
 oder ungueltige Codes durch eindeutige sechsstellige Codes. Bereits versandte
 Codes verlieren dadurch ihre Gueltigkeit. Ausstehende Outbox-Payloads werden
@@ -140,6 +144,35 @@ Die kurze Kennung darf nicht als alleiniger Authentifizierungsnachweis dienen;
 ein Registrierungsdienst benoetigt insbesondere Rate-Limiting.
 Beim Rollback der Kurzcode-Migration bleiben die kurzen Codes erhalten;
 die urspruenglichen langen Codes werden nicht wiederhergestellt.
+
+## Keycloak-Registrierung
+
+Fuer die drei internen Endpunkte muss `InternalRegistration:Token` als
+`EGWN_INTERNAL_TOKEN` an den Keycloak-Provider und als
+`InternalRegistration__Token` an die CentralAPI uebergeben werden. Beide
+Variablen muessen denselben zufaelligen, mindestens 32 Byte langen Wert
+enthalten. `InternalRegistration:TicketSigningKey` ist ein davon unabhaengiger,
+mindestens 32 Byte langer API-Schluessel und bleibt ausschliesslich bei der
+CentralAPI. Keine dieser Variablen in Realm-Exports, Images oder Browser-Code
+ablegen.
+
+Keycloak ruft mit `Authorization: Bearer <EGWN_INTERNAL_TOKEN>` diese JSON-POST-
+Routen auf:
+
+| Route | Request | HTTP-200-Antwort |
+|---|---|---|
+| `/internal/registration/resolve` | `{"code":"ABC123"}` | `{"ticket":"...","organization":"egwn-<customer-id-ohne-bindestriche>"}` |
+| `/internal/registration/assign` | `{"ticket":"...","userId":"<immutable-keycloak-id>"}` | `{"customerId":"<GUID>","organization":"egwn-<customer-id-ohne-bindestriche>"}` |
+| `/internal/registration/membership` | `{"userId":"<immutable-keycloak-id>"}` | `{"customerId":"<GUID>","organization":"egwn-<customer-id-ohne-bindestriche>"}` |
+
+Fehlerhafte Codes/Tickets, fehlende oder geloeschte Kunden und fehlende
+Mitgliedschaften ergeben HTTP 400. Tickets sind HMAC-signiert, enthalten nur
+einen Hash des Registrierungscodes und verfallen nach spaetestens fuenf Minuten.
+Bei der Zuordnung wird der aktuelle Kundenstatus und Code erneut geprueft.
+Keycloak-User-IDs werden eindeutig einem Kunden zugeordnet: Wiederholte
+Zuordnungen zum selben Kunden sind idempotent, eine Umzuordnung wird abgelehnt.
+Die Organisation ist stabil `egwn-` plus Kunden-GUID ohne Bindestriche.
+Migrationen vor dem Start der API anwenden.
 
 `eventType` ist bei Anlage `customer.created`, bei relevanten Aenderungen
 `customer.updated` und bei Kundenloeschung `customer.deleted`. Eine neue Nachricht

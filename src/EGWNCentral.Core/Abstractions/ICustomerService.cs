@@ -12,5 +12,7 @@ public interface ICustomerService
 
     Task<Customer?> UpdateAsync(Guid id, string name, string? email, CancellationToken cancellationToken = default);
 
+    Task<string?> RotateRegistrationCodeAsync(Guid id, CancellationToken cancellationToken = default);
+
     Task<bool> DeleteAsync(Guid id, CancellationToken cancellationToken = default);
 }

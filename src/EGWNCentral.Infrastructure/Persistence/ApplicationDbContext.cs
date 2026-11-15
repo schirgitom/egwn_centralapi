@@ -9,6 +9,8 @@ public sealed class ApplicationDbContext(DbContextOptions<ApplicationDbContext> 
 {
     public DbSet<Customer> Customers => Set<Customer>();
 
+    public DbSet<KeycloakMembership> KeycloakMemberships => Set<KeycloakMembership>();
+
     public DbSet<MeteringPoint> MeteringPoints => Set<MeteringPoint>();
 
     public DbSet<EnergyCommunity> EnergyCommunities => Set<EnergyCommunity>();
@@ -19,6 +21,7 @@ public sealed class ApplicationDbContext(DbContextOptions<ApplicationDbContext> 
 
     private static readonly JsonSerializerOptions EventJsonOptions = new(JsonSerializerDefaults.Web);
     private readonly Dictionary<Guid, OutboxMessage> _pendingSnapshots = [];
+    private readonly HashSet<Guid> _registrationCodeRotations = [];
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -39,6 +42,7 @@ public sealed class ApplicationDbContext(DbContextOptions<ApplicationDbContext> 
         EnqueueSnapshots(customers);
         var result = base.SaveChanges(acceptAllChangesOnSuccess);
         _pendingSnapshots.Clear();
+        _registrationCodeRotations.Clear();
         return result;
     }
 
@@ -57,7 +61,19 @@ public sealed class ApplicationDbContext(DbContextOptions<ApplicationDbContext> 
         EnqueueSnapshots(customers);
         var result = await base.SaveChangesAsync(acceptAllChangesOnSuccess, cancellationToken);
         _pendingSnapshots.Clear();
+        _registrationCodeRotations.Clear();
         return result;
+    }
+
+    internal void RotateRegistrationCode(Customer customer, string registrationCode)
+    {
+        if (Entry(customer).State == EntityState.Detached || !RegistrationCodeGenerator.IsValid(registrationCode))
+        {
+            throw new ArgumentException("A tracked customer and valid registration code are required.");
+        }
+
+        customer.RegistrationCode = registrationCode;
+        _registrationCodeRotations.Add(customer.Id);
     }
 
     private bool HasSnapshotChanges()
@@ -110,9 +126,10 @@ public sealed class ApplicationDbContext(DbContextOptions<ApplicationDbContext> 
             {
                 entry.Entity.RegistrationCode = GenerateRegistrationCode();
             }
-            else if (entry.Property(customer => customer.RegistrationCode).IsModified)
+            else if (entry.Property(customer => customer.RegistrationCode).IsModified &&
+                     !_registrationCodeRotations.Contains(entry.Entity.Id))
             {
-                throw new InvalidOperationException("A customer's registration code cannot be changed.");
+                throw new InvalidOperationException("A customer's registration code can only be changed through rotation.");
             }
             if (entry.State == EntityState.Added && !RegistrationCodeGenerator.IsValid(entry.Entity.RegistrationCode))
             {

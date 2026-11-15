@@ -19,6 +19,11 @@ public sealed class UnitOfWork(ApplicationDbContext dbContext) : IUnitOfWork
 
     public IRepository<CommunityParticipation> CommunityParticipations => _communityParticipations ??= new EfRepository<CommunityParticipation>(dbContext);
 
+    public void RotateRegistrationCode(Customer customer, string registrationCode)
+    {
+        dbContext.RotateRegistrationCode(customer, registrationCode);
+    }
+
     public Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
     {
         return dbContext.SaveChangesAsync(cancellationToken);

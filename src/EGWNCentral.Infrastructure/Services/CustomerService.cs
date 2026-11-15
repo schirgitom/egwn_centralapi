@@ -1,6 +1,7 @@
 using EGWNCentral.Core.Abstractions;
 using EGWNCentral.Core.Abstractions.Persistence;
 using EGWNCentral.Core.Domain.Entities;
+using EGWNCentral.Infrastructure.Messaging;
 using Microsoft.EntityFrameworkCore;
 
 namespace EGWNCentral.Infrastructure.Services;
@@ -57,6 +58,31 @@ public sealed class CustomerService(IUnitOfWork unitOfWork) : ICustomerService
 
         await unitOfWork.SaveChangesAsync(cancellationToken);
         return customer;
+    }
+
+    public async Task<string?> RotateRegistrationCodeAsync(Guid id, CancellationToken cancellationToken = default)
+    {
+        var customer = await unitOfWork.Customers.GetByIdAsync(id, cancellationToken);
+        if (customer is null)
+        {
+            return null;
+        }
+
+        for (var attempt = 0; attempt < 100; attempt++)
+        {
+            var code = RegistrationCodeGenerator.Generate();
+            var exists = await unitOfWork.Customers.Query()
+                .IgnoreQueryFilters()
+                .AnyAsync(x => x.RegistrationCode == code, cancellationToken);
+            if (!exists)
+            {
+                unitOfWork.RotateRegistrationCode(customer, code);
+                await unitOfWork.SaveChangesAsync(cancellationToken);
+                return code;
+            }
+        }
+
+        throw new InvalidOperationException("Unable to generate a unique registration code after 100 attempts.");
     }
 
     public async Task<bool> DeleteAsync(Guid id, CancellationToken cancellationToken = default)
