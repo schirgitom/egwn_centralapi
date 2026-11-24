@@ -1,4 +1,3 @@
-using System.Text.Json;
 using EGWNCentral.Core.Domain.Entities;
 using EGWNCentral.Infrastructure.Messaging;
 using Microsoft.EntityFrameworkCore;
@@ -19,7 +18,6 @@ public sealed class ApplicationDbContext(DbContextOptions<ApplicationDbContext> 
 
     public DbSet<OutboxMessage> OutboxMessages => Set<OutboxMessage>();
 
-    private static readonly JsonSerializerOptions EventJsonOptions = new(JsonSerializerDefaults.Web);
     private readonly Dictionary<Guid, OutboxMessage> _pendingSnapshots = [];
     private readonly HashSet<Guid> _registrationCodeRotations = [];
 
@@ -110,9 +108,7 @@ public sealed class ApplicationDbContext(DbContextOptions<ApplicationDbContext> 
                 customer.CreatedAtUtc = pending.OccurredAtUtc;
             }
             var eventType = customer.IsDeleted ? "customer.deleted" : added ? "customer.created" : "customer.updated";
-            var snapshot = new CustomerSnapshot(pending.Id, eventType, 1, pending.OccurredAtUtc,
-                CustomerSnapshotBuilder.Build(this, customer));
-            pending.Payload = JsonSerializer.Serialize(snapshot, EventJsonOptions);
+            pending.Payload = CustomerSnapshotBuilder.Serialize(this, customer, pending, eventType);
         }
     }
 

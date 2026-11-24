@@ -1,3 +1,4 @@
+using System.Text.Json;
 using EGWNCentral.Core.Domain.Entities;
 using EGWNCentral.Infrastructure.Persistence;
 using Microsoft.EntityFrameworkCore;
@@ -6,6 +7,18 @@ namespace EGWNCentral.Infrastructure.Messaging;
 
 internal static class CustomerSnapshotBuilder
 {
+    private static readonly JsonSerializerOptions EventJsonOptions = new(JsonSerializerDefaults.Web);
+
+    public static IQueryable<Customer> WithRelationships(IQueryable<Customer> customers)
+        => customers.AsSplitQuery()
+            .Include(customer => customer.MeteringPoints)
+            .ThenInclude(meter => meter.CommunityParticipations)
+            .ThenInclude(participation => participation.EnergyCommunity);
+
+    public static string Serialize(ApplicationDbContext context, Customer customer, OutboxMessage message, string eventType)
+        => JsonSerializer.Serialize(new CustomerSnapshot(message.Id, eventType, 1, message.OccurredAtUtc,
+            Build(context, customer)), EventJsonOptions);
+
     public static IQueryable<EnergyCommunity> ReferencedCommunities(ApplicationDbContext context)
     {
         var ids = context.ChangeTracker.Entries<CommunityParticipation>()
@@ -45,14 +58,10 @@ internal static class CustomerSnapshotBuilder
 
         var directIds = customerIds.ToList();
         var affectedMeterIds = meterIds.ToList();
-        return context.Customers
-            .AsSplitQuery()
+        return WithRelationships(context.Customers
             .Where(customer => directIds.Contains(customer.Id) ||
                 customer.MeteringPoints.Any(meter => affectedMeterIds.Contains(meter.Id) ||
-                    meter.CommunityParticipations.Any(participation => communityIds.Contains(participation.EnergyCommunityId))))
-            .Include(customer => customer.MeteringPoints)
-            .ThenInclude(meter => meter.CommunityParticipations)
-            .ThenInclude(participation => participation.EnergyCommunity);
+                    meter.CommunityParticipations.Any(participation => communityIds.Contains(participation.EnergyCommunityId)))));
     }
 
     public static CustomerMasterData Build(ApplicationDbContext context, Customer customer)

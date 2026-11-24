@@ -81,6 +81,7 @@ public class Program
         builder.Services.AddInfrastructure(builder.Configuration);
         builder.Services.AddSingleton<JwtTokenService>();
         builder.Services.AddSingleton<RegistrationTicketService>();
+        builder.Services.AddSingleton<RegistrationDocumentService>();
 
         builder.Services
             .AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
@@ -103,7 +104,7 @@ public class Program
 
         builder.Services.AddAuthorization();
         builder.Services.AddControllers();
-        builder.Services.AddOpenApi();
+        builder.Services.AddOpenApi(options => options.AddBearerSecurity());
 
 
         var app = builder.Build();

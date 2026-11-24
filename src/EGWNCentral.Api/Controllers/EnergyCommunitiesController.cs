@@ -135,6 +135,7 @@ public sealed class EnergyCommunitiesController(IEnergyCommunityService energyCo
         return new CommunityParticipationResponse(
             participation.MeteringPointId,
             participation.MeteringPoint.MeteringPointCode,
+            participation.MeteringPoint.EnergyDirection,
             participation.MeteringPoint.Customers
                 .OrderBy(x => x.CustomerNumber)
                 .ThenBy(x => x.Id)

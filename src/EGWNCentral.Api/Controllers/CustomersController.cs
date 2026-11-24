@@ -9,7 +9,9 @@ namespace EGWNCentral.Api.Controllers;
 [ApiController]
 [Route("api/customers")]
 [Authorize]
-public sealed class CustomersController(ICustomerService customerService) : ControllerBase
+public sealed class CustomersController(
+    ICustomerService customerService,
+    ICustomerSnapshotService customerSnapshotService) : ControllerBase
 {
     [HttpGet]
     public async Task<ActionResult<IReadOnlyCollection<CustomerResponse>>> GetAll(CancellationToken cancellationToken)
@@ -73,6 +75,27 @@ public sealed class CustomersController(ICustomerService customerService) : Cont
         return registrationCode is null
             ? NotFound()
             : Ok(new RegistrationCodeResponse(registrationCode));
+    }
+
+    [HttpPost("by-number/{customerNumber}/grafana")]
+    public async Task<ActionResult<CustomerSnapshotResponse>> EnqueueSnapshot(
+        string customerNumber,
+        CancellationToken cancellationToken)
+    {
+        if (string.IsNullOrWhiteSpace(customerNumber))
+        {
+            return BadRequest("Customer number cannot be empty.");
+        }
+
+        var eventId = await customerSnapshotService.EnqueueCreatedAsync(customerNumber, cancellationToken);
+        return eventId is null ? NotFound() : Accepted(new CustomerSnapshotResponse(eventId.Value));
+    }
+
+    [HttpPost("grafana")]
+    public async Task<ActionResult<CustomerSnapshotsResponse>> EnqueueAllSnapshots(CancellationToken cancellationToken)
+    {
+        var count = await customerSnapshotService.EnqueueAllCreatedAsync(cancellationToken);
+        return Accepted(new CustomerSnapshotsResponse(count));
     }
 
     private static CustomerResponse Map(Customer customer)

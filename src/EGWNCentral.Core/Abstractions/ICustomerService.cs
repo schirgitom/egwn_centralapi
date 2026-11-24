@@ -8,6 +8,8 @@ public interface ICustomerService
 
     Task<Customer?> GetByIdAsync(Guid id, CancellationToken cancellationToken = default);
 
+    Task<Customer?> GetByNumberAsync(string customerNumber, CancellationToken cancellationToken = default);
+
     Task<Customer> CreateAsync(string customerNumber, string name, string? email, CancellationToken cancellationToken = default);
 
     Task<Customer?> UpdateAsync(Guid id, string name, string? email, CancellationToken cancellationToken = default);

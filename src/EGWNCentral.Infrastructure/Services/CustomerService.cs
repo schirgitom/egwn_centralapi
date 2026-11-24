@@ -21,6 +21,13 @@ public sealed class CustomerService(IUnitOfWork unitOfWork) : ICustomerService
             .FirstOrDefaultAsync(x => x.Id == id, cancellationToken);
     }
 
+    public Task<Customer?> GetByNumberAsync(string customerNumber, CancellationToken cancellationToken = default)
+    {
+        var normalizedCustomerNumber = Normalize(customerNumber);
+        return CustomerSnapshotBuilder.WithRelationships(unitOfWork.Customers.Query(asNoTracking: true))
+            .SingleOrDefaultAsync(x => x.CustomerNumber == normalizedCustomerNumber, cancellationToken);
+    }
+
     public async Task<Customer> CreateAsync(string customerNumber, string name, string? email, CancellationToken cancellationToken = default)
     {
         var normalizedCustomerNumber = Normalize(customerNumber);

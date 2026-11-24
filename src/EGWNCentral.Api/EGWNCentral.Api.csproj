@@ -16,6 +16,7 @@
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.24.1-preview.1" />
+    <PackageReference Include="PDFsharp" Version="6.2.3" />
     <PackageReference Include="Serilog.AspNetCore" Version="8.0.2" />
     <PackageReference Include="Serilog.Settings.Configuration" Version="8.0.2" />
     <PackageReference Include="Serilog.Sinks.Seq" Version="8.0.0" />
@@ -27,6 +28,12 @@
   <ItemGroup>
     <ProjectReference Include="..\EGWNCentral.Core\EGWNCentral.Core.csproj" />
     <ProjectReference Include="..\EGWNCentral.Infrastructure\EGWNCentral.Infrastructure.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="..\..\data\logo.png" Link="Assets\logo.png" />
+    <EmbeddedResource Include="Assets\Lato-Regular.ttf" />
+    <EmbeddedResource Include="Assets\Lato-Bold.ttf" />
   </ItemGroup>
 
   <ItemGroup>

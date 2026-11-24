@@ -33,6 +33,13 @@ Wichtige Einstellungen in `src\EGWNCentral.Api\appsettings.json`:
 - `RabbitMQ:UserName`, `RabbitMQ:Password`, `RabbitMQ:UseTls`
 - `RabbitMQ:Exchange`, `RabbitMQ:RoutingKey`, `RabbitMQ:Queue`
 
+In der Entwicklungsumgebung bietet Swagger UI unter `/swagger` den Button
+**Authorize**: Fuer geschuetzte API-Endpunkte den `accessToken` aus
+`POST /api/auth/token` bei **Bearer** ohne das Praefix `Bearer` eingeben.
+Swagger sendet ihn automatisch im Authorization-Header. Die internen
+Keycloak-Endpunkte verwenden stattdessen **InternalBearer** mit dem separat
+konfigurierten internen Token.
+
 ## Kundenstand und RabbitMQ
 
 Bei jeder Kundenanlage und relevanten Aenderung ueber EF Core werden die
@@ -52,6 +59,25 @@ nach der Aktivierung und einem Neustart wird der Rueckstand versendet.
 Passwoerter ueber Secrets, Umgebungsvariablen (z. B. `RabbitMQ__Password`) oder
 die vorhandene Consul-Konfiguration bereitstellen, nicht ins Repository schreiben.
 Fuer TLS `UseTls=true` und den TLS-Port des Brokers (typisch 5671) setzen.
+
+Mit `POST /api/customers/by-number/{customerNumber}/grafana` (Bearer-Token erforderlich)
+laesst sich fuer einen aktiven Bestandskunden ein vollstaendiger `customer.created`-Snapshot
+erneut in die Outbox einreihen, z. B. fuer Kundennummer `232`. Kundennummern in der URL
+gegebenenfalls URL-kodieren. Die Antwort `202 Accepted` mit `{"eventId":"<GUID>"}`
+bestaetigt nur die dauerhafte Speicherung in der Outbox, nicht die Zustellung an
+RabbitMQ oder Verarbeitung durch Grafana. Jeder Aufruf erzeugt eine neue Event-ID;
+unbekannte oder geloeschte Kunden ergeben `404`. Auch bei deaktiviertem RabbitMQ
+bleibt das Event bis zur Aktivierung ausstehend. Die Nachricht entspricht dem
+aktuellen Snapshot-Schema und enthaelt auch `registrationCode` und `email`.
+
+Mit `POST /api/customers/grafana` (Bearer-Token erforderlich) wird fuer jeden
+aktiven Kunden ein solcher Snapshot in die Outbox eingereiht. Die Antwort
+`202 Accepted` mit `{"count":2}` gibt die Anzahl der eingereihten Nachrichten
+an; bei keinen aktiven Kunden ist der Wert `0`. Geloeschte Kunden werden nicht
+beruecksichtigt. Die Nachrichten werden gemeinsam gespeichert, aber anschliessend
+unabhaengig voneinander versendet und verarbeitet. Die Antwort bestaetigt weder
+die Zustellung noch die Anlage in Grafana. Jeder erneute Aufruf erzeugt neue
+Events; der Grafana-Service muss wiederholte Kundenereignisse idempotent verarbeiten.
 
 Standardvertrag fuer den separat betriebenen Grafana-Microservice:
 
@@ -135,6 +161,20 @@ einen neuen Code und gibt ihn einmalig in der Antwort zurueck; ausstehende
 Kunden-Snapshots werden mit dem neuen Code aktualisiert. Codes nicht
 protokollieren; den Zugriff auf Datenbank und RabbitMQ auf berechtigte Dienste
 beschraenken.
+
+Mit `GET /api/customers/by-number/{customerNumber}/registration-document`
+(Bearer-Token erforderlich) kann fuer einen aktiven Kunden ein PDF mit Logo,
+Name, Kundennummer und aktuellem Registrierungscode heruntergeladen werden.
+Zugeordnete aktive Zaehlpunkte werden mit Richtung (Bezug oder Einspeisung),
+gegebenenfalls Bezeichnung sowie aktiven Energiegemeinschaften und Teilnahmegrad
+auf derselben Seite aufgefuehrt. Bei vielen Eintraegen wird der gesamte Inhalt
+verkleinert und kann dadurch schwer lesbar werden.
+Die Kundennummer gegebenenfalls URL-kodieren. Unbekannte oder geloeschte Kunden
+ergeben `404`. Der Abruf erstellt oder rotiert keinen Code; nach einer Rotation
+ist ein zuvor heruntergeladenes Dokument nicht mehr aktuell. Die Antwort enthaelt
+`Cache-Control: private, no-store`. Das PDF und der Code sind vertraulich zu
+behandeln. Das eingebettete Lato-Schriftbild steht unter der SIL Open Font
+License; der Lizenztext liegt in `src\EGWNCentral.Api\Assets\Lato-OFL.txt`.
 Die Folgemigration `ShortenCustomerRegistrationCode` ersetzt bisherige lange
 oder ungueltige Codes durch eindeutige sechsstellige Codes. Bereits versandte
 Codes verlieren dadurch ihre Gueltigkeit. Ausstehende Outbox-Payloads werden
@@ -285,6 +325,9 @@ neue Herkunft `Source` geht dabei verloren.
 
 `GET /api/energy-communities/by-source?source=EDA` liefert die aktiven
 Energiegemeinschaften dieser Herkunft mit denselben Details wie die Gesamtliste.
+Jede Teilnahme enthaelt die Energierichtung des Zaehlpunkts als `energyDirection`
+(`generation` oder `consumption`); dies gilt auch fuer die Detailansicht und die
+Antwort beim Setzen einer Teilnahme.
 Der Vergleich ist exakt und unterscheidet Gross- und Kleinschreibung; fuehrende
 und nachfolgende Leerzeichen werden entfernt. Eine fehlende oder leere Herkunft
 ergibt HTTP 400, eine unbekannte Herkunft eine leere Liste.

@@ -26,6 +26,7 @@ public static class DependencyInjection
         services.AddScoped(typeof(IRepository<>), typeof(EfRepository<>));
 
         services.AddScoped<ICustomerService, CustomerService>();
+        services.AddScoped<ICustomerSnapshotService, CustomerSnapshotService>();
         services.AddScoped<IMeteringPointService, MeteringPointService>();
         services.AddScoped<IEnergyCommunityService, EnergyCommunityService>();
 
