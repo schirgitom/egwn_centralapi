@@ -11,6 +11,7 @@ namespace EGWNCentral.Api.Services;
 public sealed class RegistrationDocumentService
 {
     private const string FontFamily = "EGWN Lato";
+    private const string PortalUrl = "https://portal.wirteilenenergie.at";
     private const double Margin = 42;
     private static readonly XColor Blue = XColor.FromArgb(0, 87, 164);
     private static readonly XColor Dark = XColor.FromArgb(30, 48, 65);
@@ -32,11 +33,11 @@ public sealed class RegistrationDocumentService
         using (var logo = XImage.FromStream(logoStream))
         {
             var width = page.Width.Point;
-            var contentHeight = Render(graphics, logo, customer, width, false);
+            var contentHeight = Render(graphics, logo, customer, page, 1, false);
             var scale = Math.Min(1, (page.Height.Point - 2 * Margin) / contentHeight);
             graphics.TranslateTransform((width - width * scale) / 2, Margin);
             graphics.ScaleTransform(scale);
-            Render(graphics, logo, customer, width, true);
+            Render(graphics, logo, customer, page, scale, true);
         }
 
         using var output = new MemoryStream();
@@ -44,8 +45,9 @@ public sealed class RegistrationDocumentService
         return output.ToArray();
     }
 
-    private static double Render(XGraphics graphics, XImage logo, Customer customer, double width, bool draw)
+    private static double Render(XGraphics graphics, XImage logo, Customer customer, PdfPage page, double scale, bool draw)
     {
+        var width = page.Width.Point;
         var regular = new XFont(FontFamily, 10);
         var small = new XFont(FontFamily, 9);
         var bold = new XFont(FontFamily, 10, XFontStyleEx.Bold);
@@ -66,6 +68,18 @@ public sealed class RegistrationDocumentService
         layout.Space(logoHeight + 20);
         layout.Write("Willkommen bei der EEG", title, darkBrush, 25);
         layout.Write("Ihre persönlichen Registrierungsdaten", regular, mutedBrush, 17);
+        layout.Write("Portal: ", regular, darkBrush, 14);
+        var linkTop = layout.Y;
+        layout.Write(PortalUrl, regular, blueBrush, 14);
+        if (draw)
+        {
+            var left = (width - width * scale) / 2 + Margin * scale;
+            var top = Margin + linkTop * scale;
+            var bottom = Margin + layout.Y * scale;
+            var right = left + graphics.MeasureString(PortalUrl, regular).Width * scale;
+            page.AddWebLink(new PdfRectangle(new XPoint(left, page.Height.Point - bottom),
+                new XPoint(right, page.Height.Point - top)), PortalUrl);
+        }
         layout.Space(7);
 
         if (draw)

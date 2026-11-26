@@ -165,6 +165,12 @@ beschraenken.
 Mit `GET /api/customers/by-number/{customerNumber}/registration-document`
 (Bearer-Token erforderlich) kann fuer einen aktiven Kunden ein PDF mit Logo,
 Name, Kundennummer und aktuellem Registrierungscode heruntergeladen werden.
+Das Dokument enthaelt auch den anklickbaren Link `https://portal.wirteilenenergie.at`.
+Mit `GET /api/customers/registration-documents` (ebenfalls Bearer-Token erforderlich)
+koennen die Registrierungsdokumente aller aktiven Kunden als ZIP heruntergeladen
+werden. Ohne aktive Kunden ist das ZIP leer. Die PDFs heissen
+`Kundennummer - Name.pdf`; fuer Dateinamen unzulaessige Zeichen werden ersetzt,
+lange Namen gekuerzt und bei Namensgleichheit Suffixe ergaenzt.
 Zugeordnete aktive Zaehlpunkte werden mit Richtung (Bezug oder Einspeisung),
 gegebenenfalls Bezeichnung sowie aktiven Energiegemeinschaften und Teilnahmegrad
 auf derselben Seite aufgefuehrt. Bei vielen Eintraegen wird der gesamte Inhalt

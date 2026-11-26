@@ -6,6 +6,8 @@ public interface ICustomerService
 {
     Task<IReadOnlyCollection<Customer>> GetAllAsync(CancellationToken cancellationToken = default);
 
+    Task<IReadOnlyCollection<Customer>> GetAllWithRelationshipsAsync(CancellationToken cancellationToken = default);
+
     Task<Customer?> GetByIdAsync(Guid id, CancellationToken cancellationToken = default);
 
     Task<Customer?> GetByNumberAsync(string customerNumber, CancellationToken cancellationToken = default);

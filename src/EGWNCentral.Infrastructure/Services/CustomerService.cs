@@ -15,6 +15,13 @@ public sealed class CustomerService(IUnitOfWork unitOfWork) : ICustomerService
             .ToListAsync(cancellationToken);
     }
 
+    public async Task<IReadOnlyCollection<Customer>> GetAllWithRelationshipsAsync(CancellationToken cancellationToken = default)
+    {
+        return await CustomerSnapshotBuilder.WithRelationships(unitOfWork.Customers.Query(asNoTracking: true))
+            .OrderBy(x => x.CustomerNumber)
+            .ToListAsync(cancellationToken);
+    }
+
     public Task<Customer?> GetByIdAsync(Guid id, CancellationToken cancellationToken = default)
     {
         return unitOfWork.Customers.Query(asNoTracking: true)

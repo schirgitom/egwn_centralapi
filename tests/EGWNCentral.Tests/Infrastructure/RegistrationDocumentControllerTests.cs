@@ -1,3 +1,4 @@
+using System.IO.Compression;
 using EGWNCentral.Api.Controllers;
 using EGWNCentral.Api.Services;
 using EGWNCentral.Infrastructure.Persistence;
@@ -23,7 +24,7 @@ public sealed class RegistrationDocumentControllerTests
         var result = Assert.IsType<FileContentResult>(await controller.Get(" K-123 ", CancellationToken.None));
 
         Assert.Equal("application/pdf", result.ContentType);
-        Assert.Equal("registrierung.pdf", result.FileDownloadName);
+        Assert.Equal("K-123 - Müller Energie.pdf", result.FileDownloadName);
         Assert.Equal("private, no-store", controller.Response.Headers.CacheControl.ToString());
         Assert.NotEmpty(typeof(RegistrationDocumentController).GetCustomAttributes(typeof(AuthorizeAttribute), true));
         using var pdf = PdfDocument.Open(result.FileContents);
@@ -31,6 +32,10 @@ public sealed class RegistrationDocumentControllerTests
         Assert.Contains("Müller Energie", page.Text);
         Assert.Contains("K-123", page.Text);
         Assert.Contains(customer.RegistrationCode, page.Text);
+        Assert.Contains("https://portal.wirteilenenergie.at", page.Text);
+        var link = Assert.Single(page.GetHyperlinks());
+        Assert.Equal("https://portal.wirteilenenergie.at", link.Uri);
+        Assert.Contains("portal.wirteilenenergie.at", link.Text);
         var image = Assert.Single(page.GetImages());
         Assert.InRange(Math.Abs((image.Bounds.Left + image.Bounds.Right) / 2 - page.Width / 2), 0, 0.1);
         Assert.InRange(image.Bounds.Width, 149, 151);
@@ -41,6 +46,55 @@ public sealed class RegistrationDocumentControllerTests
         var updatedFile = Assert.IsType<FileContentResult>(await controller.Get("K-123", CancellationToken.None));
         using var updatedPdf = PdfDocument.Open(updatedFile.FileContents);
         Assert.Contains(newCode!, updatedPdf.GetPage(1).Text);
+    }
+
+    [Fact]
+    public async Task GetAll_ReturnsDocumentsForActiveCustomersWithRelationshipsAndSafeUniqueNames()
+    {
+        await using var context = CreateDbContext();
+        var unit = new UnitOfWork(context);
+        var customers = new CustomerService(unit);
+        var meters = new MeteringPointService(unit);
+        var communities = new EnergyCommunityService(unit);
+        var first = await customers.CreateAsync("K/1", "Müller", null);
+        var second = await customers.CreateAsync("K\\1", "Müller", null);
+        var deleted = await customers.CreateAsync("K-3", "Gelöscht", null);
+        var meter = await meters.CreateAsync([first.Id], "AT-ONE", "consumption", null);
+        var community = await communities.CreateAsync("EEG Sonne");
+        await communities.SetParticipationAsync(community.Id, meter.Id, 50m);
+        await customers.DeleteAsync(deleted.Id);
+        context.ChangeTracker.Clear();
+        var controller = CreateController(customers);
+
+        var result = Assert.IsType<FileContentResult>(await controller.GetAll(CancellationToken.None));
+
+        Assert.Equal("application/zip", result.ContentType);
+        Assert.Equal("registrierungsdokumente.zip", result.FileDownloadName);
+        Assert.Equal("private, no-store", controller.Response.Headers.CacheControl.ToString());
+        using var archive = new ZipArchive(new MemoryStream(result.FileContents), ZipArchiveMode.Read);
+        Assert.Equal(2, archive.Entries.Count);
+        var entry = Assert.Single(archive.Entries, x => x.Name == "K_1 - Müller.pdf");
+        Assert.Single(archive.Entries, x => x.Name == "K_1 - Müller (2).pdf");
+        using var stream = entry.Open();
+        using var buffer = new MemoryStream();
+        await stream.CopyToAsync(buffer);
+        using var pdf = PdfDocument.Open(buffer.ToArray());
+        var page = Assert.Single(pdf.GetPages());
+        Assert.Contains(first.RegistrationCode, page.Text);
+        Assert.DoesNotContain(second.RegistrationCode, page.Text);
+        Assert.Contains("AT-ONE", page.Text);
+        Assert.Contains("EEG Sonne (50 % Teilnahme)", page.Text);
+        Assert.Equal("https://portal.wirteilenenergie.at", Assert.Single(page.GetHyperlinks()).Uri);
+    }
+
+    [Fact]
+    public async Task GetAll_ReturnsAnEmptyZipWhenNoCustomersExist()
+    {
+        await using var context = CreateDbContext();
+        var controller = CreateController(new CustomerService(new UnitOfWork(context)));
+        var result = Assert.IsType<FileContentResult>(await controller.GetAll(CancellationToken.None));
+        using var archive = new ZipArchive(new MemoryStream(result.FileContents), ZipArchiveMode.Read);
+        Assert.Empty(archive.Entries);
     }
 
     [Fact]
@@ -145,6 +199,9 @@ public sealed class RegistrationDocumentControllerTests
         using var pdf = PdfDocument.Open(result.FileContents);
         var page = Assert.Single(pdf.GetPages());
         var text = page.Text;
+        var link = Assert.Single(page.GetHyperlinks());
+        Assert.Equal("https://portal.wirteilenenergie.at", link.Uri);
+        Assert.Contains("portal.wirteilenenergie.at", link.Text);
         for (var i = 0; i < 30; i++)
         {
             Assert.Contains($"AT-METER-{i:00}", text);
