@@ -6,6 +6,15 @@ namespace EGWNCentral.Api.Services;
 
 public static class OpenApiSecurityExtensions
 {
+    public static void AddSameOriginServer(this OpenApiOptions options)
+    {
+        options.AddDocumentTransformer((document, _, _) =>
+        {
+            document.Servers = [new OpenApiServer { Url = "/" }];
+            return Task.CompletedTask;
+        });
+    }
+
     public static void AddBearerSecurity(this OpenApiOptions options)
     {
         options.AddDocumentTransformer((document, _, _) =>

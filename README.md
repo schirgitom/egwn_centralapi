@@ -39,6 +39,10 @@ In der Entwicklungsumgebung bietet Swagger UI unter `/swagger` den Button
 Swagger sendet ihn automatisch im Authorization-Header. Die internen
 Keycloak-Endpunkte verwenden stattdessen **InternalBearer** mit dem separat
 konfigurierten internen Token.
+Das OpenAPI-Dokument verwendet eine relative Server-URL, damit Swagger
+API-Anfragen ueber denselben Host und dasselbe Schema wie die Swagger-Seite
+sendet, auch hinter einem HTTPS-Reverse-Proxy. Der Proxy muss die API-Routen
+unter `/api` bereitstellen.
 
 ## Kundenstand und RabbitMQ
 

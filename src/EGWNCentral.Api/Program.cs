@@ -104,7 +104,11 @@ public class Program
 
         builder.Services.AddAuthorization();
         builder.Services.AddControllers();
-        builder.Services.AddOpenApi(options => options.AddBearerSecurity());
+        builder.Services.AddOpenApi(options =>
+        {
+            options.AddSameOriginServer();
+            options.AddBearerSecurity();
+        });
 
 
         var app = builder.Build();
